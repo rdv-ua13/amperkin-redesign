@@ -32,6 +32,7 @@ const path = {
         js:                 "build/js/",
         styles:             "build/css/",
         img:                "build/img/",
+        svg:                "build/img/svg/",
     },
     src: {
         php:                "src/pages/**/*.php",
@@ -120,7 +121,7 @@ const includedJsBuild = () => {
             "node_modules/@popperjs/core/dist/umd/popper.js",
             "node_modules/swiper/swiper-bundle.js",
             "node_modules/tippy.js/dist/tippy-bundle.umd.js",
-            "node_modules/@fancyapps/ui/dist/fancybox.umd.js",
+            "node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js",
             "node_modules/select2/dist/js/select2.js",
             "node_modules/readmore-js/readmore.js",
             "node_modules/flatpickr/dist/flatpickr.min.js",
@@ -142,7 +143,7 @@ const libsJsBuild = () => {
             "node_modules/@popperjs/core/dist/umd/popper.js",
             "node_modules/swiper/swiper-bundle.js",
             "node_modules/tippy.js/dist/tippy-bundle.umd.js",
-            "node_modules/@fancyapps/ui/dist/fancybox.umd.js",
+            "node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js",
             "node_modules/select2/dist/js/select2.js",
             "node_modules/readmore-js/readmore.js",
             "node_modules/flatpickr/dist/flatpickr.min.js",
@@ -185,7 +186,7 @@ const svgSprites = () => {
                 },
             })
         )
-        /*.pipe(
+        .pipe(
             cheerio({
                 run: function ($) {
                     $("[fill]").removeAttr("fill");
@@ -196,7 +197,7 @@ const svgSprites = () => {
                     xmlMode: true
                 },
             })
-        )*/
+        )
         .pipe(replace("&gt;", ">"))
         .pipe(svgSprite({
             mode: {
@@ -208,7 +209,54 @@ const svgSprites = () => {
         .pipe(dest(path.build.img));
 };
 
-// Обработка картинок
+// Подготовка иконок (удаление атрибутов)
+const svgPreparation = () => {
+    return src(path.src.svg)
+        .pipe(
+            svgmin({
+                js2svg: {
+                    pretty: true,
+                },
+            })
+        )
+        .pipe(
+            cheerio({
+                run: function ($) {
+                    $("[fill]").removeAttr("fill");
+                    $("[stroke]").removeAttr("stroke");
+                    $("[style]").removeAttr("style");
+                },
+                parserOptions: {
+                    xmlMode: true
+                },
+            })
+        )
+        .pipe(replace("&gt;", ">"))
+        .pipe(dest(path.build.svg));
+};
+
+// Обработка картинок (dev)
+const imagesDev = () => {
+    return src([`${path.src.img}/**/**.{jpg,jpeg,png,svg}`, `!${path.src.svg}`])
+        .pipe(image([
+            image.mozjpeg({
+                quality: 80,
+                progressive: true
+            }),
+            image.optipng({
+                optimizationLevel: 2
+            }),
+            image.svgo({
+                plugins: [
+                    {removeViewBox: false},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
+        .pipe(dest(path.build.img));
+};
+
+// Обработка картинок (build)
 const images = () => {
     return src([`${path.src.img}/**/**.{jpg,jpeg,png,svg}`])
         .pipe(image([
@@ -228,6 +276,7 @@ const images = () => {
         ]))
         .pipe(dest(path.build.img));
 };
+
 const webpImages = () => {
     return src([`${path.src.img}/**/**.{jpg,jpeg,png}`])
         .pipe(webp())
@@ -271,6 +320,8 @@ const toProd = (done) => {
     done();
 };
 
-exports.default = series(clean, cacheBuild, phpBuild, cssVendorBuild, cssBuild, includedJsBuild, mainJsBuild, resources, images, webpImages, svgSprites, watchFiles);
+exports.default = series(clean, cacheBuild, phpBuild, cssVendorBuild, cssBuild, includedJsBuild, mainJsBuild, resources, imagesDev, webpImages, svgSprites, watchFiles);
+
+exports.svg = series(clean, cacheBuild, phpBuild, svgPreparation, watchFiles);
 
 exports.build = series(toProd, clean, cacheBuild, phpBuild, cssVendorBuild, cssBuild, libsJsBuild, mainJsBuild, resources, images, webpImages, svgSprites, watchFiles);

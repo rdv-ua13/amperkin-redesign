@@ -36,352 +36,606 @@
 
     <script defer src="js/main.js"></script>
 </head>
-<?/* if(strpos($_SERVER["REQUEST_URI"], "registration.php") || strpos($_SERVER["REQUEST_URI"], "auth.php")) : ?>
-<body class="bgc-white">
-<? elseif(strpos($_SERVER["REQUEST_URI"], "lk-org-profile-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-project-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-ecodelo-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-ecodelo-task-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-task-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-petition-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-contact-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-about-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-additional-settings.php")) : ?>
-<body class="has-settings-bar">
-<? else : ?>
 <body>
-<? endif; */?>
-<body>
-    <?/* if(strpos($_SERVER["REQUEST_URI"], "organizer.php")) : ?>
-    <header class="header header--org fixed-block">
-    <? elseif(strpos($_SERVER["REQUEST_URI"], "registration.php") || strpos($_SERVER["REQUEST_URI"], "auth.php") || strpos($_SERVER["REQUEST_URI"], "password-recovery.php")) : ?>
-    <header class="header header--authreg fixed-block">
-    <? else : ?>
     <header class="header fixed-block">
-    <? endif; */?>
-    <header class="header fixed-block">
-        <div class="header-top desktop-only">
-            <div class="container">
+        <div class="header-top">
+            <div class="container header-container">
                 <div class="header-top-nav">
-                    <ul class="list-reset flex-v-center">
-                        <li><a class="header-top-nav__link" href="javascript:;">Доставка</a></li>
-                        <li><a class="header-top-nav__link" href="javascript:;">Оплата</a></li>
-                        <li><a class="header-top-nav__link" href="javascript:;">Гарантия</a></li>
-                        <li><a class="header-top-nav__link" href="javascript:;">Программа лояльности</a></li>
-                        <li><a class="header-top-nav__link" href="javascript:;">Акции</a></li>
-                        <li><a class="header-top-nav__link" href="javascript:;">Статьи</a></li>
-                        <li><a class="header-top-nav__link" href="javascript:;">Распродажа</a></li>
-                        <li><a class="header-top-nav__link" href="javascript:;">Контакты</a></li>
+                    <ul class="list-reset header-top-nav__list">
+                        <li><a class="header-top__link" href="javascript:;">Доставка</a></li>
+                        <li><a class="header-top__link" href="javascript:;">Оплата</a></li>
+                        <li><a class="header-top__link" href="javascript:;">Гарантия</a></li>
+                        <li><a class="header-top__link" href="javascript:;">Программа лояльности</a></li>
+                        <li><a class="header-top__link" href="javascript:;">Акции</a></li>
+                        <li><a class="header-top__link" href="javascript:;">Статьи</a></li>
+                        <li><a class="header-top__link" href="javascript:;">Распродажа</a></li>
+                        <li><a class="header-top__link" href="javascript:;">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="header-top-city"></div>
-                <div class="header-top-pa"></div>
-            </div>
-        </div>
-        <div class="container header__container">
-            <div class="header-logo">
-                <a class="logo" href="javascript:;">
-                    <img
-                        loading="lazy"
-                        class="image"
-                        src="img/logo.svg"
-                        width="158"
-                        height="44"
-                        alt="Амперкин - выбор профессионалов"
+                <div class="header-top-city">
+                    <button
+                            class="btn-reset header-top__link header-top-city__spoiler"
+                            type="button"
+                            data-fancybox
                     >
-                </a>
-            </div>
-
-			<? if(!strpos($_SERVER["REQUEST_URI"], "registration.php") && !strpos($_SERVER["REQUEST_URI"], "auth.php")) : ?>
-				<? if(strpos($_SERVER["REQUEST_URI"], "organizer.php")) : ?>
-                    <div class="header-menu-organizer">
-                        <ul class="list-reset header-menu-organizer__list">
-                            <li><a href="javascript:;" class="link">Пункт1</a></li>
-                            <li><a href="javascript:;" class="link">Пункт2</a></li>
-                            <li><a href="javascript:;" class="link">Пункт3</a></li>
-                            <li><a href="javascript:;" class="link">Пункт4</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="header-menu-organizer-mobile">
-                        <button
-                                class="burger js-burger"
-                                aria-label="Открыть меню"
-                                aria-expanded="false"
-                                data-burger
-                                data-overlay
-                        >
-                            <svg class="icon burger__icon">
-                                <use href="img/sprite.svg#burger"></use>
+                        <svg class="icon icon-sm">
+                            <use href="img/sprite.svg#pin"></use>
+                        </svg>
+                        <span class="header-top-city__spoiler-text">
+                            <span>Москва</span>
+                            <svg class="icon">
+                                <use href="img/sprite.svg#chevron-down"></use>
                             </svg>
-                            <span class="burger__text">Меню</span>
-                        </button>
+                        </span>
+                    </button>
+                </div>
+                <div class="header-top-profile">
+                    <div class="header-top-profile__view">
+                        <picture>
+                            <source srcset="img/avatar.webp" type="image/webp">
+                            <img
+                                loading="lazy"
+                                src="img/avatar.png"
+                                width="28"
+                                height="28"
+                                alt="Изображение блока"
+                            >
+                        </picture>
                     </div>
-				<? else : ?>
-                    <div class="header-menu">
-                        <button
-                                class="burger js-burger"
-                                aria-label="Открыть меню"
-                                aria-expanded="false"
-                                data-burger
-                                data-overlay
-                        >
-                            <svg class="icon burger__icon">
-                                <use href="img/sprite.svg#burger"></use>
-                            </svg>
-                            <span class="burger__text">Меню</span>
-                        </button>
-                    </div>
-				<? endif; ?>
-				<? if(!strpos($_SERVER["REQUEST_URI"], "organizer.php")) : ?>
-                    <div class="header-search">
-                        <form id="" class="form" method="" action="javascript:;">
-                            <div class="form__field">
-                                <input
-                                        class="input-reset form__input"
-                                        type="search"
-                                        name="Поиск"
-                                        placeholder="Что вы хотите найти?"
-                                >
-                                <button class="btn-reset form__btn">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#search"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-				<? endif; ?>
-				<? // todo: отобразить состояние авториззованного пользователя - раскомментировать ".header-actions--current-user" ?>
-                <div class="header-actions--current-user header-actions--current-user*/?>">
-                    <div class="header-actions__item header-actions-mobile">
-                        <button class="btn-reset btn btn--noframe header-actions-mobile__dropdown js-header-actions-mobile-dropdown" data-overlay>
-                            <svg class="icon btn__icon">
-                                <use href="img/sprite.svg#user"></use>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="header-actions__item header-actions-no-auth">
-                        <div class="header-actions-no-auth__item">
-                            <button class="btn-reset btn btn--noframe header-actions-no-auth__entry">
-                                <svg class="icon btn__icon">
-                                    <use href="img/sprite.svg#user"></use>
+                    <div class="header-top-profile__descr">
+                        <div class="header-top-profile__name">Илья маковецкий</div>
+                        <div class="header-top-profile__bonus">
+                            <div class="header-top-profile__bonus-value">
+                                <span>2746,99</span>
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#fill-bonus"></use>
                                 </svg>
-                                <span class="btn__text">Войти</span>
-                            </button>
-                        </div>
-                        <div class="header-actions-no-auth__item">
-                            <button class="btn-reset btn">
-                                <span class="btn__text">Зарегистрироваться</span>
-                            </button>
+                            </div>
+                            <div class="header-top-profile__bonus-exp">до 01.04</div>
                         </div>
                     </div>
-
-                    <div class="header-actions__item header-actions-current-user">
-                        <div class="current-user">
-                            <span class="current-user__menu js-current-user-menu">
-                                <picture class="current-user__pic">
-                                    <source srcset="img/user.webp" type="image/webp">
-                                    <img
-                                            loading="lazy"
-                                            src="img/user.png"
-                                            class="image"
-                                            width="42"
-                                            height="42"
-                                            alt="User"
-                                    >
-                                </picture>
-                                <span class="current-user__dropdown">
-                                    <span class="current-user__dropdown-header">
-                                        <span class="current-user__dropdown-header-title">Ассоциация волонтерских центров</span>
-                                    </span>
-                                </span>
-                                <span class="current-user__dropdown-menu">
-                                    <span class="current-user__dropdown-menu-item">
-                                        <span class="current-user__dropdown-menu-user">
-                                            <picture class="current-user__pic">
-                                                <source srcset="img/user.webp" type="image/webp">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/user.png"
-                                                        class="image"
-                                                        width="42"
-                                                        height="42"
-                                                        alt="User"
-                                                >
-                                            </picture>
-                                            <span class="current-user__dropdown-menu-user-header">
-                                                <span class="current-user__dropdown-menu-user-title">
-                                                    Алексеев Дмитрий Олегович
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="current-user__dropdown-menu-user">
-                                            <picture class="current-user__pic">
-                                                <source srcset="img/user.webp" type="image/webp">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/user.png"
-                                                        class="image"
-                                                        width="42"
-                                                        height="42"
-                                                        alt="User"
-                                                >
-                                            </picture>
-                                            <span class="current-user__dropdown-menu-user-header">
-                                                <span class="current-user__dropdown-menu-user-title">
-                                                    Ассоциация волонтерских центров
-                                                </span>
-                                                <span class="current-user__dropdown-menu-user-subtitle">
-                                                    Организация
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                    <span class="current-user__dropdown-menu-item">
-                                        <ul class="list-reset">
-                                            <li><a href="javascript:;" class="link">Стать организатором</a></li>
-                                            <li><a href="javascript:;" class="link">Настройки профиля</a></li>
-                                            <li><a href="javascript:;" class="link">Выйти</a></li>
-                                        </ul>
-                                    </span>
-                                </span>
-                            </span>
-                            <span class="current-user__notice">
-                                <button class="btn-reset current-user__notice-btn notice">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#mail"></use>
-                                    </svg>
-                                    <span class="current-user__notice-btn-num">3</span>
-                                </button>
-                                <button class="btn-reset current-user__notice-btn notice">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#bell"></use>
-                                    </svg>
-                                    <span class="current-user__notice-btn-num">24</span>
-                                </button>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-			<? else : ?>
-                <div class="header-actions header-actions-authreg">
-					<? if(strpos($_SERVER["REQUEST_URI"], "registration.php")) : ?>
-                        <button class="btn-reset btn">
-                            <span class="btn__text">Войти</span>
-                        </button>
-					<? elseif(strpos($_SERVER["REQUEST_URI"], "auth.php")) : ?>
-                        <button class="btn-reset btn">
-                            <span class="btn__text desktop-only">Зарегистрироваться</span>
-                            <span class="btn__text mobile-only">Регистрация</span>
-                        </button>
-                    <? endif; ?>
-                </div>
-			<? endif; ?>
-        </div>
-    </header>
-
-    <div class="burger-menu" data-menu>
-        <div class="burger-menu__close" data-menu-close></div>
-        <div class="header-search">
-            <form id="" class="form" method="" action="javascript:;">
-                <div class="form__field">
-                    <input
-                            class="input-reset form__input"
-                            type="search"
-                            name="Поиск"
-                            placeholder="Что вы хотите найти?"
-                    >
-                    <button class="btn-reset form__btn">
+                    <div class="header-top-profile__pointer">
                         <svg class="icon">
-                            <use href="img/sprite.svg#search"></use>
+                            <use href="img/sprite.svg#chevron-down"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container header-container header-nav-container">
+                <div class="header-logo">
+                    <a class="logo" href="javascript:;">
+                        <img
+                            loading="lazy"
+                            class="image"
+                            src="img/logo.svg"
+                            width="158"
+                            height="44"
+                            alt="Амперкин - выбор профессионалов"
+                        >
+                    </a>
+                </div>
+
+                <div class="header-search">
+                    <form id="" class="form" method="" action="javascript:;">
+                        <div class="input-search-wrapper">
+                            <input
+                                    class="input-reset input-search"
+                                    type="search"
+                                    name="Поиск"
+                                    placeholder="Розетка, ST9431B (артикул) или номер заказа..."
+                                    autocomplete="off"
+                            >
+                            <button class="btn-reset btn btn-mini btn-primary input-search-btn" type="submit">
+                                <span class="btn__text">Найти</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="header-contacts">
+                    <div class="header-contacts__tel">
+                        <a class="header-contacts__number" href="tel:+74951183770">+7 (495) 118-37-70</a>
+                        <a class="link-dashed link-gray header-contacts__call" href="javascript:;">заказать звонок</a>
+                    </div>
+                </div>
+
+                <div class="header-profile">
+                    <ul class="list-reset header-profile__list">
+                        <li>
+                            <button class="btn-reset header-profile__btn">
+                                <span class="header-profile__btn-view">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#bookmarks"></use>
+                                    </svg>
+                                    <span class="header-profile__btn-count">12</span>
+                                </span>
+                                <span class="header-profile__btn-text">Избранное</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn-reset header-profile__btn">
+                                <span class="header-profile__btn-view">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#inbox-filled"></use>
+                                    </svg>
+                                    <span class="header-profile__btn-count">7</span>
+                                </span>
+                                <span class="header-profile__btn-text">Сметы</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn-reset header-profile__btn">
+                                <span class="header-profile__btn-view">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#barchart"></use>
+                                    </svg>
+                                </span>
+                                <span class="header-profile__btn-text">Сравнить</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn-reset header-profile__btn header-profile__btn-cart">
+                                <span class="header-profile__btn-view">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#shopping-cart-2"></use>
+                                    </svg>
+                                    <span class="header-profile__btn-count">3</span>
+                                </span>
+                                <span class="header-profile__btn-text">12 470,80 ₽</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header-catalog">
+                    <div class="header-catalog-spoiler">
+                        <button
+                                class="btn-reset btn btn-primary catalog-spoiler"
+                                aria-label="Открыть меню"
+                                aria-expanded="false"
+                                data-catalog-spoiler
+                                data-overlay-transparent
+                        >
+                            <svg class="icon btn__icon catalog-spoiler__icon">
+                                <use href="img/sprite.svg#burger"></use>
+                            </svg>
+                            <svg class="icon btn__icon catalog-spoiler__icon-active">
+                                <use href="img/sprite.svg#cross"></use>
+                            </svg>
+                            <span class="btn__text">Каталог</span>
+                        </button>
+                    </div>
+                    <div class="header-catalog-preview">
+                        <a class="btn-reset btn btn-link header-catalog-preview__item" href="javascript:;">Розетки и выключатели</a>
+                        <a class="btn-reset btn btn-link header-catalog-preview__item" href="javascript:;">Электроустановочные изделия</a>
+                        <a class="btn-reset btn btn-link header-catalog-preview__item" href="javascript:;">Низковольтное оборудование</a>
+                        <a class="btn-reset btn btn-link header-catalog-preview__item" href="javascript:;">Щиты, шкафы, боксы</a>
+                        <a class="btn-reset btn btn-link header-catalog-preview__item" href="javascript:;">Кабель</a>
+                        <a class="btn-reset btn btn-link header-catalog-preview__item" href="javascript:;">Светотехника</a>
+                        <a class="btn-reset btn btn-link header-catalog-preview__item" href="javascript:;">Еще...</a>
+                    </div>
+                </div>
+
+                <div class="header-mobile-menu">
+                    <button
+                            class="btn-reset burger"
+                            aria-label="Открыть меню"
+                            aria-expanded="false"
+                            data-menu-spoiler
+                            data-overlay
+                    >
+                        <svg class="icon">
+                            <use href="img/sprite.svg#burger"></use>
                         </svg>
                     </button>
                 </div>
-            </form>
+            </div>
         </div>
-        <ul class="list-reset burger-menu__list">
-            <li>
-                <a href="javascript:;" class="link">Пункт</a>
-            </li>
-            <li>
-                <a href="javascript:;" class="link">Пункт</a>
-            </li>
-            <li>
-                <a href="javascript:;" class="link">Пункт</a>
-            </li>
-            <li>
-                <a href="javascript:;" class="link">Пункт</a>
-            </li>
-            <li>
-                <a href="javascript:;" class="link">Пункт</a>
-            </li>
-            <li>
-                <a href="javascript:;" class="link">Пункт</a>
-            </li>
-            <li>
-                <a href="javascript:;" class="link">Пункт</a>
-            </li>
-            <li>
-                <a href="javascript:;" class="link">Пункт</a>
-            </li>
-            <li class="burger-menu__item-org">
-                <a href="javascript:;" class="link link--green">Пункт</a>
-            </li>
-        </ul>
-        <div class="burger-menu__footer">
-            <div class="burger-menu__contacts">
-                <div class="burger-menu__contacts-item">
-                    <div class="burger-menu__contacts-title">Консультационный центр</div>
-                    <a href="tel:+88007122811" class="link">8 (800) 712-28-11</a>
+    </header>
+
+    <div class="catalog" data-catalog>
+        <div class="container catalog-container">
+            <div class="catalog-root">
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn catalog-root-link selected" href="javascript:;" data-submenu-section="0">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-wiring-products"></use>
+                        </svg>
+                        <span class="btn__text">Розетки и выключатели</span>
+                    </a>
                 </div>
-                <div class="burger-menu__contacts-item">
-                    <div class="burger-menu__contacts-title">Поддержка</div>
-                    <a href="tel:+88007122811" class="link">8 (800) 712-28-11</a>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn catalog-root-link" href="javascript:;" data-submenu-section="1">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-wiring"></use>
+                        </svg>
+                        <span class="btn__text">Электроустановочные изделия</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-low-voltage"></use>
+                        </svg>
+                        <span class="btn__text">Низковольтное оборудование</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-shields-cabinets"></use>
+                        </svg>
+                        <span class="btn__text">Щиты, шкафы, боксы</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-cable"></use>
+                        </svg>
+                        <span class="btn__text">Кабель</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-lighting"></use>
+                        </svg>
+                        <span class="btn__text">Светотехника</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-connectors"></use>
+                        </svg>
+                        <span class="btn__text">Вилки, штекеры, разъемы, шнуры</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-tools"></use>
+                        </svg>
+                        <span class="btn__text">Инструменты и монтажные материалы</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-ventilation"></use>
+                        </svg>
+                        <span class="btn__text">Системы вентиляции и обогрева</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-electric-motors"></use>
+                        </svg>
+                        <span class="btn__text">Автоматизация и электродвигатели</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-grounding"></use>
+                        </svg>
+                        <span class="btn__text">Молниезащита и заземление</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-power-devices"></use>
+                        </svg>
+                        <span class="btn__text">Элементы и устройства питания</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-miscellaneous"></use>
+                        </svg>
+                        <span class="btn__text">Разные товары для монтажников</span>
+                    </a>
                 </div>
             </div>
-            <ul class="list-reset social social--light burger-menu__social">
-                <li class="social__item">
-                    <a
-                            href="javascript:;"
-                            target="_blank"
-                            class="social__link social__link--vk"
-                            aria-label="Наша страничка в Вконтакте"
-                    >
-                        <svg class="icon social__icon">
-                            <use href="img/sprite.svg#soc-logo-vk"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a
-                            href="javascript:;"
-                            target="_blank"
-                            class="social__link social__link--ok"
-                            aria-label="Наша страничка в Одноклассниках"
-                    >
-                        <svg class="icon social__icon">
-                            <use href="img/sprite.svg#soc-logo-ok"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a
-                            href="javascript:;"
-                            target="_blank"
-                            class="social__link social__link--fb"
-                            aria-label="Наша страничка в Фэйсбук"
-                    >
-                        <svg class="icon social__icon">
-                            <use href="img/sprite.svg#soc-logo-fb"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <div class="catalog-submenu">
+                <div class="catalog-submenu-section active" data-root-pointer="0">
+                    <div class="gap-lg h3">Розетки и выключатели</div>
+                    <div class="gap-lg catalog-submenu-links">
+                        <ul class="list-reset catalog-submenu-links__list">
+                            <li><a class="link-dark" href="javascript:;">Все товары раздела</a></li>
+                            <li><a class="link-dark" href="javascript:;">Розетки</a></li>
+                            <li><a class="link-dark" href="javascript:;">Выключатели</a></li>
+                            <li><a class="link-dark" href="javascript:;">Рамки</a></li>
+                            <li><a class="link-dark" href="javascript:;">Диммеры</a></li>
+                            <li><a class="link-dark" href="javascript:;">Датчики движения</a></li>
+                            <li><a class="link-dark" href="javascript:;">Датчики освещенности</a></li>
+                            <li><a class="link-dark" href="javascript:;">Выключатели с ДУ</a></li>
+                            <li><a class="link-dark" href="javascript:;">Блоки розеток и выключателей</a></li>
+                            <li><a class="link-dark" href="javascript:;">Антенные блоки</a></li>
+                            <li><a class="link-dark" href="javascript:;">Компьютерные розетки</a></li>
+                        </ul>
+                        <ul class="list-reset catalog-submenu-links__list">
+                            <li><a class="link-dark" href="javascript:;">Системы наблюдения и оповещения</a></li>
+                            <li><a class="link-dark" href="javascript:;">Дверные звонки и домофоны</a></li>
+                            <li><a class="link-dark" href="javascript:;">Системы видеонаблюдения</a></li>
+                        </ul>
+                        <ul class="list-reset catalog-submenu-links__list">
+                            <li><a class="link-dark" href="javascript:;">Системы прокладки кабеля</a></li>
+                            <li><a class="link-dark" href="javascript:;">Кабель-каналы и аксессуары</a></li>
+                            <li><a class="link-dark" href="javascript:;">Кабельные лотки и аксессуары</a></li>
+                            <li><a class="link-dark" href="javascript:;">Трубы для кабеля и комплектующие</a></li>
+                        </ul>
+                        <ul class="list-reset catalog-submenu-links__list">
+                            <li><a class="link-dark" href="javascript:;">Связь и безопасность</a></li>
+                            <li><a class="link-dark" href="javascript:;">Звонки</a></li>
+                            <li><a class="link-dark" href="javascript:;">Домофоны</a></li>
+                            <li><a class="link-dark" href="javascript:;">Датчики движения</a></li>
+                            <li><a class="link-dark" href="javascript:;">Датчики освещенности</a></li>
+                            <li><a class="link-dark" href="javascript:;">Терморегуляторы</a></li>
+                            <li><a class="link-dark" href="javascript:;">Видеонаблюдени</a></li>
+                            <li><a class="link-dark" href="javascript:;">Пожарно-охранная сигнализация, системы оповещения</a></li>
+                            <li><a class="link-dark" href="javascript:;">Устройства управления жалюзи, звуком, сигнализацией</a></li>
+                        </ul>
+                    </div>
+                    <div class="catalog-submenu-banners">
+                        <div class="catalog-submenu-banners__item">
+                            <picture>
+                                <source srcset="img/.webp" type="image/webp">
+                                <img
+                                    loading="lazy"
+                                    src="img/.png"
+                                    class="image"
+                                    width=""
+                                    height=""
+                                    alt="Изображение блока"
+                                >
+                            </picture>
+                        </div>
+                        <div class="catalog-submenu-banners__item">
+                            <picture>
+                                <source srcset="img/.webp" type="image/webp">
+                                <img
+                                    loading="lazy"
+                                    src="img/.png"
+                                    class="image"
+                                    width=""
+                                    height=""
+                                    alt="Изображение блока"
+                                >
+                            </picture>
+                        </div>
+                        <div class="catalog-submenu-banners__item">
+                            <picture>
+                                <source srcset="img/.webp" type="image/webp">
+                                <img
+                                    loading="lazy"
+                                    src="img/.png"
+                                    class="image"
+                                    width=""
+                                    height=""
+                                    alt="Изображение блока"
+                                >
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-submenu-section" data-root-pointer="1">
+                    <div class="gap-lg h3">Розетки и выключатели 2</div>
+                    <div class="gap-lg catalog-submenu-links">
+                        <ul class="list-reset catalog-submenu-links__list">
+                            <li><a class="link-dark" href="javascript:;">Все товары раздела</a></li>
+                            <li><a class="link-dark" href="javascript:;">Розетки</a></li>
+                            <li><a class="link-dark" href="javascript:;">Выключатели</a></li>
+                            <li><a class="link-dark" href="javascript:;">Рамки</a></li>
+                            <li><a class="link-dark" href="javascript:;">Диммеры</a></li>
+                            <li><a class="link-dark" href="javascript:;">Датчики движения</a></li>
+                            <li><a class="link-dark" href="javascript:;">Датчики освещенности</a></li>
+                            <li><a class="link-dark" href="javascript:;">Выключатели с ДУ</a></li>
+                        </ul>
+                        <ul class="list-reset catalog-submenu-links__list">
+                            <li><a class="link-dark" href="javascript:;">Системы наблюдения и оповещения</a></li>
+                            <li><a class="link-dark" href="javascript:;">Дверные звонки и домофоны</a></li>
+                            <li><a class="link-dark" href="javascript:;">Системы видеонаблюдения</a></li>
+                        </ul>
+                        <ul class="list-reset catalog-submenu-links__list">
+                            <li><a class="link-dark" href="javascript:;">Системы прокладки кабеля</a></li>
+                            <li><a class="link-dark" href="javascript:;">Кабель-каналы и аксессуары</a></li>
+                            <li><a class="link-dark" href="javascript:;">Кабельные лотки и аксессуары</a></li>
+                            <li><a class="link-dark" href="javascript:;">Трубы для кабеля и комплектующие</a></li>
+                        </ul>
+                        <ul class="list-reset catalog-submenu-links__list">
+                            <li><a class="link-dark" href="javascript:;">Связь и безопасность</a></li>
+                            <li><a class="link-dark" href="javascript:;">Звонки</a></li>
+                            <li><a class="link-dark" href="javascript:;">Домофоны</a></li>
+                            <li><a class="link-dark" href="javascript:;">Датчики движения</a></li>
+                            <li><a class="link-dark" href="javascript:;">Датчики освещенности</a></li>
+                            <li><a class="link-dark" href="javascript:;">Терморегуляторы</a></li>
+                            <li><a class="link-dark" href="javascript:;">Видеонаблюдени</a></li>
+                            <li><a class="link-dark" href="javascript:;">Пожарно-охранная сигнализация, системы оповещения</a></li>
+                            <li><a class="link-dark" href="javascript:;">Устройства управления жалюзи, звуком, сигнализацией</a></li>
+                            <li><a class="link-dark" href="javascript:;">Терморегуляторы</a></li>
+                            <li><a class="link-dark" href="javascript:;">Видеонаблюдени</a></li>
+                        </ul>
+                    </div>
+                    <div class="catalog-submenu-banners">
+                        <div class="catalog-submenu-banners__item">
+                            <picture>
+                                <source srcset="img/.webp" type="image/webp">
+                                <img
+                                    loading="lazy"
+                                    src="img/.png"
+                                    class="image"
+                                    width=""
+                                    height=""
+                                    alt="Изображение блока"
+                                >
+                            </picture>
+                        </div>
+                        <div class="catalog-submenu-banners__item">
+                            <picture>
+                                <source srcset="img/.webp" type="image/webp">
+                                <img
+                                    loading="lazy"
+                                    src="img/.png"
+                                    class="image"
+                                    width=""
+                                    height=""
+                                    alt="Изображение блока"
+                                >
+                            </picture>
+                        </div>
+                        <div class="catalog-submenu-banners__item">
+                            <picture>
+                                <source srcset="img/.webp" type="image/webp">
+                                <img
+                                    loading="lazy"
+                                    src="img/.png"
+                                    class="image"
+                                    width=""
+                                    height=""
+                                    alt="Изображение блока"
+                                >
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-close" data-menu-close>
+            <svg class="icon">
+                <use href="img/sprite.svg#cross"></use>
+            </svg>
+        </div>
+
+        <? // todo - not working / need explanation ?>
+        <div class="mobile-menu__item mobile-menu-catalog" data-catalog-spoiler>
+            <button
+                    class="btn-reset btn btn-primary catalog-spoiler"
+                    aria-label="Открыть меню"
+                    aria-expanded="false"
+                    data-catalog-spoiler
+            >
+                <svg class="icon btn__icon catalog-spoiler__icon">
+                    <use href="img/sprite.svg#burger"></use>
+                </svg>
+                <svg class="icon btn__icon catalog-spoiler__icon-active">
+                    <use href="img/sprite.svg#cross"></use>
+                </svg>
+                <span class="btn__text">Каталог</span>
+            </button>
+        </div>
+
+        <ul class="list-reset mobile-menu-list">
+            <li>
+                <button
+                        class="btn-reset mobile-menu__item mobile-menu__link mobile-menu-city"
+                        type="button"
+                        data-fancybox
+                >
+                    <svg class="icon icon-sm">
+                        <use href="img/sprite.svg#pin"></use>
+                    </svg>
+                    <span class="mobile-menu-city__text">
+                            <span>Москва</span>
+                            <svg class="icon">
+                                <use href="img/sprite.svg#chevron-down"></use>
+                            </svg>
+                        </span>
+                </button>
+            </li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">доставка</a></li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">оплата</a></li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Гарантия</a></li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">программа лояльности</a></li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Акции</a></li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Распродажа</a></li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Контакты</a></li>
+        </ul>
+
+        <div class="mobile-menu-footer">
+            <div class="mobile-menu__item mobile-menu-login">
+                <button class="btn-reset btn btn-b-light">
+                    <span class="btn__text">Войти</span>
+                </button>
+                <button class="btn-reset btn btn-b-dark">
+                    <span class="btn__text">Регистрация</span>
+                </button>
+            </div>
+
+            <div class="mobile-menu__item mobile-menu-contacts">
+                <a class="mobile-menu-contacts__number" href="tel:+74951183770">+7 (495) 118-37-70</a>
+                <a class="link-dashed link-gray mobile-menu-contacts__call" href="javascript:;">заказать звонок</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-menu-panel">
+        <ul class="list-reset mobile-menu-panel__list">
+            <li>
+                <button class="btn-reset header-profile__btn mobile-menu-panel__btn" data-catalog-spoiler>
+                    <span class="header-profile__btn-view mobile-menu-panel__btn-view">
+                        <svg class="icon">
+                            <use href="img/sprite.svg#catalog"></use>
+                        </svg>
+                    </span>
+                    <span class="header-profile__btn-text">Каталог</span>
+                </button>
+            </li>
+            <li>
+                <button class="btn-reset header-profile__btn mobile-menu-panel__btn">
+                    <span class="header-profile__btn-view mobile-menu-panel__btn-view">
+                        <svg class="icon">
+                            <use href="img/sprite.svg#bookmarks"></use>
+                        </svg>
+                        <span class="header-profile__btn-count">12</span>
+                    </span>
+                    <span class="header-profile__btn-text">Избранное</span>
+                </button>
+            </li>
+            <li>
+                <button class="btn-reset header-profile__btn mobile-menu-panel__btn">
+                    <span class="header-profile__btn-view mobile-menu-panel__btn-view">
+                        <svg class="icon">
+                            <use href="img/sprite.svg#inbox-filled"></use>
+                        </svg>
+                        <span class="header-profile__btn-count">7</span>
+                    </span>
+                    <span class="header-profile__btn-text">Сметы</span>
+                </button>
+            </li>
+            <li>
+                <button class="btn-reset header-profile__btn mobile-menu-panel__btn">
+                    <span class="header-profile__btn-view mobile-menu-panel__btn-view">
+                        <svg class="icon">
+                            <use href="img/sprite.svg#barchart"></use>
+                        </svg>
+                    </span>
+                    <span class="header-profile__btn-text">Кабинет</span>
+                </button>
+            </li>
+            <li>
+                <button class="btn-reset header-profile__btn mobile-menu-panel__btn mobile-menu-panel__btn-cart">
+                    <span class="header-profile__btn-view mobile-menu-panel__btn-view">
+                        <svg class="icon">
+                            <use href="img/sprite.svg#shopping-cart-2"></use>
+                        </svg>
+                        <span class="header-profile__btn-count">3</span>
+                    </span>
+                    <span class="header-profile__btn-text">12 470,80 ₽</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="action-notification"></div>
 
     <main class="main">
