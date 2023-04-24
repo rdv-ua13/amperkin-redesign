@@ -38,7 +38,7 @@ const path = {
         php:                "src/pages/**/*.php",
         mainJs:             "src/js/main.js",
         styles:             "src/styles/main.scss",
-        stylesVendor:       "src/styles/vendor/**/*.*",
+        stylesVendor:       "src/styles/vendors.scss",
         img:                "src/img",
         svg:                "src/img/svg/**.svg",
         resources:          "src/resources/**/*.*",
@@ -121,7 +121,7 @@ const includedJsBuild = () => {
             "node_modules/@popperjs/core/dist/umd/popper.js",
             "node_modules/swiper/swiper-bundle.js",
             "node_modules/tippy.js/dist/tippy-bundle.umd.js",
-            "node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js",
+            "node_modules/@fancyapps/ui/dist/fancybox.umd.js",
             "node_modules/select2/dist/js/select2.js",
             "node_modules/readmore-js/readmore.js",
             "node_modules/flatpickr/dist/flatpickr.min.js",
@@ -143,7 +143,7 @@ const libsJsBuild = () => {
             "node_modules/@popperjs/core/dist/umd/popper.js",
             "node_modules/swiper/swiper-bundle.js",
             "node_modules/tippy.js/dist/tippy-bundle.umd.js",
-            "node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js",
+            "node_modules/@fancyapps/ui/dist/fancybox.umd.js",
             "node_modules/select2/dist/js/select2.js",
             "node_modules/readmore-js/readmore.js",
             "node_modules/flatpickr/dist/flatpickr.min.js",
@@ -183,18 +183,6 @@ const svgSprites = () => {
             svgmin({
                 js2svg: {
                     pretty: true,
-                },
-            })
-        )
-        .pipe(
-            cheerio({
-                run: function ($) {
-                    $("[fill]").removeAttr("fill");
-                    $("[stroke]").removeAttr("stroke");
-                    $("[style]").removeAttr("style");
-                },
-                parserOptions: {
-                    xmlMode: true
                 },
             })
         )

@@ -28,6 +28,10 @@
 
 	// fancybox
 	--fancybox-scrollbar-compensate: 17px;
+	--fancybox-bg: rgba(0, 0, 0, 0.7);
+
+	// transition
+	--transition: 0.2s ease-out;
 }
 @media (min-width: 1440px) {
 	:root {

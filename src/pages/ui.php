@@ -37,7 +37,7 @@
 
     <style>
         body {
-            margin: 10px;
+            padding: 10px;
             overflow-x: hidden;
             background: #F5F5F5;
         }
@@ -180,6 +180,44 @@
                 ></span>&nbsp;&#8212; var(--text-caption)
             </div>
         </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
+
+    <h3 class="text-center">Отступы в проекте</h3>
+    <div class="container-ui">
+        <pre>
+        @media (min-width: 992px) {
+            .gap-xs {
+                margin-bottom: 12px !important;
+            }
+            .gap-sm {
+                margin-bottom: 16px !important;
+            }
+            .gap-md {
+                margin-bottom: 24px !important;
+            }
+            .gap-lg {
+                margin-bottom: 32px !important;
+            }
+            .gap-xl {
+                margin-bottom: 64px !important;
+            }
+        }
+        @media (max-width: 991.98px) {
+            .gap-xs,
+            .gap-sm {
+                margin-bottom: 12px !important;
+            }
+            .gap-md,
+            .gap-lg,
+            .gap-xl {
+                margin-bottom: 16px !important;
+            }
+        }
+        </pre>
     </div>
     <hr style="width: 100%;">
 
@@ -903,6 +941,15 @@
                     <!--end ui content-->
                 </span>
                 <span class="tooltip"
+                      data-tippy-content="#menu-file-slash"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-file-slash"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
                       data-tippy-content="#menu-layers"
                 >
                     <!--start ui content-->
@@ -957,11 +1004,121 @@
                     <!--end ui content-->
                 </span>
                 <span class="tooltip"
-                      data-tippy-content="#menu-truck-2 (проблемный)"
+                      data-tippy-content="#menu-truck-2"
                 >
                     <!--start ui content-->
                     <svg class="icon">
                         <use href="img/sprite.svg#menu-truck-2"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+            </div>
+            <div class="tooltip-ui-set tooltip-ui-iconset">
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-box-2"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-box-2"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-checkbox-rec"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-checkbox-rec"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-comment-plus"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-comment-plus"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-comment-slash"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-comment-slash"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-file-slash"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-file-slash"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-layers"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-layers"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-lock-2-opened"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-lock-2-opened"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-refresh-ccw"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-refresh-ccw"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-repeat"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-repeat"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-shopping-cart-2"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-shopping-cart-2"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-star-slash"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-star-slash"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-truck-2"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-truck-2"></use>
                     </svg>
                     <!--end ui content-->
                 </span>
@@ -1928,24 +2085,97 @@
     <br>
     <br>
 
+    <h3 class="text-center">Sale label</h3>
+    <div class="container-ui">
+        <div class="col-ui" style="max-width: 148px">
+            <div class="tooltip-ui-set">
+                <div class="tooltip"
+                     data-tippy-content='class="sale-label sale-label-yellow"'
+                >
+                    <!--start ui content-->
+                    <span class="sale-label sale-label-yellow">Распродажа</span>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-ui">
+        <div class="col-ui" style="max-width: 148px">
+            <div class="tooltip-ui-set">
+                <div class="tooltip"
+                     data-tippy-content='class="sale-label sale-label-red"'
+                >
+                    <!--start ui content-->
+                    <span class="sale-label sale-label-red">Распродажа</span>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-ui">
+        <div class="col-ui" style="max-width: 148px">
+            <div class="tooltip-ui-set">
+                <div class="tooltip"
+                     data-tippy-content='class="sale-label sale-label-green"'
+                >
+                    <!--start ui content-->
+                    <span class="sale-label sale-label-green">Распродажа</span>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
+
     <h3 class="text-center">Select (select2)</h3>
     <div class="container-ui">
         <div class="col-ui">
-            select class="input-reset form__input form__input--select js-select2"
             <div class="row-ui ">
                 <div class="flex-v-center" style="width: 100%;">
                     <!--start ui content-->
                     <form id="" class="form authreg-form" method="POST" action="">
-                        <div class="page-content__section">
-                            <div class="page-content__section-item">
-                                <div class="page-content__section-item-title">
-                                    <span>Селект <span class="required-star">*</span></span>
-                                </div>
+                        <select
+                                id=""
+                                class="input-reset form__input form__input--select2 js-select2"
+                                name=""
+                                required
+                        >
+                            <option value="0">Селект 1</option>
+                            <option value="1">Селект 2</option>
+                            <option value="2">Селект 3</option>
+                        </select>
+                    </form>
+                    <!--end ui content-->
+                </div>
+            </div>
+            <br>
+            <div class="row-ui ">
+                <div class="flex-v-center" style="width: 100%;">
+                    <!--start ui content-->
+                    <button class="btn-reset btn btn-primary" data-fancybox data-src="#modal-ui-compare">
+                        <span class="btn__text">Селект в мадальном окне</span>
+                    </button>
+                    <!--end ui content-->
+                </div>
+            </div>
+
+            <div id="modal-ui-compare" class="modal modal-big">
+                <div class="modal__content">
+                    <div class="modal__content-item">
+                        <div class="modal__header">
+                            <div class="modal__title h4">Селект в мадальном окне</div>
+                        </div>
+
+                        <form id="" class="form" method="" action="javascript:;">
+                            <div class="form__field-area">
                                 <div class="form__field">
                                     <select
                                             id=""
-                                            name=""
                                             class="input-reset form__input form__input--select2 js-select2"
+                                            name=""
                                             required
                                     >
                                         <option value="0">Селект 1</option>
@@ -1954,9 +2184,8 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
-                    </form>
-                    <!--end ui content-->
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2289,7 +2518,7 @@
             <div class="row-ui ">
                 <div class="flex-v-center" style="min-width: 100%;">
                     <!--start ui content-->
-                    <span class="star-rating-wrapper js-star-rating">
+                    <span class="star-rating-wrapper" data-star-rate-static>
                         <span class="star-rating-value" data-value="4.8">4.8</span> <!-- visually-hidden -->
                         <span class="star-rating">
                             <span class="star-rating__container">
@@ -2336,7 +2565,7 @@
             <div class="row-ui ">
                 <div class="flex-v-center" style="min-width: 100%;">
                     <!--start ui content-->
-                    <span class="star-rating-wrapper star-rating-wrapper--mobile-frame js-star-rating">
+                    <span class="star-rating-wrapper star-rating-wrapper--mobile-frame" data-star-rate-static>
                         <span class="star-rating-value" data-value="2.2">2.2</span> <!-- visually-hidden -->
                         <span class="star-rating">
                             <span class="star-rating__container">
@@ -2377,7 +2606,7 @@
     <br>
     <br>
 
-    <h3 class="text-center">Star rating (static: desk - 1stars/ mob - 1stars)</h3>
+    <h3 class="text-center">Star rating (static: desk - 1stars/ mob - 1stars) - frame</h3>
     <div class="container-ui">
         <div class="col-ui">
             <div class="row-ui ">
@@ -2395,6 +2624,1521 @@
                             </span>
                         </span>
                     </span>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h3 class="text-center">Star rating (static: desk - 1stars/ mob - 1stars)</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="flex-v-center" style="min-width: 100%;">
+                    <!--start ui content-->
+                    <span class="star-rating-wrapper star-rating-wrapper--noframe">
+                        <span class="star-rating-value" data-value="3.5">3.5</span> <!-- visually-hidden -->
+                        <span class="star-rating">
+                            <span class="star-rating__container">
+                                <label>
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#fill-star"></use>
+                                    </svg>
+                                </label>
+                            </span>
+                        </span>
+                    </span>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
+
+    <h3 class="text-center">Tags</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="flex-v-center" style="min-width: 300px; width: 300px;">
+                    <!--start ui content-->
+                    <div class="tag-bar swiper" data-tag-bar-slider>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <label class="btn btn-mini btn-b-light">
+                                    <input
+                                            class="visually-hidden"
+                                            type="checkbox"
+                                            name="EXTRA[TAGS][]"
+                                            value=""
+                                    >
+                                    <svg class="icon btn__icon">
+                                        <use href="img/sprite.svg#burger"></use>
+                                    </svg>
+                                    <span class="btn__text">Кнопка</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label class="btn btn-mini btn-b-light">
+                                    <input
+                                            class="visually-hidden"
+                                            type="checkbox"
+                                            name="EXTRA[TAGS][]"
+                                            value=""
+                                    >
+                                    <svg class="icon btn__icon">
+                                        <use href="img/sprite.svg#burger"></use>
+                                    </svg>
+                                    <span class="btn__text">Кнопка</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label class="btn btn-mini btn-b-light">
+                                    <input
+                                            class="visually-hidden"
+                                            type="checkbox"
+                                            name="EXTRA[TAGS][]"
+                                            value=""
+                                    >
+                                    <svg class="icon btn__icon">
+                                        <use href="img/sprite.svg#burger"></use>
+                                    </svg>
+                                    <span class="btn__text">Кнопка</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label class="btn btn-mini btn-b-light">
+                                    <input
+                                            class="visually-hidden"
+                                            type="checkbox"
+                                            name="EXTRA[TAGS][]"
+                                            value=""
+                                    >
+                                    <svg class="icon btn__icon">
+                                        <use href="img/sprite.svg#burger"></use>
+                                    </svg>
+                                    <span class="btn__text">Кнопка</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label class="btn btn-mini btn-b-light">
+                                    <input
+                                            class="visually-hidden"
+                                            type="checkbox"
+                                            name="EXTRA[TAGS][]"
+                                            value=""
+                                    >
+                                    <svg class="icon btn__icon">
+                                        <use href="img/sprite.svg#burger"></use>
+                                    </svg>
+                                    <span class="btn__text">Кнопка</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--<div class="tag-bar swiper" data-tag-bar-slider>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <label class="tag">
+                                    <input
+                                            class="visually-hidden"
+                                            type="checkbox"
+                                            name="EXTRA[TAGS][]"
+                                            value=""
+                                    >
+                                    <span
+                                            class="tag__content-bg"
+                                            style="
+                                            border-color: var(--text8-color);
+                                            background-color: var(--text8-color);"
+                                    ></span>
+                                    <span class="tag__content">
+                                        <svg class="icon tag__content-icon" style="fill: var(--text5-color);">
+                                            <use href="img/sprite.svg#tag-all"></use>
+                                        </svg>
+                                        <span class="tag__content-text" style="color: var(--text5-color);">disabled</span>
+                                    </span>
+                                </label>
+
+                                btn-reset btn btn-b-light
+                            </div>
+                            <div class="swiper-slide">
+                                <label class="tag">
+                                    <input
+                                            class="visually-hidden"
+                                            type="checkbox"
+                                            name="EXTRA[TAGS][all]"
+                                            value=""
+                                    >
+                                    <span
+                                            class="tag__content-bg"
+                                            style="
+                                    border-color: var(--text6-color);
+                                    background-color: var(--text8-color);"
+                                    ></span>
+                                    <span class="tag__content">
+                                        <svg class="icon tag__content-icon" style="fill: var(--text6-color);">
+                                            <use href="img/sprite.svg#tag-all"></use>
+                                        </svg>
+                                        <span class="tag__content-text" style="color: var(--text6-color);">все</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
+
+    <h3 class="text-center">Counter with button "buy"</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="flex-v-center" style="min-width: 300px; width: 300px;">
+                    <!--start ui content-->
+                    <div class="cart-buy">
+                        <div class="cart-quantity disabled">
+                            <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                <svg class="icon icon-sm btn__icon">
+                                    <use href="img/sprite.svg#minus"></use>
+                                </svg>
+                                <svg class="icon icon-sm btn__icon icon-selected">
+                                    <use href="img/sprite.svg#trash"></use>
+                                </svg>
+                            </button>
+                            <input
+                                    id=""
+                                    class="input-reset cart-quantity-input"
+                                    type="text"
+                                    placeholder="999"
+                                    value="1"
+                                    max="999"
+                                    data-mult="1"
+                            >
+                            <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                <svg class="icon icon-sm btn__icon">
+                                    <use href="img/sprite.svg#plus"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="btn-reset btn btn-primary cart-in" type="button">
+                            <span class="btn__text">В КОРЗИНУ</span>
+                        </button>
+                    </div>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
+
+    <h3 class="text-center">Basic sider with overflow nav buttons</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="flex-v-center" style="margin: 0 -10px; width: 100vw;">
+                    <!--start ui content-->
+                    <div class="container">
+
+                        <div class="gap-xl product-card-mobile-section">
+                        <div class="product-card-mobile-section-container">
+                            <div class="gap-lg">
+                                <div class="h2">Вам может понадобиться</div>
+                            </div>
+
+                            <div class="catalog-extra-slider out-container-x">
+                                <div class="gap-lg">
+                                    <div class="tag-bar swiper" data-tag-bar-slider>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <label class="btn btn-mini btn-b-light tag-bar-slide-item">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="checkbox"
+                                                            name="EXTRA[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <span class="btn__text">Все товары</span>
+                                                </label>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <label class="btn btn-mini btn-b-light tag-bar-slide-item">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="checkbox"
+                                                            name="EXTRA[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <svg class="icon btn__icon">
+                                                        <use href="img/sprite.svg#catalog-wiring-products"></use>
+                                                    </svg>
+                                                    <span class="btn__text">Розетки и выключатели</span>
+                                                </label>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <label class="btn btn-mini btn-b-light tag-bar-slide-item">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="checkbox"
+                                                            name="EXTRA[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <svg class="icon btn__icon">
+                                                        <use href="img/sprite.svg#catalog-low-voltage"></use>
+                                                    </svg>
+                                                    <span class="btn__text">Низковольтное оборудование</span>
+                                                </label>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <label class="btn btn-mini btn-b-light tag-bar-slide-item">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="checkbox"
+                                                            name="EXTRA[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <svg class="icon btn__icon">
+                                                        <use href="img/sprite.svg#catalog-shields-cabinets"></use>
+                                                    </svg>
+                                                    <span class="btn__text">Щиты, шкафы, боксы</span>
+                                                </label>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <label class="btn btn-mini btn-b-light tag-bar-slide-item">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="checkbox"
+                                                            name="EXTRA[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <svg class="icon btn__icon">
+                                                        <use href="img/sprite.svg#catalog-lighting"></use>
+                                                    </svg>
+                                                    <span class="btn__text">Светотехника</span>
+                                                </label>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <label class="btn btn-mini btn-b-light tag-bar-slide-item">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="checkbox"
+                                                            name="EXTRA[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <svg class="icon btn__icon">
+                                                        <use href="img/sprite.svg#catalog-tools"></use>
+                                                    </svg>
+                                                    <span class="btn__text">Инструменты и монтажные материалы</span>
+                                                </label>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <label class="btn btn-mini btn-b-light tag-bar-slide-item">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="checkbox"
+                                                            name="EXTRA[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <svg class="icon btn__icon">
+                                                        <use href="img/sprite.svg#catalog-ventilation"></use>
+                                                    </svg>
+                                                    <span class="btn__text">Системы вентиляции и обогрева</span>
+                                                </label>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <label class="btn btn-mini btn-b-light tag-bar-slide-item">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="checkbox"
+                                                            name="EXTRA[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <svg class="icon btn__icon">
+                                                        <use href="img/sprite.svg#catalog-grounding"></use>
+                                                    </svg>
+                                                    <span class="btn__text">Молниезащита и заземление</span>
+                                                </label>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <label class="btn btn-mini btn-b-light tag-bar-slide-item">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="checkbox"
+                                                            name="EXTRA[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <svg class="icon btn__icon">
+                                                        <use href="img/sprite.svg#catalog-power-devices"></use>
+                                                    </svg>
+                                                    <span class="btn__text">Элементы и устройства питания</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="basic-slider-wrap">
+                                    <div class="basic-slider card-product-default-wrap swiper" data-basic-slider>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="card-product card-product-default" data-card-product>
+                                                    <div class="card-product-view">
+                                                        <div class="mini-slider">
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 1;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-2.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-2.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-3.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-3.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <ul class="list-reset mini-slider__dots"></ul>
+                                                        </div>
+                                                        <div class="card-product-sale-label">
+                                                            <span class="sale-label sale-label-red">20%</span>
+                                                            <span class="sale-label sale-label-yellow">Распродажа</span>
+                                                            <span class="sale-label sale-label-green">Хит</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-product-descr">
+                                                        <div class="card-product-descr__top">
+                                                            <div class="card-product-descr__info">
+                                                                <span class="product-code"><span>ZB3327018</span></span>
+                                                                <span class="star-rating-wrapper star-rating-wrapper--noframe">
+                                                        <span class="star-rating">
+                                                            <span class="star-rating__container">
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                            </span>
+                                                        </span>
+                                                        <span class="star-rating-value" data-value="4.5">4.5</span>
+                                                    </span>
+                                                            </div>
+                                                            <div class="card-product-descr__availability in-stock">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#checkbox-rec"></use>
+                                                                </svg>
+                                                                <span>Товар в наличии</span>
+                                                            </div>
+                                                            <div class="card-product-descr__title">
+                                                                <a href="javascript:;">Haupa Отвёртка двухкомпонентная PH 2</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-product-descr__bottom">
+                                                            <div class="card-product-descr__price">
+                                                                <div class="card-product-descr__price-title">Цена за штуку</div>
+                                                                <div class="card-product-descr__price-display">
+                                                                    <div class="card-product-descr__price-current">1 478,40 ₽</div>
+                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                </div>
+                                                                <div class="card-product-descr__price-bonus">
+                                                                    <span>+ 346,99</span>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-bonus"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-product-descr__cart product-card__cart cart-buy">
+                                                                <div class="product-card__cart-quantity cart-quantity disabled">
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#minus"></use>
+                                                                        </svg>
+                                                                        <svg class="icon icon-sm btn__icon icon-selected">
+                                                                            <use href="img/sprite.svg#trash"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <input
+                                                                            id=""
+                                                                            class="input-reset cart-quantity-input"
+                                                                            type="text"
+                                                                            placeholder="999"
+                                                                            value="1"
+                                                                            max="999"
+                                                                            data-mult="1"
+                                                                    >
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#plus"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                                <button class="btn-reset btn btn-primary cart-in" type="button">
+                                                                    <span class="btn__text">В КОРЗИНУ</span>
+                                                                </button>
+                                                                <div class="card-product-act">
+                                                                    <button class="btn-reset btn btn-light card-product-act__more" data-card-product-act-more>
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#fill-more-horiz"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <div class="card-product-act__list" data-card-product-act-content>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" data-notice="favorites" title="В избранное">
+                                                                            <svg class="icon btn__icon icon-default">
+                                                                                <use href="img/sprite.svg#bookmark-plus"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">В избранное</span>
+                                                                            <svg class="icon btn__icon icon-selected">
+                                                                                <use href="img/sprite.svg#fill-bookmark-check"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-selected">В избранном</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" title="Сравнить" data-notice="compare">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#barchart"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">Сравнить</span>
+                                                                            <span class="btn__text text-selected">В сравнении</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn" title="В смету" data-fancybox data-src="#modal-estimate">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#inbox-in"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text">В смету</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="card-product card-product-default" data-card-product>
+                                                    <div class="card-product-view">
+                                                        <div class="mini-slider">
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-2.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-2.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 1;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-3.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-3.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-4.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-4.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <ul class="list-reset mini-slider__dots"></ul>
+                                                        </div>
+                                                        <div class="card-product-sale-label">
+                                                            <span class="sale-label sale-label-red">20%</span>
+                                                            <span class="sale-label sale-label-yellow">Распродажа</span>
+                                                            <span class="sale-label sale-label-green">Хит</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-product-descr">
+                                                        <div class="card-product-descr__top">
+                                                            <div class="card-product-descr__info">
+                                                                <span class="product-code"><span>46- 312792P13</span></span>
+                                                                <span class="star-rating-wrapper star-rating-wrapper--noframe">
+                                                        <span class="star-rating">
+                                                            <span class="star-rating__container">
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                            </span>
+                                                        </span>
+                                                        <span class="star-rating-value" data-value="5.0">5.0</span>
+                                                    </span>
+                                                            </div>
+                                                            <div class="card-product-descr__availability on-order">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#timer"></use>
+                                                                </svg>
+                                                                <span>Под заказ</span>
+                                                            </div>
+                                                            <div class="card-product-descr__title">
+                                                                <a href="javascript:;">Haupa Инструмент обжимной для конечных гильз 0,25-6</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-product-descr__bottom">
+                                                            <div class="card-product-descr__price">
+                                                                <div class="card-product-descr__price-title">Цена за штуку</div>
+                                                                <div class="card-product-descr__price-display">
+                                                                    <div class="card-product-descr__price-current">6 173,10 ₽</div>
+                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                </div>
+                                                                <div class="card-product-descr__price-bonus">
+                                                                    <span>+ 346,99</span>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-bonus"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-product-descr__cart product-card__cart cart-buy">
+                                                                <div class="product-card__cart-quantity cart-quantity disabled">
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#minus"></use>
+                                                                        </svg>
+                                                                        <svg class="icon icon-sm btn__icon icon-selected">
+                                                                            <use href="img/sprite.svg#trash"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <input
+                                                                            id=""
+                                                                            class="input-reset cart-quantity-input"
+                                                                            type="text"
+                                                                            placeholder="999"
+                                                                            value="1"
+                                                                            max="999"
+                                                                            data-mult="1"
+                                                                    >
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#plus"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                                <button class="btn-reset btn btn-primary cart-in" type="button">
+                                                                    <span class="btn__text">В КОРЗИНУ</span>
+                                                                </button>
+                                                                <div class="card-product-act">
+                                                                    <button class="btn-reset btn btn-light card-product-act__more" data-card-product-act-more>
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#fill-more-horiz"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <div class="card-product-act__list" data-card-product-act-content>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" data-notice="favorites" title="В избранное">
+                                                                            <svg class="icon btn__icon icon-default">
+                                                                                <use href="img/sprite.svg#bookmark-plus"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">В избранное</span>
+                                                                            <svg class="icon btn__icon icon-selected">
+                                                                                <use href="img/sprite.svg#fill-bookmark-check"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-selected">В избранном</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" title="Сравнить" data-notice="compare">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#barchart"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">Сравнить</span>
+                                                                            <span class="btn__text text-selected">В сравнении</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn" title="В смету" data-fancybox data-src="#modal-estimate">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#inbox-in"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text">В смету</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="card-product card-product-default" data-card-product>
+                                                    <div class="card-product-view">
+                                                        <div class="mini-slider">
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-3.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-3.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 1;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-4.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-4.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-5.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-5.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-2.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-2.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <ul class="list-reset mini-slider__dots"></ul>
+                                                        </div>
+                                                        <div class="card-product-sale-label">
+                                                            <span class="sale-label sale-label-red">20%</span>
+                                                            <span class="sale-label sale-label-yellow">Распродажа</span>
+                                                            <span class="sale-label sale-label-green">Хит</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-product-descr">
+                                                        <div class="card-product-descr__top">
+                                                            <div class="card-product-descr__info">
+                                                                <span class="product-code"><span>2348958- 87</span></span>
+                                                            </div>
+                                                            <div class="card-product-descr__availability on-order">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#timer"></use>
+                                                                </svg>
+                                                                <span>Под заказ</span>
+                                                            </div>
+                                                            <div class="card-product-descr__title">
+                                                                <a href="javascript:;">SE Unica Extend Бел Удлинитель 3 розетки 2К+З, кабель 1,5м</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-product-descr__bottom">
+                                                            <div class="card-product-descr__price">
+                                                                <div class="card-product-descr__price-title">Цена за штуку</div>
+                                                                <div class="card-product-descr__price-display">
+                                                                    <div class="card-product-descr__price-current">1 478,40 ₽</div>
+                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                </div>
+                                                                <div class="card-product-descr__price-bonus">
+                                                                    <span>+ 346,99</span>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-bonus"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-product-descr__cart product-card__cart cart-buy">
+                                                                <div class="product-card__cart-quantity cart-quantity disabled">
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#minus"></use>
+                                                                        </svg>
+                                                                        <svg class="icon icon-sm btn__icon icon-selected">
+                                                                            <use href="img/sprite.svg#trash"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <input
+                                                                            id=""
+                                                                            class="input-reset cart-quantity-input"
+                                                                            type="text"
+                                                                            placeholder="999"
+                                                                            value="1"
+                                                                            max="999"
+                                                                            data-mult="1"
+                                                                    >
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#plus"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                                <button class="btn-reset btn btn-primary cart-in" type="button">
+                                                                    <span class="btn__text">В КОРЗИНУ</span>
+                                                                </button>
+                                                                <div class="card-product-act">
+                                                                    <button class="btn-reset btn btn-light card-product-act__more" data-card-product-act-more>
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#fill-more-horiz"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <div class="card-product-act__list" data-card-product-act-content>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" data-notice="favorites" title="В избранное">
+                                                                            <svg class="icon btn__icon icon-default">
+                                                                                <use href="img/sprite.svg#bookmark-plus"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">В избранное</span>
+                                                                            <svg class="icon btn__icon icon-selected">
+                                                                                <use href="img/sprite.svg#fill-bookmark-check"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-selected">В избранном</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" title="Сравнить" data-notice="compare">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#barchart"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">Сравнить</span>
+                                                                            <span class="btn__text text-selected">В сравнении</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn" title="В смету" data-fancybox data-src="#modal-estimate">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#inbox-in"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text">В смету</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="card-product card-product-default" data-card-product>
+                                                    <div class="card-product-view">
+                                                        <div class="mini-slider">
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-4.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-4.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 1;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-5.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-5.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <ul class="list-reset mini-slider__dots"></ul>
+                                                        </div>
+                                                        <div class="card-product-sale-label">
+                                                            <span class="sale-label sale-label-red">20%</span>
+                                                            <span class="sale-label sale-label-yellow">Распродажа</span>
+                                                            <span class="sale-label sale-label-green">Хит</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-product-descr">
+                                                        <div class="card-product-descr__top">
+                                                            <div class="card-product-descr__info">
+                                                                <span class="product-code"><span>Z241- 0008</span></span>
+                                                            </div>
+                                                            <div class="card-product-descr__availability in-stock">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#checkbox-rec"></use>
+                                                                </svg>
+                                                                <span>Товар в наличии</span>
+                                                            </div>
+                                                            <div class="card-product-descr__title">
+                                                                <a href="javascript:;">SE Unica System+ Антрацит Блок розеточный (2к+з)+usb тип А</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-product-descr__bottom">
+                                                            <div class="card-product-descr__price">
+                                                                <div class="card-product-descr__price-title">Цена за штуку</div>
+                                                                <div class="card-product-descr__price-display">
+                                                                    <div class="card-product-descr__price-current">5 827,99 ₽</div>
+                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                </div>
+                                                                <div class="card-product-descr__price-bonus">
+                                                                    <span>+ 346,99</span>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-bonus"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-product-descr__cart product-card__cart cart-buy">
+                                                                <div class="product-card__cart-quantity cart-quantity disabled">
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#minus"></use>
+                                                                        </svg>
+                                                                        <svg class="icon icon-sm btn__icon icon-selected">
+                                                                            <use href="img/sprite.svg#trash"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <input
+                                                                            id=""
+                                                                            class="input-reset cart-quantity-input"
+                                                                            type="text"
+                                                                            placeholder="999"
+                                                                            value="1"
+                                                                            max="999"
+                                                                            data-mult="1"
+                                                                    >
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#plus"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                                <button class="btn-reset btn btn-primary cart-in" type="button">
+                                                                    <span class="btn__text">В КОРЗИНУ</span>
+                                                                </button>
+                                                                <div class="card-product-act">
+                                                                    <button class="btn-reset btn btn-light card-product-act__more" data-card-product-act-more>
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#fill-more-horiz"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <div class="card-product-act__list" data-card-product-act-content>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" data-notice="favorites" title="В избранное">
+                                                                            <svg class="icon btn__icon icon-default">
+                                                                                <use href="img/sprite.svg#bookmark-plus"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">В избранное</span>
+                                                                            <svg class="icon btn__icon icon-selected">
+                                                                                <use href="img/sprite.svg#fill-bookmark-check"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-selected">В избранном</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" title="Сравнить" data-notice="compare">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#barchart"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">Сравнить</span>
+                                                                            <span class="btn__text text-selected">В сравнении</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn" title="В смету" data-fancybox data-src="#modal-estimate">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#inbox-in"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text">В смету</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="card-product card-product-default" data-card-product>
+                                                    <div class="card-product-view">
+                                                        <div class="mini-slider">
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 1;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-2.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-2.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-3.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-3.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <ul class="list-reset mini-slider__dots"></ul>
+                                                        </div>
+                                                        <div class="card-product-sale-label">
+                                                            <span class="sale-label sale-label-red">20%</span>
+                                                            <span class="sale-label sale-label-yellow">Распродажа</span>
+                                                            <span class="sale-label sale-label-green">Хит</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-product-descr">
+                                                        <div class="card-product-descr__top">
+                                                            <div class="card-product-descr__info">
+                                                                <span class="product-code"><span>ZB3327018</span></span>
+                                                                <span class="star-rating-wrapper star-rating-wrapper--noframe">
+                                                        <span class="star-rating">
+                                                            <span class="star-rating__container">
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                            </span>
+                                                        </span>
+                                                        <span class="star-rating-value" data-value="4.5">4.5</span>
+                                                    </span>
+                                                            </div>
+                                                            <div class="card-product-descr__availability in-stock">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#checkbox-rec"></use>
+                                                                </svg>
+                                                                <span>Товар в наличии</span>
+                                                            </div>
+                                                            <div class="card-product-descr__title">
+                                                                <a href="javascript:;">Haupa Отвёртка двухкомпонентная PH 2</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-product-descr__bottom">
+                                                            <div class="card-product-descr__price">
+                                                                <div class="card-product-descr__price-title">Цена за штуку</div>
+                                                                <div class="card-product-descr__price-display">
+                                                                    <div class="card-product-descr__price-current">1 478,40 ₽</div>
+                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                </div>
+                                                                <div class="card-product-descr__price-bonus">
+                                                                    <span>+ 346,99</span>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-bonus"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-product-descr__cart product-card__cart cart-buy">
+                                                                <div class="product-card__cart-quantity cart-quantity disabled">
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#minus"></use>
+                                                                        </svg>
+                                                                        <svg class="icon icon-sm btn__icon icon-selected">
+                                                                            <use href="img/sprite.svg#trash"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <input
+                                                                            id=""
+                                                                            class="input-reset cart-quantity-input"
+                                                                            type="text"
+                                                                            placeholder="999"
+                                                                            value="1"
+                                                                            max="999"
+                                                                            data-mult="1"
+                                                                    >
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#plus"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                                <button class="btn-reset btn btn-primary cart-in" type="button">
+                                                                    <span class="btn__text">В КОРЗИНУ</span>
+                                                                </button>
+                                                                <div class="card-product-act">
+                                                                    <button class="btn-reset btn btn-light card-product-act__more" data-card-product-act-more>
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#fill-more-horiz"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <div class="card-product-act__list" data-card-product-act-content>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" data-notice="favorites" title="В избранное">
+                                                                            <svg class="icon btn__icon icon-default">
+                                                                                <use href="img/sprite.svg#bookmark-plus"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">В избранное</span>
+                                                                            <svg class="icon btn__icon icon-selected">
+                                                                                <use href="img/sprite.svg#fill-bookmark-check"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-selected">В избранном</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" title="Сравнить" data-notice="compare">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#barchart"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">Сравнить</span>
+                                                                            <span class="btn__text text-selected">В сравнении</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn" title="В смету" data-fancybox data-src="#modal-estimate">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#inbox-in"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text">В смету</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="card-product card-product-default" data-card-product>
+                                                    <div class="card-product-view">
+                                                        <div class="mini-slider">
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 1;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-2.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-2.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-3.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-3.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <ul class="list-reset mini-slider__dots"></ul>
+                                                        </div>
+                                                        <div class="card-product-sale-label">
+                                                            <span class="sale-label sale-label-red">20%</span>
+                                                            <span class="sale-label sale-label-yellow">Распродажа</span>
+                                                            <span class="sale-label sale-label-green">Хит</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-product-descr">
+                                                        <div class="card-product-descr__top">
+                                                            <div class="card-product-descr__info">
+                                                                <span class="product-code"><span>ZB3327018</span></span>
+                                                                <span class="star-rating-wrapper star-rating-wrapper--noframe">
+                                                        <span class="star-rating">
+                                                            <span class="star-rating__container">
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                            </span>
+                                                        </span>
+                                                        <span class="star-rating-value" data-value="4.5">4.5</span>
+                                                    </span>
+                                                            </div>
+                                                            <div class="card-product-descr__availability in-stock">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#checkbox-rec"></use>
+                                                                </svg>
+                                                                <span>Товар в наличии</span>
+                                                            </div>
+                                                            <div class="card-product-descr__title">
+                                                                <a href="javascript:;">Haupa Отвёртка двухкомпонентная PH 2</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-product-descr__bottom">
+                                                            <div class="card-product-descr__price">
+                                                                <div class="card-product-descr__price-title">Цена за штуку</div>
+                                                                <div class="card-product-descr__price-display">
+                                                                    <div class="card-product-descr__price-current">1 478,40 ₽</div>
+                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                </div>
+                                                                <div class="card-product-descr__price-bonus">
+                                                                    <span>+ 346,99</span>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-bonus"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-product-descr__cart product-card__cart cart-buy">
+                                                                <div class="product-card__cart-quantity cart-quantity disabled">
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#minus"></use>
+                                                                        </svg>
+                                                                        <svg class="icon icon-sm btn__icon icon-selected">
+                                                                            <use href="img/sprite.svg#trash"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <input
+                                                                            id=""
+                                                                            class="input-reset cart-quantity-input"
+                                                                            type="text"
+                                                                            placeholder="999"
+                                                                            value="1"
+                                                                            max="999"
+                                                                            data-mult="1"
+                                                                    >
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#plus"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                                <button class="btn-reset btn btn-primary cart-in" type="button">
+                                                                    <span class="btn__text">В КОРЗИНУ</span>
+                                                                </button>
+                                                                <div class="card-product-act">
+                                                                    <button class="btn-reset btn btn-light card-product-act__more" data-card-product-act-more>
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#fill-more-horiz"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <div class="card-product-act__list" data-card-product-act-content>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" data-notice="favorites" title="В избранное">
+                                                                            <svg class="icon btn__icon icon-default">
+                                                                                <use href="img/sprite.svg#bookmark-plus"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">В избранное</span>
+                                                                            <svg class="icon btn__icon icon-selected">
+                                                                                <use href="img/sprite.svg#fill-bookmark-check"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-selected">В избранном</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" title="Сравнить" data-notice="compare">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#barchart"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">Сравнить</span>
+                                                                            <span class="btn__text text-selected">В сравнении</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn" title="В смету" data-fancybox data-src="#modal-estimate">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#inbox-in"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text">В смету</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="card-product card-product-default" data-card-product>
+                                                    <div class="card-product-view">
+                                                        <div class="mini-slider">
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-2.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-2.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 1;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-3.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-3.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <div class="mini-slider__slide">
+                                                                <picture>
+                                                                    <source srcset="img/product-4.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/product-4.png"
+                                                                            class="mini-slider__img"
+                                                                            width="208"
+                                                                            height="208"
+                                                                            style="opacity: 0;"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </div>
+                                                            <ul class="list-reset mini-slider__dots"></ul>
+                                                        </div>
+                                                        <div class="card-product-sale-label">
+                                                            <span class="sale-label sale-label-red">20%</span>
+                                                            <span class="sale-label sale-label-yellow">Распродажа</span>
+                                                            <span class="sale-label sale-label-green">Хит</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-product-descr">
+                                                        <div class="card-product-descr__top">
+                                                            <div class="card-product-descr__info">
+                                                                <span class="product-code"><span>46- 312792P13</span></span>
+                                                                <span class="star-rating-wrapper star-rating-wrapper--noframe">
+                                                        <span class="star-rating">
+                                                            <span class="star-rating__container">
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                            </span>
+                                                        </span>
+                                                        <span class="star-rating-value" data-value="5.0">5.0</span>
+                                                    </span>
+                                                            </div>
+                                                            <div class="card-product-descr__availability on-order">
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#timer"></use>
+                                                                </svg>
+                                                                <span>Под заказ</span>
+                                                            </div>
+                                                            <div class="card-product-descr__title">
+                                                                <a href="javascript:;">Haupa Инструмент обжимной для конечных гильз 0,25-6</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-product-descr__bottom">
+                                                            <div class="card-product-descr__price">
+                                                                <div class="card-product-descr__price-title">Цена за штуку</div>
+                                                                <div class="card-product-descr__price-display">
+                                                                    <div class="card-product-descr__price-current">6 173,10 ₽</div>
+                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                </div>
+                                                                <div class="card-product-descr__price-bonus">
+                                                                    <span>+ 346,99</span>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-bonus"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-product-descr__cart product-card__cart cart-buy">
+                                                                <div class="product-card__cart-quantity cart-quantity disabled">
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#minus"></use>
+                                                                        </svg>
+                                                                        <svg class="icon icon-sm btn__icon icon-selected">
+                                                                            <use href="img/sprite.svg#trash"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <input
+                                                                            id=""
+                                                                            class="input-reset cart-quantity-input"
+                                                                            type="text"
+                                                                            placeholder="999"
+                                                                            value="1"
+                                                                            max="999"
+                                                                            data-mult="1"
+                                                                    >
+                                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                        <svg class="icon icon-sm btn__icon">
+                                                                            <use href="img/sprite.svg#plus"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                                <button class="btn-reset btn btn-primary cart-in" type="button">
+                                                                    <span class="btn__text">В КОРЗИНУ</span>
+                                                                </button>
+                                                                <div class="card-product-act">
+                                                                    <button class="btn-reset btn btn-light card-product-act__more" data-card-product-act-more>
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#fill-more-horiz"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <div class="card-product-act__list" data-card-product-act-content>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" data-notice="favorites" title="В избранное">
+                                                                            <svg class="icon btn__icon icon-default">
+                                                                                <use href="img/sprite.svg#bookmark-plus"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">В избранное</span>
+                                                                            <svg class="icon btn__icon icon-selected">
+                                                                                <use href="img/sprite.svg#fill-bookmark-check"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-selected">В избранном</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn switch-content" title="Сравнить" data-notice="compare">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#barchart"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text text-default">Сравнить</span>
+                                                                            <span class="btn__text text-selected">В сравнении</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn card-product-act__btn" title="В смету" data-fancybox data-src="#modal-estimate">
+                                                                            <svg class="icon btn__icon">
+                                                                                <use href="img/sprite.svg#inbox-in"></use>
+                                                                            </svg>
+                                                                            <span class="btn__text">В смету</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-navigation">
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
                     <!--end ui content-->
                 </div>
             </div>

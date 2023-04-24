@@ -1,113 +1,139 @@
+        <div class="pre-footer">
+            <div class="container pre-footer__container">
+                <div class="pre-footer__descr">
+                    <div class="h4">Подпишитесь и узнавайте<br class="mobile-only"> о выгодных предложениях</div>
+                    <div class="pre-footer__descr-text">Нажимая на кнопку, я принимаю условия Политики конфиденциальности и защиты персональных данных и соглашаюсь получать сообщения</div>
+                </div>
+                <div class="pre-footer__act">
+                    <div class="pre-footer__subscribe">
+                        <form id="" class="form" method="" action="javascript:;">
+                            <div class="submit-field-wrapper">
+                                <div class="submit-field-input">
+                                    <input
+                                            class="input-reset input"
+                                            type="email"
+                                            name=""
+                                            placeholder="Введите ваш email..."
+                                            autocomplete="off"
+                                    >
+                                </div>
+                                <button class="btn-reset btn btn-primary" type="submit">
+                                    <span class="btn__text">Подписаться</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
-		<?/* if(!strpos($_SERVER["REQUEST_URI"], "registration.php") && !strpos($_SERVER["REQUEST_URI"], "auth.php")) : */?>
-            <div class="footer-main">
-                <div class="container">
-                    <div class="footer__row">
-                        <div class="footer__column">
-                            <div class="footer__title">Популярные разделы</div>
-                            <ul class="list-reset footer__list">
-                                <li><a class="link-light" href="javascript:;">Розетки и выключатели</a></li>
-                                <li><a class="link-light" href="javascript:;">Звонки и домофоны</a></li>
-                                <li><a class="link-light" href="javascript:;">Автоматические выключатели</a></li>
-                                <li><a class="link-light" href="javascript:;">УЗО</a></li>
-                                <li><a class="link-light" href="javascript:;">Дифференциальные автоматы</a></li>
-                                <li><a class="link-light" href="javascript:;">Кросс-модули</a></li>
-                                <li><a class="link-light" href="javascript:;">Кабель и провод</a></li>
-                                <li><a class="link-light" href="javascript:;">Светильники</a></li>
-                                <li><a class="link-light" href="javascript:;">Корпуса шкафов</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__column">
-                            <div class="footer__title">Покупателям</div>
-                            <ul class="list-reset footer__list">
-                                <li><a class="link-light" href="javascript:;">Юридическим лицам</a></li>
-                                <li><a class="link-light" href="javascript:;">Физическим лицам</a></li>
-                                <li><a class="link-light" href="javascript:;">Оплата</a></li>
-                                <li><a class="link-light" href="javascript:;">Условия доставки</a></li>
-                                <li><a class="link-light" href="javascript:;">Гарантия и возврат</a></li>
-                                <li><a class="link-light" href="javascript:;">Акции</a></li>
-                                <li><a class="link-light" href="javascript:;">Распродажа</a></li>
-                                <li><a class="link-light" href="javascript:;">Контакты</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__column">
-                            <div class="footer__title">Информация</div>
-                            <ul class="list-reset footer__list">
-                                <li><a class="link-light" href="javascript:;">Справочник электрика</a></li>
-                                <li><a class="link-light" href="javascript:;">Вопросы и ответы</a></li>
-                                <li><a class="link-light" href="javascript:;">Новости</a></li>
-                                <li><a class="link-light" href="javascript:;">Статьи</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__column">
-                            <div class="footer__title">Связаться с нами</div>
-                            <div class="footer-contacts">
-                                <div>
-                                    <div class="footer-contacts__tel">
-                                        <a class="footer-contacts__number" href="tel:+74951183770">+7 (495) 118-37-70</a>
-                                        <a class="link-dashed link-gray" href="javascript:;">заказать звонок</a>
-                                    </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <div class="footer__title">Популярные разделы</div>
+                        <ul class="list-reset footer__list">
+                            <li><a class="link-light" href="javascript:;">Розетки и выключатели</a></li>
+                            <li><a class="link-light" href="javascript:;">Звонки и домофоны</a></li>
+                            <li><a class="link-light" href="javascript:;">Автоматические выключатели</a></li>
+                            <li><a class="link-light" href="javascript:;">УЗО</a></li>
+                            <li><a class="link-light" href="javascript:;">Дифференциальные автоматы</a></li>
+                            <li><a class="link-light" href="javascript:;">Кросс-модули</a></li>
+                            <li><a class="link-light" href="javascript:;">Кабель и провод</a></li>
+                            <li><a class="link-light" href="javascript:;">Светильники</a></li>
+                            <li><a class="link-light" href="javascript:;">Корпуса шкафов</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__title">Покупателям</div>
+                        <ul class="list-reset footer__list">
+                            <li><a class="link-light" href="javascript:;">Юридическим лицам</a></li>
+                            <li><a class="link-light" href="javascript:;">Физическим лицам</a></li>
+                            <li><a class="link-light" href="javascript:;">Оплата</a></li>
+                            <li><a class="link-light" href="javascript:;">Условия доставки</a></li>
+                            <li><a class="link-light" href="javascript:;">Гарантия и возврат</a></li>
+                            <li><a class="link-light" href="javascript:;">Акции</a></li>
+                            <li><a class="link-light" href="javascript:;">Распродажа</a></li>
+                            <li><a class="link-light" href="javascript:;">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__title">Информация</div>
+                        <ul class="list-reset footer__list">
+                            <li><a class="link-light" href="javascript:;">Справочник электрика</a></li>
+                            <li><a class="link-light" href="javascript:;">Вопросы и ответы</a></li>
+                            <li><a class="link-light" href="javascript:;">Новости</a></li>
+                            <li><a class="link-light" href="javascript:;">Статьи</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__title">Связаться с нами</div>
+                        <div class="footer-contacts">
+                            <div>
+                                <div class="footer-contacts__tel">
+                                    <a class="footer-contacts__number" href="tel:+74951183770">+7 (495) 118-37-70</a>
+                                    <a class="link-dashed link-gray" href="javascript:;">заказать звонок</a>
                                 </div>
-                                <div>
-                                    <a class="link" href="mailto:info@amperkin.ru"><span>info@amperkin.ru</span></a>
-                                </div>
-                                <div class="social">
-                                    <div class="social__title">Мы в социальных сетях</div>
-                                    <ul class="list-reset social__list">
-                                        <li>
-                                            <a
-                                                    href="javascript:;"
-                                                    target="_blank"
-                                                    aria-label="Наша страничка в Вконтакте"
-                                            >
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#soc-logo-vk"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                    href="javascript:;"
-                                                    target="_blank"
-                                                    aria-label="Наша страничка в Одноклассники"
-                                            >
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#soc-logo-ok"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                    href="javascript:;"
-                                                    target="_blank"
-                                                    aria-label="Наша страничка в Telegram"
-                                            >
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#soc-logo-tg"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                    href="javascript:;"
-                                                    target="_blank"
-                                                    aria-label="Наша страничка в Youtube"
-                                            >
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#soc-logo-yt"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            </div>
+                            <div>
+                                <a class="link" href="mailto:info@amperkin.ru"><span>info@amperkin.ru</span></a>
+                            </div>
+                            <div class="social">
+                                <div class="social__title">Мы в социальных сетях</div>
+                                <ul class="list-reset social__list">
+                                    <li>
+                                        <a
+                                                href="javascript:;"
+                                                target="_blank"
+                                                aria-label="Наша страничка в Вконтакте"
+                                        >
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#soc-logo-vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                                href="javascript:;"
+                                                target="_blank"
+                                                aria-label="Наша страничка в Одноклассники"
+                                        >
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#soc-logo-ok"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                                href="javascript:;"
+                                                target="_blank"
+                                                aria-label="Наша страничка в Telegram"
+                                        >
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#soc-logo-tg"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                                href="javascript:;"
+                                                target="_blank"
+                                                aria-label="Наша страничка в Youtube"
+                                        >
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#soc-logo-yt"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        <?/* endif; */?>
+        </div>
 
         <div class="footer-bottom">
             <div class="container">
@@ -199,58 +225,6 @@
         </div>
     </footer>
 
-	<?/* todo if(strpos($_SERVER["REQUEST_URI"], "lk-org-profile-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-project-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-ecodelo-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-ecodelo-task-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-task-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-petition-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-contact-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-about-settings.php")
-    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-additional-settings.php")) : ?>
-        <div class="page-content-settings-bar">
-            <div class="container page-content-settings-bar__container">
-                <div class="page-content-settings-bar__action">
-                    <? if(strpos($_SERVER["REQUEST_URI"], "lk-org-profile-settings.php")
-                    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-ecodelo-settings.php")
-                    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-ecodelo-task-settings.php")
-                    || strpos($_SERVER["REQUEST_URI"], "lk-org-create-petition-settings.php")
-                    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-settings.php")
-                    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-contact-settings.php")
-                    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-about-settings.php")
-                    || strpos($_SERVER["REQUEST_URI"], "lk-vol-profile-additional-settings.php")) : ?>
-                        <button class="btn-reset btn btn--fill">
-                            <span class="btn__text">Сохранить</span>
-                        </button>
-					<? elseif(strpos($_SERVER["REQUEST_URI"], "lk-org-create-project-settings.php")) : ?>
-                        <button class="btn-reset btn btn--fill">
-                            <span class="btn__text">Сохранить и создать экодело в проекте</span>
-                        </button>
-                        <button class="btn-reset btn btn--fill btn--gray">
-                            <span class="btn__text">Сохранить</span>
-                        </button>
-					<? elseif(strpos($_SERVER["REQUEST_URI"], "lk-org-create-task-settings.php")) : ?>
-                        <button class="btn-reset btn btn--fill">
-                            <span class="btn__text">Сохранить</span>
-                        </button>
-                        <button class="btn-reset btn btn--fill btn--gray">
-                            <span class="btn__text">Сохранить и создать новую задачу</span>
-                        </button>
-                    <? endif; ?>
-                </div>
-                <div class="page-content-settings-bar__cancel">
-                    <button class="btn-reset btn btn--noframe">
-                        <span class="btn__text">Отменить</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-	<? endif; */?>
-
-	<?/* Вариант подключения скриптов без 'defer'
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>*/?>
+	<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/modals.php"); ?>
 </body>
 </html>
