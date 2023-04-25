@@ -178,9 +178,6 @@
                                         </div>
                                     </div>
                                 </div>
-								<?/* todo (@Masterkov): хз что с autocomplete делать
-                                <div class="search-results__sidebar-item search-results__match search-results__match--typed">
-                                </div>*/?>
 
                                 <div class="search-results__sidebar-item search-results__categories">
                                     <div class="search-results__sidebar-title">Искать в категории:</div>
@@ -969,62 +966,87 @@
         </div>
     </div>
 
+    <?/* // todo (@Masterkov): добавилась разметка */?>
     <div class="mobile-menu-panel">
-        <ul class="list-reset mobile-menu-panel__list">
-            <li>
-                <button class="btn-reset header-profile__btn mobile-menu-panel__btn" data-catalog-spoiler>
+        <div class="mobile-menu-panel__cart product-card__cart cart-buy" data-fixed-cart-coord>
+            <div class="product-card__cart-quantity cart-quantity disabled">
+                <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                    <svg class="icon icon-sm btn__icon">
+                        <use href="img/sprite.svg#minus"></use>
+                    </svg>
+                    <svg class="icon icon-sm btn__icon icon-selected">
+                        <use href="img/sprite.svg#trash"></use>
+                    </svg>
+                </button>
+                <input id="" class="input-reset cart-quantity-input" type="text" placeholder="999" value="1" max="999" data-mult="1">
+                <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                    <svg class="icon icon-sm btn__icon">
+                        <use href="img/sprite.svg#plus"></use>
+                    </svg>
+                </button>
+            </div>
+            <button class="btn-reset btn btn-primary cart-in" type="button">
+                <span class="btn__text">В КОРЗИНУ</span>
+            </button>
+        </div>
+
+        <div class="mobile-menu-panel__toolbar">
+            <ul class="list-reset mobile-menu-panel__list">
+                <li>
+                    <button class="btn-reset header-profile__btn mobile-menu-panel__btn" data-catalog-spoiler>
                     <span class="header-profile__btn-view mobile-menu-panel__btn-view">
                         <svg class="icon">
                             <use href="img/sprite.svg#catalog"></use>
                         </svg>
                     </span>
-                    <span class="header-profile__btn-text">Каталог</span>
-                </button>
-            </li>
-            <li>
-                <button class="btn-reset header-profile__btn mobile-menu-panel__btn">
+                        <span class="header-profile__btn-text">Каталог</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn-reset header-profile__btn mobile-menu-panel__btn">
                     <span class="header-profile__btn-view mobile-menu-panel__btn-view">
                         <svg class="icon">
                             <use href="img/sprite.svg#bookmarks"></use>
                         </svg>
                         <span class="header-profile__btn-count">12</span>
                     </span>
-                    <span class="header-profile__btn-text">Избранное</span>
-                </button>
-            </li>
-            <li>
-                <button class="btn-reset header-profile__btn mobile-menu-panel__btn">
+                        <span class="header-profile__btn-text">Избранное</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn-reset header-profile__btn mobile-menu-panel__btn">
                     <span class="header-profile__btn-view mobile-menu-panel__btn-view">
                         <svg class="icon">
                             <use href="img/sprite.svg#inbox-filled"></use>
                         </svg>
                         <span class="header-profile__btn-count">7</span>
                     </span>
-                    <span class="header-profile__btn-text">Сметы</span>
-                </button>
-            </li>
-            <li>
-                <button class="btn-reset header-profile__btn mobile-menu-panel__btn">
+                        <span class="header-profile__btn-text">Сметы</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn-reset header-profile__btn mobile-menu-panel__btn">
                     <span class="header-profile__btn-view mobile-menu-panel__btn-view">
                         <svg class="icon">
                             <use href="img/sprite.svg#barchart"></use>
                         </svg>
                     </span>
-                    <span class="header-profile__btn-text">Кабинет</span>
-                </button>
-            </li>
-            <li>
-                <button class="btn-reset header-profile__btn mobile-menu-panel__btn mobile-menu-panel__btn-cart">
+                        <span class="header-profile__btn-text">Кабинет</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn-reset header-profile__btn mobile-menu-panel__btn mobile-menu-panel__btn-cart">
                     <span class="header-profile__btn-view mobile-menu-panel__btn-view">
                         <svg class="icon">
                             <use href="img/sprite.svg#shopping-cart-2"></use>
                         </svg>
                         <span class="header-profile__btn-count">3</span>
                     </span>
-                    <span class="header-profile__btn-text">12 470,80 ₽</span>
-                </button>
-            </li>
-        </ul>
+                        <span class="header-profile__btn-text">12 470,80 ₽</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div class="action-notice">

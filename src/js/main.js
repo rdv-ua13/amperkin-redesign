@@ -17,6 +17,7 @@ application.prototype.init = function () {
     this.initClientTypeBehaviour();
     this.initTabs();
     this.initTabsOnscroll();
+    this.initCartOnscroll();
     this.initNotification();
     this.initPasswordSwitcher();
     this.initBasicSlider();
@@ -35,7 +36,6 @@ application.prototype.init = function () {
     this.initMaskedInput();
     this.initDatepicker();
     this.initDeleteTrigger();
-    /*this.initAvatarFirstLetter();*/
 
 
 
@@ -384,6 +384,36 @@ application.prototype.initTabsOnscroll = function () {
             } else {
                 $('.header').removeClass('border-off');
                 $('.top-fixed-toolbar').removeClass('active');
+            }
+        }
+    }
+};
+
+// todo (@Masterkov): update 24/04/2023
+// Initialize cart-buy fixed panel on scroll
+application.prototype.initCartOnscroll = function () {
+    if ($('[data-fixed-cart-coord]').length) {
+        const elem = $('[data-cart-coord]');
+
+        setFixedToolbar();
+        $(window).scroll(function() {
+            setFixedToolbar();
+        });
+
+        function setFixedToolbar() {
+            let scrollValue = $(window).scrollTop();
+
+            if (window.matchMedia('(max-width: 991.98px)').matches) {
+                let headerHeight = elem.outerHeight();
+                let elemPos = elem.offset().top + headerHeight;
+
+                if(scrollValue > elemPos) {
+                    $('[data-fixed-cart-coord]').addClass('active');
+                } else {
+                    $('[data-fixed-cart-coord]').removeClass('active');
+                }
+            } else {
+                $('[data-fixed-cart-coord]').removeClass('active');
             }
         }
     }
@@ -1033,16 +1063,6 @@ application.prototype.initDeleteTrigger = function () {
     }
 };
 
-// Initialization first letter of name on avatar
-application.prototype.initAvatarFirstLetter = function () {
-    if ($('.review__view.default').length) {
-        $('.review__view.default').each(function (i) {
-            $(this).find('.image').css({
-                'content' : currentLetter,
-            });
-        });
-    }
-};
 
 
 

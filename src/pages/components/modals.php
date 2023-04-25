@@ -504,3 +504,141 @@
         </div>
     </div>
 </div>
+
+<?/* loged review */?>
+<div id="modal-loged-review" class="modal modal-create-review">
+    <div class="modal__content">
+        <div class="modal__content-item">
+            <div class="modal__header">
+                <div class="modal__title h4">Новый отзыв</div>
+            </div>
+
+            <form id="" class="form" method="" action="javascript:;">
+                <div class="form__field-area">
+                    <div class="form__field">
+                        <span class="star-rating-wrapper">
+                            <span class="star-rating-value">Оцените товар:</span>
+                            <span class="star-rating star-rating--max">
+                            <form class="star-rating__container" action="" method="post">
+                                <input
+                                        id="starrateTestOne"
+                                        class="visually-hidden"
+                                        type="radio"
+                                        name="starrate"
+                                        value="5"
+                                >
+                                <label for="starrateTestOne">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#fill-star"></use>
+                                    </svg>
+                                </label>
+
+                                <input
+                                        id="starrateTestTwo"
+                                        class="visually-hidden"
+                                        type="radio"
+                                        name="starrate"
+                                        value="4"
+                                >
+                                <label for="starrateTestTwo">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#fill-star"></use>
+                                    </svg>
+                                </label>
+
+                                <input
+                                        id="starrateTestThree"
+                                        class="visually-hidden"
+                                        type="radio"
+                                        name="starrate"
+                                        value="3"
+                                >
+                                <label for="starrateTestThree">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#fill-star"></use>
+                                    </svg>
+                                </label>
+
+                                <input
+                                        id="starrateTestFour"
+                                        class="visually-hidden"
+                                        type="radio"
+                                        name="starrate"
+                                        value="2"
+                                >
+                                <label for="starrateTestFour">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#fill-star"></use>
+                                    </svg>
+                                </label>
+
+                                <input
+                                        id="starrateTestFive"
+                                        class="visually-hidden"
+                                        type="radio"
+                                        name="starrate"
+                                        value="1"
+                                >
+                                <label for="starrateTestFive">
+                                    <svg class="icon">
+                                        <use href="img/sprite.svg#fill-star"></use>
+                                    </svg>
+                                </label>
+                            </form>
+                        </span>
+                        </span>
+                    </div>
+                    <div class="form__field">
+                        <input
+                                id=""
+                                class="input-reset form__input form__input-icon"
+                                type="password"
+                                name=""
+                                placeholder="Пароль"
+                                data-password-target
+                                required
+                        >
+                        <label class="form__input-btn">
+                            <svg class="icon icon-default">
+                                <use href="img/sprite.svg#fill-eye"></use>
+                            </svg>
+                            <svg class="icon icon-show">
+                                <use href="img/sprite.svg#fill-eye-slash"></use>
+                            </svg>
+                            <input
+                                    type="checkbox"
+                                    class="visually-hidden"
+                                    data-password-switcher
+                            >
+                        </label>
+                        <div class="form__field-ps">
+                            <a
+                                    class="link link-red"
+                                    href="javascript:;"
+                                    data-fancybox
+                                    data-src="#modal-restore"
+                            >Напомнить пароль</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__field-btn form__field-btn--single">
+                    <button class="btn-reset btn btn-primary" type="submit">
+                        <span class="btn__text">Войти</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__content-item">
+            <div class="modal__soc">
+                <div class="h5">Авторизуйтесь через соцсети</div>
+                <div class="modal__soc-links">
+                    <a class="soc-ya" href="javascript:;">
+                        <svg class="icon">
+                            <use href="img/sprite.svg#soc-logo-ya"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

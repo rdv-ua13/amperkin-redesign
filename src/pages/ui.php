@@ -2202,125 +2202,13 @@
             <div class="row-ui ">
                 <div class="flex-v-center" style="width: 100%;">
                     <!--start ui content-->
-                    <button class="btn-reset btn btn--fill fancy-modal" type="button" data-fancybox="dialog" data-src="#modal-test111">
-                        <svg class="icon btn__icon">
-                            <use href="img/sprite.svg#pencil"></use>
-                        </svg>
-                        <span class="btn__text">Вызов модалки fancy</span>
+                    <button class="btn-reset btn btn-secondary" type="button" data-fancybox data-src="#modal-test111">
+                        <span class="btn__text">Вызов модалльного окна fancybox</span>
                     </button>
 
-                    <div id="modal-test111" class="modal modal-request" style="display:none;">
+                    <div id="modal-test111" class="modal" style="padding: 30px;">
                         <div class="modal__content">
-                            <div class="modal__title">Учет времени волонтера</div>
-                            <div class="modal-fields">
-                                <div class="modal-fields__item modal-request__employee">
-                                    <div class="modal-request__employee-view">
-                                        <picture>
-                                            <source srcset="img/card-photo-volunteer.webp" type="image/webp">
-                                            <img
-                                                    loading="lazy"
-                                                    src="img/card-photo-volunteer.png"
-                                                    class="image"
-                                                    width="42"
-                                                    height="42"
-                                                    alt="Фото карточки"
-                                            >
-                                        </picture>
-                                    </div>
-                                    <div class="modal-request__employee-descr">
-                                        <div class="modal-request__employee-descr-status">ФИО</div>
-                                        <div class="modal-request__employee-descr-name">Трофимов Тимофей Арсеньевич</div>
-                                    </div>
-                                </div>
-                                <div class="modal-fields__item">
-                                    <div class="page-content__section-item-title">
-                                        <span>
-                                            <span class="custom-checkbox">
-                                                <input id="checkboxui-3" class="custom-checkbox__input" type="checkbox">
-                                                <label for="checkboxui-3" class="custom-checkbox__label-for"></label>
-                                            </span>
-                                            <span class="text5-color">Удаленная работа</span>
-                                        </span>
-                                        <span class="tooltip">
-                                            <span class="btn-reset tooltip__btn" aria-describedby="id44">
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#help"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="tooltip__txt" role="tooltip" id="id44">
-                                                <span class="visually-hidden">Тултип: </span>
-                                                Текст
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="modal-fields__item">
-                                    <div class="page-content__section-item">
-                                        <div class="page-content__section-item-title">
-                                            <span>Указать время вручную</span>
-                                        </div>
-                                        <div class="form__field">
-                                            <input
-                                                    id=""
-                                                    class="input-reset form__input"
-                                                    type="text"
-                                                    name=""
-                                                    placeholder=""
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-fields__item">
-                                    <div class="page-content__section-item-title">
-                                        <span>Оценка</span>
-                                    </div>
-                                    <div class="form__field">
-                                        <div class="page-content__intro-rate">
-                                            <div class="page-content__intro-rate-stars">
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#favorite"></use>
-                                                </svg>
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#favorite"></use>
-                                                </svg>
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#favorite"></use>
-                                                </svg>
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#favorite"></use>
-                                                </svg>
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#favorite"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-fields__item">
-                                    <div class="page-content__section-item-title">
-                                        <span>Оставить отзыв</span>
-                                    </div>
-                                    <div class="form__field">
-                                        <textarea
-                                                id=""
-                                                class="input-reset form__input form__input--textarea"
-                                                name=""
-                                                placeholder="Расскажите об опыте работы с волонтером"
-                                        ></textarea>
-                                    </div>
-                                </div>
-                                <div class="modal-fields__item">
-                                    <div class="form__field form__field-btn">
-                                        <button class="btn-reset btn btn--fill">
-                                            <span class="btn__text">Сохранить</span>
-                                        </button>
-                                        <button class="btn-reset btn btn--fill btn--gray flex-1">
-                                            <span class="btn__text">Сохранить и создать новую задачу</span>
-                                        </button>
-                                    </div>
-                                </div>
-
-                            </div>
+                            <div class="modal__title h4">Вызываемое мадальное окно</div>
                         </div>
                     </div>
                     <!--end ui content-->
@@ -2423,7 +2311,6 @@
             </div>
         </div>
     </div>
-    <hr style="width: 100%;">
     <hr style="width: 100%;">
 
     <br>

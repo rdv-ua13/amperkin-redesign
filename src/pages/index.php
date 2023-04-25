@@ -274,7 +274,8 @@
                                     </div>
                                 </div>
 
-                                <div class="product-card__cart cart-buy">
+								<?/* // todo (@Masterkov): добавилась разметка */?>
+                                <div class="product-card__cart cart-buy" data-cart-coord>
                                     <div class="product-card__cart-quantity cart-quantity disabled">
                                         <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
                                             <svg class="icon icon-sm btn__icon">
@@ -896,6 +897,7 @@
                                 </div>
                             </div>
                         </div>
+                        <? // todo (@Masterkov):  tab-отзывы ?>
                         <div class="tabs-content__panel" data-id="3">
 							<?/* // empty reviews
                             <div class="product-card-mobile-section">
@@ -911,7 +913,7 @@
                                             <div class="product-card-reviews-empty__subtitle">Расскажите о преимуществах и недостатках товара. <br>Ваш отзыв поможет другим покупателям сделать выбор.</div>
                                         </div>
                                         <div class="product-card-reviews-empty__btn">
-                                            <button class="btn-reset btn btn-primary">
+                                            <button class="btn-reset btn btn-primary" data-fancybox data-src="#modal-loged-review">
                                                 <span class="btn__text">написать отзыв</span>
                                             </button>
                                         </div>
@@ -924,46 +926,46 @@
                                     <div class="product-card-reviews__header-main">
                                         <div class="h4">Отзывы покупателей</div>
                                         <div class="product-card-reviews__header-stats">
-                                                    <span class="star-rating-wrapper" data-star-rate-static>
-                                                        <span class="star-rating-item">
-                                                            <span class="star-rating">
-                                                                <span class="star-rating__container">
-                                                                    <label>
-                                                                        <svg class="icon">
-                                                                            <use href="img/sprite.svg#fill-star"></use>
-                                                                        </svg>
-                                                                    </label>
-                                                                    <label>
-                                                                        <svg class="icon">
-                                                                            <use href="img/sprite.svg#fill-star"></use>
-                                                                        </svg>
-                                                                    </label>
-                                                                    <label>
-                                                                        <svg class="icon">
-                                                                            <use href="img/sprite.svg#fill-star"></use>
-                                                                        </svg>
-                                                                    </label>
-                                                                    <label>
-                                                                        <svg class="icon">
-                                                                            <use href="img/sprite.svg#fill-star"></use>
-                                                                        </svg>
-                                                                    </label>
-                                                                    <label>
-                                                                        <svg class="icon">
-                                                                            <use href="img/sprite.svg#fill-star"></use>
-                                                                        </svg>
-                                                                    </label>
-                                                                </span>
-                                                            </span>
-                                                            <a class="star-rating-value-text" href="javascript:;">64 отзыва</a>
-                                                        </span>
-                                                        <span class="star-rating-item">
-                                                            <span class="star-rating-value" data-value="4.4">4.4</span>&nbsp;из 5
-                                                        </span>
-                                                        <span class="star-rating-item">
-                                                            <span class="star-rating-value__efficiency">94% рекомендуют</span>
+                                            <span class="star-rating-wrapper" data-star-rate-static>
+                                                <span class="star-rating-item">
+                                                    <span class="star-rating">
+                                                        <span class="star-rating__container">
+                                                            <label>
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#fill-star"></use>
+                                                                </svg>
+                                                            </label>
+                                                            <label>
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#fill-star"></use>
+                                                                </svg>
+                                                            </label>
+                                                            <label>
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#fill-star"></use>
+                                                                </svg>
+                                                            </label>
+                                                            <label>
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#fill-star"></use>
+                                                                </svg>
+                                                            </label>
+                                                            <label>
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#fill-star"></use>
+                                                                </svg>
+                                                            </label>
                                                         </span>
                                                     </span>
+                                                    <a class="star-rating-value-text" href="javascript:;">64 отзыва</a>
+                                                </span>
+                                                <span class="star-rating-item">
+                                                    <span class="star-rating-value" data-value="4.4">4.4</span>&nbsp;из 5
+                                                </span>
+                                                <span class="star-rating-item">
+                                                    <span class="star-rating-value__efficiency">94% рекомендуют</span>
+                                                </span>
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="product-card-reviews__header-review">
@@ -973,7 +975,7 @@
                                                 <use href="img/sprite.svg#fill-bonus"></use>
                                             </svg>
                                         </div>
-                                        <button class="btn-reset btn btn-primary">
+                                        <button class="btn-reset btn btn-primary" data-fancybox data-src="#modal-loged-review">
                                             <span class="btn__text">Написать отзыв</span>
                                         </button>
                                     </div>
@@ -987,7 +989,6 @@
                                                 class="visually-hidden"
                                                 name="sortProductCardReview"
                                                 value=""
-                                                placeholder="В работе"
                                                 checked
                                         >
                                         <label for="sortByDate" class="product-card-reviews__filter-label active">
@@ -1004,7 +1005,6 @@
                                                 class="visually-hidden"
                                                 name="sortProductCardReview"
                                                 value=""
-                                                placeholder="Завершены"
                                         >
                                         <label for="sortByRate" class="product-card-reviews__filter-label">
                                             <svg class="icon">
@@ -1020,7 +1020,6 @@
                                                 class="visually-hidden"
                                                 name="sortProductCardReview"
                                                 value=""
-                                                placeholder="Все"
                                         >
                                         <label for="sortByUtility" class="product-card-reviews__filter-label">
                                             <svg class="icon">
@@ -1033,335 +1032,602 @@
                                 <div class="product-card-reviews__list">
                                     <div class="product-card-mobile-section">
                                         <div class="product-card-reviews__review review product-card-mobile-section-container">
-                                                    <span class="review__header">
-                                                        <span class="review__view">
-                                                            <picture>
-                                                                <source srcset="img/product.webp" type="image/webp">
-                                                                <img
-                                                                        loading="lazy"
-                                                                        src="img/product.png"
-                                                                        class="image"
-                                                                        width="48"
-                                                                        height="48"
-                                                                        alt="Изображение блока"
-                                                                >
-                                                            </picture>
-                                                        </span>
-                                                        <span class="review__intro">
-                                                            <span class="review__intro-item review__name">Глеб К.</span>
-                                                            <span class="review__intro-item review__date">1	Апреля 2023</span>
-                                                            <span class="review__intro-item review__city">г. Кропоткин</span>
-                                                        </span>
-                                                        <span class="review__rate">
-                                                            <span class="star-rating-wrapper" data-star-rate-static>
-                                                                <span class="star-rating-value visually-hidden" data-value="4.8">4.8</span>
-                                                                <span class="star-rating">
-                                                                    <span class="star-rating__container">
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                    </span>
-                                                                </span>
+                                            <span class="review__header">
+                                                <span class="review__view">
+                                                    <picture>
+                                                        <source srcset="img/avatar.webp" type="image/webp">
+                                                        <img
+                                                                loading="lazy"
+                                                                src="img/avatar.png"
+                                                                class="image"
+                                                                width="48"
+                                                                height="48"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </picture>
+                                                </span>
+                                                <span class="review__intro">
+                                                    <span class="review__intro-item review__name">Глеб К.</span>
+                                                    <span class="review__intro-item review__date">1	Апреля 2023</span>
+                                                    <span class="review__intro-item review__city">г. Кропоткин</span>
+                                                </span>
+                                                <span class="review__rate">
+                                                    <span class="star-rating-wrapper" data-star-rate-static>
+                                                        <span class="star-rating-value visually-hidden" data-value="4.8">4.8</span>
+                                                        <span class="star-rating">
+                                                            <span class="star-rating__container">
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
                                                             </span>
-                                                            <span class="review__recommend">Рекомендую товар</span>
                                                         </span>
                                                     </span>
+                                                    <span class="review__recommend">Рекомендую товар</span>
+                                                </span>
+                                            </span>
                                             <span class="review__descr">
-                                                        <span class="review__descr-item">
-                                                            <span class="review__descr-title">Достоинства:</span>
-                                                            <span class="review__descr-text">Качественный пластик</span>
-                                                        </span>
-                                                        <span class="review__descr-item">
-                                                            <span class="review__descr-title">Недостатки:</span>
-                                                            <span class="review__descr-text">Нет</span>
-                                                        </span>
-                                                        <span class="review__descr-item">
-                                                            <span class="review__descr-title">Комментарий:</span>
-                                                            <span class="review__descr-text">Товар в заводской упаковке. Качество пластика и изготовления удлинителя в целом. Удобно что можно зафиксировать на стену или пол.</span>
-                                                        </span>
-                                                        <span class="review__descr-item review__descr-attached">
-                                                            <span class="review__descr-attached-item">
-                                                                <picture>
-                                                                    <source srcset="img/product.webp" type="image/webp">
-                                                                    <img
-                                                                            loading="lazy"
-                                                                            src="img/product.png"
-                                                                            class="image"
-                                                                            width="50"
-                                                                            height="50"
-                                                                            alt="Изображение блока"
-                                                                    >
-                                                                </picture>
-                                                            </span>
-                                                            <span class="review__descr-attached-item">
-                                                                <picture>
-                                                                    <source srcset="img/product.webp" type="image/webp">
-                                                                    <img
-                                                                            loading="lazy"
-                                                                            src="img/product.png"
-                                                                            class="image"
-                                                                            width="50"
-                                                                            height="50"
-                                                                            alt="Изображение блока"
-                                                                    >
-                                                                </picture>
-                                                            </span>
-                                                        </span>
-                                                        <span class="review__descr-item review__descr-utility">
-                                                            <span class="review__descr-title">Вам помог этот отзыв?</span>
-                                                            <span class="review__descr-act">
-                                                                <button class="btn-reset btn btn-mini btn-light">
-                                                                    <span class="btn__text">Да 3</span>
-                                                                </button>
-                                                                <button class="btn-reset btn btn-mini btn-light">
-                                                                    <span class="btn__text">Нет 0</span>
-                                                                </button>
-                                                            </span>
-                                                        </span>
+                                                <span class="review__descr-item">
+                                                    <span class="review__descr-title">Достоинства:</span>
+                                                    <span class="review__descr-text">Качественный пластик</span>
+                                                </span>
+                                                <span class="review__descr-item">
+                                                    <span class="review__descr-title">Недостатки:</span>
+                                                    <span class="review__descr-text">Нет</span>
+                                                </span>
+                                                <span class="review__descr-item">
+                                                    <span class="review__descr-title">Комментарий:</span>
+                                                    <span class="review__descr-text">Товар в заводской упаковке. Качество пластика и изготовления удлинителя в целом. Удобно что можно зафиксировать на стену или пол.</span>
+                                                </span>
+                                                <span class="review__descr-item review__descr-attached">
+                                                    <span class="review__descr-attached-item">
+                                                        <picture>
+                                                            <source srcset="img/product.webp" type="image/webp">
+                                                            <img
+                                                                    loading="lazy"
+                                                                    src="img/product.png"
+                                                                    class="image"
+                                                                    width="50"
+                                                                    height="50"
+                                                                    alt="Изображение блока"
+                                                            >
+                                                        </picture>
                                                     </span>
+                                                    <span class="review__descr-attached-item">
+                                                        <picture>
+                                                            <source srcset="img/product.webp" type="image/webp">
+                                                            <img
+                                                                    loading="lazy"
+                                                                    src="img/product.png"
+                                                                    class="image"
+                                                                    width="50"
+                                                                    height="50"
+                                                                    alt="Изображение блока"
+                                                            >
+                                                        </picture>
+                                                    </span>
+                                                </span>
+                                                <span class="review__descr-item review__descr-utility">
+                                                    <span class="review__descr-title">Вам помог этот отзыв?</span>
+                                                    <span class="review__descr-act">
+                                                        <button class="btn-reset btn btn-mini btn-light">
+                                                            <span class="btn__text">Да 3</span>
+                                                        </button>
+                                                        <button class="btn-reset btn btn-mini btn-light">
+                                                            <span class="btn__text">Нет 0</span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="product-card-mobile-section">
                                         <div class="product-card-reviews__review review product-card-mobile-section-container">
-                                                    <span class="review__header">
-                                                        <span class="review__view default" data-first-letter="В">
-                                                            <picture>
-                                                                <source srcset="img/review-avatar-bg.webp" type="image/webp">
-                                                                <img
-                                                                        loading="lazy"
-                                                                        src="img/review-avatar-bg.png"
-                                                                        class="image"
-                                                                        width="48"
-                                                                        height="48"
-                                                                        alt="Изображение блока"
-                                                                >
-                                                            </picture>
-                                                        </span>
-                                                        <span class="review__intro">
-                                                            <span class="review__intro-item review__name">Виктор К.</span>
-                                                            <span class="review__intro-item review__date">1	Марта 2022</span>
-                                                            <span class="review__intro-item review__city">г. Верхняя Пышма</span>
-                                                        </span>
-                                                        <span class="review__rate">
-                                                            <span class="star-rating-wrapper" data-star-rate-static>
-                                                                <span class="star-rating-value visually-hidden" data-value="4.8">4.8</span>
-                                                                <span class="star-rating">
-                                                                    <span class="star-rating__container">
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                    </span>
-                                                                </span>
+                                            <span class="review__header">
+                                                <span class="review__view default" data-first-letter="В">
+                                                    <picture>
+                                                        <source srcset="img/review-avatar-bg.webp" type="image/webp">
+                                                        <img
+                                                                loading="lazy"
+                                                                src="img/review-avatar-bg.png"
+                                                                class="image"
+                                                                width="48"
+                                                                height="48"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </picture>
+                                                </span>
+                                                <span class="review__intro">
+                                                    <span class="review__intro-item review__name">Виктор К.</span>
+                                                    <span class="review__intro-item review__date">1	Марта 2022</span>
+                                                    <span class="review__intro-item review__city">г. Верхняя Пышма</span>
+                                                </span>
+                                                <span class="review__rate">
+                                                    <span class="star-rating-wrapper" data-star-rate-static>
+                                                        <span class="star-rating-value visually-hidden" data-value="4.8">4.8</span>
+                                                        <span class="star-rating">
+                                                            <span class="star-rating__container">
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
                                                             </span>
-                                                            <span class="review__recommend">Рекомендую товар</span>
                                                         </span>
                                                     </span>
+                                                    <span class="review__recommend">Рекомендую товар</span>
+                                                </span>
+                                            </span>
                                             <span class="review__descr">
-                                                        <span class="review__descr-item">
-                                                            <span class="review__descr-title">Достоинства:</span>
-                                                            <span class="review__descr-text">Компактный, длинный кабель, всё работает</span>
-                                                        </span>
-                                                        <span class="review__descr-item">
-                                                            <span class="review__descr-title">Недостатки:</span>
-                                                            <span class="review__descr-text">Пока нет</span>
-                                                        </span>
-                                                        <span class="review__descr-item">
-                                                            <span class="review__descr-title">Комментарий:</span>
-                                                            <span class="review__descr-text">Рекомендую!</span>
-                                                        </span>
-                                                        <span class="review__descr-item review__descr-utility">
-                                                            <span class="review__descr-title">Вам помог этот отзыв?</span>
-                                                            <span class="review__descr-act">
-                                                                <button class="btn-reset btn btn-mini btn-light">
-                                                                    <span class="btn__text">Да 0</span>
-                                                                </button>
-                                                                <button class="btn-reset btn btn-mini btn-light">
-                                                                    <span class="btn__text">Нет 0</span>
-                                                                </button>
-                                                            </span>
-                                                        </span>
+                                                <span class="review__descr-item">
+                                                    <span class="review__descr-title">Достоинства:</span>
+                                                    <span class="review__descr-text">Компактный, длинный кабель, всё работает</span>
+                                                </span>
+                                                <span class="review__descr-item">
+                                                    <span class="review__descr-title">Недостатки:</span>
+                                                    <span class="review__descr-text">Пока нет</span>
+                                                </span>
+                                                <span class="review__descr-item">
+                                                    <span class="review__descr-title">Комментарий:</span>
+                                                    <span class="review__descr-text">Рекомендую!</span>
+                                                </span>
+                                                <span class="review__descr-item review__descr-utility">
+                                                    <span class="review__descr-title">Вам помог этот отзыв?</span>
+                                                    <span class="review__descr-act">
+                                                        <button class="btn-reset btn btn-mini btn-light">
+                                                            <span class="btn__text">Да 0</span>
+                                                        </button>
+                                                        <button class="btn-reset btn btn-mini btn-light">
+                                                            <span class="btn__text">Нет 0</span>
+                                                        </button>
                                                     </span>
+                                                </span>
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="product-card-mobile-section">
                                         <div class="product-card-reviews__review review product-card-mobile-section-container">
-                                                    <span class="review__header">
-                                                        <span class="review__view default" data-first-letter="М">
-                                                            <picture>
-                                                                <source srcset="img/review-avatar-bg.webp" type="image/webp">
-                                                                <img
-                                                                        loading="lazy"
-                                                                        src="img/review-avatar-bg.png"
-                                                                        class="image"
-                                                                        width="48"
-                                                                        height="48"
-                                                                        alt="Изображение блока"
-                                                                >
-                                                            </picture>
-                                                        </span>
-                                                        <span class="review__intro">
-                                                            <span class="review__intro-item review__name">Максим П.</span>
-                                                            <span class="review__intro-item review__date">1	Января 2022</span>
-                                                            <span class="review__intro-item review__city">г. Королёв</span>
-                                                        </span>
-                                                        <span class="review__rate">
-                                                            <span class="star-rating-wrapper" data-star-rate-static>
-                                                                <span class="star-rating-value visually-hidden" data-value="3.8">3.8</span>
-                                                                <span class="star-rating">
-                                                                    <span class="star-rating__container">
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                        <label>
-                                                                            <svg class="icon">
-                                                                                <use href="img/sprite.svg#fill-star"></use>
-                                                                            </svg>
-                                                                        </label>
-                                                                    </span>
-                                                                </span>
+                                            <span class="review__header">
+                                                <span class="review__view default" data-first-letter="М">
+                                                    <picture>
+                                                        <source srcset="img/review-avatar-bg.webp" type="image/webp">
+                                                        <img
+                                                                loading="lazy"
+                                                                src="img/review-avatar-bg.png"
+                                                                class="image"
+                                                                width="48"
+                                                                height="48"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </picture>
+                                                </span>
+                                                <span class="review__intro">
+                                                    <span class="review__intro-item review__name">Максим П.</span>
+                                                    <span class="review__intro-item review__date">1	Января 2022</span>
+                                                    <span class="review__intro-item review__city">г. Королёв</span>
+                                                </span>
+                                                <span class="review__rate">
+                                                    <span class="star-rating-wrapper" data-star-rate-static>
+                                                        <span class="star-rating-value visually-hidden" data-value="3.8">3.8</span>
+                                                        <span class="star-rating">
+                                                            <span class="star-rating__container">
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
+                                                                <label>
+                                                                    <svg class="icon">
+                                                                        <use href="img/sprite.svg#fill-star"></use>
+                                                                    </svg>
+                                                                </label>
                                                             </span>
-                                                            <span class="review__recommend">Рекомендую товар</span>
                                                         </span>
                                                     </span>
+                                                    <span class="review__recommend">Рекомендую товар</span>
+                                                </span>
+                                            </span>
                                             <span class="review__descr">
-                                                        <span class="review__descr-item">
-                                                            <span class="review__descr-title">Достоинства:</span>
-                                                            <span class="review__descr-text">Качественный пластик</span>
-                                                        </span>
-                                                        <span class="review__descr-item">
-                                                            <span class="review__descr-title">Комментарий:</span>
-                                                            <span class="review__descr-text">Товар в заводской упаковке. Качество пластика и изготовления удлинителя в целом. Удобно что можно зафиксировать на стену или пол.</span>
-                                                        </span>
-                                                        <span class="review__descr-item review__descr-attached">
-                                                            <span class="review__descr-attached-item">
-                                                                <picture>
-                                                                    <source srcset="img/product-2.webp" type="image/webp">
-                                                                    <img
-                                                                            loading="lazy"
-                                                                            src="img/product-2.png"
-                                                                            class="image"
-                                                                            width="50"
-                                                                            height="50"
-                                                                            alt="Изображение блока"
-                                                                    >
-                                                                </picture>
-                                                            </span>
-                                                            <span class="review__descr-attached-item">
-                                                                <picture>
-                                                                    <source srcset="img/product-3.webp" type="image/webp">
-                                                                    <img
-                                                                            loading="lazy"
-                                                                            src="img/product-3.png"
-                                                                            class="image"
-                                                                            width="50"
-                                                                            height="50"
-                                                                            alt="Изображение блока"
-                                                                    >
-                                                                </picture>
-                                                            </span>
-                                                            <span class="review__descr-attached-item">
-                                                                <picture>
-                                                                    <source srcset="img/product-4.webp" type="image/webp">
-                                                                    <img
-                                                                            loading="lazy"
-                                                                            src="img/product-4.png"
-                                                                            class="image"
-                                                                            width="50"
-                                                                            height="50"
-                                                                            alt="Изображение блока"
-                                                                    >
-                                                                </picture>
-                                                            </span>
-                                                        </span>
-                                                        <span class="review__descr-item review__descr-utility">
-                                                            <span class="review__descr-title">Вам помог этот отзыв?</span>
-                                                            <span class="review__descr-act">
-                                                                <button class="btn-reset btn btn-mini btn-light">
-                                                                    <span class="btn__text">Да 7</span>
-                                                                </button>
-                                                                <button class="btn-reset btn btn-mini btn-light">
-                                                                    <span class="btn__text">Нет 2</span>
-                                                                </button>
-                                                            </span>
-                                                        </span>
+                                                <span class="review__descr-item">
+                                                    <span class="review__descr-title">Достоинства:</span>
+                                                    <span class="review__descr-text">Качественный пластик</span>
+                                                </span>
+                                                <span class="review__descr-item">
+                                                    <span class="review__descr-title">Комментарий:</span>
+                                                    <span class="review__descr-text">Товар в заводской упаковке. Качество пластика и изготовления удлинителя в целом. Удобно что можно зафиксировать на стену или пол.</span>
+                                                </span>
+                                                <span class="review__descr-item review__descr-attached">
+                                                    <span class="review__descr-attached-item">
+                                                        <picture>
+                                                            <source srcset="img/product-2.webp" type="image/webp">
+                                                            <img
+                                                                    loading="lazy"
+                                                                    src="img/product-2.png"
+                                                                    class="image"
+                                                                    width="50"
+                                                                    height="50"
+                                                                    alt="Изображение блока"
+                                                            >
+                                                        </picture>
                                                     </span>
+                                                    <span class="review__descr-attached-item">
+                                                        <picture>
+                                                            <source srcset="img/product-3.webp" type="image/webp">
+                                                            <img
+                                                                    loading="lazy"
+                                                                    src="img/product-3.png"
+                                                                    class="image"
+                                                                    width="50"
+                                                                    height="50"
+                                                                    alt="Изображение блока"
+                                                            >
+                                                        </picture>
+                                                    </span>
+                                                    <span class="review__descr-attached-item">
+                                                        <picture>
+                                                            <source srcset="img/product-4.webp" type="image/webp">
+                                                            <img
+                                                                    loading="lazy"
+                                                                    src="img/product-4.png"
+                                                                    class="image"
+                                                                    width="50"
+                                                                    height="50"
+                                                                    alt="Изображение блока"
+                                                            >
+                                                        </picture>
+                                                    </span>
+                                                </span>
+                                                <span class="review__descr-item review__descr-utility">
+                                                    <span class="review__descr-title">Вам помог этот отзыв?</span>
+                                                    <span class="review__descr-act">
+                                                        <button class="btn-reset btn btn-mini btn-light">
+                                                            <span class="btn__text">Да 7</span>
+                                                        </button>
+                                                        <button class="btn-reset btn btn-mini btn-light">
+                                                            <span class="btn__text">Нет 2</span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-mobile-section">
+                                        <div class="product-card-mobile-section-container">
+                                            <div class="product-card-pagination">
+											    <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/pagination.php"); ?>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+						<? // todo (@Masterkov):  tab-Вопросы ?>
                         <div class="tabs-content__panel" data-id="4">
-                            <div class="product-card-mobile-section">
-                                <div class="product-card-mobile-section-container">
-                                    Tabs 4 content
+                            <div class="product-card-asks">
+                                <div class="product-card-asks__header">
+                                    <div class="h4">Вопросы и ответы</div>
+                                    <div class="product-card-asks__header-stats">7 вопросов</div>
+                                </div>
+                                <div class="product-card-asks__form">
+                                    <div class="product-card-asks__form-header">
+                                        <div class="h5">Задайте свой вопрос о товаре</div>
+                                        <div class="text-secondary-color">Вам ответит продавец, представитель бренда или пользователь, купивший этот товар. Пришлем уведомление, когда поступит ответ</div>
+                                    </div>
+                                    <form id="" class="form" method="" action="javascript:;">
+                                        <div class="form__field-area">
+                                            <div class="form__field">
+                                                <input
+                                                        id=""
+                                                        class="input-reset form__input"
+                                                        type="text"
+                                                        name=""
+                                                        placeholder="Ваш вопрос"
+                                                        required
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="form__field-btn">
+                                            <button class="btn-reset btn btn-primary" type="submit">
+                                                <span class="btn__text">Задать вопрос</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="product-card-asks__filter">
+                                    <div class="product-card-asks__filter-title">Сортировать:</div>
+                                    <div class="product-card-asks__filter-item">
+                                        <input
+                                                id="sortByDate"
+                                                type="radio"
+                                                class="visually-hidden"
+                                                name="sortProductCardAsk"
+                                                value=""
+                                                checked
+                                        >
+                                        <label for="sortByDate" class="product-card-asks__filter-label active">сначала новые</label>
+                                    </div>
+                                    <div class="product-card-asks__filter-item">
+                                        <input
+                                                id="sortByRate"
+                                                type="radio"
+                                                class="visually-hidden"
+                                                name="sortProductCardAsk"
+                                                value=""
+                                        >
+                                        <label for="sortByRate" class="product-card-asks__filter-label">сначала с ответом</label>
+                                    </div>
+                                    <div class="product-card-asks__filter-item">
+                                        <input
+                                                id="sortByUtility"
+                                                type="radio"
+                                                class="visually-hidden"
+                                                name="sortProductCardAsk"
+                                                value=""
+                                        >
+                                        <label for="sortByUtility" class="product-card-asks__filter-label">сначала без ответа</label>
+                                    </div>
+                                </div>
+                                <div class="product-card-asks__list">
+                                    <div class="product-card-mobile-section">
+                                        <div class="product-card-asks__item question product-card-mobile-section-container">
+                                                    <span class="question__header">
+                                                        <span class="question__view">
+                                                            <picture>
+                                                                <source srcset="img/avatar.webp" type="image/webp">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        src="img/avatar.png"
+                                                                        class="image"
+                                                                        width="48"
+                                                                        height="48"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </picture>
+                                                        </span>
+                                                        <span class="question__intro">
+                                                            <span class="question__intro-item question__name">Семён С.</span>
+                                                            <span class="question__intro-item question__date">1	Апреля 2023</span>
+                                                        </span>
+                                                        <span class="question__content">
+                                                            <span class="h5">как его правильно использовать и куда ставить?</span>
+                                                        </span>
+                                                    </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-mobile-section">
+                                        <div class="product-card-asks__item question product-card-mobile-section-container">
+                                                    <span class="question__header">
+                                                        <span class="question__view">
+                                                            <picture>
+                                                                <source srcset="img/avatar.webp" type="image/webp">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        src="img/avatar.png"
+                                                                        class="image"
+                                                                        width="48"
+                                                                        height="48"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </picture>
+                                                        </span>
+                                                        <span class="question__intro">
+                                                            <span class="question__intro-item question__name">Стася Лебедева</span>
+                                                            <span class="question__intro-item question__date">7	Января 2023</span>
+                                                        </span>
+                                                        <span class="question__content">
+                                                            <span class="h5">К кто какой чехол покупал себе и остался доволен? Плёнку или стекло если бампер Заранее спасибо</span>
+                                                        </span>
+                                                    </span>
+                                            <span class="question-answers">
+                                                        <span class="question-answers__item">
+                                                            <span class="question-answers__view">
+                                                                <picture>
+                                                                    <source srcset="img/avatar.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/avatar.png"
+                                                                            class="image"
+                                                                            width="48"
+                                                                            height="48"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </span>
+                                                            <span class="question-answers__descr">
+                                                                <span class="question-answers__intro">
+                                                                    <span class="question-answers__intro-item question-answers__name">Екатерина С.</span>
+                                                                    <span class="question-answers__intro-item question-answers__date">25 Марта 2023</span>
+                                                                </span>
+                                                                <span class="question-answers__content">Не надо к нему чехол, будь мужиком - носи без чехла!</span>
+                                                                <span class="question-answers__utility">
+                                                                    <span class="question-answers__descr-title">Вам помог этот отзыв?</span>
+                                                                    <span class="question-answers__descr-act">
+                                                                        <button class="btn-reset btn btn-mini btn-light">
+                                                                            <span class="btn__text">Да 3</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn btn-mini btn-light">
+                                                                            <span class="btn__text">Нет 0</span>
+                                                                        </button>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="question-answers__item">
+                                                            <span class="question-answers__view default" data-first-letter="Е">
+                                                                <picture>
+                                                                    <source srcset="img/review-avatar-bg.webp" type="image/webp">
+                                                                    <img
+                                                                            loading="lazy"
+                                                                            src="img/review-avatar-bg.png"
+                                                                            class="image"
+                                                                            width="48"
+                                                                            height="48"
+                                                                            alt="Изображение блока"
+                                                                    >
+                                                                </picture>
+                                                            </span>
+                                                            <span class="question-answers__descr">
+                                                                <span class="question-answers__intro">
+                                                                    <span class="question-answers__intro-item question-answers__name">Елизавета Ф.</span>
+                                                                    <span class="question-answers__intro-item question-answers__date">11 Февраля 2023</span>
+                                                                </span>
+                                                                <span class="question-answers__content">В броню закатай</span>
+                                                                <span class="question-answers__utility">
+                                                                    <span class="question-answers__descr-title">Вам помог этот отзыв?</span>
+                                                                    <span class="question-answers__descr-act">
+                                                                        <button class="btn-reset btn btn-mini btn-light">
+                                                                            <span class="btn__text">Да 1</span>
+                                                                        </button>
+                                                                        <button class="btn-reset btn btn-mini btn-light">
+                                                                            <span class="btn__text">Нет 4</span>
+                                                                        </button>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-mobile-section">
+                                        <div class="product-card-mobile-section-container">
+                                            <div class="product-card-pagination">
+												<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/pagination.php"); ?>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tabs-content__panel product-card-mobile-section-container" data-id="5">
+						<? // todo (@Masterkov):  tab-документация ?>
+                        <div class="tabs-content__panel" data-id="5">
                             <div class="product-card-mobile-section">
                                 <div class="product-card-mobile-section-container">
-                                    Tabs 5 content
+									<?/* // empty docs
+                                    <div class="product-card-docs product-card-docs-empty">
+                                        <div class="product-card-docs-empty__view">
+                                            <svg class="icon">
+                                                <use href="img/sprite.svg#menu-file-slash"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-card-docs-empty__descr">
+                                            <div class="product-card-docs-empty__title h4">С этому товару нет документации</div>
+                                            <div class="product-card-docs-empty__subtitle">Для получения дополнительной информации свяжитесь с нашими специалистами</div>
+                                        </div>
+                                    </div>*/?>
+
+                                    <div class="product-card-docs">
+                                        <div class="product-card-docs__header">
+                                            <div class="h4">Документация</div>
+                                        </div>
+                                        <div class="product-card-docs__list">
+                                            <div class="product-card-docs__item doc">
+                                                <div class="doc__view">
+                                                    <svg class="icon icon-md">
+                                                        <use href="img/sprite.svg#pdf"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="doc__descr">
+                                                    <div class="doc__title">Сертификат соответствия.pdf</div>
+                                                </div>
+                                                <div class="doc__download">
+                                                    <a class="btn-reset btn btn-mini btn-light" href="javascript:;" download>
+                                                        <span class="btn__text">Скачать</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-docs__item doc">
+                                                <div class="doc__view">
+                                                    <svg class="icon icon-md">
+                                                        <use href="img/sprite.svg#word"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="doc__descr">
+                                                    <div class="doc__title">Инструкция к прибору.docx</div>
+                                                </div>
+                                                <div class="doc__download">
+                                                    <a class="btn-reset btn btn-mini btn-light" href="javascript:;" download>
+                                                        <span class="btn__text">Скачать</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-docs__item doc">
+                                                <div class="doc__view">
+                                                    <svg class="icon icon-md">
+                                                        <use href="img/sprite.svg#image"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="doc__descr">
+                                                    <div class="doc__title">Инструкция в картинках для детей от 3-х лет.png</div>
+                                                </div>
+                                                <div class="doc__download">
+                                                    <a class="btn-reset btn btn-mini btn-light" href="javascript:;" download>
+                                                        <span class="btn__text">Скачать</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-docs__download-all">
+                                            <a class="btn-reset btn btn-mini btn-secondary" href="javascript:;" download>
+                                                <span class="btn__text">Скачать все документы .ZIP</span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -7454,33 +7720,34 @@
     </div>
 </div>
 
+<? // todo (@Masterkov): data-tab правки номеров с учётом появляющегося таба в мобильной версии ?>
 <div class="top-fixed-toolbar" data-fixed-toolbar>
     <div class="container">
         <div class="tabs">
             <div class="tabs-container swiper" data-tab="tab-1">
                 <div class="tabs-wrapper swiper-wrapper">
                     <div class="tabs-item swiper-slide">
-                        <button class="btn-reset tabs-trigger selected" type="button" data-target="0">
+                        <button class="btn-reset tabs-trigger selected" type="button" data-target="1">
                             <span>Описание</span>
                         </button>
                     </div>
                     <div class="tabs-item swiper-slide">
-                        <a class="btn-reset tabs-trigger" href="javascript:;" data-target="1">
+                        <a class="btn-reset tabs-trigger" href="javascript:;" data-target="2">
                             <span>Характеристики</span>
                         </a>
                     </div>
                     <div class="tabs-item swiper-slide">
-                        <button class="btn-reset tabs-trigger" type="button" data-target="2">
+                        <button class="btn-reset tabs-trigger" type="button" data-target="3">
                             <span>Отзывы: 64</span>
                         </button>
                     </div>
                     <div class="tabs-item swiper-slide">
-                        <a class="btn-reset tabs-trigger" href="javascript:;" data-target="3">
+                        <a class="btn-reset tabs-trigger" href="javascript:;" data-target="4">
                             <span>Вопросы: 7</span>
                         </a>
                     </div>
                     <div class="tabs-item swiper-slide">
-                        <a class="btn-reset tabs-trigger" href="javascript:;" data-target="4">
+                        <a class="btn-reset tabs-trigger" href="javascript:;" data-target="5">
                             <span>Документация</span>
                         </a>
                     </div>
