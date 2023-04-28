@@ -625,39 +625,27 @@
                         <div class="dropfile-wrapper">
                             <div class="dropfile-title">Добавьте фотографии</div> <!--Добавьте фотографии-->
                             <div class="dropfile js-upload-photos" data-type="image" data-input-name="PHOTOS[]">
-                                <div class="dropfile-gallery">
-                                    <!--<div class="dropfile-image__item">
-                                        <img src="img/test.png">
-                                        <div class="dropfile-image__remove js-remove-image">
-                                            <svg class="icon btn__icon">
-                                                <use href="img/sprite.svg#cross"></use>
-                                            </svg>
-                                        </div>
-                                        <input class="js-image" type="hidden" name="PHOTOS[]" value=""/>
-                                    </div>-->
-                                </div>
+                                <div class="dropfile-gallery"></div>
                                 <label class="dropfile-field js-drop-file">
                                     <input class="visually-hidden dropfile-input js-change-file" type="file" accept="image/*" multiple>
                                     <div class="dropfile-area">
-                                        <div class="dropfile-descr">
-                                            <div class="dropfile-descr__view">
+                                        <div class="dropfile-area__view">
+                                            <svg class="icon icon-sm">
+                                                <use href="img/sprite.svg#image-plus"></use>
+                                            </svg>
+                                            <div class="dropfile-area__view-dragover">
                                                 <svg class="icon icon-sm">
-                                                    <use href="img/sprite.svg#image-plus"></use>
+                                                    <use href="img/sprite.svg#copy"></use>
                                                 </svg>
-                                                <div class="dropfile-descr__view-dragover">
-                                                    <svg class="icon icon-sm">
-                                                        <use href="img/sprite.svg#copy"></use>
-                                                    </svg>
-                                                    <span>Перетащите фото сюда</span>
-                                                </div>
+                                                <span>Перетащите фото сюда</span>
                                             </div>
-                                            <div class="dropfile-descr__text">
-                                                <div class="dropfile-descr__title">
-                                                    <a class="link-red" href="javascript:;">Нажмите на ссылку</a>
-                                                    <span>, чтобы выбрать фотографии или просто перетащите их в эту область</span>
-                                                </div>
-                                                <div class="dropfile-descr__accept">До 10 изображений в формате PNG, JPEG</div>
+                                        </div>
+                                        <div class="dropfile-area__text">
+                                            <div class="dropfile-area__title">
+                                                <a class="link-red" href="javascript:;">Нажмите на ссылку</a>
+                                                <span>, чтобы выбрать фотографии или просто перетащите их в эту область</span>
                                             </div>
+                                            <div class="dropfile-area__accept">До 10 изображений в формате PNG, JPEG</div>
                                         </div>
                                     </div>
                                 </label>
