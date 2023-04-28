@@ -27,6 +27,7 @@ application.prototype.init = function () {
     this.initSliders();
     this.initSelect2();
     this.setStaticStarRating();
+    this.setVisibleStarRatingGrade();
     this.setCardProductActMore();
     this.initReadmore();
     this.initCartQuantity();
@@ -36,6 +37,7 @@ application.prototype.init = function () {
     this.initMaskedInput();
     this.initDatepicker();
     this.initDeleteTrigger();
+    this.initDropfiles();
 
 
 
@@ -57,7 +59,6 @@ application.prototype.init = function () {
     /*this.initTagSelected();*/
 
     /*this.initAddList();*/
-    /*this.initDropfiles();*/
 
     /*this.initAccordion();*/
 
@@ -719,13 +720,6 @@ application.prototype.initSliders = function () {
             slidesPerView: 'auto',
         });
     }
-
-    /*if ($('.filter-sort.swiper').length) {
-        const productCardReviewfilterSort = new Swiper('.product-card-reviews__filter .filter-sort', {
-            spaceBetween: 4,
-            slidesPerView: 'auto',
-        });
-    }*/
 };
 
 // Initialize select2 plagin
@@ -765,6 +759,24 @@ application.prototype.setStaticStarRating = function () {
                     rating.addClass('star-rating-0');
             }
         });
+    }
+};
+
+// Set caption to star rating
+application.prototype.setVisibleStarRatingGrade = function () {
+    if ($('.star-rating-label').length) {
+        let caption = '';
+
+        $('[data-star-grade]').hover(
+            function () {
+                caption = $(this).data('star-grade');
+
+                $(this).closest('.star-rating-label').find('.star-rating-grade').text(caption);
+            },
+            function () {
+                $(this).closest('.star-rating-label').find('.star-rating-grade').text('');
+            }
+        );
     }
 };
 
@@ -1061,6 +1073,291 @@ application.prototype.initDeleteTrigger = function () {
             $(this).closest('[data-removable]').remove();
         });
     }
+};
+
+// Initialization drop files
+application.prototype.initDropfiles = function () {
+    File.prototype.convertToBase64 = function (callback) {
+        let reader = new FileReader();
+
+        reader.onloadend = function (e) {
+            callback(e.target.result, e.target.error);
+        };
+        reader.readAsDataURL(this);
+    };
+
+    File.prototype.convertToSvgHtml = function (callback) {
+        let reader = new FileReader();
+
+        reader.onloadend = function(e) {
+            callback(e.target.result, e.target.error);
+        };
+        reader.readAsText(this);
+    };
+
+    const getDataImage = (file, callback) => {
+        let filename = file.name,
+            idxDot = filename.lastIndexOf(".") + 1,
+            extFile = filename.substr(idxDot, filename.length).toLowerCase();
+
+        if (extFile === "jpg" || extFile === "jpeg" || extFile === "png") {
+            file.convertToBase64((base64) => {
+                callback(base64, false);
+            })
+        } else if(extFile === "svg") {
+            file.convertToSvgHtml((svgHtml) => {
+                callback(svgHtml, true);
+            })
+        } else {
+            alert('Неверный формат файла (Поддерживаемые форматы: jpg, jpeg, png, svg)');
+        }
+    };
+
+    const getDataDocs = (file, callback) => {
+        let filename = file.name,
+            idxDot = filename.lastIndexOf(".") + 1,
+            extFile = filename.substr(idxDot, filename.length).toLowerCase();
+
+        if (extFile === "jpg" || extFile === "jpeg" || extFile === "png") {
+            file.convertToBase64((base64) => {
+                callback(base64, false);
+            })
+        } else {
+            alert('Неверный формат файла (Поддерживаемые форматы: jpg, jpeg, png, svg)');
+        }
+    };
+
+    $('body').on('dragenter', '.js-drop-file', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+    });
+
+    $('body').on('dragover', '.js-drop-file', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $(this).addClass('dragover');
+    });
+
+    $('body').on('dragleave', '.js-drop-file', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $(this).removeClass('dragover');
+    });
+
+    $('body').on('drop', '.js-drop-file', function (e) {
+        console.log("success11");
+        e.stopPropagation();
+        e.preventDefault();
+        $(this).removeClass('dragover');
+        $(this).closest('.js-upload-photos').addClass('has-attached');
+
+        let type = $(this).closest('.dropfile').attr('data-type');
+        let countFiles = $(this).closest('.js-upload-photos').find('.dropfile-image__item').length + e.originalEvent.dataTransfer.files.length;
+
+        if (type === 'image') {
+            if (countFiles > 10) {
+                return;
+            }
+            for (let i in e.originalEvent.dataTransfer.files) {
+                if (e.originalEvent.dataTransfer.files.hasOwnProperty(i)) {
+                    let file = e.originalEvent.dataTransfer.files[i];
+                    getDataImage(file, (data, isSvg) => {
+                        appendImage($(this), data, isSvg);
+                    });
+                }
+            }
+        } else if (type === 'document') {
+            appendDocument($(this), e.originalEvent.dataTransfer.files);
+        }
+    });
+
+    $('.js-drop-file').on('change', '.js-change-file', function () {
+        let type = $(this).closest('.dropfile').attr('data-type');
+        let countFiles = $(this).closest('.js-upload-photos').find('.dropfile-image__item').length + $(this)[0].files.length;
+        $(this).closest('.js-upload-photos').addClass('has-attached');
+        console.log("success22");
+
+        if (type === 'image') {
+            if (countFiles > 10) {
+                return;
+            }
+            for (let i in $(this)[0].files) {
+                if ($(this)[0].files.hasOwnProperty(i)) {
+                    let file = $(this)[0].files[i];
+                    if (type === 'image') {
+                        getDataImage(file, (data, isSvg) => {
+                            appendImage($(this), data, isSvg);
+                        });
+                    } else if (type === 'document') {
+                        getDataDocs(file, (data) => {
+                            appendImage($(this), data, isSvg);
+                        });
+                    }
+                }
+            }
+        } else if (type === 'document') {
+            appendDocument($(this), $(this)[0].files);
+        }
+    });
+
+    function appendImage($input, data, isSvg) {
+        let image = '',
+            $parent = $input.closest('.dropfile');
+
+        if(isSvg) {
+            image = data;
+        } else {
+            image = `<img src="` + data + `" class="image">`;
+        }
+
+        let html = `
+                    <div class="dropfile-image__item">
+                        ` + image + `
+                        <div class="dropfile-image__remove js-remove-image">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#cross"></use>
+                            </svg>
+                        </div>
+                        <input class="js-image" type="hidden" name="` + $parent.attr('data-input-name') + `" value='` + data + `'>
+                    </div>
+                    `;
+
+        if($parent.hasClass('js-upload-cover')) {
+            $parent
+                .find('.dropfile-image')
+                .html(html);
+        } else if($parent.hasClass('js-upload-avatar')) {
+            $parent
+                .find('.dropfile-area')
+                .addClass('dropfile-image')
+                .html(html);
+        } else if($parent.hasClass('js-upload-photos')) {
+            $parent
+                .find('.dropfile-gallery')
+                .show()
+                .append(html);
+        }
+    };
+
+    function appendDocument($input, files) {
+        let $parent = $input.closest('.dropfile'),
+            $inputFile = $('<input/>')
+                .attr('type', "file")
+                .attr('multiple', true)
+                .attr('name', $parent.attr('data-input-name'))
+                .hide();
+
+        $inputFile.get(0).files = files;
+
+        for (let i in files) {
+            if (files.hasOwnProperty(i)) {
+                let filename = files[i].name,
+                    idxDot = filename.lastIndexOf(".") + 1,
+                    extFile = filename.substr(idxDot, filename.length).toLowerCase();
+
+                if (extFile === "doc" || extFile === "docx" || extFile === "xls" ||
+                    extFile === "xlsx" || extFile === "ppt" || extFile === "pptx" ||
+                    extFile === "txt" || extFile === "pdf"
+                ) {
+                } else {
+                    alert('Неверный формат файла (Поддерживаемые форматы: doc, docx, xls, xlsx, ppt, pptx, txt, pdf)');
+
+                    return false;
+                }
+            }
+        }
+
+        let html = ``;
+        for (let i in files) {
+            if (files.hasOwnProperty(i)) {
+                let filename = files[i].name;
+
+                let $parent = $input.closest('.dropfile'),
+                    $inputFile = $('<input/>')
+                        .attr('type', "file")
+                        .attr('multiple', true)
+                        .attr('name', $parent.attr('data-input-name'))
+                        .hide();
+
+                const dataTransfer = new DataTransfer();
+                dataTransfer.items.add(files[i]);
+                $inputFile.get(0).files = dataTransfer.files;
+
+                if ($inputFile.get(0).webkitEntries.length) {
+                    $inputFile.get(0).dataset.file = `${dataTransfer.files[0].name}`;
+                }
+
+                console.log($inputFile.get(0).files)
+
+                $html = $('<div/>')
+                    .addClass('dropfile-documents__item')
+                    .html(`<svg class="icon">
+                                <use href="/local/templates/main/img/sprite.svg#file"></use>
+                            </svg>
+                            <div class="dropfile-documents__name">` + filename + `</div>
+                            <div class="dropfile-documents__remove js-remove-document">
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#cross"></use>
+                                </svg>
+                            </div>`)
+                    .append($inputFile)
+
+                $parent.find('.dropfile-documents').append($html);
+            }
+        }
+
+        //$parent.find('.dropfile-documents').append(html);
+    };
+
+
+    $('body').on('click', '.dropfile-image', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+    $('body').on('click', '.js-remove-image', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        let $parent = $(this).closest('.dropfile');
+        let galleryItem = $parent.find('.dropfile-image__item');
+
+        if($parent.hasClass('js-upload-photos')) {
+            $(this).closest('.dropfile-image__item').remove();
+
+            if (galleryItem.length < 2) {
+                $parent.removeClass('has-attached');
+            }
+
+        } else {
+            let html = ``;
+
+            if($parent.hasClass('js-upload-avatar')) {
+                $parent.find('');
+                html += `<div class="dropfile-descr">
+                        <div class="dropfile-descr__view">
+                            <svg class="icon">
+                                <use href="img/sprite.svg#image-plus"></use>
+                            </svg>
+                        </div>
+                    </div>`;
+            }
+
+            $(this).closest('.dropfile-image').html(html);
+
+            if($parent.hasClass('js-upload-avatar')) {
+                $parent.find('.dropfile-area').removeClass('dropfile-image');
+            }
+        }
+    });
+
+    $('body').on('click', '.js-remove-document', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        console.log('oks')
+        $(this).closest('.dropfile-documents__item').remove();
+    });
 };
 
 
@@ -1570,275 +1867,6 @@ application.prototype.initAddList = function () {
             });
         });
     }
-};
-
-// Initialize drop files
-application.prototype.initDropfiles = function () {
-    File.prototype.convertToBase64 = function (callback) {
-        let reader = new FileReader();
-
-        reader.onloadend = function (e) {
-            callback(e.target.result, e.target.error);
-        };
-        reader.readAsDataURL(this);
-    };
-
-    File.prototype.convertToSvgHtml = function (callback) {
-        let reader = new FileReader();
-
-        reader.onloadend = function(e) {
-            callback(e.target.result, e.target.error);
-        }
-        reader.readAsText(this);
-    };
-
-    const getDataImage = (file, callback) => {
-        let filename = file.name,
-            idxDot = filename.lastIndexOf(".") + 1,
-            extFile = filename.substr(idxDot, filename.length).toLowerCase();
-
-        if (extFile === "jpg" || extFile === "jpeg" || extFile === "png") {
-            file.convertToBase64((base64) => {
-                callback(base64, false);
-            })
-        }
-        else if(extFile === "svg") {
-            file.convertToSvgHtml((svgHtml) => {
-                callback(svgHtml, true);
-            })
-        }
-        else {
-            alert('Неверный формат файла (Поддерживаемые форматы: jpg, jpeg, png, svg)');
-        }
-    }
-
-    const getDataDocs = (file, callback) => {
-        let filename = file.name,
-            idxDot = filename.lastIndexOf(".") + 1,
-            extFile = filename.substr(idxDot, filename.length).toLowerCase();
-
-        if (extFile === "jpg" || extFile === "jpeg" || extFile === "png") {
-            file.convertToBase64((base64) => {
-                callback(base64, false);
-            })
-        }
-        else {
-            alert('Неверный формат файла (Поддерживаемые форматы: jpg, jpeg, png, svg)');
-        }
-    }
-
-    $('body').on('dragenter', '.js-drop-file', function (e) {
-        e.stopPropagation();
-        e.preventDefault();
-    });
-
-    $('body').on('dragover', '.js-drop-file', function (e) {
-        e.stopPropagation();
-        e.preventDefault();
-    });
-
-    $('body').on('drop', '.js-drop-file', function (e) {
-        e.stopPropagation();
-        e.preventDefault();
-
-        let type = $(this).closest('.dropfile').attr('data-type');
-
-        if (type === 'image') {
-            for (let i in e.originalEvent.dataTransfer.files) {
-                if (e.originalEvent.dataTransfer.files.hasOwnProperty(i)) {
-                    let file = e.originalEvent.dataTransfer.files[i];
-                    getDataImage(file, (data, isSvg) => {
-                        appendImage($(this), data, isSvg);
-                    });
-                }
-            }
-        }
-        else if (type === 'document') {
-            appendDocument($(this), e.originalEvent.dataTransfer.files);
-        }
-    })
-
-    $('.js-drop-file').on('change', '.js-change-file', function () {
-        let type = $(this).closest('.dropfile').attr('data-type');
-
-        if (type === 'image') {
-            for (let i in $(this)[0].files) {
-                if ($(this)[0].files.hasOwnProperty(i)) {
-                    let file = $(this)[0].files[i];
-                    if (type === 'image') {
-                        getDataImage(file, (data, isSvg) => {
-                            appendImage($(this), data, isSvg);
-                        });
-                    }
-                    else if (type === 'document') {
-                        getDataDocs(file, (data) => {
-                            appendImage($(this), data, isSvg);
-                        });
-                    }
-                }
-            }
-        }
-        else if (type === 'document') {
-            appendDocument($(this), $(this)[0].files);
-        }
-    });
-
-    function appendImage($input, data, isSvg) {
-        let image = '',
-            $parent = $input.closest('.dropfile');
-
-        if(isSvg) {
-            image = data;
-        }
-        else {
-            image = `<img src="` + data + `">`;
-        }
-
-        let html = `
-                    <div class="dropfile-image__item">
-                        ` + image + `
-                        <div class="dropfile-image__remove js-remove-image">
-                            <svg class="icon btn__icon">
-                                <use href="/local/templates/main/img/sprite.svg#trash"></use>
-                            </svg>
-                        </div>
-                        <input class="js-image" type="hidden" name="` + $parent.attr('data-input-name') + `" value='` + data + `'>
-                    </div>
-                    `;
-
-        if($parent.hasClass('js-upload-cover')) {
-            $parent
-                .find('.dropfile-image')
-                .html(html);
-        }
-        else if($parent.hasClass('js-upload-avatar')) {
-            $parent
-                .find('.dropfile-area')
-                .addClass('dropfile-image')
-                .html(html);
-        }
-        else if($parent.hasClass('js-upload-photos')) {
-            $parent
-                .find('.dropfile-gallery')
-                .show()
-                .append(html);
-        }
-    }
-
-    function appendDocument($input, files) {
-        let $parent = $input.closest('.dropfile'),
-            $inputFile = $('<input/>')
-                .attr('type', "file")
-                .attr('multiple', true)
-                .attr('name', $parent.attr('data-input-name'))
-                .hide();
-
-        $inputFile.get(0).files = files;
-
-        for (let i in files) {
-            if (files.hasOwnProperty(i)) {
-                let filename = files[i].name,
-                    idxDot = filename.lastIndexOf(".") + 1,
-                    extFile = filename.substr(idxDot, filename.length).toLowerCase();
-
-                if (extFile === "doc" || extFile === "docx" || extFile === "xls" ||
-                    extFile === "xlsx" || extFile === "ppt" || extFile === "pptx" ||
-                    extFile === "txt" || extFile === "pdf"
-                ) {
-                } else {
-                    alert('Неверный формат файла (Поддерживаемые форматы: doc, docx, xls, xlsx, ppt, pptx, txt, pdf)');
-
-                    return false;
-                }
-            }
-        }
-
-        let html = ``;
-        for (let i in files) {
-            if (files.hasOwnProperty(i)) {
-                let filename = files[i].name;
-
-                let $parent = $input.closest('.dropfile'),
-                    $inputFile = $('<input/>')
-                        .attr('type', "file")
-                        .attr('multiple', true)
-                        .attr('name', $parent.attr('data-input-name'))
-                        .hide();
-
-                const dataTransfer = new DataTransfer();
-                dataTransfer.items.add(files[i]);
-                $inputFile.get(0).files = dataTransfer.files;
-
-                if ($inputFile.get(0).webkitEntries.length) {
-                    $inputFile.get(0).dataset.file = `${dataTransfer.files[0].name}`;
-                }
-
-                console.log($inputFile.get(0).files)
-
-                $html = $('<div/>')
-                    .addClass('dropfile-documents__item')
-                    .html(`<svg class="icon">
-                                <use href="/local/templates/main/img/sprite.svg#file"></use>
-                            </svg>
-                            <div class="dropfile-documents__name">` + filename + `</div>
-                            <div class="dropfile-documents__remove js-remove-document">
-                                <svg class="icon">
-                                    <use href="/local/templates/main/img/sprite.svg#cross"></use>
-                                </svg>
-                            </div>`)
-                    .append($inputFile)
-
-                $parent.find('.dropfile-documents').append($html);
-            }
-        }
-
-        //$parent.find('.dropfile-documents').append(html);
-    }
-
-
-    $('body').on('click', '.dropfile-image', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-    });
-
-    $('body').on('click', '.js-remove-image', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        let $parent = $(this).closest('.dropfile');
-
-        if($parent.hasClass('js-upload-photos')) {
-            $(this).closest('.dropfile-image__item').remove();
-        }
-        else {
-            let html = ``;
-
-            if($parent.hasClass('js-upload-avatar')) {
-                $parent.find('')
-                html += `<div class="dropfile-descr">
-                        <div class="dropfile-descr__view">
-                            <svg class="icon">
-                                <use href="/local/templates/main/img/sprite.svg#add-image"></use>
-                            </svg>
-                        </div>
-                    </div>`
-            }
-
-            $(this).closest('.dropfile-image').html(html);
-
-            if($parent.hasClass('js-upload-avatar')) {
-                $parent.find('.dropfile-area').removeClass('dropfile-image');
-            }
-        }
-    });
-
-    $('body').on('click', '.js-remove-document', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        console.log('oks')
-        $(this).closest('.dropfile-documents__item').remove();
-    });
 };
 
 // Initialize accordion

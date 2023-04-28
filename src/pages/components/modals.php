@@ -506,7 +506,7 @@
 </div>
 
 <?/* loged review */?>
-<div id="modal-loged-review" class="modal modal-create-review">
+<div id="modal-loged-review" class="modal modal-big modal-create-review">
     <div class="modal__content">
         <div class="modal__content-item">
             <div class="modal__header">
@@ -518,127 +518,216 @@
                     <div class="form__field">
                         <span class="star-rating-wrapper">
                             <span class="star-rating-value">Оцените товар:</span>
-                            <span class="star-rating star-rating--max">
-                            <form class="star-rating__container" action="" method="post">
-                                <input
-                                        id="starrateTestOne"
-                                        class="visually-hidden"
-                                        type="radio"
-                                        name="starrate"
-                                        value="5"
-                                >
-                                <label for="starrateTestOne">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#fill-star"></use>
-                                    </svg>
-                                </label>
+                            <span class="star-rating star-rating-label star-rating--max star-rating--stroke">
+                                <span class="star-rating__container">
+                                    <input
+                                            id="starrateTestOne"
+                                            class="visually-hidden"
+                                            type="radio"
+                                            name="createReviewStarrate"
+                                            value="5"
+                                    >
+                                    <label for="starrateTestOne" data-star-grade="&nbsp;– отлично">
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#fill-star"></use>
+                                        </svg>
+                                    </label>
 
-                                <input
-                                        id="starrateTestTwo"
-                                        class="visually-hidden"
-                                        type="radio"
-                                        name="starrate"
-                                        value="4"
-                                >
-                                <label for="starrateTestTwo">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#fill-star"></use>
-                                    </svg>
-                                </label>
+                                    <input
+                                            id="starrateTestTwo"
+                                            class="visually-hidden"
+                                            type="radio"
+                                            name="createReviewStarrate"
+                                            value="4"
+                                    >
+                                    <label for="starrateTestTwo" data-star-grade="&nbsp;– хорошо">
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#fill-star"></use>
+                                        </svg>
+                                    </label>
 
-                                <input
-                                        id="starrateTestThree"
-                                        class="visually-hidden"
-                                        type="radio"
-                                        name="starrate"
-                                        value="3"
-                                >
-                                <label for="starrateTestThree">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#fill-star"></use>
-                                    </svg>
-                                </label>
+                                    <input
+                                            id="starrateTestThree"
+                                            class="visually-hidden"
+                                            type="radio"
+                                            name="createReviewStarrate"
+                                            value="3"
+                                    >
+                                    <label for="starrateTestThree" data-star-grade="&nbsp;– удовлетворительно">
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#fill-star"></use>
+                                        </svg>
+                                    </label>
 
-                                <input
-                                        id="starrateTestFour"
-                                        class="visually-hidden"
-                                        type="radio"
-                                        name="starrate"
-                                        value="2"
-                                >
-                                <label for="starrateTestFour">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#fill-star"></use>
-                                    </svg>
-                                </label>
+                                    <input
+                                            id="starrateTestFour"
+                                            class="visually-hidden"
+                                            type="radio"
+                                            name="createReviewStarrate"
+                                            value="2"
+                                    >
+                                    <label for="starrateTestFour" data-star-grade="&nbsp;– плохо">
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#fill-star"></use>
+                                        </svg>
+                                    </label>
 
-                                <input
-                                        id="starrateTestFive"
-                                        class="visually-hidden"
-                                        type="radio"
-                                        name="starrate"
-                                        value="1"
-                                >
-                                <label for="starrateTestFive">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#fill-star"></use>
-                                    </svg>
-                                </label>
-                            </form>
-                        </span>
+                                    <input
+                                            id="starrateTestFive"
+                                            class="visually-hidden"
+                                            type="radio"
+                                            name="createReviewStarrate"
+                                            value="1"
+                                    >
+                                    <label for="starrateTestFive" data-star-grade="&nbsp;– ужасно">
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#fill-star"></use>
+                                        </svg>
+                                    </label>
+                                </span>
+                                <span class="star-rating-grade"></span>
+                            </span>
                         </span>
                     </div>
                     <div class="form__field">
+                        <span class="custom-checkbox">
+                            <input id="review-recommend" class="custom-checkbox__input" type="checkbox">
+                            <label for="review-recommend" class="custom-checkbox__label-for">Я рекомендую данный товар к покупке</label>
+                        </span>
+                    </div>
+                    <div class="form__field form__field-g">
+                        <div class="form__field-title">Поделитесь впечатлениями о товаре</div>
                         <input
                                 id=""
-                                class="input-reset form__input form__input-icon"
-                                type="password"
+                                class="input-reset form__input"
+                                type="text"
                                 name=""
-                                placeholder="Пароль"
-                                data-password-target
-                                required
+                                placeholder="Достоинства"
                         >
-                        <label class="form__input-btn">
-                            <svg class="icon icon-default">
-                                <use href="img/sprite.svg#fill-eye"></use>
-                            </svg>
-                            <svg class="icon icon-show">
-                                <use href="img/sprite.svg#fill-eye-slash"></use>
-                            </svg>
-                            <input
-                                    type="checkbox"
-                                    class="visually-hidden"
-                                    data-password-switcher
-                            >
-                        </label>
-                        <div class="form__field-ps">
-                            <a
-                                    class="link link-red"
-                                    href="javascript:;"
-                                    data-fancybox
-                                    data-src="#modal-restore"
-                            >Напомнить пароль</a>
+                        <input
+                                id=""
+                                class="input-reset form__input"
+                                type="text"
+                                name=""
+                                placeholder="Недостатки"
+                        >
+                        <input
+                                id=""
+                                class="input-reset form__input"
+                                type="text"
+                                name=""
+                                placeholder="Комментарий к отзыву"
+                        >
+                    </div>
+
+                    <!--///-->
+                    <div class="form__field">
+                        <div class="dropfile-wrapper">
+                            <div class="dropfile-title">Добавьте фотографии</div> <!--Добавьте фотографии-->
+                            <div class="dropfile js-upload-photos" data-type="image" data-input-name="PHOTOS[]">
+                                <div class="dropfile-gallery">
+                                    <!--<div class="dropfile-image__item">
+                                        <img src="img/test.png">
+                                        <div class="dropfile-image__remove js-remove-image">
+                                            <svg class="icon btn__icon">
+                                                <use href="img/sprite.svg#cross"></use>
+                                            </svg>
+                                        </div>
+                                        <input class="js-image" type="hidden" name="PHOTOS[]" value=""/>
+                                    </div>-->
+                                </div>
+                                <label class="dropfile-field js-drop-file">
+                                    <input class="visually-hidden dropfile-input js-change-file" type="file" accept="image/*" multiple>
+                                    <div class="dropfile-area">
+                                        <div class="dropfile-descr">
+                                            <div class="dropfile-descr__view">
+                                                <svg class="icon icon-sm">
+                                                    <use href="img/sprite.svg#image-plus"></use>
+                                                </svg>
+                                                <div class="dropfile-descr__view-dragover">
+                                                    <svg class="icon icon-sm">
+                                                        <use href="img/sprite.svg#copy"></use>
+                                                    </svg>
+                                                    <span>Перетащите фото сюда</span>
+                                                </div>
+                                            </div>
+                                            <div class="dropfile-descr__text">
+                                                <div class="dropfile-descr__title">
+                                                    <a class="link-red" href="javascript:;">Нажмите на ссылку</a>
+                                                    <span>, чтобы выбрать фотографии или просто перетащите их в эту область</span>
+                                                </div>
+                                                <div class="dropfile-descr__accept">До 10 изображений в формате PNG, JPEG</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--///-->
+
+                    <div class="form__field">
+                        <div class="field-wrapper">
+                            <div class="label">
+                                <span class="label-title">
+                                    <span class="label-text">Ваше имя</span>
+                                </span>
+                                <input
+                                        id=""
+                                        class="input-reset form__input"
+                                        type="text"
+                                        name=""
+                                        placeholder="Ваше имя"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field form__field-g form__field-g--horizontal">
+                        <div class="field-wrapper">
+                            <div class="label">
+                                <span class="label-title">
+                                    <span class="label-text">Город</span>
+                                </span>
+                                <input
+                                        id=""
+                                        class="input-reset form__input"
+                                        type="text"
+                                        name=""
+                                        placeholder="Город"
+                                >
+                            </div>
+                        </div>
+                        <div class="field-wrapper">
+                            <div class="label">
+                                <span class="label-title">
+                                    <span class="label-text">Телефон для связи</span>
+                                </span>
+                                <input
+                                        id=""
+                                        class="input-reset form__input"
+                                        type="text"
+                                        name=""
+                                        placeholder="Телефон для связи"
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="form__field-btn form__field-btn--single">
                     <button class="btn-reset btn btn-primary" type="submit">
-                        <span class="btn__text">Войти</span>
+                        <span class="btn__text">Отправить отзыв</span>
                     </button>
                 </div>
-            </form>
-        </div>
-        <div class="modal__content-item">
-            <div class="modal__soc">
-                <div class="h5">Авторизуйтесь через соцсети</div>
-                <div class="modal__soc-links">
-                    <a class="soc-ya" href="javascript:;">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#soc-logo-ya"></use>
-                        </svg>
-                    </a>
+                <div class="form__field-ps">
+                    Оставляя отзыв, вы соглашаетесь с условиями
+                    <a
+                            class="link link-red"
+                            href="javascript:;"
+                            data-fancybox
+                            data-src="#modal-restore"
+                    >политики конфиденциальности</a>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>

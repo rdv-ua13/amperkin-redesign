@@ -2316,7 +2316,7 @@
     <br>
     <br>
 
-    <h3 class="text-center">Star rating (input)</h3>
+    <h3 class="text-center">Star rating (input) [star-rating = 16px, star-rating--min = 14px, star-rating--max = 28px]</h3>
     <div class="container-ui">
         <div class="col-ui">
             <div class="row-ui ">
@@ -2328,7 +2328,7 @@
                                     id="starrateTestOne"
                                     class="visually-hidden"
                                     type="radio"
-                                    name="starrate"
+                                    name="starrateui1"
                                     value="5"
                             >
                             <label for="starrateTestOne">
@@ -2341,7 +2341,7 @@
                                     id="starrateTestTwo"
                                     class="visually-hidden"
                                     type="radio"
-                                    name="starrate"
+                                    name="starrateui1"
                                     value="4"
                             >
                             <label for="starrateTestTwo">
@@ -2354,7 +2354,7 @@
                                     id="starrateTestThree"
                                     class="visually-hidden"
                                     type="radio"
-                                    name="starrate"
+                                    name="starrateui1"
                                     value="3"
                             >
                             <label for="starrateTestThree">
@@ -2367,7 +2367,7 @@
                                     id="starrateTestFour"
                                     class="visually-hidden"
                                     type="radio"
-                                    name="starrate"
+                                    name="starrateui1"
                                     value="2"
                             >
                             <label for="starrateTestFour">
@@ -2380,7 +2380,7 @@
                                     id="starrateTestFive"
                                     class="visually-hidden"
                                     type="radio"
-                                    name="starrate"
+                                    name="starrateui1"
                                     value="1"
                             >
                             <label for="starrateTestFive">
@@ -2389,6 +2389,90 @@
                                 </svg>
                             </label>
                         </form>
+                    </span>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h3 class="text-center">Star rating (input) with grade caption</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="flex-v-center" style="min-width: 100%;">
+                    <!--start ui content-->
+                    <span class="star-rating star-rating-label star-rating--max star-rating--stroke">
+                        <form class="star-rating__container" action="" method="post">
+                            <input
+                                    id="starrateTestOne"
+                                    class="visually-hidden"
+                                    type="radio"
+                                    name="starrateui2"
+                                    value="5"
+                            >
+                            <label for="starrateTestOne" data-star-grade="&nbsp;– отлично">
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#fill-star"></use>
+                                </svg>
+                            </label>
+
+                            <input
+                                    id="starrateTestTwo"
+                                    class="visually-hidden"
+                                    type="radio"
+                                    name="starrateui2"
+                                    value="4"
+                            >
+                            <label for="starrateTestTwo" data-star-grade="&nbsp;– хорошо">
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#fill-star"></use>
+                                </svg>
+                            </label>
+
+                            <input
+                                    id="starrateTestThree"
+                                    class="visually-hidden"
+                                    type="radio"
+                                    name="starrateui2"
+                                    value="3"
+                            >
+                            <label for="starrateTestThree" data-star-grade="&nbsp;– удовлетворительно">
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#fill-star"></use>
+                                </svg>
+                            </label>
+
+                            <input
+                                    id="starrateTestFour"
+                                    class="visually-hidden"
+                                    type="radio"
+                                    name="starrateui2"
+                                    value="2"
+                            >
+                            <label for="starrateTestFour" data-star-grade="&nbsp;– плохо">
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#fill-star"></use>
+                                </svg>
+                            </label>
+
+                            <input
+                                    id="starrateTestFive"
+                                    class="visually-hidden"
+                                    type="radio"
+                                    name="starrateui2"
+                                    value="1"
+                            >
+                            <label for="starrateTestFive" data-star-grade="&nbsp;– ужасно">
+                                <svg class="icon">
+                                    <use href="img/sprite.svg#fill-star"></use>
+                                </svg>
+                            </label>
+                        </form>
+                        <span class="star-rating-grade"></span>
                     </span>
                     <!--end ui content-->
                 </div>
