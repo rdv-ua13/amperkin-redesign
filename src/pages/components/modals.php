@@ -377,7 +377,6 @@
     </div>
 </div>
 
-<?/* // todo (@Masterkov): update 23/04/2023 */?>
 <?/* city */?>
 <div id="modal-city" class="modal modal-big modal-city">
     <div class="modal__content">
@@ -619,8 +618,6 @@
                                 placeholder="Комментарий к отзыву"
                         >
                     </div>
-
-                    <!--///-->
                     <div class="form__field">
                         <div class="dropfile-wrapper">
                             <div class="dropfile-title">Добавьте фотографии</div> <!--Добавьте фотографии-->
@@ -641,9 +638,12 @@
                                             </div>
                                         </div>
                                         <div class="dropfile-area__text">
-                                            <div class="dropfile-area__title">
+                                            <div class="dropfile-area__title dropfile-area__title--desktop">
                                                 <a class="link-red" href="javascript:;">Нажмите на ссылку</a>
                                                 <span>, чтобы выбрать фотографии или просто перетащите их в эту область</span>
+                                            </div>
+                                            <div class="dropfile-area__title dropfile-area__title--mobile">
+                                                <a class="link-red" href="javascript:;">Выбрать файлы</a>
                                             </div>
                                             <div class="dropfile-area__accept">До 10 изображений в формате PNG, JPEG</div>
                                         </div>
@@ -652,8 +652,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--///-->
-
                     <div class="form__field">
                         <div class="field-wrapper">
                             <div class="label">
@@ -702,7 +700,8 @@
                     </div>
                 </div>
                 <div class="form__field-btn form__field-btn--single">
-                    <button class="btn-reset btn btn-primary" type="submit">
+                    <?/* // todo (@Masterkov): временно data-fancybox. Поменять на type="submit" */?>
+                    <button class="btn-reset btn btn-primary" type="button" data-fancybox data-src="#modal-review-success">
                         <span class="btn__text">Отправить отзыв</span>
                     </button>
                 </div>
@@ -716,6 +715,22 @@
                     >политики конфиденциальности</a>
                 </div>
             </form>
+        </div>
+    </div>
+</div>
+
+<div id="modal-review-success" class="modal modal-big">
+    <div class="modal__content">
+        <div class="modal__content-item">
+            <div class="modal__header modal__header-icon">
+                <div class="modal__title-icon modal__title-column">
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-checkbox-rec"></use>
+                    </svg>
+                    <div class="h4 text-center">Ваш отзыв успешно отправлен на модерацию</div>
+                </div>
+                <div class="modal__subtitle text-center">После проверки ваш отзыв будет опубликован на странице товара</div>
+            </div>
         </div>
     </div>
 </div>

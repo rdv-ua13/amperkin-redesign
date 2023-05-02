@@ -427,6 +427,12 @@
 	}
 }
 
+.burger {
+	.icon {
+		pointer-events: none;
+	}
+}
+
 .catalog {
 	z-index: 2000;
 	position: fixed;
@@ -907,6 +913,12 @@
 		}
 	}
 
+	.catalog {
+		&-header {
+			display: none;
+		}
+	}
+
 	.mobile-menu {
 		display: none;
 	}
@@ -1200,6 +1212,14 @@
 			& .input-search {
 				padding: 12px 50px 12px 78px;
 			}
+		}
+	}
+
+	.catalog {
+		background-color: red;
+
+		&-header {
+
 		}
 	}
 

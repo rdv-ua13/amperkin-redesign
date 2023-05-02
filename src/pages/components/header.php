@@ -630,8 +630,87 @@
         </div>
     </header>
 
+    <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-close" data-menu-close>
+            <svg class="icon">
+                <use href="img/sprite.svg#cross"></use>
+            </svg>
+        </div>
+
+        <div class="mobile-menu__item mobile-menu-catalog">
+            <button
+                    class="btn-reset btn btn-primary catalog-spoiler"
+                    aria-label="Открыть меню"
+                    aria-expanded="false"
+                    data-catalog-spoiler
+                    data-overlay-transparent
+            >
+                <svg class="icon btn__icon catalog-spoiler__icon">
+                    <use href="img/sprite.svg#burger"></use>
+                </svg>
+                <svg class="icon btn__icon catalog-spoiler__icon-active">
+                    <use href="img/sprite.svg#cross"></use>
+                </svg>
+                <span class="btn__text">Каталог</span>
+            </button>
+        </div>
+
+        <ul class="list-reset mobile-menu-list">
+            <li>
+				<?/* // todo (@Masterkov): update 23/04/2023 */?>
+                <button
+                        class="btn-reset mobile-menu__item mobile-menu__link mobile-menu-city"
+                        type="button"
+                        data-fancybox
+                        data-src="#modal-city"
+                >
+                    <svg class="icon icon-sm">
+                        <use href="img/sprite.svg#pin"></use>
+                    </svg>
+                    <span class="mobile-menu-city__text">
+                            <span>Москва</span>
+                            <svg class="icon">
+                                <use href="img/sprite.svg#chevron-down"></use>
+                            </svg>
+                        </span>
+                </button>
+            </li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">доставка</a></li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">оплата</a></li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Гарантия</a></li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">программа лояльности</a></li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Акции</a></li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Распродажа</a></li>
+            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Контакты</a></li>
+        </ul>
+
+        <div class="mobile-menu-footer">
+            <div class="mobile-menu__item mobile-menu-login">
+                <button class="btn-reset btn btn-b-light" data-fancybox data-src="#modal-auth">
+                    <span class="btn__text">Войти</span>
+                </button>
+                <button class="btn-reset btn btn-b-dark" data-fancybox data-src="#modal-reg">
+                    <span class="btn__text">Регистрация</span>
+                </button>
+            </div>
+
+            <div class="mobile-menu__item mobile-menu-contacts">
+                <a class="mobile-menu-contacts__number" href="tel:+74951183770">+7 (495) 118-37-70</a>
+                <a class="link-dashed link-gray mobile-menu-contacts__call" href="javascript:;">заказать звонок</a>
+            </div>
+        </div>
+    </div>
+
     <div class="catalog" data-catalog>
         <div class="container catalog-container">
+            <div class="catalog-header">
+                <div class="catalog-title">Каталог</div>
+                <div class="catalog-close">
+                    <svg class="icon">
+                        <use href="img/sprite.svg#cross"></use>
+                    </svg>
+                </div>
+            </div>
             <div class="catalog-root">
                 <div class="catalog-root-item">
                     <a class="btn-reset btn catalog-root-link selected" href="javascript:;" data-submenu-section="0">
@@ -904,68 +983,6 @@
         </div>
     </div>
 
-    <div class="mobile-menu" data-menu>
-        <div class="mobile-menu-close" data-menu-close>
-            <svg class="icon">
-                <use href="img/sprite.svg#cross"></use>
-            </svg>
-        </div>
-
-        <div class="mobile-menu__item mobile-menu-catalog">
-            <a class="btn-reset btn btn-primary catalog-spoiler" href="javascript:;">
-                <svg class="icon btn__icon catalog-spoiler__icon">
-                    <use href="img/sprite.svg#burger"></use>
-                </svg>
-                <span class="btn__text">Каталог</span>
-            </a>
-        </div>
-
-        <ul class="list-reset mobile-menu-list">
-            <li>
-				<?/* // todo (@Masterkov): update 23/04/2023 */?>
-                <button
-                        class="btn-reset mobile-menu__item mobile-menu__link mobile-menu-city"
-                        type="button"
-                        data-fancybox
-                        data-src="#modal-city"
-                >
-                    <svg class="icon icon-sm">
-                        <use href="img/sprite.svg#pin"></use>
-                    </svg>
-                    <span class="mobile-menu-city__text">
-                            <span>Москва</span>
-                            <svg class="icon">
-                                <use href="img/sprite.svg#chevron-down"></use>
-                            </svg>
-                        </span>
-                </button>
-            </li>
-            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">доставка</a></li>
-            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">оплата</a></li>
-            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Гарантия</a></li>
-            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">программа лояльности</a></li>
-            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Акции</a></li>
-            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Распродажа</a></li>
-            <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Контакты</a></li>
-        </ul>
-
-        <div class="mobile-menu-footer">
-            <div class="mobile-menu__item mobile-menu-login">
-                <button class="btn-reset btn btn-b-light" data-fancybox data-src="#modal-auth">
-                    <span class="btn__text">Войти</span>
-                </button>
-                <button class="btn-reset btn btn-b-dark" data-fancybox data-src="#modal-reg">
-                    <span class="btn__text">Регистрация</span>
-                </button>
-            </div>
-
-            <div class="mobile-menu__item mobile-menu-contacts">
-                <a class="mobile-menu-contacts__number" href="tel:+74951183770">+7 (495) 118-37-70</a>
-                <a class="link-dashed link-gray mobile-menu-contacts__call" href="javascript:;">заказать звонок</a>
-            </div>
-        </div>
-    </div>
-
     <?/* // todo (@Masterkov): добавилась разметка */?>
     <div class="mobile-menu-panel">
         <div class="mobile-menu-panel__cart product-card__cart cart-buy" data-fixed-cart-coord>
@@ -994,11 +1011,11 @@
             <ul class="list-reset mobile-menu-panel__list">
                 <li>
                     <button class="btn-reset header-profile__btn mobile-menu-panel__btn" data-catalog-spoiler>
-                    <span class="header-profile__btn-view mobile-menu-panel__btn-view">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#catalog"></use>
-                        </svg>
-                    </span>
+                        <span class="header-profile__btn-view mobile-menu-panel__btn-view">
+                            <svg class="icon">
+                                <use href="img/sprite.svg#catalog"></use>
+                            </svg>
+                        </span>
                         <span class="header-profile__btn-text">Каталог</span>
                     </button>
                 </li>

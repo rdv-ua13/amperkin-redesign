@@ -13,7 +13,7 @@ application.prototype.init = function () {
     this.initOverlay();
     this.initMenu();
     this.initCatalogSubmenu();
-    this.initFancyBehaviour();
+    /*this.initFancyBehaviour();*/
     this.initClientTypeBehaviour();
     this.initTabs();
     this.initTabsOnscroll();
@@ -139,9 +139,10 @@ application.prototype.initBurger = function () {
     }
 
     $(document).on('click', function (e) {
+        console.log(e.target);
+
         if ($('.overlay').is(e.target)) {
             setMenuClose();
-
         }
     });
 };
@@ -178,7 +179,7 @@ application.prototype.initOverlay = function () {
 };
 
 // Initialize menu call
-application.prototype.initMenu = function () {
+/*application.prototype.initMenu = function () {
     const catalogSpoiler = document?.querySelector('[data-catalog-spoiler]');
     const catalog = document?.querySelector('[data-catalog]');
     const catalogClose = document?.querySelector('[data-catalog-close]');
@@ -203,19 +204,41 @@ application.prototype.initMenu = function () {
 
     setOverlay();
 
-    $(window).on('resize', setTargetAction()); // not working todo
+    $(window).on('resize', /!*setTargetAction()*!/function () {
+        setCatalogClose();
+        $('.overlay-transparent').remove();
+    }); // not working todo
 
     $(document).on('keyup', function (e) {
         if (e.key == 'Escape') {
-            setTargetAction()
+            /!*setTargetAction();*!/
+            setCatalogClose();
+            $('.overlay-transparent').remove();
         }
     });
 
     function setCatalogClose() {
-        catalogSpoiler?.setAttribute('aria-expanded', 'false');
+        /!*catalogSpoiler?.setAttribute('aria-expanded', 'false');
         catalogSpoiler?.setAttribute('aria-label', 'Открыть меню');
         catalogSpoiler?.classList.remove('active');
-        catalog?.classList.remove('active');
+        catalog?.classList.remove('active');*!/
+
+        if (catalogSpoiler.hasClass('active')) {
+            catalogSpoiler.attr('aria-expanded', 'false');
+            catalogSpoiler.attr('aria-label', 'Открыть меню');
+            catalogSpoiler.removeClass('active');
+            catalog.removeClass('active');
+        } else {
+            /!*catalogSpoiler?.setAttribute('aria-expanded', 'false');
+            catalogSpoiler?.setAttribute('aria-label', 'Открыть меню');
+            catalogSpoiler?.classList.remove('active');
+            catalog?.classList.remove('active');*!/
+
+            catalogSpoiler.attr('aria-expanded', 'true');
+            catalogSpoiler.attr('aria-label', 'Закрыть меню');
+            catalogSpoiler.addClass('active');
+            catalog.addClass('active');
+        }
     }
 
     function setOverlay() {
@@ -226,15 +249,79 @@ application.prototype.initMenu = function () {
         });
 
         $(document).on('click', function (e) {
+            console.log(e.target);
+
             if ($('.catalog-spoiler.active').is(e.target) || $('.overlay-transparent').is(e.target)) {
-                setTargetAction();
+                /!*setTargetAction();*!/
+                setCatalogClose();
+                $('.overlay-transparent').remove();
             }
         });
     }
 
-    function setTargetAction() {
+    /!*function setTargetAction() {
         $('.overlay-transparent').remove();
         setCatalogClose();
+    }*!/
+};*/
+application.prototype.initMenu = function () {
+    const catalogSpoiler = $('[data-catalog-spoiler]');
+    const catalog = $('[data-catalog]');
+    const catalogClose = $('[data-catalog-close]');
+    let overlayTrigger = $('[data-overlay-transparent]');
+
+    catalogSpoiler.on('click', () => {
+        setCatalogSwitch();
+    });
+
+    catalogClose.on('click', () => {
+        setCatalogClose();
+    });
+
+    setOverlay();
+
+    $(window).on('resize', function () {
+        setCatalogClose();
+    });
+
+    $(document).on('keyup', function (e) {
+        if (e.key == 'Escape') {
+            setCatalogClose();
+        }
+    });
+
+    function setCatalogSwitch() {
+        if (catalog.hasClass('active') && catalogSpoiler.hasClass('active')) {
+            catalogSpoiler.attr('aria-expanded', 'false');
+            catalogSpoiler.attr('aria-label', 'Открыть меню');
+            catalogSpoiler.removeClass('active');
+            catalog.removeClass('active');
+        } else {
+            catalogSpoiler.attr('aria-expanded', 'true');
+            catalogSpoiler.attr('aria-label', 'Закрыть меню');
+            catalogSpoiler.addClass('active');
+            catalog.addClass('active');
+        }
+    }
+
+    function setCatalogClose() {
+        catalogSpoiler.attr('aria-expanded', 'false');
+        catalogSpoiler.attr('aria-label', 'Открыть меню');
+        catalogSpoiler.removeClass('active');
+        catalog.removeClass('active');
+        $('.overlay-transparent').remove();
+    }
+
+    function setOverlay() {
+        overlayTrigger.on('click', function () {
+            $("<div class='overlay-transparent'></div>").insertAfter($(this));
+        });
+
+        $(document).on('click', function (e) {
+            if ($('.overlay-transparent').is(e.target)) {
+                setCatalogClose();
+            }
+        });
     }
 };
 
@@ -243,7 +330,7 @@ application.prototype.initCatalogSubmenu = function () {
     const catalogSpoiler = $('[data-catalog-spoiler]');
     const rootItem = $('[data-submenu-section]');
 
-    catalogSpoiler.on('click', function () {
+    catalogSpoiler.on('click', function (e) {
         const currentRootItem = $(".catalog-root-link[data-submenu-section='0']");
         const currentSubmenuItem = $(".catalog-submenu-section[data-root-pointer='0']");
 
