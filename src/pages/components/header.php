@@ -53,7 +53,6 @@
                     </ul>
                 </div>
                 <div class="header-top-city">
-					<?/* // todo (@Masterkov): update 23/04/2023 */?>
                     <button
                             class="btn-reset header-top__link header-top-city__spoiler"
                             type="button"
@@ -130,7 +129,6 @@
                 </div>
 
                 <div class="header-search">
-					<?/* // todo (@Masterkov): update 23/04/2023 */?>
                     <form id="" class="form" method="" action="javascript:;">
                         <div class="input-search-wrapper">
                             <input
@@ -657,7 +655,6 @@
 
         <ul class="list-reset mobile-menu-list">
             <li>
-				<?/* // todo (@Masterkov): update 23/04/2023 */?>
                 <button
                         class="btn-reset mobile-menu__item mobile-menu__link mobile-menu-city"
                         type="button"
@@ -710,7 +707,7 @@
                             <use href="img/sprite.svg#arrow-left"></use>
                         </svg>
                     </div>
-                    <span>Каталог</span> <!-- // todo (@Masterkov): data-catalog-title-default data-catalog-title="Каталог" -->
+                    <span data-catalog-title="Каталог">Каталог</span>
                 </div>
                 <div class="catalog-close" data-catalog-close>
                     <svg class="icon icon-md">
@@ -725,6 +722,11 @@
                             <use href="img/sprite.svg#catalog-wiring-products"></use>
                         </svg>
                         <span class="btn__text">Розетки и выключатели</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -733,6 +735,11 @@
                             <use href="img/sprite.svg#catalog-wiring"></use>
                         </svg>
                         <span class="btn__text">Электроустановочные изделия</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -741,6 +748,11 @@
                             <use href="img/sprite.svg#catalog-low-voltage"></use>
                         </svg>
                         <span class="btn__text">Низковольтное оборудование</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -749,6 +761,11 @@
                             <use href="img/sprite.svg#catalog-shields-cabinets"></use>
                         </svg>
                         <span class="btn__text">Щиты, шкафы, боксы</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -757,6 +774,11 @@
                             <use href="img/sprite.svg#catalog-cable"></use>
                         </svg>
                         <span class="btn__text">Кабель</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -765,6 +787,11 @@
                             <use href="img/sprite.svg#catalog-lighting"></use>
                         </svg>
                         <span class="btn__text">Светотехника</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -773,6 +800,11 @@
                             <use href="img/sprite.svg#catalog-connectors"></use>
                         </svg>
                         <span class="btn__text">Вилки, штекеры, разъемы, шнуры</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -781,6 +813,11 @@
                             <use href="img/sprite.svg#catalog-tools"></use>
                         </svg>
                         <span class="btn__text">Инструменты и монтажные материалы</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -789,6 +826,11 @@
                             <use href="img/sprite.svg#catalog-ventilation"></use>
                         </svg>
                         <span class="btn__text">Системы вентиляции и обогрева</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -797,6 +839,11 @@
                             <use href="img/sprite.svg#catalog-electric-motors"></use>
                         </svg>
                         <span class="btn__text">Автоматизация и электродвигатели</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -805,6 +852,11 @@
                             <use href="img/sprite.svg#catalog-grounding"></use>
                         </svg>
                         <span class="btn__text">Молниезащита и заземление</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -813,6 +865,11 @@
                             <use href="img/sprite.svg#catalog-power-devices"></use>
                         </svg>
                         <span class="btn__text">Элементы и устройства питания</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -821,6 +878,11 @@
                             <use href="img/sprite.svg#catalog-miscellaneous"></use>
                         </svg>
                         <span class="btn__text">Разные товары для монтажников</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
 
@@ -830,6 +892,11 @@
                             <use href="img/sprite.svg#catalog-grounding"></use>
                         </svg>
                         <span class="btn__text">Молниезащита и заземление</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -838,6 +905,11 @@
                             <use href="img/sprite.svg#catalog-power-devices"></use>
                         </svg>
                         <span class="btn__text">Элементы и устройства питания</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -846,6 +918,11 @@
                             <use href="img/sprite.svg#catalog-miscellaneous"></use>
                         </svg>
                         <span class="btn__text">Разные товары для монтажников</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -854,6 +931,11 @@
                             <use href="img/sprite.svg#catalog-grounding"></use>
                         </svg>
                         <span class="btn__text">Молниезащита и заземление</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -862,6 +944,11 @@
                             <use href="img/sprite.svg#catalog-power-devices"></use>
                         </svg>
                         <span class="btn__text">Элементы и устройства питания</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -870,6 +957,11 @@
                             <use href="img/sprite.svg#catalog-miscellaneous"></use>
                         </svg>
                         <span class="btn__text">Разные товары для монтажников</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -878,6 +970,11 @@
                             <use href="img/sprite.svg#catalog-grounding"></use>
                         </svg>
                         <span class="btn__text">Молниезащита и заземление</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -886,6 +983,11 @@
                             <use href="img/sprite.svg#catalog-power-devices"></use>
                         </svg>
                         <span class="btn__text">Элементы и устройства питания</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
                 <div class="catalog-root-item">
@@ -894,6 +996,11 @@
                             <use href="img/sprite.svg#catalog-miscellaneous"></use>
                         </svg>
                         <span class="btn__text">Разные товары для монтажников</span>
+                        <span class="catalog-root-item-pointer">
+                            <svg class="icon btn__icon">
+                                <use href="img/sprite.svg#chevron-right"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
             </div>
@@ -902,44 +1009,84 @@
                     <div class="h3 catalog-submenu-section__title">Розетки и выключатели</div>
                     <div class="catalog-submenu-links">
                         <ul class="list-reset catalog-submenu-links__list">
-                            <li><a class="link-dark" href="javascript:;">Все товары раздела</a></li>
-                            <li><a class="link-dark" href="javascript:;">Розетки</a></li>
-                            <li><a class="link-dark" href="javascript:;">Выключатели</a></li>
-                            <li><a class="link-dark" href="javascript:;">Рамки</a></li>
-                            <li><a class="link-dark" href="javascript:;">Диммеры</a></li>
-                            <li><a class="link-dark" href="javascript:;">Датчики движения</a></li>
-                            <li><a class="link-dark" href="javascript:;">Датчики освещенности</a></li>
-                            <li><a class="link-dark" href="javascript:;">Выключатели с ДУ</a></li>
-                            <li><a class="link-dark" href="javascript:;">Блоки розеток и выключателей</a></li>
-                            <li><a class="link-dark" href="javascript:;">Антенные блоки</a></li>
-                            <li><a class="link-dark" href="javascript:;">Компьютерные розетки</a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Все товары раздела</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Розетки</span></a></li>
+                            <li>
+                                <a class="link-dark" href="javascript:;">
+                                    <span class="catalog-submenu-link-text">Выключатели</span>
+                                    <span class="catalog-submenu-links-pointer">
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#chevron-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-dark" href="javascript:;">
+                                    <span class="catalog-submenu-link-text">Рамки</span>
+                                    <span class="catalog-submenu-links-pointer">
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#chevron-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-dark" href="javascript:;">
+                                    <span class="catalog-submenu-link-text">Диммеры</span>
+                                    <span class="catalog-submenu-links-pointer">
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#chevron-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Датчики движения</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Датчики освещенности</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Выключатели с ДУ</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Блоки розеток и выключателей</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Антенные блоки</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Компьютерные розетки</span></a></li>
                         </ul>
                         <ul class="list-reset catalog-submenu-links__list">
-                            <li><a class="link-dark" href="javascript:;">Системы наблюдения и оповещения</a></li>
-                            <li><a class="link-dark" href="javascript:;">Дверные звонки и домофоны</a></li>
-                            <li><a class="link-dark" href="javascript:;">Системы видеонаблюдения</a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Системы наблюдения и оповещения</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Дверные звонки и домофоны</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Системы видеонаблюдения</span></a></li>
                         </ul>
                         <ul class="list-reset catalog-submenu-links__list">
-                            <li><a class="link-dark" href="javascript:;">Системы прокладки кабеля</a></li>
-                            <li><a class="link-dark" href="javascript:;">Кабель-каналы и аксессуары</a></li>
-                            <li><a class="link-dark" href="javascript:;">Кабельные лотки и аксессуары</a></li>
-                            <li><a class="link-dark" href="javascript:;">Трубы для кабеля и комплектующие</a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Системы прокладки кабеля</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Кабель-каналы и аксессуары</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Кабельные лотки и аксессуары</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Трубы для кабеля и комплектующие</span></a></li>
                         </ul>
                         <ul class="list-reset catalog-submenu-links__list">
-                            <li><a class="link-dark" href="javascript:;">Связь и безопасность</a></li>
-                            <li><a class="link-dark" href="javascript:;">Звонки</a></li>
-                            <li><a class="link-dark" href="javascript:;">Домофоны</a></li>
-                            <li><a class="link-dark" href="javascript:;">Датчики движения</a></li>
-                            <li><a class="link-dark" href="javascript:;">Датчики освещенности</a></li>
-                            <li><a class="link-dark" href="javascript:;">Терморегуляторы</a></li>
-                            <li><a class="link-dark" href="javascript:;">Видеонаблюдени</a></li>
-                            <li><a class="link-dark" href="javascript:;">Пожарно-охранная сигнализация, системы оповещения</a></li>
-                            <li><a class="link-dark" href="javascript:;">Устройства управления жалюзи, звуком, сигнализацией</a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Связь и безопасность</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Звонки</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Домофоны</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Датчики движения</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Датчики освещенности</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Терморегуляторы</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Видеонаблюдени</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Пожарно-охранная сигнализация, системы оповещения</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Устройства управления жалюзи, звуком, сигнализацией</span></a></li>
                         </ul>
                     </div>
                     <div class="catalog-submenu-banners">
                         <div class="swiper">
                             <div class="swiper-wrapper">
+                                <div class="catalog-submenu-banners__item swiper-slide">
+                                    <picture>
+                                        <source srcset="img/.webp" type="image/webp">
+                                        <img
+                                                loading="lazy"
+                                                src="img/.png"
+                                                class="image"
+                                                width=""
+                                                height=""
+                                                alt="Изображение блока"
+                                        >
+                                    </picture>
+                                </div>
                                 <div class="catalog-submenu-banners__item swiper-slide">
                                     <picture>
                                         <source srcset="img/.webp" type="image/webp">
@@ -1097,7 +1244,6 @@
         </div>
     </div>
 
-    <?/* // todo (@Masterkov): добавилась разметка */?>
     <div class="mobile-menu-panel">
         <div class="mobile-menu-panel__cart product-card__cart cart-buy" data-fixed-cart-coord>
             <div class="product-card__cart-quantity cart-quantity disabled">

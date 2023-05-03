@@ -274,7 +274,6 @@
                                     </div>
                                 </div>
 
-								<?/* // todo (@Masterkov): добавилась разметка */?>
                                 <div class="product-card__cart cart-buy" data-cart-coord>
                                     <div class="product-card__cart-quantity cart-quantity disabled">
                                         <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
@@ -366,9 +365,7 @@
                             </div>
                         </div>
                     </div>
-					<?/* // todo (@Masterkov): проверить и убрать/добавить классы начиная с "tabs-content" */?>
                     <div class="tabs-content" data-tab-content="tab-1">
-                        <?/* // todo (@Masterkov): add classes inside block */?>
                         <div class="tabs-content__panel mobile-only mobile-first-elem active" data-id="0">
                             <div class="product-card-mobile-section">
                                 <div class="product-card-mobile-section-container">
@@ -443,7 +440,6 @@
                         <div class="tabs-content__panel desktop-first-elem" data-id="1">
                             <div class="product-card-mobile-section">
                                 <div class="product-card-mobile-section-container">
-									<?/* todo @Masterkov: - add "product-card-descr-desktop" for "product-card-descr" */?>
                                     <div class="product-card-descr product-card-descr-desktop">
                                         <div class="product-card-descr__view">
                                             <div class="product-card-descr-sale-label">
@@ -897,7 +893,6 @@
                                 </div>
                             </div>
                         </div>
-                        <? // todo (@Masterkov):  tab-отзывы ?>
                         <div class="tabs-content__panel" data-id="3">
 							<?/* // empty reviews
                             <div class="product-card-mobile-section">
@@ -1357,7 +1352,6 @@
                                 </div>
                             </div>
                         </div>
-						<? // todo (@Masterkov):  tab-Вопросы ?>
                         <div class="tabs-content__panel" data-id="4">
                             <div class="product-card-asks">
                                 <div class="product-card-asks__header">
@@ -1554,7 +1548,6 @@
                                 </div>
                             </div>
                         </div>
-						<? // todo (@Masterkov):  tab-документация ?>
                         <div class="tabs-content__panel" data-id="5">
                             <div class="product-card-mobile-section">
                                 <div class="product-card-mobile-section-container">
@@ -7720,7 +7713,6 @@
     </div>
 </div>
 
-<? // todo (@Masterkov): data-tab правки номеров с учётом появляющегося таба в мобильной версии ?>
 <div class="top-fixed-toolbar" data-fixed-toolbar>
     <div class="container">
         <div class="tabs">
