@@ -440,7 +440,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tabs-content__panel <?/*desktop-first-elem*/?>" data-id="1">
+                        <div class="tabs-content__panel desktop-first-elem" data-id="1">
                             <div class="product-card-mobile-section">
                                 <div class="product-card-mobile-section-container">
 									<?/* todo @Masterkov: - add "product-card-descr-desktop" for "product-card-descr" */?>
@@ -898,7 +898,7 @@
                             </div>
                         </div>
                         <? // todo (@Masterkov):  tab-отзывы ?>
-                        <div class="tabs-content__panel desktop-first-elem" data-id="3">
+                        <div class="tabs-content__panel" data-id="3">
 							<?/* // empty reviews
                             <div class="product-card-mobile-section">
                                 <div class="product-card-mobile-section-container">

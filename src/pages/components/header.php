@@ -704,9 +704,16 @@
     <div class="catalog" data-catalog>
         <div class="container catalog-container">
             <div class="catalog-header">
-                <div class="catalog-title">Каталог</div>
-                <div class="catalog-close">
-                    <svg class="icon">
+                <div class="catalog-title h4">
+                    <div class="catalog-title-back">
+                        <svg class="icon icon-md">
+                            <use href="img/sprite.svg#arrow-left"></use>
+                        </svg>
+                    </div>
+                    <span>Каталог</span> <!-- // todo (@Masterkov): data-catalog-title-default data-catalog-title="Каталог" -->
+                </div>
+                <div class="catalog-close" data-catalog-close>
+                    <svg class="icon icon-md">
                         <use href="img/sprite.svg#cross"></use>
                     </svg>
                 </div>
@@ -816,11 +823,84 @@
                         <span class="btn__text">Разные товары для монтажников</span>
                     </a>
                 </div>
+
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-grounding"></use>
+                        </svg>
+                        <span class="btn__text">Молниезащита и заземление</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-power-devices"></use>
+                        </svg>
+                        <span class="btn__text">Элементы и устройства питания</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-miscellaneous"></use>
+                        </svg>
+                        <span class="btn__text">Разные товары для монтажников</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-grounding"></use>
+                        </svg>
+                        <span class="btn__text">Молниезащита и заземление</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-power-devices"></use>
+                        </svg>
+                        <span class="btn__text">Элементы и устройства питания</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-miscellaneous"></use>
+                        </svg>
+                        <span class="btn__text">Разные товары для монтажников</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-grounding"></use>
+                        </svg>
+                        <span class="btn__text">Молниезащита и заземление</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-power-devices"></use>
+                        </svg>
+                        <span class="btn__text">Элементы и устройства питания</span>
+                    </a>
+                </div>
+                <div class="catalog-root-item">
+                    <a class="btn-reset btn" href="javascript:;">
+                        <svg class="icon btn__icon">
+                            <use href="img/sprite.svg#catalog-miscellaneous"></use>
+                        </svg>
+                        <span class="btn__text">Разные товары для монтажников</span>
+                    </a>
+                </div>
             </div>
             <div class="catalog-submenu">
                 <div class="catalog-submenu-section active" data-root-pointer="0">
-                    <div class="gap-lg h3">Розетки и выключатели</div>
-                    <div class="gap-lg catalog-submenu-links">
+                    <div class="h3 catalog-submenu-section__title">Розетки и выключатели</div>
+                    <div class="catalog-submenu-links">
                         <ul class="list-reset catalog-submenu-links__list">
                             <li><a class="link-dark" href="javascript:;">Все товары раздела</a></li>
                             <li><a class="link-dark" href="javascript:;">Розетки</a></li>
@@ -858,50 +938,67 @@
                         </ul>
                     </div>
                     <div class="catalog-submenu-banners">
-                        <div class="catalog-submenu-banners__item">
-                            <picture>
-                                <source srcset="<?/*img/.webp*/?>" type="image/webp">
-                                <img
-                                    loading="lazy"
-                                    src="<?/*img/.png*/?>"
-                                    class="image"
-                                    width=""
-                                    height=""
-                                    alt="Изображение блока"
-                                >
-                            </picture>
-                        </div>
-                        <div class="catalog-submenu-banners__item">
-                            <picture>
-                                <source srcset="<?/*img/.webp*/?>" type="image/webp">
-                                <img
-                                        loading="lazy"
-                                        src="<?/*img/.png*/?>"
-                                        class="image"
-                                        width=""
-                                        height=""
-                                        alt="Изображение блока"
-                                >
-                            </picture>
-                        </div>
-                        <div class="catalog-submenu-banners__item">
-                            <picture>
-                                <source srcset="<?/*img/.webp*/?>" type="image/webp">
-                                <img
-                                        loading="lazy"
-                                        src="<?/*img/.png*/?>"
-                                        class="image"
-                                        width=""
-                                        height=""
-                                        alt="Изображение блока"
-                                >
-                            </picture>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="catalog-submenu-banners__item swiper-slide">
+                                    <picture>
+                                        <source srcset="img/.webp" type="image/webp">
+                                        <img
+                                                loading="lazy"
+                                                src="img/.png"
+                                                class="image"
+                                                width=""
+                                                height=""
+                                                alt="Изображение блока"
+                                        >
+                                    </picture>
+                                </div>
+                                <div class="catalog-submenu-banners__item swiper-slide">
+                                    <picture>
+                                        <source srcset="img/.webp" type="image/webp">
+                                        <img
+                                                loading="lazy"
+                                                src="img/.png"
+                                                class="image"
+                                                width=""
+                                                height=""
+                                                alt="Изображение блока"
+                                        >
+                                    </picture>
+                                </div>
+                                <div class="catalog-submenu-banners__item swiper-slide">
+                                    <picture>
+                                        <source srcset="img/.webp" type="image/webp">
+                                        <img
+                                                loading="lazy"
+                                                src="img/.png"
+                                                class="image"
+                                                width=""
+                                                height=""
+                                                alt="Изображение блока"
+                                        >
+                                    </picture>
+                                </div>
+                                <div class="catalog-submenu-banners__item swiper-slide">
+                                    <picture>
+                                        <source srcset="img/.webp" type="image/webp">
+                                        <img
+                                                loading="lazy"
+                                                src="img/.png"
+                                                class="image"
+                                                width=""
+                                                height=""
+                                                alt="Изображение блока"
+                                        >
+                                    </picture>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="catalog-submenu-section" data-root-pointer="1">
-                    <div class="gap-lg h3">Розетки и выключатели 2</div>
-                    <div class="gap-lg catalog-submenu-links">
+                    <div class="h3 catalog-submenu-section__title">Розетки и выключатели 2</div>
+                    <div class="catalog-submenu-links">
                         <ul class="list-reset catalog-submenu-links__list">
                             <li><a class="link-dark" href="javascript:;">Все товары раздела</a></li>
                             <li><a class="link-dark" href="javascript:;">Розетки</a></li>
@@ -938,44 +1035,61 @@
                         </ul>
                     </div>
                     <div class="catalog-submenu-banners">
-                        <div class="catalog-submenu-banners__item">
-                            <picture>
-                                <source srcset="img/.webp" type="image/webp">
-                                <img
-                                    loading="lazy"
-                                    src="img/.png"
-                                    class="image"
-                                    width=""
-                                    height=""
-                                    alt="Изображение блока"
-                                >
-                            </picture>
-                        </div>
-                        <div class="catalog-submenu-banners__item">
-                            <picture>
-                                <source srcset="img/.webp" type="image/webp">
-                                <img
-                                    loading="lazy"
-                                    src="img/.png"
-                                    class="image"
-                                    width=""
-                                    height=""
-                                    alt="Изображение блока"
-                                >
-                            </picture>
-                        </div>
-                        <div class="catalog-submenu-banners__item">
-                            <picture>
-                                <source srcset="img/.webp" type="image/webp">
-                                <img
-                                    loading="lazy"
-                                    src="img/.png"
-                                    class="image"
-                                    width=""
-                                    height=""
-                                    alt="Изображение блока"
-                                >
-                            </picture>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="catalog-submenu-banners__item swiper-slide">
+                                    <picture>
+                                        <source srcset="img/.webp" type="image/webp">
+                                        <img
+                                            loading="lazy"
+                                            src="img/.png"
+                                            class="image"
+                                            width=""
+                                            height=""
+                                            alt="Изображение блока"
+                                        >
+                                    </picture>
+                                </div>
+                                <div class="catalog-submenu-banners__item swiper-slide">
+                                    <picture>
+                                        <source srcset="img/.webp" type="image/webp">
+                                        <img
+                                            loading="lazy"
+                                            src="img/.png"
+                                            class="image"
+                                            width=""
+                                            height=""
+                                            alt="Изображение блока"
+                                        >
+                                    </picture>
+                                </div>
+                                <div class="catalog-submenu-banners__item swiper-slide">
+                                    <picture>
+                                        <source srcset="img/.webp" type="image/webp">
+                                        <img
+                                            loading="lazy"
+                                            src="img/.png"
+                                            class="image"
+                                            width=""
+                                            height=""
+                                            alt="Изображение блока"
+                                        >
+                                    </picture>
+                                </div>
+                                <div class="catalog-submenu-banners__item swiper-slide">
+                                    <picture>
+                                        <source srcset="img/.webp" type="image/webp">
+                                        <img
+                                            loading="lazy"
+                                            src="img/.png"
+                                            class="image"
+                                            width=""
+                                            height=""
+                                            alt="Изображение блока"
+                                        >
+                                    </picture>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -12,9 +12,10 @@ application.prototype.init = function () {
     this.initBurger();
     this.initOverlay();
     this.initMenu();
+    this.setMenuHeightOverflow();
     this.initCatalogSubmenu();
-    /*this.initFancyBehaviour();*/
-    this.initClientTypeBehaviour();
+    /*this.initFancyBehavior();*/
+    this.initClientTypeBehavior();
     this.initTabs();
     this.initTabsOnscroll();
     this.initCartOnscroll();
@@ -129,22 +130,31 @@ application.prototype.initBurger = function () {
         $('.overlay').remove();
     });
 
+    $(window).on('resize', function () {
+        setMenuClose();
+    });
+
+    $(document).on('keyup', function (e) {
+        if (e.key == 'Escape') {
+            setMenuClose();
+        }
+    });
+
+    $(document).on('click', function (e) {
+        if ($('.overlay').is(e.target)) {
+            setMenuClose();
+        }
+    });
+
     function setMenuClose() {
         burger?.setAttribute('aria-expanded', 'false');
         burger?.setAttribute('aria-label', 'Открыть меню');
         burger.classList.remove('active');
         menu.classList.remove('active');
         body?.classList.remove('overflow-hidden');
+        $('.overlay').remove();
         return application.prototype.enableScroll();
     }
-
-    $(document).on('click', function (e) {
-        console.log(e.target);
-
-        if ($('.overlay').is(e.target)) {
-            setMenuClose();
-        }
-    });
 };
 
 // Initialize overlay element
@@ -325,7 +335,26 @@ application.prototype.initMenu = function () {
     }
 };
 
-// Initialize catalogs behaviour
+// Initialize menu height overflow
+application.prototype.setMenuHeightOverflow = function () {
+    defineMenuOverflow();
+    $(window).on('resize', function () {
+        defineMenuOverflow();
+    });
+
+    function defineMenuOverflow() {
+        let windowHeight = $(window).outerHeight();
+        let menuHeight = $('.catalog').outerHeight();
+
+        if (menuHeight > windowHeight) {
+            $('.catalog').addClass('catalog-overflow');
+        } else {
+            $('.catalog').removeClass('catalog-overflow');
+        }
+    }
+};
+
+// Initialize catalogs behavior
 application.prototype.initCatalogSubmenu = function () {
     const catalogSpoiler = $('[data-catalog-spoiler]');
     const rootItem = $('[data-submenu-section]');
@@ -347,9 +376,30 @@ application.prototype.initCatalogSubmenu = function () {
         $(".catalog-submenu-section[data-root-pointer='" + rootItemId + "']").addClass('active');
     });
 };
+/*application.prototype.initCatalogSubmenu = function () {
+    const catalogSpoiler = $('[data-catalog-spoiler]');
+    const rootItem = $('[data-submenu-section]');
 
-// Initialize custom fancy behaviour
-application.prototype.initFancyBehaviour = function () {
+    catalogSpoiler.on('click', function (e) {
+        const currentRootItem = $(".catalog-root-link[data-submenu-section='0']");
+        const currentSubmenuItem = $(".catalog-submenu-section[data-root-pointer='0']");
+
+        $('.catalog-root-link').removeClass('selected');
+        currentRootItem.addClass('selected');
+        $('.catalog-submenu-section').removeClass('active');
+        currentSubmenuItem.addClass('active');
+    });
+
+    rootItem.on('mouseover', function () {
+        let rootItemId = $(this).data('submenu-section');
+
+        $('.catalog-submenu-section').removeClass('active');
+        $(".catalog-submenu-section[data-root-pointer='" + rootItemId + "']").addClass('active');
+    });
+};*/
+
+// Initialize custom fancy behavior
+application.prototype.initFancyBehavior = function () {
     const body = $('body');
     const fancybox = $('[data-fancybox]');
     const burger = $('[data-menu-spoiler]');
@@ -380,8 +430,8 @@ application.prototype.initFancyBehaviour = function () {
     });
 };
 
-// Initialize custom '.client-type' behaviour
-application.prototype.initClientTypeBehaviour = function () {
+// Initialize custom '.client-type' behavior
+application.prototype.initClientTypeBehavior = function () {
     const elem = $('[data-ct]');
 
     elem.on('click', function () {
@@ -733,7 +783,6 @@ application.prototype.initTagbarSlider = function () {
 
             function setCheckedSlide() {
                 $('.tag-bar-slider-' + i + ' .tag-bar-slide-item input').on('click', function () {
-                    console.log($(this));
                    if($(this).prop('checked')) {
                        $(this).closest('.tag-bar-slide-item').addClass('checked');
                    } else {
@@ -806,6 +855,23 @@ application.prototype.initSliders = function () {
             spaceBetween: 0,
             slidesPerView: 'auto',
         });
+    }
+
+    if ($('.catalog-submenu-banners').length) {
+        $('.catalog-submenu-banners').each(function (i) {
+            let currentElem = $(this).find('.swiper').addClass('catalog-submenu-banners-slider-' + i);
+
+            let sliderCatalogSubmenuBanners = new Swiper('.catalog-submenu-banners-slider-' + i, {
+                spaceBetween: 12,
+                slidesPerView: 'auto',
+                breakpoints: {
+                    992: {
+                        spaceBetween: 40
+                    },
+                }
+            });
+        });
+
     }
 };
 
@@ -986,8 +1052,6 @@ application.prototype.initShareLink = function () {
         copyBtn.on('click', function () {
             let copyValue = $(this).closest('[data-share-link]').find('[data-share-link-input]');
             copyToClipboard(copyValue);
-            console.log("success");
-            console.log(copyValue);
         });
 
         function copyToClipboard(element) {

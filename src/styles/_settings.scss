@@ -1858,25 +1858,6 @@ input.disabled {
 
 		&-reviews {
 			gap: 24px;
-
-			&__header {
-				justify-content: space-between;
-				align-items: flex-start;
-				gap: 24px;
-
-				&-main {
-					max-width: 55%;
-				}
-			}
-			&__filter {
-				margin-bottom: 40px;
-				padding-top: 24px;
-			}
-			&__list {
-				display: flex;
-				flex-direction: column;
-				gap: 40px;
-			}
 		}
 		&-reviews-empty,
 		&-docs-empty {
@@ -1941,6 +1922,28 @@ input.disabled {
 			& .tabs {
 				&-item {
 					flex: 1;
+				}
+			}
+		}
+		.product-card {
+			&-reviews {
+				&__header {
+					justify-content: space-between;
+					align-items: flex-start;
+					gap: 24px;
+
+					&-main {
+						max-width: 55%;
+					}
+				}
+				&__filter {
+					margin-bottom: 40px;
+					padding-top: 24px;
+				}
+				&__list {
+					display: flex;
+					flex-direction: column;
+					gap: 40px;
 				}
 			}
 		}
@@ -2246,6 +2249,29 @@ input.disabled {
 					min-height: 250px;
 					height: 250px;
 				}
+			}
+		}
+	}
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.product-card {
+		&-reviews {
+			&__header {
+				flex-direction: column;
+				gap: 12px;
+
+				&-main {
+					max-width: 55%;
+				}
+			}
+			&__filter {
+				margin-bottom: 40px;
+				padding-top: 24px;
+			}
+			&__list {
+				display: flex;
+				flex-direction: column;
+				gap: 40px;
 			}
 		}
 	}
@@ -3960,6 +3986,7 @@ input.disabled {
 		position: relative;
 		display: flex;
 		align-items: center;
+		white-space: nowrap;
 
 		&:not(:first-child) {
 			padding-left: 19px;
@@ -3999,6 +4026,10 @@ input.disabled {
 
 		&-text {
 			color: var(--text-secondary);
+
+			&:not(:first-child) {
+				padding-left: 8px;
+			}
 		}
 	}
 	& label:hover,
