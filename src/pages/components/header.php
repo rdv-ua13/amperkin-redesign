@@ -139,16 +139,77 @@
                                     autocomplete="off"
                                     onclick="$(this).closest('.header-search').find('.header-search-results').toggleClass('active');"
                             >
+                            <button class="btn-reset btn btn-link input-delete-btn">
+                                <svg class="icon btn__icon icon-xs">
+                                    <use href="img/sprite.svg#cross"></use>
+                                </svg>
+                            </button>
                             <button class="btn-reset btn btn-mini btn-primary input-search-btn" type="submit">
                                 <span class="btn__text">Найти</span>
                             </button>
                         </div>
                     </form>
-                    <?/* todo @Masterkov - add new block to template and delete --> `onclick="$(this).closest('.header-search').find('.header-search-results').toggleClass('active');"` */?>
                     <div class="header-search-results">
                         <div class="search-results">
+                            <div class="search-results__header">
+                                <div class="search-results__header-top">
+                                    <div class="search-results__title h4">Поиск</div>
+                                    <div class="search-results__close">
+                                        <svg class="icon icon-md">
+                                            <use href="img/sprite.svg#cross"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="search-results__search">
+                                    <div class="search-results__search-item">
+                                        <div class="input-search-wrapper">
+                                            <input
+                                                    class="input-reset input-search"
+                                                    type="search"
+                                                    name=""
+                                                    value=""
+                                                    placeholder="Розетка, ST9431B (артикул) или номер заказа..."
+                                            >
+                                            <button class="btn-reset btn btn-link input-delete-btn">
+                                                <svg class="icon btn__icon icon-xs">
+                                                    <use href="img/sprite.svg#cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="search-results__search-item">
+                                        <div class="mobile-search-results-hint">
+                                            <div class="swiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <button class="btn-reset btn btn-mini btn-b-light">
+                                                            <span class="btn__text">Москва</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <button class="btn-reset btn btn-mini btn-b-light">
+                                                            <span class="btn__text">Санкт-петербург</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <button class="btn-reset btn btn-mini btn-b-light">
+                                                            <span class="btn__text">Казань</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <button class="btn-reset btn btn-mini btn-b-light">
+                                                            <span class="btn__text">Воронеж</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="search-results__sidebar">
                                 <div class="search-results__sidebar-item search-results__match search-results__match--history">
+                                    <div class="search-results__sidebar-title">История поиска</div>
                                     <div class="search-results__match-item" data-removable>
                                         <a class="btn-reset btn btn-link search-results__link" href="javascript:;">
                                             <svg class="icon btn__icon">
@@ -215,6 +276,7 @@
                                 </div>
                             </div>
                             <div class="search-results__suggest">
+                                <div class="search-results__suggest-title">Товары:</div>
                                 <div class="search-results__suggest-list">
                                     <div class="search-results-product">
                                         <div class="search-results-product__view">
@@ -233,7 +295,7 @@
                                         <div class="search-results-product__descr">
                                             <div class="search-results-product__descr-header">
                                                 <div class="search-results-product__info">
-                                                    <span class="product-code"><span>ZB3327018</span></span>
+                                                    <span class="product-code">ZB3327018</span>
                                                 </div>
                                                 <div class="search-results-product__title">SE Unica System+ Антрацит Блок розеточный (2к+з)+usb тип А</div>
                                             </div>
@@ -283,7 +345,7 @@
                                         <div class="search-results-product__descr">
                                             <div class="search-results-product__descr-header">
                                                 <div class="search-results-product__info">
-                                                    <span class="product-code"><span>AB3327018</span></span>
+                                                    <span class="product-code">AB3327018</span>
                                                 </div>
                                                 <div class="search-results-product__title">SE Удлинитель катушечный Thorsman 4 роз 15м</div>
                                             </div>
@@ -333,7 +395,7 @@
                                         <div class="search-results-product__descr">
                                             <div class="search-results-product__descr-header">
                                                 <div class="search-results-product__info">
-                                                    <span class="product-code"><span>BB3327018</span></span>
+                                                    <span class="product-code">BB3327018</span>
                                                 </div>
                                                 <div class="search-results-product__title">SE Unica Extend Бел Удлинитель 3 розетки 2К+З, кабель 1,5м</div>
                                             </div>
@@ -383,7 +445,7 @@
                                         <div class="search-results-product__descr">
                                             <div class="search-results-product__descr-header">
                                                 <div class="search-results-product__info">
-                                                    <span class="product-code"><span>CB3327018</span></span>
+                                                    <span class="product-code">CB3327018</span>
                                                 </div>
                                                 <div class="search-results-product__title">SE Unica System+ Белый Блок розеточный (2к+з)+usb тип А</div>
                                             </div>
@@ -433,7 +495,7 @@
                                         <div class="search-results-product__descr">
                                             <div class="search-results-product__descr-header">
                                                 <div class="search-results-product__info">
-                                                    <span class="product-code"><span>DB3327018</span></span>
+                                                    <span class="product-code">DB3327018</span>
                                                 </div>
                                                 <div class="search-results-product__title">SE Unica Extend Черный Удлинитель 3 розетки 2К+З, кабель 1,5м</div>
                                             </div>
@@ -483,7 +545,7 @@
                                         <div class="search-results-product__descr">
                                             <div class="search-results-product__descr-header">
                                                 <div class="search-results-product__info">
-                                                    <span class="product-code"><span>EB3327018</span></span>
+                                                    <span class="product-code">EB3327018</span>
                                                 </div>
                                                 <div class="search-results-product__title">SE Unica System+ Антрацит Блок розеточный (2к+з)+usb тип А</div>
                                             </div>
@@ -520,7 +582,7 @@
 
                                 <div class="search-results__suggest-details">
                                     <div class="search-results__suggest-found">Найдено товаров: 178</div>
-                                    <a class="link-red" href="javascript:;">Показать все найденные товары</a>
+                                    <a class="btn-reset btn btn-light search-results__suggest-more" href="javascript:;">Показать все найденные товары</a>
                                 </div>
                             </div>
                         </div>
@@ -658,8 +720,7 @@
                 <button
                         class="btn-reset mobile-menu__item mobile-menu__link mobile-menu-city"
                         type="button"
-                        data-fancybox
-                        data-src="#modal-city"
+                        data-mobile-city-spoiler
                 >
                     <svg class="icon icon-sm">
                         <use href="img/sprite.svg#pin"></use>
@@ -694,6 +755,145 @@
             <div class="mobile-menu__item mobile-menu-contacts">
                 <a class="mobile-menu-contacts__number" href="tel:+74951183770">+7 (495) 118-37-70</a>
                 <a class="link-dashed link-gray mobile-menu-contacts__call" href="javascript:;">заказать звонок</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-city">
+        <div class="mobile-city-header">
+            <div class="mobile-city-header__top">
+                <div class="mobile-city__title h4">Выберите ваш город</div>
+                <div class="mobile-city__close">
+                    <svg class="icon icon-md">
+                        <use href="img/sprite.svg#cross"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="mobile-city-search">
+                <div class="mobile-city-search__item">
+                    <div class="input-search-wrapper">
+                        <input
+                                class="input-reset input-search"
+                                type="search"
+                                name=""
+                                placeholder="Найти город..."
+                        >
+                        <button class="btn-reset btn btn-link input-delete-btn">
+                            <svg class="icon btn__icon icon-xs">
+                                <use href="img/sprite.svg#cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mobile-city-search__item">
+                    <div class="mobile-search-results-hint">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <button class="btn-reset btn btn-mini btn-b-light">
+                                        <span class="btn__text">Москва</span>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="btn-reset btn btn-mini btn-b-light">
+                                        <span class="btn__text">Санкт-петербург</span>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="btn-reset btn btn-mini btn-b-light">
+                                        <span class="btn__text">Казань</span>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="btn-reset btn btn-mini btn-b-light">
+                                        <span class="btn__text">Воронеж</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-city-alphabet">
+            <div class="mobile-city-alphabet__list">
+                <div class="mobile-city-alphabet__item">
+                    <div class="mobile-city-alphabet__title">А</div>
+                    <div class="mobile-city-alphabet__city">Абакан</div>
+                    <div class="mobile-city-alphabet__city">Альметьевск</div>
+                    <div class="mobile-city-alphabet__city">Ангарск</div>
+                    <div class="mobile-city-alphabet__city">Артем</div>
+                    <div class="mobile-city-alphabet__city">Ачинск</div>
+                </div>
+                <div class="mobile-city-alphabet__item">
+                    <div class="mobile-city-alphabet__title">Б</div>
+                    <div class="mobile-city-alphabet__city">Барнаул</div>
+                    <div class="mobile-city-alphabet__city">Белгород</div>
+                    <div class="mobile-city-alphabet__city">Белово</div>
+                    <div class="mobile-city-alphabet__city">Бердск</div>
+                    <div class="mobile-city-alphabet__city">Бийск</div>
+                </div>
+                <div class="mobile-city-alphabet__item">
+                    <div class="mobile-city-alphabet__title">В</div>
+                    <div class="mobile-city-alphabet__city">Великие Луки</div>
+                    <div class="mobile-city-alphabet__city">Владивосток</div>
+                    <div class="mobile-city-alphabet__city">Воронеж</div>
+                </div>
+                <div class="mobile-city-alphabet__item">
+                    <div class="mobile-city-alphabet__title">Г</div>
+                    <div class="mobile-city-alphabet__city">Губкин</div>
+                </div>
+                <div class="mobile-city-alphabet__item">
+                    <div class="mobile-city-alphabet__title">Е</div>
+                    <div class="mobile-city-alphabet__city">Ейск</div>
+                    <div class="mobile-city-alphabet__city">Екатеринбург</div>
+                </div>
+                <div class="mobile-city-alphabet__item">
+                    <div class="mobile-city-alphabet__title">Ж</div>
+                    <div class="mobile-city-alphabet__city">Железногорск</div>
+                </div>
+                <div class="mobile-city-alphabet__item">
+                    <div class="mobile-city-alphabet__title">З</div>
+                    <div class="mobile-city-alphabet__city">Зеленогорск</div>
+                    <div class="mobile-city-alphabet__city">Златоуст</div>
+                </div>
+                <div class="mobile-city-alphabet__item">
+                    <div class="mobile-city-alphabet__title">И</div>
+                    <div class="mobile-city-alphabet__city">Иваново</div>
+                    <div class="mobile-city-alphabet__city">Иркутск</div>
+                    <div class="mobile-city-alphabet__city">Искитим</div>
+                    <div class="mobile-city-alphabet__city">Ишим</div>
+                </div>
+                <div class="mobile-city-alphabet__item">
+                    <div class="mobile-city-alphabet__title">Й</div>
+                    <div class="mobile-city-alphabet__city">Йошкар-Ола</div>
+                </div>
+                <div class="mobile-city-alphabet__item">
+                    <div class="mobile-city-alphabet__title">К</div>
+                    <div class="mobile-city-alphabet__city">Казань</div>
+                    <div class="mobile-city-alphabet__city">Канск</div>
+                    <div class="mobile-city-alphabet__city">Кемерово</div>
+                    <div class="mobile-city-alphabet__city">Киселевск</div>
+                    <div class="mobile-city-alphabet__city">Краснодар</div>
+                    <div class="mobile-city-alphabet__city">Краснотурьинск</div>
+                    <div class="mobile-city-alphabet__city">Красноярск</div>
+                    <div class="mobile-city-alphabet__city">Кызыл</div>
+                </div>
+                <div class="mobile-city-alphabet__item">
+                    <div class="mobile-city-alphabet__title">Л</div>
+                    <div class="mobile-city-alphabet__city">Ленинск-Кузнецкий</div>
+                    <div class="mobile-city-alphabet__city">Лесосибирск</div>
+                </div>
+                <div class="mobile-city-alphabet__item">
+                    <div class="mobile-city-alphabet__title">М</div>
+                    <div class="mobile-city-alphabet__city">Майский</div>
+                    <div class="mobile-city-alphabet__city">Маркс</div>
+                    <div class="mobile-city-alphabet__city">Мегион</div>
+                    <div class="mobile-city-alphabet__city">Миасс</div>
+                    <div class="mobile-city-alphabet__city">Минусинск</div>
+                    <div class="mobile-city-alphabet__city">Мурманск</div>
+                    <div class="mobile-city-alphabet__city">Муром</div>
+                </div>
             </div>
         </div>
     </div>

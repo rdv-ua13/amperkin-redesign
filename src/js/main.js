@@ -40,6 +40,9 @@ application.prototype.init = function () {
     this.initDatepicker();
     this.initDeleteTrigger();
     this.initDropfiles();
+    this.initInputSearchBehavior();
+    this.initSearchResBehavior();
+    this.initMobileCitySelection();
 
 
 
@@ -794,7 +797,19 @@ application.prototype.initSliders = function () {
                 }
             });
         });
+    }
 
+    if ($('.mobile-search-results-hint').length) {
+        const MobileSearchSliderSettings = {
+            spaceBetween: 8,
+            slidesPerView: 'auto',
+            watchOverflow: true,
+            freeMode: true,
+            mousewheel: true
+        };
+
+        let sliderSearchResultsHint = new Swiper('.search-results .mobile-search-results-hint .swiper', MobileSearchSliderSettings);
+        let sliderMobileCityHint = new Swiper('.mobile-city .mobile-search-results-hint .swiper', MobileSearchSliderSettings);
     }
 };
 
@@ -1296,6 +1311,57 @@ application.prototype.initDropfiles = function () {
             }
         }
     });
+};
+
+// Initialization input-search behavior
+application.prototype.initInputSearchBehavior = function () {
+    if ($('.input-search').length) {
+        $('.input-search').on('input', function () {
+            if ($(this).val() === '' || $(this).val() === null) {
+                $(this).removeClass('has-data');
+            } else if ($(this).val() !== '' && $(this).val() !== null) {
+                $(this).addClass('has-data');
+            }
+        });
+
+        $('.input-delete-btn').on('click', function () {
+            $(this).closest('.input-search-wrapper').find('.input-search').val('').removeClass('has-data');
+        });
+    }
+};
+
+// Initialization search result behavior
+application.prototype.initSearchResBehavior = function () {
+    if ($('[data-delete-trigger]').length) {
+        $('.search-results__close').on('click', function () {
+            $(this).closest('.header-search-results').removeClass('active');
+        });
+
+        $(document).on('keyup', function (e) {
+            if (e.key == 'Escape') {
+                $('.search-results__close').closest('.header-search-results').removeClass('active');
+            }
+        });
+    }
+};
+
+// Initialization mobile city selection
+application.prototype.initMobileCitySelection = function () {
+    if ($('.mobile-menu-city').length) {
+        $('[data-mobile-city-spoiler]').on('click', function () {
+            $('.mobile-city').addClass('active');
+        });
+
+        $('.mobile-city__close').on('click', function () {
+            $(this).closest('.mobile-city').removeClass('active');
+        });
+
+        $(document).on('keyup', function (e) {
+            if (e.key == 'Escape') {
+                $('.mobile-city').removeClass('active');
+            }
+        });
+    }
 };
 
 

@@ -394,26 +394,40 @@
                                 name=""
                                 placeholder="Найти город..."
                         >
-                        <button class="btn-reset btn btn-link input-search-btn">
-                            <svg class="icon btn__icon">
+                        <button class="btn-reset btn btn-link input-delete-btn">
+                            <svg class="icon btn__icon icon-xs">
                                 <use href="img/sprite.svg#cross"></use>
                             </svg>
                         </button>
                     </div>
                 </div>
                 <div class="modal-city-search__item">
-                    <button class="btn-reset btn btn-mini btn-b-light">
-                        <span class="btn__text">Москва</span>
-                    </button>
-                    <button class="btn-reset btn btn-mini btn-b-light">
-                        <span class="btn__text">санкт-петербург</span>
-                    </button>
-                    <button class="btn-reset btn btn-mini btn-b-light">
-                        <span class="btn__text">Казань</span>
-                    </button>
-                    <button class="btn-reset btn btn-mini btn-b-light">
-                        <span class="btn__text">Воронеж</span>
-                    </button>
+                    <div class="modal-city-search__hint">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <button class="btn-reset btn btn-mini btn-b-light">
+                                        <span class="btn__text">Москва</span>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="btn-reset btn btn-mini btn-b-light">
+                                        <span class="btn__text">Санкт-петербург</span>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="btn-reset btn btn-mini btn-b-light">
+                                        <span class="btn__text">Казань</span>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="btn-reset btn btn-mini btn-b-light">
+                                        <span class="btn__text">Воронеж</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
