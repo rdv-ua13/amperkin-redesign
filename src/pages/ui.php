@@ -37,7 +37,8 @@
 
     <style>
         body {
-            padding: 10px;
+            margin: 0;
+            padding: 16px;
             overflow-x: hidden;
             background: #F5F5F5;
         }
@@ -2638,132 +2639,82 @@
             <div class="row-ui ">
                 <div class="flex-v-center" style="min-width: 300px; width: 300px;">
                     <!--start ui content-->
-                    <div class="tag-bar swiper" data-tag-bar-slider>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <label class="btn btn-mini btn-b-light">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="EXTRA[TAGS][]"
-                                            value=""
-                                    >
-                                    <svg class="icon btn__icon">
-                                        <use href="img/sprite.svg#burger"></use>
-                                    </svg>
-                                    <span class="btn__text">Кнопка</span>
-                                </label>
-                            </div>
-                            <div class="swiper-slide">
-                                <label class="btn btn-mini btn-b-light">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="EXTRA[TAGS][]"
-                                            value=""
-                                    >
-                                    <svg class="icon btn__icon">
-                                        <use href="img/sprite.svg#burger"></use>
-                                    </svg>
-                                    <span class="btn__text">Кнопка</span>
-                                </label>
-                            </div>
-                            <div class="swiper-slide">
-                                <label class="btn btn-mini btn-b-light">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="EXTRA[TAGS][]"
-                                            value=""
-                                    >
-                                    <svg class="icon btn__icon">
-                                        <use href="img/sprite.svg#burger"></use>
-                                    </svg>
-                                    <span class="btn__text">Кнопка</span>
-                                </label>
-                            </div>
-                            <div class="swiper-slide">
-                                <label class="btn btn-mini btn-b-light">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="EXTRA[TAGS][]"
-                                            value=""
-                                    >
-                                    <svg class="icon btn__icon">
-                                        <use href="img/sprite.svg#burger"></use>
-                                    </svg>
-                                    <span class="btn__text">Кнопка</span>
-                                </label>
-                            </div>
-                            <div class="swiper-slide">
-                                <label class="btn btn-mini btn-b-light">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="EXTRA[TAGS][]"
-                                            value=""
-                                    >
-                                    <svg class="icon btn__icon">
-                                        <use href="img/sprite.svg#burger"></use>
-                                    </svg>
-                                    <span class="btn__text">Кнопка</span>
-                                </label>
+                    <div class="tag-bar-wrapper">
+                        <div class="tag-bar swiper" data-tag-bar-slider>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <label class="btn btn-mini btn-b-light">
+                                        <input
+                                                class="visually-hidden"
+                                                type="checkbox"
+                                                name="EXTRA[TAGS][]"
+                                                value=""
+                                        >
+                                        <svg class="icon btn__icon">
+                                            <use href="img/sprite.svg#burger"></use>
+                                        </svg>
+                                        <span class="btn__text">Кнопка</span>
+                                    </label>
+                                </div>
+                                <div class="swiper-slide">
+                                    <label class="btn btn-mini btn-b-light">
+                                        <input
+                                                class="visually-hidden"
+                                                type="checkbox"
+                                                name="EXTRA[TAGS][]"
+                                                value=""
+                                        >
+                                        <svg class="icon btn__icon">
+                                            <use href="img/sprite.svg#burger"></use>
+                                        </svg>
+                                        <span class="btn__text">Кнопка</span>
+                                    </label>
+                                </div>
+                                <div class="swiper-slide">
+                                    <label class="btn btn-mini btn-b-light">
+                                        <input
+                                                class="visually-hidden"
+                                                type="checkbox"
+                                                name="EXTRA[TAGS][]"
+                                                value=""
+                                        >
+                                        <svg class="icon btn__icon">
+                                            <use href="img/sprite.svg#burger"></use>
+                                        </svg>
+                                        <span class="btn__text">Кнопка</span>
+                                    </label>
+                                </div>
+                                <div class="swiper-slide">
+                                    <label class="btn btn-mini btn-b-light">
+                                        <input
+                                                class="visually-hidden"
+                                                type="checkbox"
+                                                name="EXTRA[TAGS][]"
+                                                value=""
+                                        >
+                                        <svg class="icon btn__icon">
+                                            <use href="img/sprite.svg#burger"></use>
+                                        </svg>
+                                        <span class="btn__text">Кнопка</span>
+                                    </label>
+                                </div>
+                                <div class="swiper-slide">
+                                    <label class="btn btn-mini btn-b-light">
+                                        <input
+                                                class="visually-hidden"
+                                                type="checkbox"
+                                                name="EXTRA[TAGS][]"
+                                                value=""
+                                        >
+                                        <svg class="icon btn__icon">
+                                            <use href="img/sprite.svg#burger"></use>
+                                        </svg>
+                                        <span class="btn__text">Кнопка</span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-                    <!--<div class="tag-bar swiper" data-tag-bar-slider>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <label class="tag">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="EXTRA[TAGS][]"
-                                            value=""
-                                    >
-                                    <span
-                                            class="tag__content-bg"
-                                            style="
-                                            border-color: var(--text8-color);
-                                            background-color: var(--text8-color);"
-                                    ></span>
-                                    <span class="tag__content">
-                                        <svg class="icon tag__content-icon" style="fill: var(--text5-color);">
-                                            <use href="img/sprite.svg#tag-all"></use>
-                                        </svg>
-                                        <span class="tag__content-text" style="color: var(--text5-color);">disabled</span>
-                                    </span>
-                                </label>
-
-                                btn-reset btn btn-b-light
-                            </div>
-                            <div class="swiper-slide">
-                                <label class="tag">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="EXTRA[TAGS][all]"
-                                            value=""
-                                    >
-                                    <span
-                                            class="tag__content-bg"
-                                            style="
-                                    border-color: var(--text6-color);
-                                    background-color: var(--text8-color);"
-                                    ></span>
-                                    <span class="tag__content">
-                                        <svg class="icon tag__content-icon" style="fill: var(--text6-color);">
-                                            <use href="img/sprite.svg#tag-all"></use>
-                                        </svg>
-                                        <span class="tag__content-text" style="color: var(--text6-color);">все</span>
-                                    </span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>-->
                     <!--end ui content-->
                 </div>
             </div>

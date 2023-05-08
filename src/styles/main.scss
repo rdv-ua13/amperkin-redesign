@@ -55,3 +55,70 @@
 		outline: none;
 	}
 }
+
+.search-results-title {
+	font-weight: 400;
+}
+
+@media (max-width: 991.98px) {
+	.amp-section {
+		margin: 0 -16px;
+		border-bottom: 8px solid var(--gray5-color);
+
+		&-container {
+			padding: 0 16px 16px;
+		}
+	}
+}
+
+.extra-search {
+	display: flex;
+	align-items: flex-start;
+
+	&__title {
+		white-space: nowrap;
+	}
+	&__tag-bar {
+		.btn {
+			font-weight: 400;
+			font-size: 13px;
+			letter-spacing: 0;
+			text-transform: unset;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.extra-search {
+		gap: 12px;
+		padding-bottom: 24px;
+
+		&__title {
+			display: flex;
+			align-items: center;
+			min-height: 32px;
+		}
+		&__tag-bar {
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.extra-search {
+		flex-direction: column;
+		gap: 8px;
+		padding-bottom: 16px;
+
+		&__tag-bar {
+
+		}
+	}
+}
+
+.catalog {
+	&.inner-catalog {
+
+	}
+
+
+}

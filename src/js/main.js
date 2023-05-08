@@ -14,7 +14,7 @@ application.prototype.init = function () {
     this.initOverlay();
     this.initMenu();
     this.setMenuHeightOverflow();
-    this.initCatalogSubmenu();
+    this.initMenuCatalogSubmenu();
     this.initFancyBehavior();
     this.initClientTypeBehavior();
     this.initTabs();
@@ -245,6 +245,7 @@ application.prototype.initMenu = function () {
         catalogSpoiler.attr('aria-label', 'Открыть меню');
         catalogSpoiler.removeClass('active');
         catalog.removeClass('active');
+        $('.menu-catalog-header').removeClass('submenu');
         $('.overlay-transparent').remove();
     }
 
@@ -270,33 +271,33 @@ application.prototype.setMenuHeightOverflow = function () {
 
     function defineMenuOverflow() {
         let windowHeight = $(window).outerHeight();
-        let menuHeight = $('.catalog').outerHeight();
+        let menuHeight = $('.menu-catalog').outerHeight();
 
         if (menuHeight > windowHeight) {
-            $('.catalog').addClass('catalog-overflow');
+            $('.menu-catalog').addClass('menu-catalog-overflow');
         } else {
-            $('.catalog').removeClass('catalog-overflow');
+            $('.menu-catalog').removeClass('menu-catalog-overflow');
         }
     }
 };
 
-// Initialize catalogs behavior
-application.prototype.initCatalogSubmenu = function () {
+// Initialize menu catalog behavior
+application.prototype.initMenuCatalogSubmenu = function () {
     const catalogSpoiler = $('[data-catalog-spoiler]');
     const catalogTitle = $('[data-catalog-title]');
     const rootItem = $('[data-submenu-section]');
 
     catalogSpoiler.on('click', function (e) {
-        const currentRootItem = $(".catalog-root-link[data-submenu-section='0']");
-        const currentSubmenuItem = $(".catalog-submenu-section[data-root-pointer='0']");
+        const currentRootItem = $(".menu-catalog-root-link[data-submenu-section='0']");
+        const currentSubmenuItem = $(".menu-catalog-submenu-section[data-root-pointer='0']");
         let currentCatalogTitle = catalogTitle.data('catalog-title');
 
         catalogTitle.text(currentCatalogTitle);
-        rootItem.closest('.catalog-root').removeClass('hide');
-        rootItem.closest('.catalog').find('.catalog-submenu').removeClass('active');
-        $('.catalog-root-link').removeClass('selected');
+        rootItem.closest('.menu-catalog-root').removeClass('hide');
+        rootItem.closest('.menu-catalog').find('.menu-catalog-submenu').removeClass('active');
+        $('.menu-catalog-root-link').removeClass('selected');
         currentRootItem.addClass('selected');
-        $('.catalog-submenu-section').removeClass('active');
+        $('.menu-catalog-submenu-section').removeClass('active');
         currentSubmenuItem.addClass('active');
     });
 
@@ -305,8 +306,8 @@ application.prototype.initCatalogSubmenu = function () {
             rootItem.on('mouseover', function () {
                 let rootItemId = $(this).data('submenu-section');
 
-                $('.catalog-submenu-section').removeClass('active');
-                $(".catalog-submenu-section[data-root-pointer='" + rootItemId + "']").addClass('active');
+                $('.menu-catalog-submenu-section').removeClass('active');
+                $(".menu-catalog-submenu-section[data-root-pointer='" + rootItemId + "']").addClass('active');
             });
         } else {
             rootItem.on('click', function (e) {
@@ -315,8 +316,8 @@ application.prototype.initCatalogSubmenu = function () {
 
                 let rootItemId = $(this).data('submenu-section');
 
-                $('.catalog-submenu-section').removeClass('active');
-                $(".catalog-submenu-section[data-root-pointer='" + rootItemId + "']").addClass('active');
+                $('.menu-catalog-submenu-section').removeClass('active');
+                $(".menu-catalog-submenu-section[data-root-pointer='" + rootItemId + "']").addClass('active');
             });
         }
     } else if (window.matchMedia('(max-width: 991.98px)').matches) {
@@ -328,20 +329,20 @@ application.prototype.initCatalogSubmenu = function () {
             let currentCatalogTitle = $(this).text();
 
             catalogTitle.text(currentCatalogTitle);
-            $(this).closest('.catalog').find('.catalog-header').addClass('submenu');
-            $(this).closest('.catalog-root').addClass('hide');
-            $(this).closest('.catalog').find('.catalog-submenu').addClass('active');
-            $('.catalog-submenu-section').removeClass('active');
-            $(".catalog-submenu-section[data-root-pointer='" + rootItemId + "']").addClass('active');
+            $(this).closest('.menu-catalog').find('.menu-catalog-header').addClass('submenu');
+            $(this).closest('.menu-catalog-root').addClass('hide');
+            $(this).closest('.menu-catalog').find('.menu-catalog-submenu').addClass('active');
+            $('.menu-catalog-submenu-section').removeClass('active');
+            $(".menu-catalog-submenu-section[data-root-pointer='" + rootItemId + "']").addClass('active');
         });
 
-        $('.catalog-title-back').on('click', function (e) {
+        $('.menu-catalog-title-back').on('click', function (e) {
             let currentCatalogTitle = catalogTitle.data('catalog-title');
 
             catalogTitle.text(currentCatalogTitle);
-            $(this).closest('.catalog-header').removeClass('submenu');
-            $(this).closest('.catalog').find('.catalog-root').removeClass('hide');
-            $(this).closest('.catalog').find('.catalog-submenu').removeClass('active');
+            $(this).closest('.menu-catalog-header').removeClass('submenu');
+            $(this).closest('.menu-catalog').find('.menu-catalog-root').removeClass('hide');
+            $(this).closest('.menu-catalog').find('.menu-catalog-submenu').removeClass('active');
         });
     }
 };
@@ -783,11 +784,11 @@ application.prototype.initSliders = function () {
         });
     }
 
-    if ($('.catalog-submenu-banners').length) {
-        $('.catalog-submenu-banners').each(function (i) {
-            let currentElem = $(this).find('.swiper').addClass('catalog-submenu-banners-slider-' + i);
+    if ($('.menu-catalog-submenu-banners').length) {
+        $('.menu-catalog-submenu-banners').each(function (i) {
+            let currentElem = $(this).find('.swiper').addClass('menu-catalog-submenu-banners-slider-' + i);
 
-            let sliderCatalogSubmenuBanners = new Swiper('.catalog-submenu-banners-slider-' + i, {
+            let sliderCatalogSubmenuBanners = new Swiper('.menu-catalog-submenu-banners-slider-' + i, {
                 spaceBetween: 12,
                 slidesPerView: 'auto',
                 breakpoints: {

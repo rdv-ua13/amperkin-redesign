@@ -647,16 +647,16 @@
                 <div class="header-catalog">
                     <div class="header-catalog-spoiler">
                         <button
-                                class="btn-reset btn btn-primary catalog-spoiler"
+                                class="btn-reset btn btn-primary menu-catalog-spoiler"
                                 aria-label="Открыть меню"
                                 aria-expanded="false"
                                 data-catalog-spoiler
                                 data-overlay-transparent
                         >
-                            <svg class="icon btn__icon catalog-spoiler__icon">
+                            <svg class="icon btn__icon menu-catalog-spoiler__icon">
                                 <use href="img/sprite.svg#burger"></use>
                             </svg>
-                            <svg class="icon btn__icon catalog-spoiler__icon-active">
+                            <svg class="icon btn__icon menu-catalog-spoiler__icon-active">
                                 <use href="img/sprite.svg#cross"></use>
                             </svg>
                             <span class="btn__text">Каталог</span>
@@ -699,16 +699,16 @@
 
         <div class="mobile-menu__item mobile-menu-catalog">
             <button
-                    class="btn-reset btn btn-primary catalog-spoiler"
+                    class="btn-reset btn btn-primary menu-catalog-spoiler"
                     aria-label="Открыть меню"
                     aria-expanded="false"
                     data-catalog-spoiler
                     data-overlay-transparent
             >
-                <svg class="icon btn__icon catalog-spoiler__icon">
+                <svg class="icon btn__icon menu-catalog-spoiler__icon">
                     <use href="img/sprite.svg#burger"></use>
                 </svg>
-                <svg class="icon btn__icon catalog-spoiler__icon-active">
+                <svg class="icon btn__icon menu-catalog-spoiler__icon-active">
                     <use href="img/sprite.svg#cross"></use>
                 </svg>
                 <span class="btn__text">Каталог</span>
@@ -898,187 +898,187 @@
         </div>
     </div>
 
-    <div class="catalog" data-catalog>
-        <div class="container catalog-container">
-            <div class="catalog-header">
-                <div class="catalog-title h4">
-                    <div class="catalog-title-back">
+    <div class="menu-catalog" data-catalog>
+        <div class="container menu-catalog-container">
+            <div class="menu-catalog-header">
+                <div class="menu-catalog-title h4">
+                    <div class="menu-catalog-title-back">
                         <svg class="icon icon-md">
                             <use href="img/sprite.svg#arrow-left"></use>
                         </svg>
                     </div>
                     <span data-catalog-title="Каталог">Каталог</span>
                 </div>
-                <div class="catalog-close" data-catalog-close>
+                <div class="menu-catalog-close" data-catalog-close>
                     <svg class="icon icon-md">
                         <use href="img/sprite.svg#cross"></use>
                     </svg>
                 </div>
             </div>
-            <div class="catalog-root">
-                <div class="catalog-root-item">
-                    <a class="btn-reset btn catalog-root-link selected" href="javascript:;" data-submenu-section="0">
+            <div class="menu-catalog-root">
+                <div class="menu-catalog-root-item">
+                    <a class="btn-reset btn menu-catalog-root-link selected" href="javascript:;" data-submenu-section="0">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-wiring-products"></use>
                         </svg>
                         <span class="btn__text">Розетки и выключатели</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
-                    <a class="btn-reset btn catalog-root-link" href="javascript:;" data-submenu-section="1">
+                <div class="menu-catalog-root-item">
+                    <a class="btn-reset btn menu-catalog-root-link" href="javascript:;" data-submenu-section="1">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-wiring"></use>
                         </svg>
                         <span class="btn__text">Электроустановочные изделия</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-low-voltage"></use>
                         </svg>
                         <span class="btn__text">Низковольтное оборудование</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-shields-cabinets"></use>
                         </svg>
                         <span class="btn__text">Щиты, шкафы, боксы</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-cable"></use>
                         </svg>
                         <span class="btn__text">Кабель</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-lighting"></use>
                         </svg>
                         <span class="btn__text">Светотехника</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-connectors"></use>
                         </svg>
                         <span class="btn__text">Вилки, штекеры, разъемы, шнуры</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-tools"></use>
                         </svg>
                         <span class="btn__text">Инструменты и монтажные материалы</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-ventilation"></use>
                         </svg>
                         <span class="btn__text">Системы вентиляции и обогрева</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-electric-motors"></use>
                         </svg>
                         <span class="btn__text">Автоматизация и электродвигатели</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-grounding"></use>
                         </svg>
                         <span class="btn__text">Молниезащита и заземление</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-power-devices"></use>
                         </svg>
                         <span class="btn__text">Элементы и устройства питания</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-miscellaneous"></use>
                         </svg>
                         <span class="btn__text">Разные товары для монтажников</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
@@ -1086,117 +1086,117 @@
                     </a>
                 </div>
 
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-grounding"></use>
                         </svg>
                         <span class="btn__text">Молниезащита и заземление</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-power-devices"></use>
                         </svg>
                         <span class="btn__text">Элементы и устройства питания</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-miscellaneous"></use>
                         </svg>
                         <span class="btn__text">Разные товары для монтажников</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-grounding"></use>
                         </svg>
                         <span class="btn__text">Молниезащита и заземление</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-power-devices"></use>
                         </svg>
                         <span class="btn__text">Элементы и устройства питания</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-miscellaneous"></use>
                         </svg>
                         <span class="btn__text">Разные товары для монтажников</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-grounding"></use>
                         </svg>
                         <span class="btn__text">Молниезащита и заземление</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-power-devices"></use>
                         </svg>
                         <span class="btn__text">Элементы и устройства питания</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
                         </span>
                     </a>
                 </div>
-                <div class="catalog-root-item">
+                <div class="menu-catalog-root-item">
                     <a class="btn-reset btn" href="javascript:;">
                         <svg class="icon btn__icon">
                             <use href="img/sprite.svg#catalog-miscellaneous"></use>
                         </svg>
                         <span class="btn__text">Разные товары для монтажников</span>
-                        <span class="catalog-root-item-pointer">
+                        <span class="menu-catalog-root-item-pointer">
                             <svg class="icon btn__icon">
                                 <use href="img/sprite.svg#chevron-right"></use>
                             </svg>
@@ -1204,17 +1204,17 @@
                     </a>
                 </div>
             </div>
-            <div class="catalog-submenu">
-                <div class="catalog-submenu-section active" data-root-pointer="0">
-                    <div class="h3 catalog-submenu-section__title">Розетки и выключатели</div>
-                    <div class="catalog-submenu-links">
-                        <ul class="list-reset catalog-submenu-links__list">
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Все товары раздела</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Розетки</span></a></li>
+            <div class="menu-catalog-submenu">
+                <div class="menu-catalog-submenu-section active" data-root-pointer="0">
+                    <div class="h3 menu-catalog-submenu-section__title">Розетки и выключатели</div>
+                    <div class="menu-catalog-submenu-links">
+                        <ul class="list-reset menu-catalog-submenu-links__list">
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Все товары раздела</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Розетки</span></a></li>
                             <li>
                                 <a class="link-dark" href="javascript:;">
-                                    <span class="catalog-submenu-link-text">Выключатели</span>
-                                    <span class="catalog-submenu-links-pointer">
+                                    <span class="menu-catalog-submenu-link-text">Выключатели</span>
+                                    <span class="menu-catalog-submenu-links-pointer">
                                         <svg class="icon">
                                             <use href="img/sprite.svg#chevron-right"></use>
                                         </svg>
@@ -1223,8 +1223,8 @@
                             </li>
                             <li>
                                 <a class="link-dark" href="javascript:;">
-                                    <span class="catalog-submenu-link-text">Рамки</span>
-                                    <span class="catalog-submenu-links-pointer">
+                                    <span class="menu-catalog-submenu-link-text">Рамки</span>
+                                    <span class="menu-catalog-submenu-links-pointer">
                                         <svg class="icon">
                                             <use href="img/sprite.svg#chevron-right"></use>
                                         </svg>
@@ -1233,48 +1233,48 @@
                             </li>
                             <li>
                                 <a class="link-dark" href="javascript:;">
-                                    <span class="catalog-submenu-link-text">Диммеры</span>
-                                    <span class="catalog-submenu-links-pointer">
+                                    <span class="menu-catalog-submenu-link-text">Диммеры</span>
+                                    <span class="menu-catalog-submenu-links-pointer">
                                         <svg class="icon">
                                             <use href="img/sprite.svg#chevron-right"></use>
                                         </svg>
                                     </span>
                                 </a>
                             </li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Датчики движения</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Датчики освещенности</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Выключатели с ДУ</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Блоки розеток и выключателей</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Антенные блоки</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Компьютерные розетки</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Датчики движения</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Датчики освещенности</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Выключатели с ДУ</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Блоки розеток и выключателей</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Антенные блоки</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Компьютерные розетки</span></a></li>
                         </ul>
-                        <ul class="list-reset catalog-submenu-links__list">
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Системы наблюдения и оповещения</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Дверные звонки и домофоны</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Системы видеонаблюдения</span></a></li>
+                        <ul class="list-reset menu-catalog-submenu-links__list">
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Системы наблюдения и оповещения</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Дверные звонки и домофоны</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Системы видеонаблюдения</span></a></li>
                         </ul>
-                        <ul class="list-reset catalog-submenu-links__list">
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Системы прокладки кабеля</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Кабель-каналы и аксессуары</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Кабельные лотки и аксессуары</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Трубы для кабеля и комплектующие</span></a></li>
+                        <ul class="list-reset menu-catalog-submenu-links__list">
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Системы прокладки кабеля</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Кабель-каналы и аксессуары</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Кабельные лотки и аксессуары</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Трубы для кабеля и комплектующие</span></a></li>
                         </ul>
-                        <ul class="list-reset catalog-submenu-links__list">
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Связь и безопасность</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Звонки</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Домофоны</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Датчики движения</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Датчики освещенности</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Терморегуляторы</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Видеонаблюдени</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Пожарно-охранная сигнализация, системы оповещения</span></a></li>
-                            <li><a class="link-dark" href="javascript:;"><span class="catalog-submenu-link-text">Устройства управления жалюзи, звуком, сигнализацией</span></a></li>
+                        <ul class="list-reset menu-catalog-submenu-links__list">
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Связь и безопасность</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalog-submenu-link-text">Звонки</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalog-submenu-link-text">Домофоны</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalog-submenu-link-text">Датчики движения</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalog-submenu-link-text">Датчики освещенности</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalog-submenu-link-text">Терморегуляторы</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalog-submenu-link-text">Видеонаблюдени</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalog-submenu-link-text">Пожарно-охранная сигнализация, системы оповещения</span></a></li>
+                            <li><a class="link-dark" href="javascript:;"><span class="menu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalog-submenu-link-text">Устройства управления жалюзи, звуком, сигнализацией</span></a></li>
                         </ul>
                     </div>
-                    <div class="catalog-submenu-banners">
+                    <div class="menu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalog-submenu-banners">
                         <div class="swiper">
                             <div class="swiper-wrapper">
-                                <div class="catalog-submenu-banners__item swiper-slide">
+                                <div class="menu-catalog-submenu-banners__item swiper-slide">
                                     <picture>
                                         <source srcset="img/.webp" type="image/webp">
                                         <img
@@ -1287,7 +1287,7 @@
                                         >
                                     </picture>
                                 </div>
-                                <div class="catalog-submenu-banners__item swiper-slide">
+                                <div class="menu-catalog-submenu-banners__item swiper-slide">
                                     <picture>
                                         <source srcset="img/.webp" type="image/webp">
                                         <img
@@ -1300,7 +1300,7 @@
                                         >
                                     </picture>
                                 </div>
-                                <div class="catalog-submenu-banners__item swiper-slide">
+                                <div class="menu-catalog-submenu-banners__item swiper-slide">
                                     <picture>
                                         <source srcset="img/.webp" type="image/webp">
                                         <img
@@ -1313,7 +1313,7 @@
                                         >
                                     </picture>
                                 </div>
-                                <div class="catalog-submenu-banners__item swiper-slide">
+                                <div class="menu-catalog-submenu-banners__item swiper-slide">
                                     <picture>
                                         <source srcset="img/.webp" type="image/webp">
                                         <img
@@ -1326,7 +1326,7 @@
                                         >
                                     </picture>
                                 </div>
-                                <div class="catalog-submenu-banners__item swiper-slide">
+                                <div class="menu-catalog-submenu-banners__item swiper-slide">
                                     <picture>
                                         <source srcset="img/.webp" type="image/webp">
                                         <img
@@ -1343,10 +1343,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="catalog-submenu-section" data-root-pointer="1">
-                    <div class="h3 catalog-submenu-section__title">Розетки и выключатели 2</div>
-                    <div class="catalog-submenu-links">
-                        <ul class="list-reset catalog-submenu-links__list">
+                <div class="menu-catalog-submenu-section" data-root-pointer="1">
+                    <div class="h3 menu-catalog-submenu-section__title">Розетки и выключатели 2</div>
+                    <div class="menu-catalog-submenu-links">
+                        <ul class="list-reset menu-catalogmenu-catalog-submenu-links__list">
                             <li><a class="link-dark" href="javascript:;">Все товары раздела</a></li>
                             <li><a class="link-dark" href="javascript:;">Розетки</a></li>
                             <li><a class="link-dark" href="javascript:;">Выключатели</a></li>
@@ -1356,18 +1356,18 @@
                             <li><a class="link-dark" href="javascript:;">Датчики освещенности</a></li>
                             <li><a class="link-dark" href="javascript:;">Выключатели с ДУ</a></li>
                         </ul>
-                        <ul class="list-reset catalog-submenu-links__list">
+                        <ul class="list-reset menu-catalogmenu-catalog-submenu-links__list">
                             <li><a class="link-dark" href="javascript:;">Системы наблюдения и оповещения</a></li>
                             <li><a class="link-dark" href="javascript:;">Дверные звонки и домофоны</a></li>
                             <li><a class="link-dark" href="javascript:;">Системы видеонаблюдения</a></li>
                         </ul>
-                        <ul class="list-reset catalog-submenu-links__list">
+                        <ul class="list-reset menu-catalogmenu-catalog-submenu-links__list">
                             <li><a class="link-dark" href="javascript:;">Системы прокладки кабеля</a></li>
                             <li><a class="link-dark" href="javascript:;">Кабель-каналы и аксессуары</a></li>
                             <li><a class="link-dark" href="javascript:;">Кабельные лотки и аксессуары</a></li>
                             <li><a class="link-dark" href="javascript:;">Трубы для кабеля и комплектующие</a></li>
                         </ul>
-                        <ul class="list-reset catalog-submenu-links__list">
+                        <ul class="list-reset menu-catalog-submenu-links__list">
                             <li><a class="link-dark" href="javascript:;">Связь и безопасность</a></li>
                             <li><a class="link-dark" href="javascript:;">Звонки</a></li>
                             <li><a class="link-dark" href="javascript:;">Домофоны</a></li>
@@ -1381,10 +1381,10 @@
                             <li><a class="link-dark" href="javascript:;">Видеонаблюдени</a></li>
                         </ul>
                     </div>
-                    <div class="catalog-submenu-banners">
+                    <div class="menu-catalog-submenu-banners">
                         <div class="swiper">
                             <div class="swiper-wrapper">
-                                <div class="catalog-submenu-banners__item swiper-slide">
+                                <div class="menu-catalog-submenu-banners__item swiper-slide">
                                     <picture>
                                         <source srcset="img/.webp" type="image/webp">
                                         <img
@@ -1397,7 +1397,7 @@
                                         >
                                     </picture>
                                 </div>
-                                <div class="catalog-submenu-banners__item swiper-slide">
+                                <div class="menu-catalog-submenu-banners__item swiper-slide">
                                     <picture>
                                         <source srcset="img/.webp" type="image/webp">
                                         <img
@@ -1410,7 +1410,7 @@
                                         >
                                     </picture>
                                 </div>
-                                <div class="catalog-submenu-banners__item swiper-slide">
+                                <div class="menu-catalog-submenu-banners__item swiper-slide">
                                     <picture>
                                         <source srcset="img/.webp" type="image/webp">
                                         <img
@@ -1423,7 +1423,7 @@
                                         >
                                     </picture>
                                 </div>
-                                <div class="catalog-submenu-banners__item swiper-slide">
+                                <div class="menu-catalog-submenu-banners__item swiper-slide">
                                     <picture>
                                         <source srcset="img/.webp" type="image/webp">
                                         <img
