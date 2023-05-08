@@ -76,9 +76,10 @@
 	align-items: flex-start;
 
 	&__title {
+		color: var(--text-secondary);
 		white-space: nowrap;
 	}
-	&__tag-bar {
+	& .tag-bar {
 		.btn {
 			font-weight: 400;
 			font-size: 13px;
@@ -97,10 +98,6 @@
 			align-items: center;
 			min-height: 32px;
 		}
-		&__tag-bar {
-			margin-right: 0;
-			margin-left: 0;
-		}
 	}
 }
 @media (max-width: 991.98px) {
@@ -108,17 +105,147 @@
 		flex-direction: column;
 		gap: 8px;
 		padding-bottom: 16px;
-
-		&__tag-bar {
-
-		}
 	}
 }
 
 .catalog {
-	&.inner-catalog {
+	&.catalog-top-level {}
+	/*&.catalog-category {
+		.catalog-sidebar {}
+		.catalog-content-header {}
+		.catalog-content {}
+	}*/
 
+	&-sidebar {
+		outline: 1px solid red;
+
+		&-sortby {}
 	}
 
+	&-content {
+		&-header {
+			outline: 1px solid blue;
+		}
+	}
 
+	&-grid {
+		display: flex;
+	}
+}
+@media (min-width: 992px) {
+	.catalog {
+		&.catalog-category {
+			display: grid;
+			grid-template-columns: 288px auto;
+			grid-template-rows: repeat(10, auto);
+			gap: 0 40px;
+
+			.catalog-sidebar {
+				order: 1;
+				grid-column: 1/2;
+				grid-row: 1/10;
+			}
+			.catalog-content-header {
+				order: 5;
+				grid-column: 2/3;
+				grid-row: 1/2;
+			}
+			.catalog-content {
+				order: 10;
+				grid-column: 2/3;
+			}
+		}
+
+		&-sidebar {
+			&-sortby {
+				&-fake {
+					overflow: hidden;
+					opacity: 0;
+				}
+			}
+		}
+
+		&-content {
+			&-header {
+
+			}
+		}
+
+		&-grid {
+			&.catalog-grid--grid {
+				flex-wrap: wrap;
+				gap: 24px 40px;
+
+				.card-product {
+					flex: 1;
+					margin-bottom: 24px;
+
+					/* todo
+					&:nth-child(4n+1) {
+						background-color: red;
+						&::before {
+							z-index: 1;
+							position: absolute;
+							bottom: -24px;
+							left: 0;
+							min-width: 100vw;
+							min-height: 1px;
+							height: 1px;
+							background-color: var(--gray5-color);
+						}
+					}*/
+				}
+			}
+			&.catalog-grid--list,
+			&.catalog-grid--table {
+				flex-direction: column;
+			}
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.catalog {
+		&.catalog-category {
+
+
+			.catalog-sidebar {
+				/*order: 1;
+				grid-column: 1/2;
+				grid-row: 1/10;*/
+			}
+			.catalog-content-header {
+				/*order: 5;
+				grid-column: 2/3;
+				grid-row: 1/2;*/
+			}
+			.catalog-content {
+				/*order: 10;
+				grid-column: 2/3;*/
+			}
+		}
+
+		&-sidebar {
+			&-sortby {
+				&-fake {
+					display: none;
+				}
+			}
+		}
+
+		&-content {
+			&-header {
+
+			}
+		}
+
+		&-grid {
+			flex-wrap: wrap;
+			justify-content: space-between;
+			gap: 32px 16px;
+
+			.card-product {
+				flex: 1;
+			}
+		}
+	}
 }

@@ -1345,7 +1345,14 @@
                                     <div class="product-card-mobile-section">
                                         <div class="product-card-mobile-section-container">
                                             <div class="product-card-pagination">
-											    <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/pagination.php"); ?>
+                                                <div class="pagination-wrapper">
+													<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/pagination.php"); ?>
+                                                    <div class="pagination-more">
+                                                        <button class="btn-reset btn btn-b-light">
+                                                            <span class="btn__text">Показать еще</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1541,7 +1548,14 @@
                                     <div class="product-card-mobile-section">
                                         <div class="product-card-mobile-section-container">
                                             <div class="product-card-pagination">
-												<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/pagination.php"); ?>
+                                                <div class="pagination-wrapper">
+													<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/pagination.php"); ?>
+                                                    <div class="pagination-more">
+                                                        <button class="btn-reset btn btn-b-light">
+                                                            <span class="btn__text">Показать еще</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

@@ -476,7 +476,7 @@ application.prototype.initTabsOnscroll = function () {
 
 // Initialize cart-buy fixed panel on scroll
 application.prototype.initCartOnscroll = function () {
-    if ($('[data-fixed-cart-coord]').length) {
+    if ($('[data-fixed-cart-coord]').length && $('[data-cart-coord]').length) {
         const elem = $('[data-cart-coord]');
 
         setFixedToolbar();
