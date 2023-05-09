@@ -43,6 +43,7 @@ application.prototype.init = function () {
     this.initInputSearchBehavior();
     this.initSearchResBehavior();
     this.initMobileCitySelection();
+    this.initCatalogContentSort();
 
 
 
@@ -1360,6 +1361,48 @@ application.prototype.initMobileCitySelection = function () {
         $(document).on('keyup', function (e) {
             if (e.key == 'Escape') {
                 $('.mobile-city').removeClass('active');
+            }
+        });
+    }
+};
+
+// Initialization catalog content sort
+application.prototype.initCatalogContentSort = function () {
+    if ($('.catalog-content-settings__sort-options').length) {
+        $('.catalog-content-settings__sort-item input[type="radio"]').on('click', function () {
+            if($(this).prop('checked')) {
+                $(this).closest('.catalog-content-settings__sort-options').find('.catalog-content-settings__sort-label').removeClass('active');
+                $(this).siblings('.catalog-content-settings__sort-label').addClass('active');
+            } else {
+                $(this).siblings('.catalog-content-settings__sort-label').removeClass('active');
+            }
+        });
+
+        $(window).on('resize', function () {
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                $('.catalog-content-settings__sort-select').removeClass('active');
+                $('.catalog-content-settings__sort-options').removeClass('active');
+            } else if (window.matchMedia('(max-width: 991.98px)').matches) {
+                $('.catalog-content-settings__sort-select').on('click', function () {
+                   if($(this).hasClass('active')) {
+                       $(this).removeClass('active');
+                       $(this).siblings('.catalog-content-settings__sort-options').removeClass('active');
+                   } else if(!$(this).hasClass('active')) {
+                       $(this).addClass('active');
+                       $(this).siblings('.catalog-content-settings__sort-options').addClass('active');
+                   }
+                });
+
+                $('.catalog-content-settings__sort-item input[type="radio"]').on('click', function () {
+                    let selectPlaceholder = $('.catalog-content-settings__sort-label.active').text();
+                    console.log(selectPlaceholder);
+                    if($(this).prop('checked')) {
+                        $(this).text();
+                        $(this).siblings('.catalog-content-settings__sort-label').addClass('active');
+                    } else {
+                        $(this).siblings('.catalog-content-settings__sort-label').removeClass('active');
+                    }
+                });
             }
         });
     }
