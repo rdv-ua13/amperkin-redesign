@@ -126,6 +126,7 @@ const includedJsBuild = () => {
             "node_modules/readmore-js/readmore.js",
             "node_modules/flatpickr/dist/flatpickr.min.js",
             "node_modules/flatpickr/dist/l10n/ru.js",
+            "node_modules/nouislider/dist/nouislider.js",
         ]
     )
         .pipe(dest(path.build.js))
@@ -148,6 +149,7 @@ const libsJsBuild = () => {
             "node_modules/readmore-js/readmore.js",
             "node_modules/flatpickr/dist/flatpickr.min.js",
             "node_modules/flatpickr/dist/l10n/ru.js",
+            "node_modules/nouislider/dist/nouislider.js",
         ]
     )
         .pipe(concat("libs.min.js"))

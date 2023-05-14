@@ -635,7 +635,12 @@
                                                     <div class="h5">Характеристики</div>
                                                 </div>
 
-                                                <div class="spoiler" data-spoiler data-collapsed-height="426">
+                                                <div
+                                                        class="spoiler"
+                                                        data-spoiler
+                                                        data-spoiler-more="Все характеристики"
+                                                        data-spoiler-less="Скрыть"
+                                                >
                                                     <div class="spoiler-content">
                                                         <table class="table-descr">
                                                             <tbody>

@@ -702,7 +702,8 @@ input.disabled {
 				border-color: var(--gray1-color);
 			}
 		}
-		&:checked {
+		&:checked,
+		&.checked {
 			&,
 			&:hover {
 				border-color: var(--yellow2-color);
@@ -726,7 +727,7 @@ input.disabled {
 		}
 		&:disabled,
 		&.disabled {
-			cursor: not-allowed;
+			cursor: default;
 
 			&,
 			&:hover {
@@ -736,6 +737,7 @@ input.disabled {
 			& ~ .custom-checkbox__label-for,
 			& ~ .custom-radio__label-for {
 				color: var(--text-caption);
+				user-select: none;
 			}
 			& ~ .custom-checkbox__brand,
 			& ~ .custom-radio__brand {
@@ -763,9 +765,18 @@ input.disabled {
 		line-height: 18px;
 	}
 	&__brand {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 64px;
+		width: 64px;
+		min-height: 30px;
+		height: 30px;
+
 		& .icon,
 		& .image {
-			max-height: 30px;
+			width: auto;
+			height: 100%;
 		}
 	}
 }
@@ -853,6 +864,7 @@ input.disabled {
 		height: 16px;
 		margin-top: -8px;
 		background: url("../img/sprite.svg#search") no-repeat center/cover transparent;
+		transition: var(--transition);
 	}
 	.input-search {
 		min-width: 100%;
@@ -879,14 +891,19 @@ input.disabled {
 	.input-delete-btn {
 		position: absolute;
 		top: 50%;
+		right: 0;
 		transform: translateY(-50%);
+		min-width: 40px;
+		width: 40px;
+		min-height: 40px;
+		height: 40px;
 	}
 	.input-search-btn {
 		right: 6px;
 	}
-	.input-delete-btn {
+	/*.input-delete-btn {
 		right: 12px;
-	}
+	}*/
 }
 
 .submit-field-wrapper {
@@ -1905,6 +1922,9 @@ input.disabled {
 				&-header {
 					margin-bottom: 24px;
 				}
+				.spoiler {
+					max-height: 426px;
+				}
 			}
 			&-sale-label {
 				top: 0;
@@ -2834,8 +2854,10 @@ input.disabled {
 		left: 0;
 		min-height: 8px;
 		height: 8px;
-		background-color: var(--white-color);
-		filter: blur(4px);
+		background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.5) 75%, #ffffff);
+	}
+	&[data-readmore] {
+		margin-bottom: 16px;
 	}
 	&,
 	&-content {
@@ -2846,7 +2868,7 @@ input.disabled {
 			margin-top: 0;
 
 			&:not(:last-child) {
-				margin-bottom: 20px;
+				margin-bottom: 16px;
 			}
 			&:last-child {
 				margin-bottom: 0;

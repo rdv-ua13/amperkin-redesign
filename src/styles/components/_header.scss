@@ -932,6 +932,15 @@
 			padding-top: calc(185px + 32px);
 		}
 
+		& .header-search {
+			.input-search-btn {
+				min-width: 0;
+				width: auto;
+				min-height: 32px;
+				height: 32px;
+			}
+		}
+
 		&-contacts {
 			&:not(:last-child) {
 				margin-right: 50px;

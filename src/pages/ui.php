@@ -2770,6 +2770,154 @@
     <br>
     <br>
 
+    <h3 class="text-center">Spoiler for text</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="h5">Default values: height = 200px; data-spoiler-more = 'Показать все'; data-spoiler-less = 'Свернуть';</div>
+            </div>
+            <div class="row-ui ">
+                <div class="flex-v-center">
+                    <div>
+                        <!--start ui content-->
+                        <div class="spoiler-wrapper">
+                            <div
+                                    class="spoiler"
+                                    data-spoiler
+                                    data-spoiler-more="Все характеристики"
+                                    data-spoiler-less="Скрыть"
+                            >
+                                <div class="spoiler-content">
+                                    <table class="table-descr">
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <span>Артикул</span>
+                                            </td>
+                                            <td>
+                                                <span>ST9431B</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Тип товара</span>
+                                            </td>
+                                            <td>
+                                                <span>Удлинитель</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Производитель</span>
+                                            </td>
+                                            <td>
+                                                <span class="red-color">Schneider Electric</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Серия</span>
+                                            </td>
+                                            <td>
+                                                <span class="red-color">Электромонтажная система OPTILINE 45</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Цвет</span>
+                                            </td>
+                                            <td>
+                                                <span class="red-color">Чёрный</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Степень защиты</span>
+                                            </td>
+                                            <td>
+                                                <span class="red-color">IP20</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Материал корпуса</span>
+                                            </td>
+                                            <td>
+                                                <span>Пластик</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Поперечное сечение жилы</span>
+                                            </td>
+                                            <td>
+                                                <span>1.5 мм²</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Количество штепсельных розеток с заземляющим контактом:</span>
+                                            </td>
+                                            <td>
+                                                <span>4</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Количество жил</span>
+                                            </td>
+                                            <td>
+                                                <span>3</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Длина кабеля, м</span>
+                                            </td>
+                                            <td>
+                                                <span>15</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>С термозащитой</span>
+                                            </td>
+                                            <td>
+                                                <span>Да</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Заземление</span>
+                                            </td>
+                                            <td>
+                                                <span>Да</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>test</span>
+                                            </td>
+                                            <td>
+                                                <span>test</span>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end ui content-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
+
     <h3 class="text-center">Basic sider with overflow nav buttons</h3>
     <div class="container-ui">
         <div class="col-ui">
