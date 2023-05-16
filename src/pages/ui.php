@@ -2222,47 +2222,6 @@
     <br>
     <br>
 
-    <h3 class="text-center">Check all</h3>
-    <div class="container-ui">
-        <div class="col-ui">
-            <div class="row-ui ">
-                <div class="flex-v-center" style="width: 100%; gap: 15px;">
-                    <!--start ui content-->
-                    <div class="custom-checkbox">
-                        <input
-                                class="custom-checkbox__input custom-checkbox__input--checkline checkall-for"
-                                type="checkbox"
-                                data-checkall-for="checkallTest"
-                        >
-                        all
-                    </div>
-
-                    <div class="custom-checkbox">
-                        <input
-                                class="custom-checkbox__input checkall-group"
-                                type="checkbox"
-                                data-checkall-group="checkallTest"
-                        >
-                        single
-                    </div>
-                    <div class="custom-checkbox">
-                        <input
-                                class="custom-checkbox__input checkall-group"
-                                type="checkbox"
-                                data-checkall-group="checkallTest"
-                        >
-                        single
-                    </div>
-                    <!--end ui content-->
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr style="width: 100%;">
-
-    <br>
-    <br>
-
     <h3 class="text-center">Tooltip</h3>
     <div class="container-ui">
         <div class="col-ui">
@@ -2918,6 +2877,580 @@
     <br>
     <br>
 
+    <h3 class="text-center">Card-product</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div style="margin-bottom: 20px;">
+                <h4 class="text-center flex-1" style="max-width: 200px">default</h4>
+                <div class="container-ui">
+                    <div class="col-ui">
+                        <div class="row-ui ">
+                            <div class="flex-v-center" style="gap: 20px;">
+                                <!--start ui content-->
+                                <div class="card-product card-product-default" data-card-product>
+                                    <div class="card-product-view">
+                                        <div class="mini-slider">
+                                            <div class="mini-slider__slide">
+                                                <picture>
+                                                    <source srcset="img/product-2.webp" type="image/webp">
+                                                    <img
+                                                            loading="lazy"
+                                                            src="img/product-2.png"
+                                                            class="mini-slider__img"
+                                                            width="208"
+                                                            height="208"
+                                                            style="opacity: 1;"
+                                                            alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <div class="mini-slider__slide">
+                                                <picture>
+                                                    <source srcset="img/product-3.webp" type="image/webp">
+                                                    <img
+                                                            loading="lazy"
+                                                            src="img/product-3.png"
+                                                            class="mini-slider__img"
+                                                            width="208"
+                                                            height="208"
+                                                            style="opacity: 0;"
+                                                            alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <div class="mini-slider__slide">
+                                                <picture>
+                                                    <source srcset="img/product-4.webp" type="image/webp">
+                                                    <img
+                                                            loading="lazy"
+                                                            src="img/product-4.png"
+                                                            class="mini-slider__img"
+                                                            width="208"
+                                                            height="208"
+                                                            style="opacity: 0;"
+                                                            alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <ul class="list-reset mini-slider__dots"></ul>
+                                        </div>
+                                        <div class="card-product-sale-label">
+                                            <span class="sale-label sale-label-red">20%</span>
+                                            <span class="sale-label sale-label-yellow">Распродажа</span>
+                                            <span class="sale-label sale-label-green">Хит</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-product-descr">
+                                        <div class="card-product-descr__top">
+                                            <div class="card-product-descr__info">
+                                                <span class="product-code"><span>46- 312792P13</span></span>
+                                                <span class="star-rating-wrapper star-rating-wrapper--noframe">
+                                                    <span class="star-rating">
+                                                        <span class="star-rating__container">
+                                                            <label>
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#fill-star"></use>
+                                                                </svg>
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                    <span class="star-rating-value" data-value="5.0">5.0</span>
+                                                </span>
+                                            </div>
+                                            <div class="card-product-descr__availability product-availability in-stock">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#checkbox-rec"></use>
+                                                </svg>
+                                                <span>Товар в наличии</span>
+                                            </div>
+                                            <div class="card-product-descr__title">
+                                                <a href="javascript:;">Haupa Инструмент обжимной для конечных гильз 0,25-6</a>
+                                            </div>
+                                            <div class="card-product-descr__text">
+                                                <span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
+
+                                                <span>
+                                                    <a class="btn-reset btn btn-link" href="javascript:;">
+                                                        <svg class="icon btn__icon">
+                                                            <use href="img/sprite.svg#sliders-horiz"></use>
+                                                        </svg>
+                                                        <span class="btn__text">Перейти в конфигуратор</span>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-product-descr__bottom">
+                                            <div class="card-product-descr__price">
+                                                <div class="card-product-descr__price-title">Цена за штуку</div>
+                                                <div class="card-product-descr__price-display">
+                                                    <div class="card-product-descr__price-discount">
+                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                        <div class="card-product-descr__price-discount-label">10%</div>
+                                                    </div>
+                                                    <div class="card-product-descr__price-current">1 666 173,10 ₽</div>
+                                                </div>
+                                                <div class="card-product-descr__price-bonus">
+                                                    <span>+ 346,99</span>
+                                                    <svg class="icon">
+                                                        <use href="img/sprite.svg#fill-bonus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="card-product-descr__cart product-card__cart cart-buy">
+                                                <div class="product-card__cart-quantity cart-quantity disabled">
+                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                        <svg class="icon icon-sm btn__icon">
+                                                            <use href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                        <svg class="icon icon-sm btn__icon icon-selected">
+                                                            <use href="img/sprite.svg#trash"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input
+                                                            id=""
+                                                            class="input-reset cart-quantity-input"
+                                                            type="text"
+                                                            placeholder="999"
+                                                            value="1"
+                                                            max="999"
+                                                            data-mult="1"
+                                                    >
+                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                        <svg class="icon icon-sm btn__icon">
+                                                            <use href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="btn-reset btn btn-primary cart-in switch-content" type="button">
+                                                    <span class="btn__text text-default">В КОРЗИНУ</span>
+                                                    <span class="btn__text text-selected">в корзине</span>
+                                                </button>
+                                                <div class="card-product-act">
+                                                    <button class="btn-reset btn btn-light card-product-act__more" data-card-product-act-more>
+                                                        <svg class="icon btn__icon">
+                                                            <use href="img/sprite.svg#fill-more-horiz"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <div class="card-product-act__list" data-card-product-act-content>
+                                                        <button class="btn-reset btn card-product-act__btn switch-content" data-notice="favorites" title="В избранное">
+                                                            <svg class="icon btn__icon icon-default">
+                                                                <use href="img/sprite.svg#bookmark-plus"></use>
+                                                            </svg>
+                                                            <span class="btn__text text-default">В избранное</span>
+                                                            <svg class="icon btn__icon icon-selected">
+                                                                <use href="img/sprite.svg#fill-bookmark-check"></use>
+                                                            </svg>
+                                                            <span class="btn__text text-selected">В избранном</span>
+                                                        </button>
+                                                        <button class="btn-reset btn card-product-act__btn switch-content" title="Сравнить" data-notice="compare">
+                                                            <svg class="icon btn__icon">
+                                                                <use href="img/sprite.svg#barchart"></use>
+                                                            </svg>
+                                                            <span class="btn__text text-default">Сравнить</span>
+                                                            <span class="btn__text text-selected">В сравнении</span>
+                                                        </button>
+                                                        <button class="btn-reset btn card-product-act__btn" title="В смету" data-fancybox data-src="#modal-estimate">
+                                                            <svg class="icon btn__icon">
+                                                                <use href="img/sprite.svg#inbox-in"></use>
+                                                            </svg>
+                                                            <span class="btn__text">В смету</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end ui content-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h4 class="text-center flex-1" style="max-width: 200px">list</h4>
+                <div class="container-ui">
+                    <div class="col-ui">
+                        <div class="row-ui ">
+                            <div class="flex-v-center" style="gap: 20px;">
+                                <!--start ui content-->
+                                <div class="card-product card-product-list" data-card-product>
+                                    <div class="card-product-view">
+                                        <div class="mini-slider">
+                                            <div class="mini-slider__slide">
+                                                <picture>
+                                                    <source srcset="img/product-2.webp" type="image/webp">
+                                                    <img
+                                                            loading="lazy"
+                                                            src="img/product-2.png"
+                                                            class="mini-slider__img"
+                                                            width="208"
+                                                            height="208"
+                                                            style="opacity: 1;"
+                                                            alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <div class="mini-slider__slide">
+                                                <picture>
+                                                    <source srcset="img/product-3.webp" type="image/webp">
+                                                    <img
+                                                            loading="lazy"
+                                                            src="img/product-3.png"
+                                                            class="mini-slider__img"
+                                                            width="208"
+                                                            height="208"
+                                                            style="opacity: 0;"
+                                                            alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <div class="mini-slider__slide">
+                                                <picture>
+                                                    <source srcset="img/product-4.webp" type="image/webp">
+                                                    <img
+                                                            loading="lazy"
+                                                            src="img/product-4.png"
+                                                            class="mini-slider__img"
+                                                            width="208"
+                                                            height="208"
+                                                            style="opacity: 0;"
+                                                            alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <ul class="list-reset mini-slider__dots"></ul>
+                                        </div>
+                                        <div class="card-product-sale-label">
+                                            <span class="sale-label sale-label-red">20%</span>
+                                            <span class="sale-label sale-label-yellow">Распродажа</span>
+                                            <span class="sale-label sale-label-green">Хит</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-product-descr">
+                                        <div class="card-product-descr__top">
+                                            <div class="card-product-descr__info">
+                                                <span class="product-code"><span>46- 312792P13</span></span>
+                                                <span class="star-rating-wrapper star-rating-wrapper--noframe">
+                                                    <span class="star-rating">
+                                                        <span class="star-rating__container">
+                                                            <label>
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#fill-star"></use>
+                                                                </svg>
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                    <span class="star-rating-value" data-value="5.0">5.0</span>
+                                                </span>
+                                            </div>
+                                            <div class="card-product-descr__availability product-availability on-order">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#timer"></use>
+                                                </svg>
+                                                <span>Под заказ</span>
+                                            </div>
+                                            <div class="card-product-descr__title">
+                                                <a href="javascript:;">Haupa Инструмент обжимной для конечных гильз 0,25-6</a>
+                                            </div>
+                                            <div class="card-product-descr__text">
+                                                <span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
+
+                                                <span>
+                                                    <a class="btn-reset btn btn-link" href="javascript:;">
+                                                        <svg class="icon btn__icon">
+                                                            <use href="img/sprite.svg#sliders-horiz"></use>
+                                                        </svg>
+                                                        <span class="btn__text">Перейти в конфигуратор</span>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-product-descr__bottom">
+                                            <div class="card-product-descr__price">
+                                                <div class="card-product-descr__price-title">Цена за штуку</div>
+                                                <div class="card-product-descr__price-display">
+                                                    <div class="card-product-descr__price-discount">
+                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                        <div class="card-product-descr__price-discount-label">10%</div>
+                                                    </div>
+                                                    <div class="card-product-descr__price-current">1 666 173,10 ₽</div>
+                                                </div>
+                                                <div class="card-product-descr__price-bonus">
+                                                    <span>+ 346,99</span>
+                                                    <svg class="icon">
+                                                        <use href="img/sprite.svg#fill-bonus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="card-product-descr__cart product-card__cart cart-buy">
+                                                <div class="product-card__cart-quantity cart-quantity disabled">
+                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                        <svg class="icon icon-sm btn__icon">
+                                                            <use href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                        <svg class="icon icon-sm btn__icon icon-selected">
+                                                            <use href="img/sprite.svg#trash"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input
+                                                            id=""
+                                                            class="input-reset cart-quantity-input"
+                                                            type="text"
+                                                            placeholder="999"
+                                                            value="1"
+                                                            max="999"
+                                                            data-mult="1"
+                                                    >
+                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                        <svg class="icon icon-sm btn__icon">
+                                                            <use href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="btn-reset btn btn-primary cart-in switch-content" type="button">
+                                                    <span class="btn__text text-default">В КОРЗИНУ</span>
+                                                    <span class="btn__text text-selected">в корзине</span>
+                                                </button>
+                                                <div class="card-product-act">
+                                                    <button class="btn-reset btn btn-light card-product-act__more" data-card-product-act-more>
+                                                        <svg class="icon btn__icon">
+                                                            <use href="img/sprite.svg#fill-more-horiz"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <div class="card-product-act__list" data-card-product-act-content>
+                                                        <button class="btn-reset btn card-product-act__btn switch-content" data-notice="favorites" title="В избранное">
+                                                            <svg class="icon btn__icon icon-default">
+                                                                <use href="img/sprite.svg#bookmark-plus"></use>
+                                                            </svg>
+                                                            <span class="btn__text text-default">В избранное</span>
+                                                            <svg class="icon btn__icon icon-selected">
+                                                                <use href="img/sprite.svg#fill-bookmark-check"></use>
+                                                            </svg>
+                                                            <span class="btn__text text-selected">В избранном</span>
+                                                        </button>
+                                                        <button class="btn-reset btn card-product-act__btn switch-content" title="Сравнить" data-notice="compare">
+                                                            <svg class="icon btn__icon">
+                                                                <use href="img/sprite.svg#barchart"></use>
+                                                            </svg>
+                                                            <span class="btn__text text-default">Сравнить</span>
+                                                            <span class="btn__text text-selected">В сравнении</span>
+                                                        </button>
+                                                        <button class="btn-reset btn card-product-act__btn" title="В смету" data-fancybox data-src="#modal-estimate">
+                                                            <svg class="icon btn__icon">
+                                                                <use href="img/sprite.svg#inbox-in"></use>
+                                                            </svg>
+                                                            <span class="btn__text">В смету</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end ui content-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h4 class="text-center flex-1" style="max-width: 200px">table</h4>
+                <div class="container-ui">
+                    <div class="col-ui">
+                        <div class="row-ui ">
+                            <div class="flex-v-center" style="gap: 20px;">
+                                <!--start ui content-->
+                                <div class="card-product card-product-table" data-card-product>
+                                    <div class="card-product-view">
+                                        <div class="mini-slider">
+                                            <div class="mini-slider__slide">
+                                                <picture>
+                                                    <source srcset="img/product-2.webp" type="image/webp">
+                                                    <img
+                                                            loading="lazy"
+                                                            src="img/product-2.png"
+                                                            class="mini-slider__img"
+                                                            width="208"
+                                                            height="208"
+                                                            style="opacity: 1;"
+                                                            alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <div class="mini-slider__slide">
+                                                <picture>
+                                                    <source srcset="img/product-3.webp" type="image/webp">
+                                                    <img
+                                                            loading="lazy"
+                                                            src="img/product-3.png"
+                                                            class="mini-slider__img"
+                                                            width="208"
+                                                            height="208"
+                                                            style="opacity: 0;"
+                                                            alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <div class="mini-slider__slide">
+                                                <picture>
+                                                    <source srcset="img/product-4.webp" type="image/webp">
+                                                    <img
+                                                            loading="lazy"
+                                                            src="img/product-4.png"
+                                                            class="mini-slider__img"
+                                                            width="208"
+                                                            height="208"
+                                                            style="opacity: 0;"
+                                                            alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <ul class="list-reset mini-slider__dots"></ul>
+                                        </div>
+                                        <div class="card-product-sale-label">
+                                            <span class="sale-label sale-label-red">20%</span>
+                                            <span class="sale-label sale-label-yellow">Распродажа</span>
+                                            <span class="sale-label sale-label-green">Хит</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-product-descr">
+                                        <div class="card-product-descr__top">
+                                            <div class="card-product-descr__info">
+                                                <span class="product-code"><span>46- 312792P13</span></span>
+                                                <span class="star-rating-wrapper star-rating-wrapper--noframe">
+                                                    <span class="star-rating">
+                                                        <span class="star-rating__container">
+                                                            <label>
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#fill-star"></use>
+                                                                </svg>
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                    <span class="star-rating-value" data-value="5.0">5.0</span>
+                                                </span>
+                                            </div>
+                                            <div class="card-product-descr__availability product-availability out-stock">
+                                                <svg class="icon">
+                                                    <use href="img/sprite.svg#slash"></use>
+                                                </svg>
+                                                <span>Нет в наличии</span>
+                                            </div>
+                                            <div class="card-product-descr__title">
+                                                <a href="javascript:;">Haupa Инструмент обжимной для конечных гильз 0,25-6</a>
+                                            </div>
+                                            <div class="card-product-descr__text">
+                                                <span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
+
+                                                <span>
+                                                    <a class="btn-reset btn btn-link" href="javascript:;">
+                                                        <svg class="icon btn__icon">
+                                                            <use href="img/sprite.svg#sliders-horiz"></use>
+                                                        </svg>
+                                                        <span class="btn__text">Перейти в конфигуратор</span>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-product-descr__bottom">
+                                            <div class="card-product-descr__price">
+                                                <div class="card-product-descr__price-title">Цена за штуку</div>
+                                                <div class="card-product-descr__price-display">
+                                                    <div class="card-product-descr__price-discount">
+                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                        <div class="card-product-descr__price-discount-label">10%</div>
+                                                    </div>
+                                                    <div class="card-product-descr__price-current">1 666 173,10 ₽</div>
+                                                </div>
+                                                <div class="card-product-descr__price-bonus">
+                                                    <span>+ 346,99</span>
+                                                    <svg class="icon">
+                                                        <use href="img/sprite.svg#fill-bonus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="card-product-descr__cart product-card__cart cart-buy">
+                                                <div class="product-card__cart-quantity cart-quantity disabled">
+                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                        <svg class="icon icon-sm btn__icon">
+                                                            <use href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                        <svg class="icon icon-sm btn__icon icon-selected">
+                                                            <use href="img/sprite.svg#trash"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input
+                                                            id=""
+                                                            class="input-reset cart-quantity-input"
+                                                            type="text"
+                                                            placeholder="999"
+                                                            value="1"
+                                                            max="999"
+                                                            data-mult="1"
+                                                    >
+                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                        <svg class="icon icon-sm btn__icon">
+                                                            <use href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="btn-reset btn btn-primary cart-in switch-content" type="button">
+                                                    <span class="btn__text text-default">В КОРЗИНУ</span>
+                                                    <span class="btn__text text-selected">в корзине</span>
+                                                </button>
+                                                <div class="card-product-act">
+                                                    <button class="btn-reset btn btn-light card-product-act__more" data-card-product-act-more>
+                                                        <svg class="icon btn__icon">
+                                                            <use href="img/sprite.svg#fill-more-horiz"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <div class="card-product-act__list" data-card-product-act-content>
+                                                        <button class="btn-reset btn card-product-act__btn switch-content" data-notice="favorites" title="В избранное">
+                                                            <svg class="icon btn__icon icon-default">
+                                                                <use href="img/sprite.svg#bookmark-plus"></use>
+                                                            </svg>
+                                                            <span class="btn__text text-default">В избранное</span>
+                                                            <svg class="icon btn__icon icon-selected">
+                                                                <use href="img/sprite.svg#fill-bookmark-check"></use>
+                                                            </svg>
+                                                            <span class="btn__text text-selected">В избранном</span>
+                                                        </button>
+                                                        <button class="btn-reset btn card-product-act__btn switch-content" title="Сравнить" data-notice="compare">
+                                                            <svg class="icon btn__icon">
+                                                                <use href="img/sprite.svg#barchart"></use>
+                                                            </svg>
+                                                            <span class="btn__text text-default">Сравнить</span>
+                                                            <span class="btn__text text-selected">В сравнении</span>
+                                                        </button>
+                                                        <button class="btn-reset btn card-product-act__btn" title="В смету" data-fancybox data-src="#modal-estimate">
+                                                            <svg class="icon btn__icon">
+                                                                <use href="img/sprite.svg#inbox-in"></use>
+                                                            </svg>
+                                                            <span class="btn__text">В смету</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end ui content-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
+    <br>
+    <br>
+
     <h3 class="text-center">Basic sider with overflow nav buttons</h3>
     <div class="container-ui">
         <div class="col-ui">
@@ -3137,7 +3670,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                             </div>
-                                                            <div class="card-product-descr__availability in-stock">
+                                                            <div class="card-product-descr__availability product-availability in-stock">
                                                                 <svg class="icon">
                                                                     <use href="img/sprite.svg#checkbox-rec"></use>
                                                                 </svg>
@@ -3146,14 +3679,29 @@
                                                             <div class="card-product-descr__title">
                                                                 <a href="javascript:;">Haupa Отвёртка двухкомпонентная PH 2</a>
                                                             </div>
+                                                            <div class="card-product-descr__text">
+                                                                <span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
+
+                                                                <span>
+                                                                    <a class="btn-reset btn btn-link" href="javascript:;">
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#sliders-horiz"></use>
+                                                                        </svg>
+                                                                        <span class="btn__text">Перейти в конфигуратор</span>
+                                                                    </a>
+                                                                </span>
+                                                            </div>
                                                         </div>
 
                                                         <div class="card-product-descr__bottom">
                                                             <div class="card-product-descr__price">
                                                                 <div class="card-product-descr__price-title">Цена за штуку</div>
                                                                 <div class="card-product-descr__price-display">
-                                                                    <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                    <div class="card-product-descr__price-discount">
+                                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                        <div class="card-product-descr__price-discount-label">10%</div>
+                                                                    </div>
+                                                                    <div class="card-product-descr__price-current">6 173,10 ₽</div>
                                                                 </div>
                                                                 <div class="card-product-descr__price-bonus">
                                                                     <span>+ 346,99</span>
@@ -3298,7 +3846,7 @@
                                                         <span class="star-rating-value" data-value="5.0">5.0</span>
                                                     </span>
                                                             </div>
-                                                            <div class="card-product-descr__availability on-order">
+                                                            <div class="card-product-descr__availability product-availability on-order">
                                                                 <svg class="icon">
                                                                     <use href="img/sprite.svg#timer"></use>
                                                                 </svg>
@@ -3307,14 +3855,29 @@
                                                             <div class="card-product-descr__title">
                                                                 <a href="javascript:;">Haupa Инструмент обжимной для конечных гильз 0,25-6</a>
                                                             </div>
+                                                            <div class="card-product-descr__text">
+                                                                <span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
+
+                                                                <span>
+                                                                    <a class="btn-reset btn btn-link" href="javascript:;">
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#sliders-horiz"></use>
+                                                                        </svg>
+                                                                        <span class="btn__text">Перейти в конфигуратор</span>
+                                                                    </a>
+                                                                </span>
+                                                            </div>
                                                         </div>
 
                                                         <div class="card-product-descr__bottom">
                                                             <div class="card-product-descr__price">
                                                                 <div class="card-product-descr__price-title">Цена за штуку</div>
                                                                 <div class="card-product-descr__price-display">
+                                                                    <div class="card-product-descr__price-discount">
+                                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                        <div class="card-product-descr__price-discount-label">10%</div>
+                                                                    </div>
                                                                     <div class="card-product-descr__price-current">6 173,10 ₽</div>
-                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                                 </div>
                                                                 <div class="card-product-descr__price-bonus">
                                                                     <span>+ 346,99</span>
@@ -3475,7 +4038,7 @@
                                                             <div class="card-product-descr__info">
                                                                 <span class="product-code"><span>2348958- 87</span></span>
                                                             </div>
-                                                            <div class="card-product-descr__availability on-order">
+                                                            <div class="card-product-descr__availability product-availability on-order">
                                                                 <svg class="icon">
                                                                     <use href="img/sprite.svg#timer"></use>
                                                                 </svg>
@@ -3484,14 +4047,29 @@
                                                             <div class="card-product-descr__title">
                                                                 <a href="javascript:;">SE Unica Extend Бел Удлинитель 3 розетки 2К+З, кабель 1,5м</a>
                                                             </div>
+                                                            <div class="card-product-descr__text">
+                                                                <span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
+
+                                                                <span>
+                                                                    <a class="btn-reset btn btn-link" href="javascript:;">
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#sliders-horiz"></use>
+                                                                        </svg>
+                                                                        <span class="btn__text">Перейти в конфигуратор</span>
+                                                                    </a>
+                                                                </span>
+                                                            </div>
                                                         </div>
 
                                                         <div class="card-product-descr__bottom">
                                                             <div class="card-product-descr__price">
                                                                 <div class="card-product-descr__price-title">Цена за штуку</div>
                                                                 <div class="card-product-descr__price-display">
-                                                                    <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                    <div class="card-product-descr__price-discount">
+                                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                        <div class="card-product-descr__price-discount-label">10%</div>
+                                                                    </div>
+                                                                    <div class="card-product-descr__price-current">6 173,10 ₽</div>
                                                                 </div>
                                                                 <div class="card-product-descr__price-bonus">
                                                                     <span>+ 346,99</span>
@@ -3624,7 +4202,7 @@
                                                             <div class="card-product-descr__info">
                                                                 <span class="product-code"><span>Z241- 0008</span></span>
                                                             </div>
-                                                            <div class="card-product-descr__availability in-stock">
+                                                            <div class="card-product-descr__availability product-availability in-stock">
                                                                 <svg class="icon">
                                                                     <use href="img/sprite.svg#checkbox-rec"></use>
                                                                 </svg>
@@ -3633,14 +4211,29 @@
                                                             <div class="card-product-descr__title">
                                                                 <a href="javascript:;">SE Unica System+ Антрацит Блок розеточный (2к+з)+usb тип А</a>
                                                             </div>
+                                                            <div class="card-product-descr__text">
+                                                                <span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
+
+                                                                <span>
+                                                                    <a class="btn-reset btn btn-link" href="javascript:;">
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#sliders-horiz"></use>
+                                                                        </svg>
+                                                                        <span class="btn__text">Перейти в конфигуратор</span>
+                                                                    </a>
+                                                                </span>
+                                                            </div>
                                                         </div>
 
                                                         <div class="card-product-descr__bottom">
                                                             <div class="card-product-descr__price">
                                                                 <div class="card-product-descr__price-title">Цена за штуку</div>
                                                                 <div class="card-product-descr__price-display">
-                                                                    <div class="card-product-descr__price-current">5 827,99 ₽</div>
-                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                    <div class="card-product-descr__price-discount">
+                                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                        <div class="card-product-descr__price-discount-label">10%</div>
+                                                                    </div>
+                                                                    <div class="card-product-descr__price-current">6 173,10 ₽</div>
                                                                 </div>
                                                                 <div class="card-product-descr__price-bonus">
                                                                     <span>+ 346,99</span>
@@ -3785,7 +4378,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                             </div>
-                                                            <div class="card-product-descr__availability in-stock">
+                                                            <div class="card-product-descr__availability product-availability in-stock">
                                                                 <svg class="icon">
                                                                     <use href="img/sprite.svg#checkbox-rec"></use>
                                                                 </svg>
@@ -3794,14 +4387,29 @@
                                                             <div class="card-product-descr__title">
                                                                 <a href="javascript:;">Haupa Отвёртка двухкомпонентная PH 2</a>
                                                             </div>
+                                                            <div class="card-product-descr__text">
+                                                                <span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
+
+                                                                <span>
+                                                                    <a class="btn-reset btn btn-link" href="javascript:;">
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#sliders-horiz"></use>
+                                                                        </svg>
+                                                                        <span class="btn__text">Перейти в конфигуратор</span>
+                                                                    </a>
+                                                                </span>
+                                                            </div>
                                                         </div>
 
                                                         <div class="card-product-descr__bottom">
                                                             <div class="card-product-descr__price">
                                                                 <div class="card-product-descr__price-title">Цена за штуку</div>
                                                                 <div class="card-product-descr__price-display">
-                                                                    <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                    <div class="card-product-descr__price-discount">
+                                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                        <div class="card-product-descr__price-discount-label">10%</div>
+                                                                    </div>
+                                                                    <div class="card-product-descr__price-current">6 173,10 ₽</div>
                                                                 </div>
                                                                 <div class="card-product-descr__price-bonus">
                                                                     <span>+ 346,99</span>
@@ -3946,7 +4554,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                             </div>
-                                                            <div class="card-product-descr__availability in-stock">
+                                                            <div class="card-product-descr__availability product-availability in-stock">
                                                                 <svg class="icon">
                                                                     <use href="img/sprite.svg#checkbox-rec"></use>
                                                                 </svg>
@@ -3955,14 +4563,29 @@
                                                             <div class="card-product-descr__title">
                                                                 <a href="javascript:;">Haupa Отвёртка двухкомпонентная PH 2</a>
                                                             </div>
+                                                            <div class="card-product-descr__text">
+                                                                <span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
+
+                                                                <span>
+                                                                    <a class="btn-reset btn btn-link" href="javascript:;">
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#sliders-horiz"></use>
+                                                                        </svg>
+                                                                        <span class="btn__text">Перейти в конфигуратор</span>
+                                                                    </a>
+                                                                </span>
+                                                            </div>
                                                         </div>
 
                                                         <div class="card-product-descr__bottom">
                                                             <div class="card-product-descr__price">
                                                                 <div class="card-product-descr__price-title">Цена за штуку</div>
                                                                 <div class="card-product-descr__price-display">
-                                                                    <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                    <div class="card-product-descr__price-discount">
+                                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                        <div class="card-product-descr__price-discount-label">10%</div>
+                                                                    </div>
+                                                                    <div class="card-product-descr__price-current">6 173,10 ₽</div>
                                                                 </div>
                                                                 <div class="card-product-descr__price-bonus">
                                                                     <span>+ 346,99</span>
@@ -4107,7 +4730,7 @@
                                                         <span class="star-rating-value" data-value="5.0">5.0</span>
                                                     </span>
                                                             </div>
-                                                            <div class="card-product-descr__availability on-order">
+                                                            <div class="card-product-descr__availability product-availability on-order">
                                                                 <svg class="icon">
                                                                     <use href="img/sprite.svg#timer"></use>
                                                                 </svg>
@@ -4116,14 +4739,29 @@
                                                             <div class="card-product-descr__title">
                                                                 <a href="javascript:;">Haupa Инструмент обжимной для конечных гильз 0,25-6</a>
                                                             </div>
+                                                            <div class="card-product-descr__text">
+                                                                <span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
+
+                                                                <span>
+                                                                    <a class="btn-reset btn btn-link" href="javascript:;">
+                                                                        <svg class="icon btn__icon">
+                                                                            <use href="img/sprite.svg#sliders-horiz"></use>
+                                                                        </svg>
+                                                                        <span class="btn__text">Перейти в конфигуратор</span>
+                                                                    </a>
+                                                                </span>
+                                                            </div>
                                                         </div>
 
                                                         <div class="card-product-descr__bottom">
                                                             <div class="card-product-descr__price">
                                                                 <div class="card-product-descr__price-title">Цена за штуку</div>
                                                                 <div class="card-product-descr__price-display">
+                                                                    <div class="card-product-descr__price-discount">
+                                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                                        <div class="card-product-descr__price-discount-label">10%</div>
+                                                                    </div>
                                                                     <div class="card-product-descr__price-current">6 173,10 ₽</div>
-                                                                    <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                                 </div>
                                                                 <div class="card-product-descr__price-bonus">
                                                                     <span>+ 346,99</span>

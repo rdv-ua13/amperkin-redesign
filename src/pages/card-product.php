@@ -1997,7 +1997,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -2012,8 +2012,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -2158,7 +2161,7 @@
                                                         <span class="star-rating-value" data-value="5.0">5.0</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -2173,8 +2176,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">6 173,10 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -2335,7 +2341,7 @@
                                                 <div class="card-product-descr__info">
                                                     <span class="product-code"><span>2348958- 87</span></span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -2350,8 +2356,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -2484,7 +2493,7 @@
                                                 <div class="card-product-descr__info">
                                                     <span class="product-code"><span>Z241- 0008</span></span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -2499,8 +2508,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">5 827,99 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -2645,7 +2657,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -2660,8 +2672,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -2806,7 +2821,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -2821,8 +2836,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -2967,7 +2985,7 @@
                                                         <span class="star-rating-value" data-value="5.0">5.0</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -2982,8 +3000,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">6 173,10 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -3149,7 +3170,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -3164,8 +3185,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -3310,7 +3334,7 @@
                                                         <span class="star-rating-value" data-value="5.0">5.0</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -3325,8 +3349,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">6 173,10 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -3487,7 +3514,7 @@
                                                 <div class="card-product-descr__info">
                                                     <span class="product-code"><span>2348958- 87</span></span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -3502,8 +3529,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -3636,7 +3666,7 @@
                                                 <div class="card-product-descr__info">
                                                     <span class="product-code"><span>Z241- 0008</span></span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -3651,8 +3681,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">5 827,99 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -3797,7 +3830,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -3812,8 +3845,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -3958,7 +3994,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -3973,8 +4009,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -4119,7 +4158,7 @@
                                                         <span class="star-rating-value" data-value="5.0">5.0</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -4134,8 +4173,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">6 173,10 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -4301,7 +4343,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -4316,8 +4358,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -4462,7 +4507,7 @@
                                                         <span class="star-rating-value" data-value="5.0">5.0</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -4477,8 +4522,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">6 173,10 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -4639,7 +4687,7 @@
                                                 <div class="card-product-descr__info">
                                                     <span class="product-code"><span>2348958- 87</span></span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -4654,8 +4702,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -4788,7 +4839,7 @@
                                                 <div class="card-product-descr__info">
                                                     <span class="product-code"><span>Z241- 0008</span></span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -4803,8 +4854,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">5 827,99 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -4949,7 +5003,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -4964,8 +5018,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -5110,7 +5167,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -5125,8 +5182,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -5271,7 +5331,7 @@
                                                         <span class="star-rating-value" data-value="5.0">5.0</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -5286,8 +5346,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">6 173,10 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -5453,7 +5516,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -5468,8 +5531,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -5614,7 +5680,7 @@
                                                         <span class="star-rating-value" data-value="5.0">5.0</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -5629,8 +5695,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">6 173,10 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -5791,7 +5860,7 @@
                                                 <div class="card-product-descr__info">
                                                     <span class="product-code"><span>2348958- 87</span></span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -5806,8 +5875,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -5940,7 +6012,7 @@
                                                 <div class="card-product-descr__info">
                                                     <span class="product-code"><span>Z241- 0008</span></span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -5955,8 +6027,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">5 827,99 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -6101,7 +6176,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -6116,8 +6191,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -6262,7 +6340,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -6277,8 +6355,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -6423,7 +6504,7 @@
                                                         <span class="star-rating-value" data-value="5.0">5.0</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -6438,8 +6519,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">6 173,10 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -6605,7 +6689,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -6620,8 +6704,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -6766,7 +6853,7 @@
                                                         <span class="star-rating-value" data-value="5.0">5.0</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -6781,8 +6868,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">6 173,10 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -6943,7 +7033,7 @@
                                                 <div class="card-product-descr__info">
                                                     <span class="product-code"><span>2348958- 87</span></span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -6958,8 +7048,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -7092,7 +7185,7 @@
                                                 <div class="card-product-descr__info">
                                                     <span class="product-code"><span>Z241- 0008</span></span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -7107,8 +7200,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">5 827,99 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -7253,7 +7349,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -7268,8 +7364,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -7414,7 +7513,7 @@
                                                         <span class="star-rating-value" data-value="4.5">4.5</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability in-stock">
+                                                <div class="card-product-descr__availability product-availability in-stock">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#checkbox-rec"></use>
                                                     </svg>
@@ -7429,8 +7528,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">1 478,40 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>
@@ -7575,7 +7677,7 @@
                                                         <span class="star-rating-value" data-value="5.0">5.0</span>
                                                     </span>
                                                 </div>
-                                                <div class="card-product-descr__availability on-order">
+                                                <div class="card-product-descr__availability product-availability on-order">
                                                     <svg class="icon">
                                                         <use href="img/sprite.svg#timer"></use>
                                                     </svg>
@@ -7590,8 +7692,11 @@
                                                 <div class="card-product-descr__price">
                                                     <div class="card-product-descr__price-title">Цена за штуку</div>
                                                     <div class="card-product-descr__price-display">
+                                                        <div class="card-product-descr__price-discount">
+                                                            <div class="card-product-descr__price-originally">1 624,50 ₽</div>
+                                                            <div class="card-product-descr__price-discount-label">10%</div>
+                                                        </div>
                                                         <div class="card-product-descr__price-current">6 173,10 ₽</div>
-                                                        <div class="card-product-descr__price-originally">1 624,50 ₽</div>
                                                     </div>
                                                     <div class="card-product-descr__price-bonus">
                                                         <span>+ 346,99</span>

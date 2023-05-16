@@ -36,7 +36,12 @@
 
     <script defer src="js/main.js"></script>
 </head>
+
+<? if (strpos($_SERVER["REQUEST_URI"], "card-product.php")) : ?>
+<body class="card-product-page">
+<? else : ?>
 <body>
+<? endif; ?>
     <header class="header fixed-block">
         <div class="header-top">
             <div class="container header-container">
@@ -1271,7 +1276,7 @@
                             <li><a class="link-dark" href="javascript:;"><span class="menu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalog-submenu-link-text">Устройства управления жалюзи, звуком, сигнализацией</span></a></li>
                         </ul>
                     </div>
-                    <div class="menu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalogmenu-catalog-submenu-banners">
+                    <div class="menu-catalog-submenu-banners">
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="menu-catalog-submenu-banners__item swiper-slide">

@@ -86,7 +86,9 @@
             <li><a href="card-product.php" target="_blank" class="ready">Карточка товара</a></li>
             <br>
             <!--<li class="block-ready">Блок готов</li>-->
-            <li><a href="search-searchbar.php" target="_blank">Поиск через строку поиска</a></li>
+            <li><a href="search-searchbar.php" target="_blank" class="ready">Поиск через строку поиска</a></li>
+            <li><a href="search-searchbar-product-off.php" target="_blank">Отсутствующий товар</a></li>
+            <br>
 
             <br>
             <li><a href="ui.php" target="_blank">ui</a></li>
