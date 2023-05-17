@@ -132,7 +132,7 @@
                                     </svg>
                                 </button>
                             </span>
-                            <div class="swiper product-card-descr-slider" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+                            <div class="swiper product-card-descr-slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <picture>

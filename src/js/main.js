@@ -767,9 +767,22 @@ application.prototype.initSliders = function () {
     }
 
     if ($('.nav-breadcrumbs').length) {
-        const sliderNavBreadcrumbs = new Swiper('.nav-breadcrumbs', {
+        let sliderNavBreadcrumbs = new Swiper('.nav-breadcrumbs', {
             spaceBetween: 0,
             slidesPerView: 'auto',
+        });
+    }
+
+    if ($('.catalog-content-filter-selected__list').length) {
+        let sliderCatalogContentFilterSelected = new Swiper('.catalog-content-filter-selected__list.swiper', {
+            spaceBetween: 4,
+            slidesPerView: 'auto',
+            observer: true,
+        });
+
+        $('.catalog-content-filter-selected [data-delete-trigger]').on('click', function () {
+            sliderCatalogContentFilterSelected.update();
+            console.log("success");
         });
     }
 

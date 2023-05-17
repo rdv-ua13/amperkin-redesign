@@ -880,21 +880,27 @@
                                 </div>
                             </div>
                             <div class="catalog-content-settings__view">
-                                <div class="catalog-content-settings__view-item" data-catalog-content-grid="list">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#fill-list"></use>
-                                    </svg>
-                                </div>
-                                <div class="catalog-content-settings__view-item active" data-catalog-content-grid="grid">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#fill-grid"></use>
-                                    </svg>
-                                </div>
-                                <div class="catalog-content-settings__view-item" data-catalog-content-grid="table">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#fill-table"></use>
-                                    </svg>
-                                </div>
+                                <span class="tooltip" data-tippy-content="Списком">
+                                    <div class="catalog-content-settings__view-item" data-catalog-content-grid="list">
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#fill-list"></use>
+                                        </svg>
+                                    </div>
+                                </span>
+                                <span class="tooltip" data-tippy-content="Плиткой">
+                                    <div class="catalog-content-settings__view-item active" data-catalog-content-grid="grid">
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#fill-grid"></use>
+                                        </svg>
+                                    </div>
+                                </span>
+                                <span class="tooltip" data-tippy-content="Таблицей">
+                                    <div class="catalog-content-settings__view-item" data-catalog-content-grid="table">
+                                        <svg class="icon">
+                                            <use href="img/sprite.svg#fill-table"></use>
+                                        </svg>
+                                    </div>
+                                </span>
                             </div>
                         </div>
                         <div class="catalog-content-filter-spoiler" data-filter-spoiler>
