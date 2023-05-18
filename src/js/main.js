@@ -1058,11 +1058,9 @@ application.prototype.initDatepicker = function () {
 
 // Initialization delete trigger
 application.prototype.initDeleteTrigger = function () {
-    if ($('[data-delete-trigger]').length) {
-        $('[data-delete-trigger]').on("click", function () {
-            $(this).closest('[data-removable]').remove();
-        });
-    }
+    $('[data-delete-trigger]').on("click", function () {
+        $(this).closest('[data-removable]').remove();
+    });
 };
 
 // Initialization drop files
@@ -1236,17 +1234,15 @@ application.prototype.initInputSearchBehavior = function () {
 
 // Initialization search result behavior
 application.prototype.initSearchResBehavior = function () {
-    if ($('[data-delete-trigger]').length) {
-        $(document).on('click', '.search-results__close', function () {
-            $(this).closest('.header-search-results').removeClass('active');
-        });
+    $(document).on('click', '.search-results__close', function () {
+        $(this).closest('.header-search-results').removeClass('active');
+    });
 
-        $(document).on('keyup', function (e) {
-            if (e.key == 'Escape') {
-                $('.search-results__close').closest('.header-search-results').removeClass('active');
-            }
-        });
-    }
+    $(document).on('keyup', function (e) {
+        if (e.key == 'Escape') {
+            $('.search-results__close').closest('.header-search-results').removeClass('active');
+        }
+    });
 };
 
 // Initialization mobile city selection
@@ -1393,16 +1389,39 @@ application.prototype.initCatalogFilterBehavior = function () {
             slidesPerView: 'auto',
         });*/
 
-        $('[data-filter-selected] [data-delete-trigger]').on('click', function () {
-            $('[data-filter-selected] .swiper-slide').each(function () {
-                console.log($('[data-filter-selected] .catalog-content-filter-selected__item').length);
+        $(document).on('click', '[data-filter-selected] [data-delete-trigger]', function () {
+            console.log('123');
+            console.log($('.catalog-content-filter-selected__item').length);
+            $('[data-filter-selected] .catalog-content-filter-selected__item').each(function () {
                 if ($('[data-filter-selected] .catalog-content-filter-selected__item').length === 1) {
                     filterSelected.addClass('empty');
-                }
+                    console.log("less that 1 + empty");
+                }/* else if ($('[data-filter-selected] .catalog-content-filter-selected__item').length > 1) {
+                    $(this).closest('[data-removable]').remove();
+                    console.log("success12345");
+                }*/
             });
 
-            $(this).closest('.swiper-slide').remove();
-            sliderCatalogContentFilterSelected.update();
+            $(this).closest('.catalog-content-filter-selected__item').remove();
+            /*sliderCatalogContentFilterSelected.update();*/
+        });
+
+        $('[data-filter-selected] [data-delete-trigger]').on('click', function () {
+
+            console.log($('.catalog-content-filter-selected__item').length);
+
+            $('[data-filter-selected] .catalog-content-filter-selected__item').each(function () {
+                if ($('[data-filter-selected] .catalog-content-filter-selected__item').length === 0) {
+                    filterSelected.addClass('empty');
+                    console.log("less that 1 + empty2");
+                }/* else if ($('[data-filter-selected] .catalog-content-filter-selected__item').length > 1) {
+                    $(this).closest('[data-removable]').remove();
+                    console.log("success12345");
+                }*/
+            });
+
+            $(this).closest('.catalog-content-filter-selected__item').remove();
+            /*sliderCatalogContentFilterSelected.update();*/
         });
 
         $(document).on('click', function (e) {
@@ -1414,10 +1433,21 @@ application.prototype.initCatalogFilterBehavior = function () {
                 clickedItemHeader = $(this).closest('.catalog-sidebar-filter__options-item').find('.catalog-sidebar-filter__options-title').text();
                 let appendNumber = $('[data-filter-selected] .catalog-content-filter-selected__item').length;
 
-
                 if(clickedItemHeader !== '') {
                     clickedItemHeader = clickedItemHeader + ': ';
                 }
+
+                let html = '<div class="swiper-slide">' +
+                    '   <button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>' +
+                    '       <span class="btn__text">' + clickedItemHeader + clickedItem + '</span>' +
+                    '       <span class="catalog-content-filter-selected__item-delete" data-delete-trigger>' +
+                    '           <svg class="icon btn__icon">' +
+                    '               <use href="img/sprite.svg#cross"></use>' +
+                    '           </svg>' +
+                    '       </span>' +
+                    '   </button>' +
+                    '</div>'
+                ;
 
                 filterSelected.removeClass('empty');
                 $('.catalog-content-filter-selected__list').append(html);
