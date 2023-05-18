@@ -826,8 +826,8 @@
                                 <button class="btn-reset btn btn-primary">
                                     <span class="btn__text">Показать товары</span>
                                 </button>
-                                <button class="btn-reset btn btn-light">
-                                    <span class="btn__text">Показать товары</span>
+                                <button class="btn-reset btn btn-light" data-filter-reset>
+                                    <span class="btn__text">Сбросить фильтры</span>
                                 </button>
                             </div>
                         </form>

@@ -2901,7 +2901,7 @@ input.disabled {
 		position: relative;
 		padding-top: 6px;
 		padding-bottom: 6px;
-		vertical-align: top;
+		vertical-align: bottom;
 		background-color: #fff;
 		color: var(--text-primary);
 		line-height: 18px;
@@ -2925,9 +2925,9 @@ input.disabled {
 		&:first-child::before {
 			content: "";
 			position: absolute;
-			left: 4px;
 			right: 0;
-			margin-top: 14px;
+			bottom: 9px;
+			left: 4px;
 			height: 1px;
 			background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAABCAYAAAAW/mTzAAAAHklEQVQImWM8debC+2/fvwsoysv9k5OVYmJgYPgAAHoMCO6trEXWAAAAAElFTkSuQmCC') 0 0 repeat-x;
 		}
@@ -2949,9 +2949,9 @@ input.disabled {
 				&::before {
 					content: "";
 					position: absolute;
-					left: 0;
 					right: 4px;
-					margin-top: 14px;
+					bottom: 9px;
+					left: 0;
 					height: 1px;
 					background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAABCAYAAAAW/mTzAAAAHklEQVQImWM8debC+2/fvwsoysv9k5OVYmJgYPgAAHoMCO6trEXWAAAAAElFTkSuQmCC') 0 0 repeat-x;
 				}
@@ -4447,6 +4447,7 @@ input.disabled {
 	cursor: pointer;
 
 	.icon {
+		pointer-events: none;
 		fill: var(--gray4-color);
 	}
 

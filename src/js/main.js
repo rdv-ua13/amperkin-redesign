@@ -45,6 +45,7 @@ application.prototype.init = function () {
     this.initMobileCitySelection();
     this.initCatalogContentSort();
     this.initCatalogContentViewSwitcher();
+    this.initCatalogFilterBehavior();
     this.initCatalogSidebarFilterViewSwitcher();
     this.initCheckedRadioInsurances();
     this.initCatalogSidebarFilterCheckedTags();
@@ -773,19 +774,6 @@ application.prototype.initSliders = function () {
         });
     }
 
-    if ($('.catalog-content-filter-selected__list').length) {
-        let sliderCatalogContentFilterSelected = new Swiper('.catalog-content-filter-selected__list.swiper', {
-            spaceBetween: 4,
-            slidesPerView: 'auto',
-            observer: true,
-        });
-
-        $('.catalog-content-filter-selected [data-delete-trigger]').on('click', function () {
-            sliderCatalogContentFilterSelected.update();
-            console.log("success");
-        });
-    }
-
     if ($('.menu-catalog-submenu-banners').length) {
         $('.menu-catalog-submenu-banners').each(function (i) {
             let currentElem = $(this).find('.swiper').addClass('menu-catalog-submenu-banners-slider-' + i);
@@ -813,6 +801,18 @@ application.prototype.initSliders = function () {
 
         let sliderSearchResultsHint = new Swiper('.search-results .mobile-search-results-hint .swiper', MobileSearchSliderSettings);
         let sliderMobileCityHint = new Swiper('.mobile-city .mobile-search-results-hint .swiper', MobileSearchSliderSettings);
+    }
+
+    if ($('.catalog-content__section').length) {
+        let sliderCatalogContentFilterSelected = new Swiper('.catalog-content__section .swiper', {
+            spaceBetween: 8,
+            slidesPerView: 'auto',
+            breakpoints: {
+                992: {
+                    spaceBetween: 20,
+                }
+            }
+        });
     }
 };
 
@@ -1376,6 +1376,68 @@ application.prototype.initCatalogContentViewSwitcher = function () {
             viewSwitcher.removeClass('active');
             $('[data-catalog-content-grid="grid"]').addClass('active');
         }
+    }
+};
+
+// Initialization catalog filter behavior
+application.prototype.initCatalogFilterBehavior = function () {
+    if ($('[data-filter]').length && $('[data-filter-selected]').length) {
+        let clickedItem = null;
+        let clickedItemHeader = null;
+        let filter = $('[data-filter]');
+        let filterSelected = $('[data-filter-selected]');
+        let filterReset = $('[data-filter-reset]');
+
+        /*let sliderCatalogContentFilterSelected = new Swiper('[data-filter-selected] .swiper', {
+            spaceBetween: 4,
+            slidesPerView: 'auto',
+        });*/
+
+        $('[data-filter-selected] [data-delete-trigger]').on('click', function () {
+            $('[data-filter-selected] .swiper-slide').each(function () {
+                console.log($('[data-filter-selected] .catalog-content-filter-selected__item').length);
+                if ($('[data-filter-selected] .catalog-content-filter-selected__item').length === 1) {
+                    filterSelected.addClass('empty');
+                }
+            });
+
+            $(this).closest('.swiper-slide').remove();
+            sliderCatalogContentFilterSelected.update();
+        });
+
+        $(document).on('click', function (e) {
+            console.log(e.target);
+        });
+        $(document).on('click', '.catalog-sidebar-filter__item', function () {
+            if ($(this).find('input[type="checkbox"]').prop('checked')) {
+                clickedItem = $(this).find('input[type="checkbox"]').siblings('label').text();
+                clickedItemHeader = $(this).closest('.catalog-sidebar-filter__options-item').find('.catalog-sidebar-filter__options-title').text();
+                let appendNumber = $('[data-filter-selected] .catalog-content-filter-selected__item').length;
+
+
+                if(clickedItemHeader !== '') {
+                    clickedItemHeader = clickedItemHeader + ': ';
+                }
+
+                filterSelected.removeClass('empty');
+                $('.catalog-content-filter-selected__list').append(html);
+                /*sliderCatalogContentFilterSelected.appendSlide(
+                    '<div class="swiper-slide">' +
+                    '   <button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>' +
+                    '       <span class="btn__text">' + clickedItemHeader + clickedItem + '</span>' +
+                    '       <span class="catalog-content-filter-selected__item-delete" data-delete-trigger>' +
+                    '           <svg class="icon btn__icon">' +
+                    '               <use href="img/sprite.svg#cross"></use>' +
+                    '           </svg>' +
+                    '       </span>' +
+                    '   </button>' +
+                    '</div>'
+                );*/
+
+                console.log("item = " + clickedItem);
+                console.log("item header = " + clickedItemHeader);
+            }
+        });
     }
 };
 

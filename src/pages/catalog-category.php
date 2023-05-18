@@ -87,6 +87,65 @@
 									</li>
 								</ul>
 							</div>
+							<div class="catalog-sidebar-section">
+								<div class="catalog-sidebar-section__title">Звонки и домофоны</div>
+								<ul class="list-reset catalog-sidebar-section__list">
+									<li>
+										<a class="catalog-sidebar-section__item" href="javascript:;">
+											<span class="catalog-sidebar-section__item-text">Дверные звонки</span>
+											<span class="catalog-sidebar-section__item-available">81</span>
+										</a>
+									</li>
+									<li>
+										<a class="catalog-sidebar-section__item" href="javascript:;">
+											<span class="catalog-sidebar-section__item-text">Звонковый трансформатор</span>
+											<span class="catalog-sidebar-section__item-available">1</span>
+										</a>
+									</li>
+									<li>
+										<a class="catalog-sidebar-section__item" href="javascript:;">
+											<span class="catalog-sidebar-section__item-text">Зуммеры</span>
+											<span class="catalog-sidebar-section__item-available">7</span>
+										</a>
+									</li>
+									<li>
+										<a class="catalog-sidebar-section__item" href="javascript:;">
+											<span class="catalog-sidebar-section__item-text">Домофоны / видеодомофоны</span>
+											<span class="catalog-sidebar-section__item-available">74</span>
+										</a>
+									</li>
+									<li>
+										<a class="catalog-sidebar-section__item" href="javascript:;">
+											<span class="catalog-sidebar-section__item-text">Комплект домофона</span>
+											<span class="catalog-sidebar-section__item-available">28</span>
+										</a>
+									</li>
+									<li>
+										<a class="catalog-sidebar-section__item" href="javascript:;">
+											<span class="catalog-sidebar-section__item-text">Камеры для видеодомофона</span>
+											<span class="catalog-sidebar-section__item-available">13</span>
+										</a>
+									</li>
+									<li>
+										<a class="catalog-sidebar-section__item" href="javascript:;">
+											<span class="catalog-sidebar-section__item-text">Мониторы для видеодомофона</span>
+											<span class="catalog-sidebar-section__item-available">9</span>
+										</a>
+									</li>
+									<li>
+										<a class="catalog-sidebar-section__item" href="javascript:;">
+											<span class="catalog-sidebar-section__item-text">Вызывная панель видеодомофона</span>
+											<span class="catalog-sidebar-section__item-available">3</span>
+										</a>
+									</li>
+									<li>
+										<a class="catalog-sidebar-section__item" href="javascript:;">
+											<span class="catalog-sidebar-section__item-text">Комплектующие домофона</span>
+											<span class="catalog-sidebar-section__item-available">172</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 						<div class="catalog-sidebar-filter" data-filter>
 							<div class="catalog-sidebar-filter__header">
@@ -788,8 +847,8 @@
 									<button class="btn-reset btn btn-primary">
 										<span class="btn__text">Показать товары</span>
 									</button>
-									<button class="btn-reset btn btn-light">
-										<span class="btn__text">Показать товары</span>
+									<button class="btn-reset btn btn-light" data-filter-reset>
+										<span class="btn__text">Сбросить фильтры</span>
 									</button>
 								</div>
 							</form>
@@ -798,6 +857,76 @@
 
 					<div class="catalog-content">
 						<div class="catalog-content__top">
+                            <div class="catalog-content__section">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide catalog-content__section-item">
+                                            <div class="catalog-content__section-view">
+                                                <picture>
+                                                    <source srcset="img/catalog-section.webp" type="image/webp">
+                                                    <img
+                                                        loading="lazy"
+                                                        src="img/catalog-section.png"
+                                                        class="image"
+                                                        width="100"
+                                                        height="100"
+                                                        alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <div class="catalog-content__section-title">Дверные звонки</div>
+                                        </div>
+                                        <div class="swiper-slide catalog-content__section-item">
+                                            <div class="catalog-content__section-view">
+                                                <picture>
+                                                    <source srcset="img/catalog-section2.webp" type="image/webp">
+                                                    <img
+                                                        loading="lazy"
+                                                        src="img/catalog-section2.png"
+                                                        class="image"
+                                                        width="100"
+                                                        height="100"
+                                                        alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <div class="catalog-content__section-title">Звонковый трансформатор</div>
+                                        </div>
+                                        <div class="swiper-slide catalog-content__section-item">
+                                            <div class="catalog-content__section-view">
+                                                <picture>
+                                                    <source srcset="img/catalog-section3.webp" type="image/webp">
+                                                    <img
+                                                        loading="lazy"
+                                                        src="img/catalog-section3.png"
+                                                        class="image"
+                                                        width="100"
+                                                        height="100"
+                                                        alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <div class="catalog-content__section-title">Зуммеры</div>
+                                        </div>
+                                        <div class="swiper-slide catalog-content__section-item">
+                                            <div class="catalog-content__section-view">
+                                                <picture>
+                                                    <source srcset="img/catalog-section4.webp" type="image/webp">
+                                                    <img
+                                                        loading="lazy"
+                                                        src="img/catalog-section4.png"
+                                                        class="image"
+                                                        width="100"
+                                                        height="100"
+                                                        alt="Изображение блока"
+                                                    >
+                                                </picture>
+                                            </div>
+                                            <div class="catalog-content__section-title">Домофоны / видеодомофоны</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 							<div class="catalog-content-settings">
 								<div class="catalog-content-settings__sort">
 									<div class="catalog-content-settings__sort-title">Сортировать:</div>
@@ -867,7 +996,7 @@
 								</div>
 								<span>Фильтры</span>
 							</div>
-							<div class="catalog-content-filter-selected" data-filter-selected>
+							<!--<div class="catalog-content-filter-selected" data-filter-selected>
                                 <div class="swiper catalog-content-filter-selected__list">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -900,30 +1029,46 @@
                                                 </span>
                                             </button>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>
-                                                <span class="btn__text">Серия: Atlas Design2</span>
-                                                <span class="catalog-content-filter-selected__item-delete" data-delete-trigger>
-                                                    <svg class="icon btn__icon">
-                                                        <use href="img/sprite.svg#cross"></use>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>
-                                                <span class="btn__text">Серия: Atlas Design3</span>
-                                                <span class="catalog-content-filter-selected__item-delete" data-delete-trigger>
-                                                    <svg class="icon btn__icon">
-                                                        <use href="img/sprite.svg#cross"></use>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="catalog-content-filter-selected__reset">
-                                    <button class="btn-reset btn btn-mini btn-light" data-filter-selected-reset>
+                                    <button class="btn-reset btn btn-mini btn-light" data-filter-reset>
+                                        <svg class="icon btn__icon">
+                                            <use href="img/sprite.svg#trash"></use>
+                                        </svg>
+                                        <span class="btn__text">Очистить фильтры</span>
+                                    </button>
+                                </div>
+							</div>-->
+							<div class="catalog-content-filter-selected" data-filter-selected>
+                                <div class="catalog-content-filter-selected__list">
+                                    <button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>
+                                        <span class="btn__text">Наличие: Центральный склад</span>
+                                        <span class="catalog-content-filter-selected__item-delete" data-delete-trigger>
+                                            <svg class="icon btn__icon">
+                                                <use href="img/sprite.svg#cross"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>
+                                        <span class="btn__text">Тип изделия: USB розетки</span>
+                                        <span class="catalog-content-filter-selected__item-delete" data-delete-trigger>
+                                            <svg class="icon btn__icon">
+                                                <use href="img/sprite.svg#cross"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>
+                                        <span class="btn__text">Серия: Atlas Design</span>
+                                        <span class="catalog-content-filter-selected__item-delete" data-delete-trigger>
+                                            <svg class="icon btn__icon">
+                                                <use href="img/sprite.svg#cross"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="catalog-content-filter-selected__reset">
+                                    <button class="btn-reset btn btn-mini btn-light" data-filter-reset>
                                         <svg class="icon btn__icon">
                                             <use href="img/sprite.svg#trash"></use>
                                         </svg>
