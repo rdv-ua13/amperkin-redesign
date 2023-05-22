@@ -86,7 +86,8 @@
             <li><a href="card-product.php" target="_blank" class="ready">Карточка товара</a></li>
             <br>
             <!--<li class="block-ready">Блок готов</li>-->
-            <li><a href="catalog-category.php" target="_blank">Категории каталога - Изделия</a></li>
+            <li><a href="catalog-category.php" target="_blank" class="ready">Категории каталога - Изделия</a></li>
+            <li><a href="catalog-category-socket-switches.php" target="_blank">Категории каталога - Розетки и выключатели</a></li>
             <br>
 
             <li class="block-ready">Блок готов</li>

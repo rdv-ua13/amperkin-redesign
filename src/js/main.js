@@ -45,12 +45,11 @@ application.prototype.init = function () {
     this.initMobileCitySelection();
     this.initCatalogContentSort();
     this.initCatalogContentViewSwitcher();
-    this.initCatalogFilterBehavior();
     this.initCatalogSidebarFilterViewSwitcher();
     this.initCheckedRadioInsurances();
     this.initCatalogSidebarFilterCheckedTags();
     this.initCatalogSidebarFilter();
-    /*this.initRangeSlider();*/
+    this.initCatalogSidebarApplyFilter();
 };
 
 // Initialize device check
@@ -814,6 +813,34 @@ application.prototype.initSliders = function () {
             }
         });
     }
+
+    if ($('.catalog-content__popular-collection').length) {
+        let sliderCatalogContentPopularCollection = new Swiper('.catalog-content__popular-collection .swiper', {
+            slidesPerView: 2.15,
+            grid: {
+                rows: 3,
+            },
+            spaceBetween: 12,
+            breakpoints: {
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                }
+            }
+        });
+    }
+
+    if ($('.catalog-content__popular-color').length) {
+        let sliderCatalogContentPopularColor = new Swiper('.catalog-content__popular-color .swiper', {
+            spaceBetween: 8,
+            slidesPerView: 'auto',
+            breakpoints: {
+                992: {
+                    spaceBetween: 16,
+                }
+            }
+        });
+    }
 };
 
 // Initialize select2 plagin
@@ -1375,102 +1402,6 @@ application.prototype.initCatalogContentViewSwitcher = function () {
     }
 };
 
-// Initialization catalog filter behavior
-application.prototype.initCatalogFilterBehavior = function () {
-    if ($('[data-filter]').length && $('[data-filter-selected]').length) {
-        let clickedItem = null;
-        let clickedItemHeader = null;
-        let filter = $('[data-filter]');
-        let filterSelected = $('[data-filter-selected]');
-        let filterReset = $('[data-filter-reset]');
-
-        /*let sliderCatalogContentFilterSelected = new Swiper('[data-filter-selected] .swiper', {
-            spaceBetween: 4,
-            slidesPerView: 'auto',
-        });*/
-
-        $(document).on('click', '[data-filter-selected] [data-delete-trigger]', function () {
-            console.log('123');
-            console.log($('.catalog-content-filter-selected__item').length);
-            $('[data-filter-selected] .catalog-content-filter-selected__item').each(function () {
-                if ($('[data-filter-selected] .catalog-content-filter-selected__item').length === 1) {
-                    filterSelected.addClass('empty');
-                    console.log("less that 1 + empty");
-                }/* else if ($('[data-filter-selected] .catalog-content-filter-selected__item').length > 1) {
-                    $(this).closest('[data-removable]').remove();
-                    console.log("success12345");
-                }*/
-            });
-
-            $(this).closest('.catalog-content-filter-selected__item').remove();
-            /*sliderCatalogContentFilterSelected.update();*/
-        });
-
-        $('[data-filter-selected] [data-delete-trigger]').on('click', function () {
-
-            console.log($('.catalog-content-filter-selected__item').length);
-
-            $('[data-filter-selected] .catalog-content-filter-selected__item').each(function () {
-                if ($('[data-filter-selected] .catalog-content-filter-selected__item').length === 0) {
-                    filterSelected.addClass('empty');
-                    console.log("less that 1 + empty2");
-                }/* else if ($('[data-filter-selected] .catalog-content-filter-selected__item').length > 1) {
-                    $(this).closest('[data-removable]').remove();
-                    console.log("success12345");
-                }*/
-            });
-
-            $(this).closest('.catalog-content-filter-selected__item').remove();
-            /*sliderCatalogContentFilterSelected.update();*/
-        });
-
-        $(document).on('click', function (e) {
-            console.log(e.target);
-        });
-        $(document).on('click', '.catalog-sidebar-filter__item', function () {
-            if ($(this).find('input[type="checkbox"]').prop('checked')) {
-                clickedItem = $(this).find('input[type="checkbox"]').siblings('label').text();
-                clickedItemHeader = $(this).closest('.catalog-sidebar-filter__options-item').find('.catalog-sidebar-filter__options-title').text();
-                let appendNumber = $('[data-filter-selected] .catalog-content-filter-selected__item').length;
-
-                if(clickedItemHeader !== '') {
-                    clickedItemHeader = clickedItemHeader + ': ';
-                }
-
-                let html = '<div class="swiper-slide">' +
-                    '   <button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>' +
-                    '       <span class="btn__text">' + clickedItemHeader + clickedItem + '</span>' +
-                    '       <span class="catalog-content-filter-selected__item-delete" data-delete-trigger>' +
-                    '           <svg class="icon btn__icon">' +
-                    '               <use href="img/sprite.svg#cross"></use>' +
-                    '           </svg>' +
-                    '       </span>' +
-                    '   </button>' +
-                    '</div>'
-                ;
-
-                filterSelected.removeClass('empty');
-                $('.catalog-content-filter-selected__list').append(html);
-                /*sliderCatalogContentFilterSelected.appendSlide(
-                    '<div class="swiper-slide">' +
-                    '   <button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>' +
-                    '       <span class="btn__text">' + clickedItemHeader + clickedItem + '</span>' +
-                    '       <span class="catalog-content-filter-selected__item-delete" data-delete-trigger>' +
-                    '           <svg class="icon btn__icon">' +
-                    '               <use href="img/sprite.svg#cross"></use>' +
-                    '           </svg>' +
-                    '       </span>' +
-                    '   </button>' +
-                    '</div>'
-                );*/
-
-                console.log("item = " + clickedItem);
-                console.log("item header = " + clickedItemHeader);
-            }
-        });
-    }
-};
-
 // Initialization catalog sidebar filter view switcher
 application.prototype.initCatalogSidebarFilterViewSwitcher = function () {
     if ($('[data-filter-option-view]').length && $('[data-filter-option-content]').length) {
@@ -1511,7 +1442,7 @@ application.prototype.initCatalogSidebarFilterCheckedTags = function () {
     }
 };
 
-// Initialization range-slider
+// Initialization catalog sidebar filter
 application.prototype.initCatalogSidebarFilter = function () {
     if ($('[data-filter]').length && $('[data-filter-spoiler]').length) {
         const filter = $('[data-filter]');
@@ -1561,106 +1492,30 @@ application.prototype.initCatalogSidebarFilter = function () {
     }
 };
 
-// Initialization range-slider
-application.prototype.initRangeSlider = function () {
-    if ($('.range-slider').length) {
-        /*var slider = document.getElementById('range-slider');
+// Initialization catalog sidebar apply filter
+application.prototype.initCatalogSidebarApplyFilter = function () {
+    const trigger = $('.catalog-sidebar-filter__item');
+    let coordsTrigger = null;
+    let wTrigger = null;
+    let hTrigger = null;
+    let html = '<div class="catalog-sidebar-apply-filter">' +
+        '           <div class="catalog-sidebar-apply-filter__title">Показать</div>' +
+        '           <div class="catalog-sidebar-apply-filter__value">2 184 товара</div>' +
+        '       </div>';
 
-        noUiSlider.create(slider, {
-            start: 5000,
-            step: 2000,
-            range: {
-                'min': 2000,
-                'max': 100000
-            },
-            connect: [true, false],
-            tooltips: true,
-        });*/
+    trigger.on('click', function () {
+        coordsTrigger = $(this).offset();
+        wTrigger = $(this).outerWidth();
+        hTrigger = $(this).outerHeight();
 
-
-        /*let rangeSlider = document.getElementById('steps-slider');
-        let input0 = document.getElementById('range-slider-keypress-0');
-        let input1 = document.getElementById('range-slider-keypress-1');
-        let inputs = [input0, input1];
-
-        noUiSlider.create(rangeSlider, {
-            start: [20, 80],
-            connect: true,
-            tooltips: [true, wNumb({decimals: 1})],
-            range: {
-                'min': [0],
-                '10%': [10, 10],
-                '50%': [80, 50],
-                '80%': 150,
-                'max': 200
-            }
+        $('.catalog-sidebar-apply-filter').remove();
+        $('body').append(html);
+        $('.catalog-sidebar-apply-filter').css({
+           "top": parseInt(coordsTrigger.top + (hTrigger * 0.5)) + "px",
+           "left": parseInt(coordsTrigger.left + wTrigger - 2) + "px",
         });
-
-        rangeSlider.noUiSlider.on('update', function (values, handle) {
-            inputs[handle].value = values[handle];
-        });
-
-        // Listen to keydown events on the input field.
-        inputs.forEach(function (input, handle) {
-
-            input.addEventListener('change', function () {
-                stepsSlider.noUiSlider.setHandle(handle, this.value);
-            });
-
-            input.addEventListener('keydown', function (e) {
-
-                var values = rangeSlider.noUiSlider.get();
-                var value = Number(values[handle]);
-
-                // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
-                var steps = rangeSlider.noUiSlider.steps();
-
-                // [down, up]
-                var step = steps[handle];
-
-                var position;
-
-                // 13 is enter,
-                // 38 is key up,
-                // 40 is key down.
-                switch (e.which) {
-
-                    case 13:
-                        rangeSlider.noUiSlider.setHandle(handle, this.value);
-                        break;
-
-                    case 38:
-
-                        // Get step to go increase slider value (up)
-                        position = step[1];
-
-                        // false = no step is set
-                        if (position === false) {
-                            position = 1;
-                        }
-
-                        // null = edge of slider
-                        if (position !== null) {
-                            rangeSlider.noUiSlider.setHandle(handle, value + position);
-                        }
-
-                        break;
-
-                    case 40:
-
-                        position = step[0];
-
-                        if (position === false) {
-                            position = 1;
-                        }
-
-                        if (position !== null) {
-                            rangeSlider.noUiSlider.setHandle(handle, value - position);
-                        }
-
-                        break;
-                }
-            });
-        });*/
-    }
+        setTimeout(function () {
+            $('.catalog-sidebar-apply-filter').remove();
+        }, 5000);
+    })
 };

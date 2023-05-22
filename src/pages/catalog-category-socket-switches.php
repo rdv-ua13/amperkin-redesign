@@ -1,152 +1,40 @@
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
 <div class="gap-sm">
-    <div class="container">
-        <?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/breadcrumbs.php'); ?>
-    </div>
+	<div class="container">
+		<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/breadcrumbs.php'); ?>
+	</div>
 </div>
 
 <div class="gap-xl">
 	<div class="container">
-		<div class="gap-xl catalog-category-section">
+		<div class="gap-xl catalog-category-section catalog-category-section-socket-switches">
 			<div class="gap-md">
 				<div class="catalog-heading">
 					<div class="h1 catalog-heading__title">Звонки и домофоны</div>
 					<div class="catalog-heading__goods">&#8212; 10 616 товаров</div>
 					<div class="catalog-heading__back">
-                        <a class="catalog-heading__back-link" href="javascript:;">
-                            <svg class="icon icon-xs">
-                                <use href="img/sprite.svg#chevron-left"></use>
-                            </svg>
-                            <span>Электроустановочные изделия</span>
-                        </a>
-                    </div>
+						<a class="catalog-heading__back-link" href="javascript:;">
+							<svg class="icon icon-xs">
+								<use href="img/sprite.svg#chevron-left"></use>
+							</svg>
+							<span>Электроустановочные изделия</span>
+						</a>
+					</div>
+					<div class="catalog-heading__action">
+						<a class="btn-reset btn btn-mini btn-secondary" href="javascript:;">
+						    <svg class="icon btn__icon">
+						        <use href="img/sprite.svg#sliders-horiz"></use>
+						    </svg>
+						    <span class="btn__text">Перейти в конфигуратор</span>
+						</a>
+					</div>
 				</div>
 			</div>
 
 			<div class="gap-xl">
 				<div class="catalog catalog-category catalog-category--grid" data-catalog-content-view>
 					<div class="catalog-sidebar">
-						<div class="catalog-sidebar-top">
-							<div class="catalog-sidebar-category">
-								<div class="catalog-sidebar-category__title">Категории</div>
-								<ul class="list-reset catalog-sidebar-category__list">
-									<li>
-										<a class="catalog-sidebar-category__item" href="javascript:;">
-											<span class="catalog-sidebar-category__item-text">Дверные звонки</span>
-											<span class="catalog-sidebar-category__item-available">81</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-category__item" href="javascript:;">
-											<span class="catalog-sidebar-category__item-text">Звонковый трансформатор</span>
-											<span class="catalog-sidebar-category__item-available">1</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-category__item" href="javascript:;">
-											<span class="catalog-sidebar-category__item-text">Зуммеры</span>
-											<span class="catalog-sidebar-category__item-available">7</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-category__item" href="javascript:;">
-											<span class="catalog-sidebar-category__item-text">Домофоны / видеодомофоны</span>
-											<span class="catalog-sidebar-category__item-available">74</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-category__item" href="javascript:;">
-											<span class="catalog-sidebar-category__item-text">Комплект домофона</span>
-											<span class="catalog-sidebar-category__item-available">28</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-category__item" href="javascript:;">
-											<span class="catalog-sidebar-category__item-text">Камеры для видеодомофона</span>
-											<span class="catalog-sidebar-category__item-available">13</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-category__item" href="javascript:;">
-											<span class="catalog-sidebar-category__item-text">Мониторы для видеодомофона</span>
-											<span class="catalog-sidebar-category__item-available">9</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-category__item" href="javascript:;">
-											<span class="catalog-sidebar-category__item-text">Вызывная панель видеодомофона</span>
-											<span class="catalog-sidebar-category__item-available">3</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-category__item" href="javascript:;">
-											<span class="catalog-sidebar-category__item-text">Комплектующие домофона</span>
-											<span class="catalog-sidebar-category__item-available">172</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="catalog-sidebar-section">
-								<div class="catalog-sidebar-section__title">Звонки и домофоны</div>
-								<ul class="list-reset catalog-sidebar-section__list">
-									<li>
-										<a class="catalog-sidebar-section__item" href="javascript:;">
-											<span class="catalog-sidebar-section__item-text">Дверные звонки</span>
-											<span class="catalog-sidebar-section__item-available">81</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-section__item" href="javascript:;">
-											<span class="catalog-sidebar-section__item-text">Звонковый трансформатор</span>
-											<span class="catalog-sidebar-section__item-available">1</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-section__item" href="javascript:;">
-											<span class="catalog-sidebar-section__item-text">Зуммеры</span>
-											<span class="catalog-sidebar-section__item-available">7</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-section__item" href="javascript:;">
-											<span class="catalog-sidebar-section__item-text">Домофоны / видеодомофоны</span>
-											<span class="catalog-sidebar-section__item-available">74</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-section__item" href="javascript:;">
-											<span class="catalog-sidebar-section__item-text">Комплект домофона</span>
-											<span class="catalog-sidebar-section__item-available">28</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-section__item" href="javascript:;">
-											<span class="catalog-sidebar-section__item-text">Камеры для видеодомофона</span>
-											<span class="catalog-sidebar-section__item-available">13</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-section__item" href="javascript:;">
-											<span class="catalog-sidebar-section__item-text">Мониторы для видеодомофона</span>
-											<span class="catalog-sidebar-section__item-available">9</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-section__item" href="javascript:;">
-											<span class="catalog-sidebar-section__item-text">Вызывная панель видеодомофона</span>
-											<span class="catalog-sidebar-section__item-available">3</span>
-										</a>
-									</li>
-									<li>
-										<a class="catalog-sidebar-section__item" href="javascript:;">
-											<span class="catalog-sidebar-section__item-text">Комплектующие домофона</span>
-											<span class="catalog-sidebar-section__item-available">172</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
 						<div class="catalog-sidebar-filter" data-filter>
 							<div class="catalog-sidebar-filter__header">
 								<div class="catalog-sidebar-filter__title h4">Фильтр</div>
@@ -161,22 +49,22 @@
 									<li class="catalog-sidebar-filter__options-item">
 										<ul class="list-reset catalog-sidebar-filter__list">
 											<li class="catalog-sidebar-filter__item">
-									<span class="custom-checkbox">
-										<input id="csf-checkbox-1" class="custom-checkbox__input" type="checkbox" name="test1[0]">
-										<label for="csf-checkbox-1" class="custom-checkbox__label-for">Новинки</label>
-									</span>
+								<span class="custom-checkbox">
+									<input id="csf-checkbox-1" class="custom-checkbox__input" type="checkbox" name="test1[0]">
+									<label for="csf-checkbox-1" class="custom-checkbox__label-for">Новинки</label>
+								</span>
 											</li>
 											<li class="catalog-sidebar-filter__item">
-									<span class="custom-checkbox">
-										<input id="csf-checkbox-2" class="custom-checkbox__input" type="checkbox" name="test1[1]">
-										<label for="csf-checkbox-2" class="custom-checkbox__label-for">Акции</label>
-									</span>
+								<span class="custom-checkbox">
+									<input id="csf-checkbox-2" class="custom-checkbox__input" type="checkbox" name="test1[1]">
+									<label for="csf-checkbox-2" class="custom-checkbox__label-for">Акции</label>
+								</span>
 											</li>
 											<li class="catalog-sidebar-filter__item">
-									<span class="custom-checkbox">
-										<input id="csf-checkbox-3" class="custom-checkbox__input" type="checkbox" name="test1[2]">
-										<label for="csf-checkbox-3" class="custom-checkbox__label-for">Есть в наличии</label>
-									</span>
+								<span class="custom-checkbox">
+									<input id="csf-checkbox-3" class="custom-checkbox__input" type="checkbox" name="test1[2]">
+									<label for="csf-checkbox-3" class="custom-checkbox__label-for">Есть в наличии</label>
+								</span>
 											</li>
 										</ul>
 									</li>
@@ -214,40 +102,40 @@
 													<div class="spoiler-content">
 														<ul class="list-reset catalog-sidebar-filter__list collapse-content-in" data-filter-option-content>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-10" class="custom-checkbox__input" type="checkbox" name="test2[0]">
-														<label for="csf-checkbox-10" class="custom-checkbox__label-for">USB розетки</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-10" class="custom-checkbox__input" type="checkbox" name="test2[0]">
+													<label for="csf-checkbox-10" class="custom-checkbox__label-for">USB розетки</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-11" class="custom-checkbox__input" type="checkbox" name="test2[1]">
-														<label for="csf-checkbox-11" class="custom-checkbox__label-for">Антенные розетки</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-11" class="custom-checkbox__input" type="checkbox" name="test2[1]">
+													<label for="csf-checkbox-11" class="custom-checkbox__label-for">Антенные розетки</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-12" class="custom-checkbox__input" type="checkbox" name="test2[2]" disabled>
-														<label for="csf-checkbox-12" class="custom-checkbox__label-for">Блоки розеток и выключателей</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-12" class="custom-checkbox__input" type="checkbox" name="test2[2]" disabled>
+													<label for="csf-checkbox-12" class="custom-checkbox__label-for">Блоки розеток и выключателей</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-13" class="custom-checkbox__input disabled" type="checkbox" name="test2[3]">
-														<label for="csf-checkbox-13" class="custom-checkbox__label-for">Выключатели</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-13" class="custom-checkbox__input disabled" type="checkbox" name="test2[3]">
+													<label for="csf-checkbox-13" class="custom-checkbox__label-for">Выключатели</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-14" class="custom-checkbox__input" type="checkbox" name="test2[4]">
-														<label for="csf-checkbox-14" class="custom-checkbox__label-for">Выключатели с ДУ</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-14" class="custom-checkbox__input" type="checkbox" name="test2[4]">
+													<label for="csf-checkbox-14" class="custom-checkbox__label-for">Выключатели с ДУ</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-15" class="custom-checkbox__input" type="checkbox" name="test2[5]">
-														<label for="csf-checkbox-15" class="custom-checkbox__label-for">Тест</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-15" class="custom-checkbox__input" type="checkbox" name="test2[5]">
+													<label for="csf-checkbox-15" class="custom-checkbox__label-for">Тест</label>
+												</span>
 															</li>
 														</ul>
 													</div>
@@ -289,158 +177,158 @@
 													<div class="spoiler-content">
 														<ul class="list-reset catalog-sidebar-filter__list collapse-content-in" data-filter-option-content>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-20" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-20" class="custom-checkbox__label-for">Schneider Electric</label>
-														<span class="custom-checkbox__brand">
-															<img
-																loading="lazy"
-																src="img/brand-schneider-electric.png"
-																class="image"
-																alt="Изображение блока"
-															>
-														</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-20" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-20" class="custom-checkbox__label-for">Schneider Electric</label>
+													<span class="custom-checkbox__brand">
+														<img
+															loading="lazy"
+															src="img/brand-schneider-electric.png"
+															class="image"
+															alt="Изображение блока"
+														>
 													</span>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-21" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-21" class="custom-checkbox__label-for">PHILIPS</label>
-														<span class="custom-checkbox__brand">
-															<img
-																loading="lazy"
-																src="img/brand-philips.png"
-																class="image"
-																alt="Изображение блока"
-															>
-														</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-21" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-21" class="custom-checkbox__label-for">PHILIPS</label>
+													<span class="custom-checkbox__brand">
+														<img
+															loading="lazy"
+															src="img/brand-philips.png"
+															class="image"
+															alt="Изображение блока"
+														>
 													</span>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-22" class="custom-checkbox__input" type="checkbox" disabled>
-														<label for="csf-checkbox-22" class="custom-checkbox__label-for">DKC</label>
-														<span class="custom-checkbox__brand">
-															<img
-																loading="lazy"
-																src="img/brand-dkc.png"
-																class="image"
-																alt="Изображение блока"
-															>
-														</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-22" class="custom-checkbox__input" type="checkbox" disabled>
+													<label for="csf-checkbox-22" class="custom-checkbox__label-for">DKC</label>
+													<span class="custom-checkbox__brand">
+														<img
+															loading="lazy"
+															src="img/brand-dkc.png"
+															class="image"
+															alt="Изображение блока"
+														>
 													</span>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-23" class="custom-checkbox__input disabled" type="checkbox">
-														<label for="csf-checkbox-23" class="custom-checkbox__label-for">Legrand</label>
-														<span class="custom-checkbox__brand">
-															<img
-																loading="lazy"
-																src="img/brand-legrand.png"
-																class="image"
-																alt="Изображение блока"
-															>
-														</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-23" class="custom-checkbox__input disabled" type="checkbox">
+													<label for="csf-checkbox-23" class="custom-checkbox__label-for">Legrand</label>
+													<span class="custom-checkbox__brand">
+														<img
+															loading="lazy"
+															src="img/brand-legrand.png"
+															class="image"
+															alt="Изображение блока"
+														>
 													</span>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-24" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-24" class="custom-checkbox__label-for">Arlight</label>
-														<span class="custom-checkbox__brand">
-															<img
-																loading="lazy"
-																src="img/brand-arlight.png"
-																class="image"
-																alt="Изображение блока"
-															>
-														</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-24" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-24" class="custom-checkbox__label-for">Arlight</label>
+													<span class="custom-checkbox__brand">
+														<img
+															loading="lazy"
+															src="img/brand-arlight.png"
+															class="image"
+															alt="Изображение блока"
+														>
 													</span>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-25" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-25" class="custom-checkbox__label-for">Schneider Electric</label>
-														<span class="custom-checkbox__brand">
-															<img
-																loading="lazy"
-																src="img/brand-schneider-electric.png"
-																class="image"
-																alt="Изображение блока"
-															>
-														</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-25" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-25" class="custom-checkbox__label-for">Schneider Electric</label>
+													<span class="custom-checkbox__brand">
+														<img
+															loading="lazy"
+															src="img/brand-schneider-electric.png"
+															class="image"
+															alt="Изображение блока"
+														>
 													</span>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-26" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-26" class="custom-checkbox__label-for">PHILIPS</label>
-														<span class="custom-checkbox__brand">
-															<img
-																loading="lazy"
-																src="img/brand-philips.png"
-																class="image"
-																alt="Изображение блока"
-															>
-														</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-26" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-26" class="custom-checkbox__label-for">PHILIPS</label>
+													<span class="custom-checkbox__brand">
+														<img
+															loading="lazy"
+															src="img/brand-philips.png"
+															class="image"
+															alt="Изображение блока"
+														>
 													</span>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-27" class="custom-checkbox__input" type="checkbox" disabled>
-														<label for="csf-checkbox-27" class="custom-checkbox__label-for">DKC</label>
-														<span class="custom-checkbox__brand">
-															<img
-																loading="lazy"
-																src="img/brand-dkc.png"
-																class="image"
-																alt="Изображение блока"
-															>
-														</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-27" class="custom-checkbox__input" type="checkbox" disabled>
+													<label for="csf-checkbox-27" class="custom-checkbox__label-for">DKC</label>
+													<span class="custom-checkbox__brand">
+														<img
+															loading="lazy"
+															src="img/brand-dkc.png"
+															class="image"
+															alt="Изображение блока"
+														>
 													</span>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-28" class="custom-checkbox__input disabled" type="checkbox">
-														<label for="csf-checkbox-28" class="custom-checkbox__label-for">Legrand</label>
-														<span class="custom-checkbox__brand">
-															<img
-																loading="lazy"
-																src="img/brand-legrand.png"
-																class="image"
-																alt="Изображение блока"
-															>
-														</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-28" class="custom-checkbox__input disabled" type="checkbox">
+													<label for="csf-checkbox-28" class="custom-checkbox__label-for">Legrand</label>
+													<span class="custom-checkbox__brand">
+														<img
+															loading="lazy"
+															src="img/brand-legrand.png"
+															class="image"
+															alt="Изображение блока"
+														>
 													</span>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-29" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-29" class="custom-checkbox__label-for">Arlight</label>
-														<span class="custom-checkbox__brand">
-															<img
-																loading="lazy"
-																src="img/brand-arlight.png"
-																class="image"
-																alt="Изображение блока"
-															>
-														</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-29" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-29" class="custom-checkbox__label-for">Arlight</label>
+													<span class="custom-checkbox__brand">
+														<img
+															loading="lazy"
+															src="img/brand-arlight.png"
+															class="image"
+															alt="Изображение блока"
+														>
 													</span>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-30" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-30" class="custom-checkbox__label-for">Schneider Electric</label>
-														<span class="custom-checkbox__brand">
-															<img
-																loading="lazy"
-																src="img/brand-schneider-electric.png"
-																class="image"
-																alt="Изображение блока"
-															>
-														</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-30" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-30" class="custom-checkbox__label-for">Schneider Electric</label>
+													<span class="custom-checkbox__brand">
+														<img
+															loading="lazy"
+															src="img/brand-schneider-electric.png"
+															class="image"
+															alt="Изображение блока"
+														>
 													</span>
+												</span>
 															</li>
 														</ul>
 													</div>
@@ -482,40 +370,40 @@
 													<div class="spoiler-content">
 														<ul class="list-reset catalog-sidebar-filter__list collapse-content-in" data-filter-option-content>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-50" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-50" class="custom-checkbox__label-for">Alfa</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-50" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-50" class="custom-checkbox__label-for">Alfa</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-51" class="custom-checkbox__input" type="checkbox" disabled>
-														<label for="csf-checkbox-51" class="custom-checkbox__label-for">Antico</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-51" class="custom-checkbox__input" type="checkbox" disabled>
+													<label for="csf-checkbox-51" class="custom-checkbox__label-for">Antico</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-52" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-52" class="custom-checkbox__label-for">Atlas Design</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-52" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-52" class="custom-checkbox__label-for">Atlas Design</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-53" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-53" class="custom-checkbox__label-for">Blanca</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-53" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-53" class="custom-checkbox__label-for">Blanca</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-54" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-54" class="custom-checkbox__label-for">Eqona</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-54" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-54" class="custom-checkbox__label-for">Eqona</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-55" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-55" class="custom-checkbox__label-for">Тест</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-55" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-55" class="custom-checkbox__label-for">Тест</label>
+												</span>
 															</li>
 														</ul>
 													</div>
@@ -557,40 +445,40 @@
 													<div class="spoiler-content">
 														<ul class="list-reset catalog-sidebar-filter__list collapse-content-in" data-filter-option-content>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-60" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-60" class="custom-checkbox__label-for">Аллюминий</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-60" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-60" class="custom-checkbox__label-for">Аллюминий</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-61" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-61" class="custom-checkbox__label-for">Ампир бежевый</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-61" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-61" class="custom-checkbox__label-for">Ампир бежевый</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-62" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-62" class="custom-checkbox__label-for">Ампир белый</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-62" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-62" class="custom-checkbox__label-for">Ампир белый</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-63" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-63" class="custom-checkbox__label-for">Антрацит</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-63" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-63" class="custom-checkbox__label-for">Антрацит</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-64" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-64" class="custom-checkbox__label-for">Бежевый</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-64" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-64" class="custom-checkbox__label-for">Бежевый</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-65" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-65" class="custom-checkbox__label-for">Тест</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-65" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-65" class="custom-checkbox__label-for">Тест</label>
+												</span>
 															</li>
 														</ul>
 													</div>
@@ -599,57 +487,57 @@
 										</div>
 									</li>
 									<?/* // todo: end this part
-						<li class="catalog-sidebar-filter__options-item" data-filter-option>
-							<div class="catalog-sidebar-filter__options-header collapse-view-in" data-filter-option-view>
-								<svg class="icon icon-sm">
-									<use href="img/sprite.svg#chevron-down"></use>
-								</svg>
-								<span class="catalog-sidebar-filter__options-title h5">Цена (демо)</span>
-							</div>
-							<div class="catalog-sidebar-filter__options-content collapse-content-in" data-filter-option-content>
-								<div class="catalog-sidebar-filter__options-content-item">
-									<div class="range-slider-wrapper">
-										<div id="range-slider"></div>
+					<li class="catalog-sidebar-filter__options-item" data-filter-option>
+						<div class="catalog-sidebar-filter__options-header collapse-view-in" data-filter-option-view>
+							<svg class="icon icon-sm">
+								<use href="img/sprite.svg#chevron-down"></use>
+							</svg>
+							<span class="catalog-sidebar-filter__options-title h5">Цена (демо)</span>
+						</div>
+						<div class="catalog-sidebar-filter__options-content collapse-content-in" data-filter-option-content>
+							<div class="catalog-sidebar-filter__options-content-item">
+								<div class="range-slider-wrapper">
+									<div id="range-slider"></div>
 
-										<!--<div id="steps-slider" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr">
-											<div class="noUi-base">
-												<div class="noUi-connects">
-													<div class="noUi-connect"></div>
-												</div>
-												<div class="noUi-origin">
-													<div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="70.0" aria-valuenow="20.0" aria-valuetext="20.00">
-														<div class="noUi-touch-area"></div>
-														<div class="noUi-tooltip">20.00</div>
-													</div>
-												</div>
-												<div class="noUi-origin">
-													<div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="200.0" aria-valuenow="70.0" aria-valuetext="70.00">
-														<div class="noUi-touch-area"></div>
-														<div class="noUi-tooltip">70.0</div>
-													</div>
+									<!--<div id="steps-slider" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr">
+										<div class="noUi-base">
+											<div class="noUi-connects">
+												<div class="noUi-connect"></div>
+											</div>
+											<div class="noUi-origin">
+												<div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="70.0" aria-valuenow="20.0" aria-valuetext="20.00">
+													<div class="noUi-touch-area"></div>
+													<div class="noUi-tooltip">20.00</div>
 												</div>
 											</div>
-										</div>-->
+											<div class="noUi-origin">
+												<div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="200.0" aria-valuenow="70.0" aria-valuetext="70.00">
+													<div class="noUi-touch-area"></div>
+													<div class="noUi-tooltip">70.0</div>
+												</div>
+											</div>
+										</div>
+									</div>-->
 
-										<!--<input id="range-slider-keypress-0" type="text">
-										<input id="range-slider-keypress-1" type="text">-->
-									</div>
+									<!--<input id="range-slider-keypress-0" type="text">
+									<input id="range-slider-keypress-1" type="text">-->
 								</div>
 							</div>
+						</div>
 
 
 
-							<!--<div class="catalog-sidebar-prices ">
-								<div class="catalog-sidebar-prices__from">
+						<!--<div class="catalog-sidebar-prices ">
+							<div class="catalog-sidebar-prices__from">
 
-									<input id="arrFilter_P3_MIN" class="input__area catalog-sidebar__label" name="arrFilter_P3_MIN" value="" placeholder="6" autocomplete="off">
+								<input id="arrFilter_P3_MIN" class="input__area catalog-sidebar__label" name="arrFilter_P3_MIN" value="" placeholder="6" autocomplete="off">
 
-								</div>
-								<div class="catalog-sidebar-prices__to">
-									<input id="arrFilter_P3_MAX" class="input__area catalog-sidebar__label" name="arrFilter_P3_MAX" value="" placeholder="628362" autocomplete="off">
-								</div>
-							</div>-->
-						</li>*/?>
+							</div>
+							<div class="catalog-sidebar-prices__to">
+								<input id="arrFilter_P3_MAX" class="input__area catalog-sidebar__label" name="arrFilter_P3_MAX" value="" placeholder="628362" autocomplete="off">
+							</div>
+						</div>-->
+					</li>*/?>
 									<li class="catalog-sidebar-filter__options-item" data-filter-option>
 										<div class="catalog-sidebar-filter__options-header collapse-view-in" data-filter-option-view>
 											<svg class="icon icon-sm">
@@ -663,16 +551,16 @@
 													<div class="spoiler-content">
 														<ul class="list-reset catalog-sidebar-filter__list collapse-content-in" data-filter-option-content>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-80" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-80" class="custom-checkbox__label-for">Открытая</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-80" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-80" class="custom-checkbox__label-for">Открытая</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-81" class="custom-checkbox__input" type="checkbox" disabled>
-														<label for="csf-checkbox-81" class="custom-checkbox__label-for">Скрытая</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-81" class="custom-checkbox__input" type="checkbox" disabled>
+													<label for="csf-checkbox-81" class="custom-checkbox__label-for">Скрытая</label>
+												</span>
 															</li>
 														</ul>
 													</div>
@@ -693,22 +581,22 @@
 													<div class="spoiler-content">
 														<ul class="list-reset catalog-sidebar-filter__list collapse-content-in" data-filter-option-content>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-90" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-90" class="custom-checkbox__label-for">Магазин м. Октябрьское поле</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-90" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-90" class="custom-checkbox__label-for">Магазин м. Октябрьское поле</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-91" class="custom-checkbox__input" type="checkbox">
-														<label for="csf-checkbox-91" class="custom-checkbox__label-for">Центральный склад</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-91" class="custom-checkbox__input" type="checkbox">
+													<label for="csf-checkbox-91" class="custom-checkbox__label-for">Центральный склад</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-checkbox">
-														<input id="csf-checkbox-92" class="custom-checkbox__input" type="checkbox" disabled>
-														<label for="csf-checkbox-92" class="custom-checkbox__label-for">На складе производителя</label>
-													</span>
+												<span class="custom-checkbox">
+													<input id="csf-checkbox-92" class="custom-checkbox__input" type="checkbox" disabled>
+													<label for="csf-checkbox-92" class="custom-checkbox__label-for">На складе производителя</label>
+												</span>
 															</li>
 														</ul>
 													</div>
@@ -729,28 +617,28 @@
 													<div class="spoiler-content">
 														<ul class="list-reset catalog-sidebar-filter__list collapse-content-in" data-filter-option-content>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-radio">
-														<input id="csf-radio-1" class="custom-radio__input checked" type="radio" name="deliveryPeriod" value="0" checked>
-														<label for="csf-radio-1" class="custom-radio__label-for">Любой</label>
-													</span>
+												<span class="custom-radio">
+													<input id="csf-radio-1" class="custom-radio__input checked" type="radio" name="deliveryPeriod" value="0" checked>
+													<label for="csf-radio-1" class="custom-radio__label-for">Любой</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-radio">
-														<input id="csf-radio-2" class="custom-radio__input" type="radio" name="deliveryPeriod" value="1" disabled>
-														<label for="csf-radio-2" class="custom-radio__label-for">Сегодня</label>
-													</span>
+												<span class="custom-radio">
+													<input id="csf-radio-2" class="custom-radio__input" type="radio" name="deliveryPeriod" value="1" disabled>
+													<label for="csf-radio-2" class="custom-radio__label-for">Сегодня</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-radio">
-														<input id="csf-radio-3" class="custom-radio__input" type="radio" name="deliveryPeriod" value="2">
-														<label for="csf-radio-3" class="custom-radio__label-for">2-4 дня</label>
-													</span>
+												<span class="custom-radio">
+													<input id="csf-radio-3" class="custom-radio__input" type="radio" name="deliveryPeriod" value="2">
+													<label for="csf-radio-3" class="custom-radio__label-for">2-4 дня</label>
+												</span>
 															</li>
 															<li class="catalog-sidebar-filter__item">
-													<span class="custom-radio">
-														<input id="csf-radio-4" class="custom-radio__input" type="radio" name="deliveryPeriod" value="3">
-														<label for="csf-radio-4" class="custom-radio__label-for">3-5 дней</label>
-													</span>
+												<span class="custom-radio">
+													<input id="csf-radio-4" class="custom-radio__input" type="radio" name="deliveryPeriod" value="3">
+													<label for="csf-radio-4" class="custom-radio__label-for">3-5 дней</label>
+												</span>
 															</li>
 														</ul>
 													</div>
@@ -857,72 +745,319 @@
 
 					<div class="catalog-content">
 						<div class="catalog-content__top">
-                            <div class="catalog-content__section">
-                                <div class="swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide catalog-content__section-item">
-                                            <div class="catalog-content__section-view">
-                                                <picture>
-                                                    <source srcset="img/catalog-section.webp" type="image/webp">
-                                                    <img
-                                                        loading="lazy"
-                                                        src="img/catalog-section.png"
-                                                        class="image"
-                                                        width="100"
-                                                        height="100"
-                                                        alt="Изображение блока"
-                                                    >
-                                                </picture>
+                            <div class="product-card-mobile-section">
+                                <div class="product-card-mobile-section-container">
+                                    <div class="catalog-content__popular">
+                                        <div class="catalog-content__popular-collection">
+                                            <div class="catalog-content__popular-collection-title h5">Популярные коллекции</div>
+                                            <div class="catalog-content__popular-collection-list">
+                                                <div class="swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide catalog-content__popular-collection-item">
+                                                            <div class="catalog-content__popular-collection-view">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-image-1.png"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-collection-descr">
+                                                                <div class="catalog-content__popular-collection-brand">Legrand</div>
+                                                                <div class="catalog-content__popular-collection-series">VALENA LIFE/ALLURE</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="swiper-slide catalog-content__popular-collection-item">
+                                                            <div class="catalog-content__popular-collection-view">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-image-2.png"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-collection-descr">
+                                                                <div class="catalog-content__popular-collection-brand">Legrand</div>
+                                                                <div class="catalog-content__popular-collection-series">Celiane</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-collection-item">
+                                                            <div class="catalog-content__popular-collection-view">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-image-3.png"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-collection-descr">
+                                                                <div class="catalog-content__popular-collection-brand">Aling-conel</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-collection-item">
+                                                            <div class="catalog-content__popular-collection-view">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-image-4.png"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-collection-descr">
+                                                                <div class="catalog-content__popular-collection-brand">Simon </div>
+                                                                <div class="catalog-content__popular-collection-series">Simon 24</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-collection-item">
+                                                            <div class="catalog-content__popular-collection-view">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-image-5.png"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-collection-descr">
+                                                                <div class="catalog-content__popular-collection-brand">GUNSAN Eqona</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-collection-item">
+                                                            <div class="catalog-content__popular-collection-view">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-image-6.png"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-collection-descr">
+                                                                <div class="catalog-content__popular-collection-brand">BIRONI</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-collection-item">
+                                                            <div class="catalog-content__popular-collection-view">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-image-7.png"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-collection-descr">
+                                                                <div class="catalog-content__popular-collection-brand">Legrand</div>
+                                                                <div class="catalog-content__popular-collection-series">INSPIRIA</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-collection-item">
+                                                            <div class="catalog-content__popular-collection-view">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-image-8.png"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-collection-descr">
+                                                                <div class="catalog-content__popular-collection-brand">Bticino (Legrand)</div>
+                                                                <div class="catalog-content__popular-collection-series">Living Now</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-collection-item">
+                                                            <div class="catalog-content__popular-collection-view">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-image-9.png"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-collection-descr">
+                                                                <div class="catalog-content__popular-collection-brand">EKF Минск</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-collection-item">
+                                                            <div class="catalog-content__popular-collection-view">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-image-10.png"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-collection-descr">
+                                                                <div class="catalog-content__popular-collection-brand">Legrand</div>
+                                                                <div class="catalog-content__popular-collection-series">Valena Classic</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-collection-item">
+                                                            <div class="catalog-content__popular-collection-view">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-image-11.png"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-collection-descr">
+                                                                <div class="catalog-content__popular-collection-brand">JUNG</div>
+                                                                <div class="catalog-content__popular-collection-series">EcoProfi</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-collection-item">
+                                                            <div class="catalog-content__popular-collection-view">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-image-12.png"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-collection-descr">
+                                                                <div class="catalog-content__popular-collection-brand">GUNSAN Eqona</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="catalog-content__section-title">Дверные звонки</div>
                                         </div>
-                                        <div class="swiper-slide catalog-content__section-item">
-                                            <div class="catalog-content__section-view">
-                                                <picture>
-                                                    <source srcset="img/catalog-section2.webp" type="image/webp">
-                                                    <img
-                                                        loading="lazy"
-                                                        src="img/catalog-section2.png"
-                                                        class="image"
-                                                        width="100"
-                                                        height="100"
-                                                        alt="Изображение блока"
-                                                    >
-                                                </picture>
+                                        <div class="catalog-content__popular-color">
+                                            <div class="catalog-content__popular-color-title h5">Популярные цвета</div>
+                                            <div class="catalog-content__popular-color-list">
+                                                <div class="swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide catalog-content__popular-color-item">
+                                                            <div class="catalog-content__popular-color-view" style="background-color: #070707">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-color-image-1.png"
+                                                                        width="40"
+                                                                        height="40"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-color-descr">Черный</div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-color-item">
+                                                            <div class="catalog-content__popular-color-view" style="background-color:
+#3985F7">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-color-image-2.png"
+                                                                        width="40"
+                                                                        height="40"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-color-descr">Синий</div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-color-item">
+                                                            <div class="catalog-content__popular-color-view" style="background-color: #663A07">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-color-image-3.png"
+                                                                        width="40"
+                                                                        height="40"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-color-descr">Коричневый</div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-color-item">
+                                                            <div class="catalog-content__popular-color-view" style="background-color: #D4D4D4">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-color-image-4.png"
+                                                                        width="40"
+                                                                        height="40"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-color-descr">Серебристый</div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-color-item">
+                                                            <div class="catalog-content__popular-color-view" style="background-color: #FFFFFF; border: 1px solid #D5D5D6;">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-color-image-5.png"
+                                                                        width="40"
+                                                                        height="40"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-color-descr">Белый</div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-color-item">
+                                                            <div class="catalog-content__popular-color-view" style="background-color: #FD93FF">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-color-image-6.png"
+                                                                        width="40"
+                                                                        height="40"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-color-descr">Розовый</div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-color-item">
+                                                            <div class="catalog-content__popular-color-view" style="background-color: #BD5EF6">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-color-image-1.png"
+                                                                        width="40"
+                                                                        height="40"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-color-descr">Сиреневый</div>
+                                                        </div>
+                                                        <div class="swiper-slide catalog-content__popular-color-item">
+                                                            <div class="catalog-content__popular-color-view" style="background-color: #967A15">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image"
+                                                                        src="img/collection-color-image-2.png"
+                                                                        width="40"
+                                                                        height="40"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </div>
+                                                            <div class="catalog-content__popular-color-descr">Золотой</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="catalog-content__section-title">Звонковый трансформатор</div>
-                                        </div>
-                                        <div class="swiper-slide catalog-content__section-item">
-                                            <div class="catalog-content__section-view">
-                                                <picture>
-                                                    <source srcset="img/catalog-section3.webp" type="image/webp">
-                                                    <img
-                                                        loading="lazy"
-                                                        src="img/catalog-section3.png"
-                                                        class="image"
-                                                        width="100"
-                                                        height="100"
-                                                        alt="Изображение блока"
-                                                    >
-                                                </picture>
-                                            </div>
-                                            <div class="catalog-content__section-title">Зуммеры</div>
-                                        </div>
-                                        <div class="swiper-slide catalog-content__section-item">
-                                            <div class="catalog-content__section-view">
-                                                <picture>
-                                                    <source srcset="img/catalog-section4.webp" type="image/webp">
-                                                    <img
-                                                        loading="lazy"
-                                                        src="img/catalog-section4.png"
-                                                        class="image"
-                                                        width="100"
-                                                        height="100"
-                                                        alt="Изображение блока"
-                                                    >
-                                                </picture>
-                                            </div>
-                                            <div class="catalog-content__section-title">Домофоны / видеодомофоны</div>
                                         </div>
                                     </div>
                                 </div>
@@ -997,63 +1132,39 @@
 								<span>Фильтры</span>
 							</div>
 							<div class="catalog-content-filter-selected" data-filter-selected> <?/* class ".empty" hides block */?>
-                                <div class="catalog-content-filter-selected__list">
-                                    <button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>
-                                        <span class="btn__text">Наличие: Центральный склад</span>
-                                        <span class="catalog-content-filter-selected__item-delete" data-delete-trigger>
-                                            <svg class="icon btn__icon">
-                                                <use href="img/sprite.svg#cross"></use>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>
-                                        <span class="btn__text">Тип изделия: USB розетки</span>
-                                        <span class="catalog-content-filter-selected__item-delete" data-delete-trigger>
-                                            <svg class="icon btn__icon">
-                                                <use href="img/sprite.svg#cross"></use>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>
-                                        <span class="btn__text">Серия: Atlas Design</span>
-                                        <span class="catalog-content-filter-selected__item-delete" data-delete-trigger>
-                                            <svg class="icon btn__icon">
-                                                <use href="img/sprite.svg#cross"></use>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <button class="btn-reset btn btn-mini btn-light catalog-content-filter-selected__item" data-filter-reset>
-                                        <svg class="icon btn__icon">
-                                            <use href="img/sprite.svg#trash"></use>
-                                        </svg>
-                                        <span class="btn__text">Очистить фильтры</span>
-                                    </button>
-                                </div>
+								<div class="catalog-content-filter-selected__list">
+									<button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>
+										<span class="btn__text">Наличие: Центральный склад</span>
+										<span class="catalog-content-filter-selected__item-delete" data-delete-trigger>
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#cross"></use>
+										</svg>
+									</span>
+									</button>
+									<button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>
+										<span class="btn__text">Тип изделия: USB розетки</span>
+										<span class="catalog-content-filter-selected__item-delete" data-delete-trigger>
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#cross"></use>
+										</svg>
+									</span>
+									</button>
+									<button class="btn-reset btn btn-mini btn-primary catalog-content-filter-selected__item" data-removable>
+										<span class="btn__text">Серия: Atlas Design</span>
+										<span class="catalog-content-filter-selected__item-delete" data-delete-trigger>
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#cross"></use>
+										</svg>
+									</span>
+									</button>
+									<button class="btn-reset btn btn-mini btn-light catalog-content-filter-selected__item" data-filter-reset>
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#trash"></use>
+										</svg>
+										<span class="btn__text">Очистить фильтры</span>
+									</button>
+								</div>
 							</div>
-                            <div class="catalog-content__banner">
-                                <div class="catalog-content__banner-text">
-                                    <div class="catalog-content__banner-title h3">Кэшбэк 15% на серию Glossa<br> от System Electric</div>
-                                    <div class="catalog-content__banner-subtitle">Выгодные условия в декабре 2022 года для всех покупателей</div>
-                                </div>
-                                <div class="catalog-content__banner-decor">
-                                    <img
-                                            loading="lazy"
-                                            src="img/schneider-decor-1.png"
-                                            class="image"
-                                            width="155"
-                                            height="155"
-                                            alt="Изображение блока"
-                                    >
-                                    <img
-                                            loading="lazy"
-                                            src="img/schneider-decor-2.png"
-                                            class="image"
-                                            width="155"
-                                            height="155"
-                                            alt="Изображение блока"
-                                    >
-                                </div>
-                            </div>
 						</div>
 						<div class="catalog-content__layout">
 							<div class="catalog-content__grid">
@@ -1115,17 +1226,17 @@
 											<div class="card-product-descr__info">
 												<span class="product-code"><span>ZB3327018</span></span>
 												<span class="star-rating-wrapper star-rating-wrapper--noframe">
-															<span class="star-rating">
-																<span class="star-rating__container">
-																	<label>
-																		<svg class="icon">
-																			<use href="img/sprite.svg#fill-star"></use>
-																		</svg>
-																	</label>
-																</span>
+														<span class="star-rating">
+															<span class="star-rating__container">
+																<label>
+																	<svg class="icon">
+																		<use href="img/sprite.svg#fill-star"></use>
+																	</svg>
+																</label>
 															</span>
-															<span class="star-rating-value" data-value="4.5">4.5</span>
 														</span>
+														<span class="star-rating-value" data-value="4.5">4.5</span>
+													</span>
 											</div>
 											<div class="card-product-descr__availability product-availability in-stock">
 												<svg class="icon">
@@ -1140,13 +1251,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -1289,17 +1400,17 @@
 											<div class="card-product-descr__info">
 												<span class="product-code"><span>46- 312792P13</span></span>
 												<span class="star-rating-wrapper star-rating-wrapper--noframe">
-															<span class="star-rating">
-																<span class="star-rating__container">
-																	<label>
-																		<svg class="icon">
-																			<use href="img/sprite.svg#fill-star"></use>
-																		</svg>
-																	</label>
-																</span>
+														<span class="star-rating">
+															<span class="star-rating__container">
+																<label>
+																	<svg class="icon">
+																		<use href="img/sprite.svg#fill-star"></use>
+																	</svg>
+																</label>
 															</span>
-															<span class="star-rating-value" data-value="5.0">5.0</span>
 														</span>
+														<span class="star-rating-value" data-value="5.0">5.0</span>
+													</span>
 											</div>
 											<div class="card-product-descr__availability product-availability on-order">
 												<svg class="icon">
@@ -1314,13 +1425,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -1504,13 +1615,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -1666,13 +1777,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -1815,17 +1926,17 @@
 											<div class="card-product-descr__info">
 												<span class="product-code"><span>ZB3327018</span></span>
 												<span class="star-rating-wrapper star-rating-wrapper--noframe">
-															<span class="star-rating">
-																<span class="star-rating__container">
-																	<label>
-																		<svg class="icon">
-																			<use href="img/sprite.svg#fill-star"></use>
-																		</svg>
-																	</label>
-																</span>
+														<span class="star-rating">
+															<span class="star-rating__container">
+																<label>
+																	<svg class="icon">
+																		<use href="img/sprite.svg#fill-star"></use>
+																	</svg>
+																</label>
 															</span>
-															<span class="star-rating-value" data-value="4.5">4.5</span>
 														</span>
+														<span class="star-rating-value" data-value="4.5">4.5</span>
+													</span>
 											</div>
 											<div class="card-product-descr__availability product-availability in-stock">
 												<svg class="icon">
@@ -1840,13 +1951,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -1989,17 +2100,17 @@
 											<div class="card-product-descr__info">
 												<span class="product-code"><span>ZB3327018</span></span>
 												<span class="star-rating-wrapper star-rating-wrapper--noframe">
-															<span class="star-rating">
-																<span class="star-rating__container">
-																	<label>
-																		<svg class="icon">
-																			<use href="img/sprite.svg#fill-star"></use>
-																		</svg>
-																	</label>
-																</span>
+														<span class="star-rating">
+															<span class="star-rating__container">
+																<label>
+																	<svg class="icon">
+																		<use href="img/sprite.svg#fill-star"></use>
+																	</svg>
+																</label>
 															</span>
-															<span class="star-rating-value" data-value="4.5">4.5</span>
 														</span>
+														<span class="star-rating-value" data-value="4.5">4.5</span>
+													</span>
 											</div>
 											<div class="card-product-descr__availability product-availability in-stock">
 												<svg class="icon">
@@ -2014,13 +2125,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -2163,17 +2274,17 @@
 											<div class="card-product-descr__info">
 												<span class="product-code"><span>ZB3327018</span></span>
 												<span class="star-rating-wrapper star-rating-wrapper--noframe">
-															<span class="star-rating">
-																<span class="star-rating__container">
-																	<label>
-																		<svg class="icon">
-																			<use href="img/sprite.svg#fill-star"></use>
-																		</svg>
-																	</label>
-																</span>
+														<span class="star-rating">
+															<span class="star-rating__container">
+																<label>
+																	<svg class="icon">
+																		<use href="img/sprite.svg#fill-star"></use>
+																	</svg>
+																</label>
 															</span>
-															<span class="star-rating-value" data-value="4.5">4.5</span>
 														</span>
+														<span class="star-rating-value" data-value="4.5">4.5</span>
+													</span>
 											</div>
 											<div class="card-product-descr__availability product-availability in-stock">
 												<svg class="icon">
@@ -2188,13 +2299,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -2337,17 +2448,17 @@
 											<div class="card-product-descr__info">
 												<span class="product-code"><span>46- 312792P13</span></span>
 												<span class="star-rating-wrapper star-rating-wrapper--noframe">
-															<span class="star-rating">
-																<span class="star-rating__container">
-																	<label>
-																		<svg class="icon">
-																			<use href="img/sprite.svg#fill-star"></use>
-																		</svg>
-																	</label>
-																</span>
+														<span class="star-rating">
+															<span class="star-rating__container">
+																<label>
+																	<svg class="icon">
+																		<use href="img/sprite.svg#fill-star"></use>
+																	</svg>
+																</label>
 															</span>
-															<span class="star-rating-value" data-value="5.0">5.0</span>
 														</span>
+														<span class="star-rating-value" data-value="5.0">5.0</span>
+													</span>
 											</div>
 											<div class="card-product-descr__availability product-availability on-order">
 												<svg class="icon">
@@ -2362,13 +2473,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -2511,17 +2622,17 @@
 											<div class="card-product-descr__info">
 												<span class="product-code"><span>ZB3327018</span></span>
 												<span class="star-rating-wrapper star-rating-wrapper--noframe">
-															<span class="star-rating">
-																<span class="star-rating__container">
-																	<label>
-																		<svg class="icon">
-																			<use href="img/sprite.svg#fill-star"></use>
-																		</svg>
-																	</label>
-																</span>
+														<span class="star-rating">
+															<span class="star-rating__container">
+																<label>
+																	<svg class="icon">
+																		<use href="img/sprite.svg#fill-star"></use>
+																	</svg>
+																</label>
 															</span>
-															<span class="star-rating-value" data-value="4.5">4.5</span>
 														</span>
+														<span class="star-rating-value" data-value="4.5">4.5</span>
+													</span>
 											</div>
 											<div class="card-product-descr__availability product-availability in-stock">
 												<svg class="icon">
@@ -2536,13 +2647,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -2685,17 +2796,17 @@
 											<div class="card-product-descr__info">
 												<span class="product-code"><span>46- 312792P13</span></span>
 												<span class="star-rating-wrapper star-rating-wrapper--noframe">
-										<span class="star-rating">
-											<span class="star-rating__container">
-												<label>
-													<svg class="icon">
-														<use href="img/sprite.svg#fill-star"></use>
-													</svg>
-												</label>
-											</span>
+									<span class="star-rating">
+										<span class="star-rating__container">
+											<label>
+												<svg class="icon">
+													<use href="img/sprite.svg#fill-star"></use>
+												</svg>
+											</label>
 										</span>
-										<span class="star-rating-value" data-value="5.0">5.0</span>
 									</span>
+									<span class="star-rating-value" data-value="5.0">5.0</span>
+								</span>
 											</div>
 											<div class="card-product-descr__availability product-availability on-order">
 												<svg class="icon">
@@ -2710,13 +2821,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -2900,13 +3011,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -3062,13 +3173,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -3211,17 +3322,17 @@
 											<div class="card-product-descr__info">
 												<span class="product-code"><span>ZB3327018</span></span>
 												<span class="star-rating-wrapper star-rating-wrapper--noframe">
-															<span class="star-rating">
-																<span class="star-rating__container">
-																	<label>
-																		<svg class="icon">
-																			<use href="img/sprite.svg#fill-star"></use>
-																		</svg>
-																	</label>
-																</span>
+														<span class="star-rating">
+															<span class="star-rating__container">
+																<label>
+																	<svg class="icon">
+																		<use href="img/sprite.svg#fill-star"></use>
+																	</svg>
+																</label>
 															</span>
-															<span class="star-rating-value" data-value="4.5">4.5</span>
 														</span>
+														<span class="star-rating-value" data-value="4.5">4.5</span>
+													</span>
 											</div>
 											<div class="card-product-descr__availability product-availability in-stock">
 												<svg class="icon">
@@ -3236,13 +3347,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -3385,17 +3496,17 @@
 											<div class="card-product-descr__info">
 												<span class="product-code"><span>ZB3327018</span></span>
 												<span class="star-rating-wrapper star-rating-wrapper--noframe">
-															<span class="star-rating">
-																<span class="star-rating__container">
-																	<label>
-																		<svg class="icon">
-																			<use href="img/sprite.svg#fill-star"></use>
-																		</svg>
-																	</label>
-																</span>
+														<span class="star-rating">
+															<span class="star-rating__container">
+																<label>
+																	<svg class="icon">
+																		<use href="img/sprite.svg#fill-star"></use>
+																	</svg>
+																</label>
 															</span>
-															<span class="star-rating-value" data-value="4.5">4.5</span>
 														</span>
+														<span class="star-rating-value" data-value="4.5">4.5</span>
+													</span>
 											</div>
 											<div class="card-product-descr__availability product-availability in-stock">
 												<svg class="icon">
@@ -3410,13 +3521,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -3559,17 +3670,17 @@
 											<div class="card-product-descr__info">
 												<span class="product-code"><span>ZB3327018</span></span>
 												<span class="star-rating-wrapper star-rating-wrapper--noframe">
-															<span class="star-rating">
-																<span class="star-rating__container">
-																	<label>
-																		<svg class="icon">
-																			<use href="img/sprite.svg#fill-star"></use>
-																		</svg>
-																	</label>
-																</span>
+														<span class="star-rating">
+															<span class="star-rating__container">
+																<label>
+																	<svg class="icon">
+																		<use href="img/sprite.svg#fill-star"></use>
+																	</svg>
+																</label>
 															</span>
-															<span class="star-rating-value" data-value="4.5">4.5</span>
 														</span>
+														<span class="star-rating-value" data-value="4.5">4.5</span>
+													</span>
 											</div>
 											<div class="card-product-descr__availability product-availability in-stock">
 												<svg class="icon">
@@ -3584,13 +3695,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 
@@ -3733,17 +3844,17 @@
 											<div class="card-product-descr__info">
 												<span class="product-code"><span>46- 312792P13</span></span>
 												<span class="star-rating-wrapper star-rating-wrapper--noframe">
-															<span class="star-rating">
-																<span class="star-rating__container">
-																	<label>
-																		<svg class="icon">
-																			<use href="img/sprite.svg#fill-star"></use>
-																		</svg>
-																	</label>
-																</span>
+														<span class="star-rating">
+															<span class="star-rating__container">
+																<label>
+																	<svg class="icon">
+																		<use href="img/sprite.svg#fill-star"></use>
+																	</svg>
+																</label>
 															</span>
-															<span class="star-rating-value" data-value="5.0">5.0</span>
 														</span>
+														<span class="star-rating-value" data-value="5.0">5.0</span>
+													</span>
 											</div>
 											<div class="card-product-descr__availability product-availability on-order">
 												<svg class="icon">
@@ -3758,13 +3869,13 @@
 												<span>Заземление: Да; Тип товара: Розетка; Бренд: Schneider Electric; Установка: Открытая; Вид розетки: Двойной; Количество гнезд: 2; Номинальное напряжение (В): 220; Номинальный ток: 16;</span>
 
 												<span>
-										<a class="btn-reset btn btn-link" href="javascript:;">
-											<svg class="icon btn__icon">
-												<use href="img/sprite.svg#sliders-horiz"></use>
-											</svg>
-											<span class="btn__text">Перейти в конфигуратор</span>
-										</a>
-									</span>
+									<a class="btn-reset btn btn-link" href="javascript:;">
+										<svg class="icon btn__icon">
+											<use href="img/sprite.svg#sliders-horiz"></use>
+										</svg>
+										<span class="btn__text">Перейти в конфигуратор</span>
+									</a>
+								</span>
 											</div>
 										</div>
 

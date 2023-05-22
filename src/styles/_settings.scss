@@ -1999,6 +1999,13 @@ input.disabled {
 			padding-top: 40px;
 			border-top: 1px solid var(--gray5-color);
 		}
+
+		&-mobile-section {
+			&,
+			&-container {
+				width: 100%;
+			}
+		}
 	}
 }
 @media (min-width: 1200px) {
@@ -2061,6 +2068,12 @@ input.disabled {
 	.product-card {
 		flex-direction: column;
 
+		&-mobile-section {
+			&,
+			&-container {
+				width: 100vw;
+			}
+		}
 		&-mobile-section {
 			margin: 0 -16px;
 			border-bottom: 8px solid var(--gray5-color);
