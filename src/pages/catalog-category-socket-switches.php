@@ -2,7 +2,7 @@
 
 <div class="gap-sm">
 	<div class="container">
-		<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/breadcrumbs.php'); ?>
+		<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/breadcrumbs.php"); ?>
 	</div>
 </div>
 
@@ -753,8 +753,8 @@
                                             <div class="catalog-content__popular-collection-list">
                                                 <div class="swiper">
                                                     <div class="swiper-wrapper">
-                                                        <div class="swiper-slide catalog-content__popular-collection-item">
-                                                            <div class="catalog-content__popular-collection-view">
+                                                        <a class="swiper-slide catalog-content__popular-collection-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-collection-view">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -763,15 +763,15 @@
                                                                         height="60"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-collection-descr">
-                                                                <div class="catalog-content__popular-collection-brand">Legrand</div>
-                                                                <div class="catalog-content__popular-collection-series">VALENA LIFE/ALLURE</div>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                            <span class="catalog-content__popular-collection-descr">
+                                                                <span class="catalog-content__popular-collection-brand">Legrand</span>
+                                                                <span class="catalog-content__popular-collection-series">VALENA LIFE/ALLURE</span>
+                                                            </span>
+                                                        </a>
 
-                                                        <div class="swiper-slide catalog-content__popular-collection-item">
-                                                            <div class="catalog-content__popular-collection-view">
+                                                        <a class="swiper-slide catalog-content__popular-collection-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-collection-view">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -780,14 +780,14 @@
                                                                         height="60"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-collection-descr">
-                                                                <div class="catalog-content__popular-collection-brand">Legrand</div>
-                                                                <div class="catalog-content__popular-collection-series">Celiane</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-collection-item">
-                                                            <div class="catalog-content__popular-collection-view">
+                                                            </span>
+                                                            <span class="catalog-content__popular-collection-descr">
+                                                                <span class="catalog-content__popular-collection-brand">Legrand</span>
+                                                                <span class="catalog-content__popular-collection-series">Celiane</span>
+                                                            </span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-collection-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-collection-view">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -796,13 +796,13 @@
                                                                         height="60"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-collection-descr">
-                                                                <div class="catalog-content__popular-collection-brand">Aling-conel</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-collection-item">
-                                                            <div class="catalog-content__popular-collection-view">
+                                                            </span>
+                                                            <span class="catalog-content__popular-collection-descr">
+                                                                <span class="catalog-content__popular-collection-brand">Aling-conel</span>
+                                                            </span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-collection-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-collection-view">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -811,14 +811,14 @@
                                                                         height="60"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-collection-descr">
-                                                                <div class="catalog-content__popular-collection-brand">Simon </div>
-                                                                <div class="catalog-content__popular-collection-series">Simon 24</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-collection-item">
-                                                            <div class="catalog-content__popular-collection-view">
+                                                            </span>
+                                                            <span class="catalog-content__popular-collection-descr">
+                                                                <span class="catalog-content__popular-collection-brand">Simon </span>
+                                                                <span class="catalog-content__popular-collection-series">Simon 24</span>
+                                                            </span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-collection-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-collection-view">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -827,13 +827,13 @@
                                                                         height="60"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-collection-descr">
-                                                                <div class="catalog-content__popular-collection-brand">GUNSAN Eqona</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-collection-item">
-                                                            <div class="catalog-content__popular-collection-view">
+                                                            </span>
+                                                            <span class="catalog-content__popular-collection-descr">
+                                                                <span class="catalog-content__popular-collection-brand">GUNSAN Eqona</span>
+                                                            </span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-collection-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-collection-view">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -842,13 +842,13 @@
                                                                         height="60"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-collection-descr">
-                                                                <div class="catalog-content__popular-collection-brand">BIRONI</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-collection-item">
-                                                            <div class="catalog-content__popular-collection-view">
+                                                            </span>
+                                                            <span class="catalog-content__popular-collection-descr">
+                                                                <span class="catalog-content__popular-collection-brand">BIRONI</span>
+                                                            </span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-collection-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-collection-view">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -857,14 +857,14 @@
                                                                         height="60"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-collection-descr">
-                                                                <div class="catalog-content__popular-collection-brand">Legrand</div>
-                                                                <div class="catalog-content__popular-collection-series">INSPIRIA</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-collection-item">
-                                                            <div class="catalog-content__popular-collection-view">
+                                                            </span>
+                                                            <span class="catalog-content__popular-collection-descr">
+                                                                <span class="catalog-content__popular-collection-brand">Legrand</span>
+                                                                <span class="catalog-content__popular-collection-series">INSPIRIA</span>
+                                                            </span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-collection-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-collection-view">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -873,14 +873,14 @@
                                                                         height="60"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-collection-descr">
-                                                                <div class="catalog-content__popular-collection-brand">Bticino (Legrand)</div>
-                                                                <div class="catalog-content__popular-collection-series">Living Now</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-collection-item">
-                                                            <div class="catalog-content__popular-collection-view">
+                                                            </span>
+                                                            <span class="catalog-content__popular-collection-descr">
+                                                                <span class="catalog-content__popular-collection-brand">Bticino (Legrand)</span>
+                                                                <span class="catalog-content__popular-collection-series">Living Now</span>
+                                                            </span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-collection-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-collection-view">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -889,13 +889,13 @@
                                                                         height="60"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-collection-descr">
-                                                                <div class="catalog-content__popular-collection-brand">EKF Минск</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-collection-item">
-                                                            <div class="catalog-content__popular-collection-view">
+                                                            </span>
+                                                            <span class="catalog-content__popular-collection-descr">
+                                                                <span class="catalog-content__popular-collection-brand">EKF Минск</span>
+                                                            </span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-collection-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-collection-view">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -904,14 +904,14 @@
                                                                         height="60"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-collection-descr">
-                                                                <div class="catalog-content__popular-collection-brand">Legrand</div>
-                                                                <div class="catalog-content__popular-collection-series">Valena Classic</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-collection-item">
-                                                            <div class="catalog-content__popular-collection-view">
+                                                            </span>
+                                                            <span class="catalog-content__popular-collection-descr">
+                                                                <span class="catalog-content__popular-collection-brand">Legrand</span>
+                                                                <span class="catalog-content__popular-collection-series">Valena Classic</span>
+                                                            </span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-collection-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-collection-view">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -920,14 +920,14 @@
                                                                         height="60"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-collection-descr">
-                                                                <div class="catalog-content__popular-collection-brand">JUNG</div>
-                                                                <div class="catalog-content__popular-collection-series">EcoProfi</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-collection-item">
-                                                            <div class="catalog-content__popular-collection-view">
+                                                            </span>
+                                                            <span class="catalog-content__popular-collection-descr">
+                                                                <span class="catalog-content__popular-collection-brand">JUNG</span>
+                                                                <span class="catalog-content__popular-collection-series">EcoProfi</span>
+                                                            </span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-collection-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-collection-view">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -936,11 +936,11 @@
                                                                         height="60"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-collection-descr">
-                                                                <div class="catalog-content__popular-collection-brand">GUNSAN Eqona</div>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                            <span class="catalog-content__popular-collection-descr">
+                                                                <span class="catalog-content__popular-collection-brand">GUNSAN Eqona</span>
+                                                            </span>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -950,8 +950,8 @@
                                             <div class="catalog-content__popular-color-list">
                                                 <div class="swiper">
                                                     <div class="swiper-wrapper">
-                                                        <div class="swiper-slide catalog-content__popular-color-item">
-                                                            <div class="catalog-content__popular-color-view" style="background-color: #070707">
+                                                        <a class="swiper-slide catalog-content__popular-color-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-color-view" style="background-color: #070707">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -960,11 +960,11 @@
                                                                         height="40"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-color-descr">Черный</div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-color-item">
-                                                            <div class="catalog-content__popular-color-view" style="background-color:
+                                                            </span>
+                                                            <span class="catalog-content__popular-color-descr">Черный</span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-color-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-color-view" style="background-color:
 #3985F7">
                                                                 <img
                                                                         loading="lazy"
@@ -974,11 +974,11 @@
                                                                         height="40"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-color-descr">Синий</div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-color-item">
-                                                            <div class="catalog-content__popular-color-view" style="background-color: #663A07">
+                                                            </span>
+                                                            <span class="catalog-content__popular-color-descr">Синий</span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-color-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-color-view" style="background-color: #663A07">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -987,11 +987,11 @@
                                                                         height="40"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-color-descr">Коричневый</div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-color-item">
-                                                            <div class="catalog-content__popular-color-view" style="background-color: #D4D4D4">
+                                                            </span>
+                                                            <span class="catalog-content__popular-color-descr">Коричневый</span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-color-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-color-view" style="background-color: #D4D4D4">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -1000,11 +1000,11 @@
                                                                         height="40"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-color-descr">Серебристый</div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-color-item">
-                                                            <div class="catalog-content__popular-color-view" style="background-color: #FFFFFF; border: 1px solid #D5D5D6;">
+                                                            </span>
+                                                            <span class="catalog-content__popular-color-descr">Серебристый</span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-color-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-color-view" style="background-color: #FFFFFF; border: 1px solid #D5D5D6;">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -1013,11 +1013,11 @@
                                                                         height="40"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-color-descr">Белый</div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-color-item">
-                                                            <div class="catalog-content__popular-color-view" style="background-color: #FD93FF">
+                                                            </span>
+                                                            <span class="catalog-content__popular-color-descr">Белый</span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-color-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-color-view" style="background-color: #FD93FF">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -1026,11 +1026,11 @@
                                                                         height="40"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-color-descr">Розовый</div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-color-item">
-                                                            <div class="catalog-content__popular-color-view" style="background-color: #BD5EF6">
+                                                            </span>
+                                                            <span class="catalog-content__popular-color-descr">Розовый</span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-color-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-color-view" style="background-color: #BD5EF6">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -1039,11 +1039,11 @@
                                                                         height="40"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-color-descr">Сиреневый</div>
-                                                        </div>
-                                                        <div class="swiper-slide catalog-content__popular-color-item">
-                                                            <div class="catalog-content__popular-color-view" style="background-color: #967A15">
+                                                            </span>
+                                                            <span class="catalog-content__popular-color-descr">Сиреневый</span>
+                                                        </a>
+                                                        <a class="swiper-slide catalog-content__popular-color-item" href="javascript:;">
+                                                            <span class="catalog-content__popular-color-view" style="background-color: #967A15">
                                                                 <img
                                                                         loading="lazy"
                                                                         class="image"
@@ -1052,9 +1052,9 @@
                                                                         height="40"
                                                                         alt="Изображение блока"
                                                                 >
-                                                            </div>
-                                                            <div class="catalog-content__popular-color-descr">Золотой</div>
-                                                        </div>
+                                                            </span>
+                                                            <span class="catalog-content__popular-color-descr">Золотой</span>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>

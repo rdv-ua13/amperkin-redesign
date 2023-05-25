@@ -2,7 +2,7 @@
 
 <div class="gap-sm">
     <div class="container">
-	    <?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/breadcrumbs.php'); ?>
+	    <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/breadcrumbs.php"); ?>
     </div>
 </div>
 

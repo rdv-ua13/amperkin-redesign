@@ -25,10 +25,10 @@ body {
 }
 @media (max-width: 991.98px) {
 	body {
-		padding-bottom: 61px;
+		padding-bottom: 73px;
 	}
 	.card-product-page {
-		padding-bottom: 118px;
+		padding-bottom: 130px;
 	}
 }
 
@@ -2072,6 +2072,20 @@ input.disabled {
 			&,
 			&-container {
 				width: 100vw;
+			}
+
+			.pagination {
+				&-all {
+					min-width: 100vw;
+					width: 100vw;
+					margin-right: -16px;
+					margin-left: -16px;
+
+					.btn-link {
+						padding-right: 16px;
+						padding-left: 16px;
+					}
+				}
 			}
 		}
 		&-mobile-section {
@@ -4517,6 +4531,23 @@ input.disabled {
 			&,
 			.btn {
 				min-width: 100%;
+			}
+		}
+		&-all {
+			&,
+			.btn-link {
+				min-width: 100%;
+				width: 100%;
+			}
+			.btn-link {
+				justify-content: space-between;
+				padding-top: 20px;
+				padding-bottom: 6px;
+				border-top: 1px solid var(--gray5-color);
+				font-weight: 400;
+				font-size: 13px;
+				letter-spacing: 0;
+				text-transform: unset;
 			}
 		}
 	}

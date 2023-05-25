@@ -841,6 +841,27 @@ application.prototype.initSliders = function () {
             }
         });
     }
+
+    if ($('.catalog-content__grid-mobile-slider').length) {
+        let sliderCatalogContentGrid = null;
+
+        breakpointChecker();
+        $(window).on('resize', breakpointChecker);
+
+        function breakpointChecker() {
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                sliderCatalogContentGrid = null;
+            }
+            else if (window.matchMedia('(max-width: 991.98px)').matches) {
+                sliderCatalogContentGrid = null;
+
+                sliderCatalogContentGrid = new Swiper('.catalog-content__grid-mobile-slider .swiper', {
+                    spaceBetween: 12,
+                    slidesPerView: 'auto',
+                });
+            }
+        }
+    }
 };
 
 // Initialize select2 plagin

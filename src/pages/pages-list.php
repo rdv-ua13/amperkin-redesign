@@ -73,9 +73,9 @@
             <img src="img/logo.svg" width="180" height="50" alt="Логотип компании">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">02 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">14 + ui</span>
             &nbsp;/&nbsp;
-            <span style="font-size: 24px;">00 + ui (всего страниц в макете)</span>
+            <span style="font-size: 24px;">n + ui (всего страниц в макете)</span>
         </span>
     </div>
     <div style="font-size: 24px;">Готовые разделы отмечены "<span class="block-ready">Блок готов</span>"</div>
@@ -85,9 +85,12 @@
             <li class="block-ready">Блок готов</li>
             <li><a href="card-product.php" target="_blank" class="ready">Карточка товара</a></li>
             <br>
-            <!--<li class="block-ready">Блок готов</li>-->
+
+            <li class="block-ready">Блок готов</li>
+            <li><a href="catalog.php" target="_blank" class="ready">Каталог - Верхний уровень</a></li>
+            <li><a href="catalog-section.php" target="_blank" class="ready">Каталог - Разделы</a></li>
             <li><a href="catalog-category.php" target="_blank" class="ready">Категории каталога - Изделия</a></li>
-            <li><a href="catalog-category-socket-switches.php" target="_blank">Категории каталога - Розетки и выключатели</a></li>
+            <li><a href="catalog-category-socket-switches.php" target="_blank" class="ready">Категории каталога - Розетки и выключатели</a></li>
             <br>
 
             <li class="block-ready">Блок готов</li>

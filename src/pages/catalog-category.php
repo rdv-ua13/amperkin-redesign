@@ -2,7 +2,7 @@
 
 <div class="gap-sm">
     <div class="container">
-        <?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/breadcrumbs.php'); ?>
+        <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/breadcrumbs.php"); ?>
     </div>
 </div>
 
@@ -860,8 +860,8 @@
                             <div class="catalog-content__section">
                                 <div class="swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide catalog-content__section-item">
-                                            <div class="catalog-content__section-view">
+                                        <a class="swiper-slide catalog-content__section-item" href="javascript:;">
+                                            <span class="catalog-content__section-view">
                                                 <picture>
                                                     <source srcset="img/catalog-section.webp" type="image/webp">
                                                     <img
@@ -873,11 +873,11 @@
                                                         alt="Изображение блока"
                                                     >
                                                 </picture>
-                                            </div>
-                                            <div class="catalog-content__section-title">Дверные звонки</div>
-                                        </div>
-                                        <div class="swiper-slide catalog-content__section-item">
-                                            <div class="catalog-content__section-view">
+                                            </span>
+                                            <span class="catalog-content__section-title">Дверные звонки</span>
+                                        </a>
+                                        <a class="swiper-slide catalog-content__section-item" href="javascript:;">
+                                            <span class="catalog-content__section-view">
                                                 <picture>
                                                     <source srcset="img/catalog-section2.webp" type="image/webp">
                                                     <img
@@ -889,11 +889,11 @@
                                                         alt="Изображение блока"
                                                     >
                                                 </picture>
-                                            </div>
-                                            <div class="catalog-content__section-title">Звонковый трансформатор</div>
-                                        </div>
-                                        <div class="swiper-slide catalog-content__section-item">
-                                            <div class="catalog-content__section-view">
+                                            </span>
+                                            <span class="catalog-content__section-title">Звонковый трансформатор</span>
+                                        </a>
+                                        <a class="swiper-slide catalog-content__section-item" href="javascript:;">
+                                            <span class="catalog-content__section-view">
                                                 <picture>
                                                     <source srcset="img/catalog-section3.webp" type="image/webp">
                                                     <img
@@ -905,11 +905,11 @@
                                                         alt="Изображение блока"
                                                     >
                                                 </picture>
-                                            </div>
-                                            <div class="catalog-content__section-title">Зуммеры</div>
-                                        </div>
-                                        <div class="swiper-slide catalog-content__section-item">
-                                            <div class="catalog-content__section-view">
+                                            </span>
+                                            <span class="catalog-content__section-title">Зуммеры</span>
+                                        </a>
+                                        <a class="swiper-slide catalog-content__section-item" href="javascript:;">
+                                            <span class="catalog-content__section-view">
                                                 <picture>
                                                     <source srcset="img/catalog-section4.webp" type="image/webp">
                                                     <img
@@ -921,9 +921,9 @@
                                                         alt="Изображение блока"
                                                     >
                                                 </picture>
-                                            </div>
-                                            <div class="catalog-content__section-title">Домофоны / видеодомофоны</div>
-                                        </div>
+                                            </span>
+                                            <span class="catalog-content__section-title">Домофоны / видеодомофоны</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
