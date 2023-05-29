@@ -1976,6 +1976,44 @@
     </div>
     <hr style="width: 100%;">
 
+    <h3 class="text-center">Check all</h3>
+    <div class="container-ui">
+        <div class="col-ui">
+            <div class="row-ui ">
+                <div class="flex-v-center" style="width: 100%; gap: 15px;">
+                    <!--start ui content-->
+                    <div class="custom-checkbox">
+                        <input
+                                class="custom-checkbox__input custom-checkbox__input--checkline checkall-for"
+                                type="checkbox"
+                                data-checkall-for="checkallTest"
+                        >
+                        all
+                    </div>
+
+                    <div class="custom-checkbox">
+                        <input
+                                class="custom-checkbox__input checkall-group"
+                                type="checkbox"
+                                data-checkall-group="checkallTest"
+                        >
+                        single
+                    </div>
+                    <div class="custom-checkbox">
+                        <input
+                                class="custom-checkbox__input checkall-group"
+                                type="checkbox"
+                                data-checkall-group="checkallTest"
+                        >
+                        single
+                    </div>
+                    <!--end ui content-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+
     <br>
     <br>
 

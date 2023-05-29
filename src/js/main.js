@@ -50,6 +50,7 @@ application.prototype.init = function () {
     this.initCatalogSidebarFilterCheckedTags();
     this.initCatalogSidebarFilter();
     this.initCatalogSidebarApplyFilter();
+    this.initCheckall();
 };
 
 // Initialize device check
@@ -1539,4 +1540,126 @@ application.prototype.initCatalogSidebarApplyFilter = function () {
             $('.catalog-sidebar-apply-filter').remove();
         }, 5000);
     })
+};
+
+// Initialization check all group
+application.prototype.initCheckall = function () {
+    if ($(".checkall-for").length) {
+        initOnloadCheckall();
+        initOnclickCheckallFor();
+        initOnclickCheckallGroup();
+
+        function initOnloadCheckall() {
+            $(".checkall-for").each(function () {
+                const checkallFor = $(this);
+                const checkallForData = checkallFor.data("checkall-for");
+                let checkallForState = false;
+                let checkallGroupState = [];
+                let checkallGroupCheckedState = [];
+
+                checkallForHandling();
+                compareGroupState(checkallGroupState);
+
+                function checkallForHandling() {
+                    $(".checkall-group[data-checkall-group='" + checkallForData + "']").each(function (e) {
+                        let checkallGroupElem = $(this);
+
+                        if(checkallGroupElem.is(":checked")) {
+                            checkallForState = true;
+                            checkallGroupState.push(true);
+                        } else if(!checkallGroupElem.is(":checked")) {
+                            checkallGroupState.push(false);
+                        }
+                    });
+
+                    if(checkallForState === false) {
+                        checkallFor.prop("checked", false);
+                    } else if(checkallForState === true) {
+                        checkallFor.prop("checked", true);
+                    }
+                }
+
+                function compareGroupState(arr) {
+                    $.each(arr, function(i) {
+                        if(arr[i] === true) {
+                            checkallGroupCheckedState.push("checked");
+                        } else if(arr[i] === false) {
+                            checkallGroupCheckedState.push("notChecked");
+                        }
+                    });
+
+                    const allChecked = checkallGroupCheckedState.every(elem => elem === "checked");
+
+                    if(allChecked) checkallFor.removeClass("custom-checkbox__input--checkline");
+                }
+            });
+        }
+
+        function initOnclickCheckallFor() {
+            $(".checkall-for").on("click", function (e) {
+                const checkallFor = $(this);
+                const checkallForData = checkallFor.data("checkall-for");
+
+                if(checkallFor.is(":checked")) {
+                    checkallFor.prop("checked", true);
+                    checkallFor.removeClass("custom-checkbox__input--checkline");
+                    $(".checkall-group[data-checkall-group='" + checkallForData + "']").prop("checked", true);
+                } else if(!checkallFor.is(":checked")) {
+                    checkallFor.prop("checked", false);
+                    $(".checkall-group[data-checkall-group='" + checkallForData + "']").prop("checked", false);
+                }
+            });
+        }
+
+        function initOnclickCheckallGroup() {
+            $(".checkall-group").on("click", function (e) {
+                const checkallGroup = $(this);
+                const checkallGroupData = checkallGroup.data("checkall-group");
+
+                let checkallGroupState = [];
+                let checkallGroupCheckedState = [];
+
+                checkallGroupHandling();
+                compareGroupState(checkallGroupState);
+
+                function checkallGroupHandling() {
+                    $(".checkall-group[data-checkall-group='" + checkallGroupData + "']").each(function (e) {
+                        let checkallGroupElem = $(this);
+
+                        if(checkallGroupElem.is(":checked")) {
+                            checkallGroupState.push(true);
+                        } else if(!checkallGroupElem.is(":checked")) {
+                            checkallGroupState.push(false);
+                        }
+                    });
+                }
+
+                function compareGroupState(arr) {
+                    $.each(arr, function(i) {
+                        if(arr[i] === true) {
+                            checkallGroupCheckedState.push("checked");
+                        } else if(arr[i] === false) {
+                            checkallGroupCheckedState.push("notChecked");
+                        }
+                    });
+
+                    const allChecked = checkallGroupCheckedState.every(elem => elem === "checked");
+                    const allNotChecked = checkallGroupCheckedState.every(elem => elem === "notChecked");
+
+                    if(allChecked) {
+                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").prop("checked", true);
+                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").removeClass("custom-checkbox__input--checkline");
+                    } else if(allNotChecked) {
+                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").prop("checked", false);
+                    } else if(!allChecked && !allNotChecked) {
+                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").prop("checked", true);
+
+                        if(!$(".checkall-for[data-checkall-for='" + checkallGroupData + "']").hasClass("custom-checkbox__input--checkline")) {
+                            $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").addClass("custom-checkbox__input--checkline");
+                        }
+                    }
+                }
+            });
+        }
+    }
 };
