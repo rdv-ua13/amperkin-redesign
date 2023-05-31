@@ -104,6 +104,8 @@
 
             <!--<li class="block-ready">Блок готов</li>-->
             <li><a href="cart.php" target="_blank" class="ready">Корзина</a></li>
+            <li><a href="cart-category.php" target="_blank" class="ready">Корзина - сортировка по категориям</a></li>
+            <li><a href="cart-user.php" target="_blank" class="ready">Корзина - пользователь</a></li>
             <br>
 
             <li><a href="ui.php" target="_blank">ui</a></li>

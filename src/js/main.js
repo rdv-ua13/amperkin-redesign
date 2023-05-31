@@ -576,7 +576,7 @@ application.prototype.initPasswordSwitcher = function () {
     }
 };
 
-// Initialization basic slider
+// Initialize basic slider
 application.prototype.initBasicSlider = function () {
     if ($('.basic-slider').length) {
         const slider = $('[data-basic-slider]');
@@ -606,7 +606,7 @@ application.prototype.initBasicSlider = function () {
     }
 };
 
-// Initialization mini slider - change images on mouse movement
+// Initialize mini slider - change images on mouse movement
 application.prototype.initMiniSlider = function () {
     if ($('.mini-slider').length) {
         $('.mini-slider').each(function(index, element) {
@@ -669,7 +669,7 @@ application.prototype.initSwiperTabs = function () {
     }
 };
 
-// Initialization tag-bar slider
+// Initialize tag-bar slider
 application.prototype.initTagbarSlider = function () {
     if ($('[data-tag-bar-slider]').length) {
         const slider = $('[data-tag-bar-slider]');
@@ -1105,14 +1105,14 @@ application.prototype.initDatepicker = function () {
     }
 };
 
-// Initialization delete trigger
+// Initialize delete trigger
 application.prototype.initDeleteTrigger = function () {
     $('[data-delete-trigger]').on("click", function () {
         $(this).closest('[data-removable]').remove();
     });
 };
 
-// Initialization drop files
+// Initialize drop files
 application.prototype.initDropfiles = function () {
     File.prototype.convertToBase64 = function (callback) {
         let reader = new FileReader();
@@ -1261,7 +1261,7 @@ application.prototype.initDropfiles = function () {
     });
 };
 
-// Initialization input-search behavior
+// Initialize input-search behavior
 application.prototype.initInputSearchBehavior = function () {
     if ($('.input-search').length) {
         $('.input-search').on('input', function () {
@@ -1281,7 +1281,7 @@ application.prototype.initInputSearchBehavior = function () {
     }
 };
 
-// Initialization search result behavior
+// Initialize search result behavior
 application.prototype.initSearchResBehavior = function () {
     $(document).on('click', '.search-results__close', function () {
         $(this).closest('.header-search-results').removeClass('active');
@@ -1294,7 +1294,7 @@ application.prototype.initSearchResBehavior = function () {
     });
 };
 
-// Initialization mobile city selection
+// Initialize mobile city selection
 application.prototype.initMobileCitySelection = function () {
     if ($('.mobile-menu-city').length) {
         $('[data-mobile-city-spoiler]').on('click', function () {
@@ -1313,7 +1313,7 @@ application.prototype.initMobileCitySelection = function () {
     }
 };
 
-// Initialization catalog content sort
+// Initialize catalog content sort
 application.prototype.initCatalogContentSort = function () {
     if ($('.catalog-content-settings__sort-options').length) {
         initCatalogContentSortSwitch();
@@ -1377,7 +1377,7 @@ application.prototype.initCatalogContentSort = function () {
     }
 };
 
-// Initialization catalog content view switcher
+// Initialize catalog content view switcher
 application.prototype.initCatalogContentViewSwitcher = function () {
     if ($('[data-catalog-content-grid]').length) {
         const viewSwitcherContainer = $('[data-catalog-content-view]');
@@ -1424,7 +1424,7 @@ application.prototype.initCatalogContentViewSwitcher = function () {
     }
 };
 
-// Initialization catalog sidebar filter view switcher
+// Initialize catalog sidebar filter view switcher
 application.prototype.initCatalogSidebarFilterViewSwitcher = function () {
     if ($('[data-filter-option-view]').length && $('[data-filter-option-content]').length) {
         const viewSwitcherContainer = $('[data-filter-option]');
@@ -1443,7 +1443,7 @@ application.prototype.initCatalogSidebarFilterViewSwitcher = function () {
     }
 };
 
-// Initialization checked radio insurances
+// Initialize checked radio insurances
 application.prototype.initCheckedRadioInsurances = function () {
     if ($('.custom-radio').length) {
         $('.custom-radio__input').on('click',function () {
@@ -1455,7 +1455,7 @@ application.prototype.initCheckedRadioInsurances = function () {
     }
 };
 
-// Initialization catalog sidebar filter checked tags
+// Initialize catalog sidebar filter checked tags
 application.prototype.initCatalogSidebarFilterCheckedTags = function () {
     if ($('.catalog-sidebar-filter__tag').length) {
         $('.catalog-sidebar-filter__tag input[type="checkbox"]').on('click',function () {
@@ -1464,7 +1464,7 @@ application.prototype.initCatalogSidebarFilterCheckedTags = function () {
     }
 };
 
-// Initialization catalog sidebar filter
+// Initialize catalog sidebar filter
 application.prototype.initCatalogSidebarFilter = function () {
     if ($('[data-filter]').length && $('[data-filter-spoiler]').length) {
         const filter = $('[data-filter]');
@@ -1514,7 +1514,7 @@ application.prototype.initCatalogSidebarFilter = function () {
     }
 };
 
-// Initialization catalog sidebar apply filter
+// Initialize catalog sidebar apply filter
 application.prototype.initCatalogSidebarApplyFilter = function () {
     const trigger = $('.catalog-sidebar-filter__item');
     let coordsTrigger = null;
@@ -1542,17 +1542,17 @@ application.prototype.initCatalogSidebarApplyFilter = function () {
     })
 };
 
-// Initialization check all group
+// Initialize check all group
 application.prototype.initCheckall = function () {
-    if ($(".checkall-for").length) {
+    if ($('.checkall-for').length) {
         initOnloadCheckall();
         initOnclickCheckallFor();
         initOnclickCheckallGroup();
 
         function initOnloadCheckall() {
-            $(".checkall-for").each(function () {
+            $('.checkall-for').each(function () {
                 const checkallFor = $(this);
-                const checkallForData = checkallFor.data("checkall-for");
+                const checkallForData = checkallFor.data('checkall-for');
                 let checkallForState = false;
                 let checkallGroupState = [];
                 let checkallGroupCheckedState = [];
@@ -1564,57 +1564,57 @@ application.prototype.initCheckall = function () {
                     $(".checkall-group[data-checkall-group='" + checkallForData + "']").each(function (e) {
                         let checkallGroupElem = $(this);
 
-                        if(checkallGroupElem.is(":checked")) {
+                        if(checkallGroupElem.is(':checked')) {
                             checkallForState = true;
                             checkallGroupState.push(true);
-                        } else if(!checkallGroupElem.is(":checked")) {
+                        } else if(!checkallGroupElem.is(':checked')) {
                             checkallGroupState.push(false);
                         }
                     });
 
                     if(checkallForState === false) {
-                        checkallFor.prop("checked", false);
+                        checkallFor.prop('checked', false);
                     } else if(checkallForState === true) {
-                        checkallFor.prop("checked", true);
+                        checkallFor.prop('checked', true);
                     }
                 }
 
                 function compareGroupState(arr) {
                     $.each(arr, function(i) {
                         if(arr[i] === true) {
-                            checkallGroupCheckedState.push("checked");
+                            checkallGroupCheckedState.push('checked');
                         } else if(arr[i] === false) {
-                            checkallGroupCheckedState.push("notChecked");
+                            checkallGroupCheckedState.push('notChecked');
                         }
                     });
 
-                    const allChecked = checkallGroupCheckedState.every(elem => elem === "checked");
+                    const allChecked = checkallGroupCheckedState.every(elem => elem === 'checked');
 
-                    if(allChecked) checkallFor.removeClass("custom-checkbox__input--checkline");
+                    if(allChecked) checkallFor.removeClass('custom-checkbox__input--checkline');
                 }
             });
         }
 
         function initOnclickCheckallFor() {
-            $(".checkall-for").on("click", function (e) {
+            $('.checkall-for').on('click', function (e) {
                 const checkallFor = $(this);
-                const checkallForData = checkallFor.data("checkall-for");
+                const checkallForData = checkallFor.data('checkall-for');
 
-                if(checkallFor.is(":checked")) {
-                    checkallFor.prop("checked", true);
-                    checkallFor.removeClass("custom-checkbox__input--checkline");
+                if(checkallFor.is(':checked')) {
+                    checkallFor.prop('checked', true);
+                    checkallFor.removeClass('custom-checkbox__input--checkline');
                     $(".checkall-group[data-checkall-group='" + checkallForData + "']").prop("checked", true);
-                } else if(!checkallFor.is(":checked")) {
-                    checkallFor.prop("checked", false);
+                } else if(!checkallFor.is(':checked')) {
+                    checkallFor.prop('checked', false);
                     $(".checkall-group[data-checkall-group='" + checkallForData + "']").prop("checked", false);
                 }
             });
         }
 
         function initOnclickCheckallGroup() {
-            $(".checkall-group").on("click", function (e) {
+            $('.checkall-group').on('click', function (e) {
                 const checkallGroup = $(this);
-                const checkallGroupData = checkallGroup.data("checkall-group");
+                const checkallGroupData = checkallGroup.data('checkall-group');
 
                 let checkallGroupState = [];
                 let checkallGroupCheckedState = [];
@@ -1626,9 +1626,9 @@ application.prototype.initCheckall = function () {
                     $(".checkall-group[data-checkall-group='" + checkallGroupData + "']").each(function (e) {
                         let checkallGroupElem = $(this);
 
-                        if(checkallGroupElem.is(":checked")) {
+                        if(checkallGroupElem.is(':checked')) {
                             checkallGroupState.push(true);
-                        } else if(!checkallGroupElem.is(":checked")) {
+                        } else if(!checkallGroupElem.is(':checked')) {
                             checkallGroupState.push(false);
                         }
                     });
@@ -1637,25 +1637,25 @@ application.prototype.initCheckall = function () {
                 function compareGroupState(arr) {
                     $.each(arr, function(i) {
                         if(arr[i] === true) {
-                            checkallGroupCheckedState.push("checked");
+                            checkallGroupCheckedState.push('checked');
                         } else if(arr[i] === false) {
-                            checkallGroupCheckedState.push("notChecked");
+                            checkallGroupCheckedState.push('notChecked');
                         }
                     });
 
-                    const allChecked = checkallGroupCheckedState.every(elem => elem === "checked");
-                    const allNotChecked = checkallGroupCheckedState.every(elem => elem === "notChecked");
+                    const allChecked = checkallGroupCheckedState.every(elem => elem === 'checked');
+                    const allNotChecked = checkallGroupCheckedState.every(elem => elem === 'notChecked');
 
                     if(allChecked) {
-                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").prop("checked", true);
-                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").removeClass("custom-checkbox__input--checkline");
+                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").prop('checked', true);
+                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").removeClass('custom-checkbox__input--checkline');
                     } else if(allNotChecked) {
-                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").prop("checked", false);
+                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").prop('checked', false);
                     } else if(!allChecked && !allNotChecked) {
-                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").prop("checked", true);
+                        $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").prop('checked', true);
 
-                        if(!$(".checkall-for[data-checkall-for='" + checkallGroupData + "']").hasClass("custom-checkbox__input--checkline")) {
-                            $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").addClass("custom-checkbox__input--checkline");
+                        if(!$(".checkall-for[data-checkall-for='" + checkallGroupData + "']").hasClass('custom-checkbox__input--checkline')) {
+                            $(".checkall-for[data-checkall-for='" + checkallGroupData + "']").addClass('custom-checkbox__input--checkline');
                         }
                     }
                 }

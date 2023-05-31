@@ -683,6 +683,7 @@ input.disabled {
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
+	line-height: 1;
 	cursor: default;
 
 	&__input {
@@ -3031,6 +3032,31 @@ input.disabled {
 	transition: height 0.2s ease-out;
 }
 
+[data-removable] {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+[data-delete-trigger] {
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	.icon {
+		pointer-events: none;
+		fill: var(--gray4-color);
+	}
+
+	&:hover {
+		.icon {
+			fill: var(--gray3-color);
+		}
+	}
+}
+
 .modal {
 	position: relative;
 	display: none;
@@ -4461,30 +4487,6 @@ input.disabled {
 			flex-direction: column;
 			gap: 16px;
 			padding-top: 16px;
-		}
-	}
-}
-
-[data-removable] {
-	display: inline-flex;
-	align-items: center;
-	gap: 8px;
-}
-[data-delete-trigger] {
-	z-index: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-
-	.icon {
-		pointer-events: none;
-		fill: var(--gray4-color);
-	}
-
-	&:hover {
-		.icon {
-			fill: var(--gray3-color);
 		}
 	}
 }

@@ -5,117 +5,306 @@
 		<div class="gap-xl">
 			<div class="cart">
 				<div class="cart-content">
-                    <div class="gap-md">
-                        <div class="catalog-heading">
-                            <div class="catalog-heading__back">
-                                <a class="catalog-heading__back-link" href="javascript:;">
-                                    <svg class="icon icon-xs">
-                                        <use href="img/sprite.svg#chevron-left"></use>
-                                    </svg>
-                                    <span>Вернуться к покупкам</span>
-                                </a>
-                            </div>
-                            <div class="h1 catalog-heading__title">Корзина</div>
-                            <div class="catalog-heading__action">
-                                <a class="btn-reset btn btn-mini" href="javascript:;">
-                                    <svg class="icon btn__icon">
-                                        <use href="img/sprite.svg#trash"></use>
-                                    </svg>
-                                    <span class="btn__text">Удалить всё</span>
-                                </a>
-                            </div>
-                            <div class="catalog-heading__toolbar">
-                                <div class="catalog-heading__toolbar-item catalog-heading__toolbar-action">
-                                    <button class="btn-reset btn btn-link">
-                                        <svg class="icon icon-xs btn__icon">
-                                            <use href="img/sprite.svg#printer"></use>
-                                        </svg>
-                                        <span class="btn__text">Распечатать</span>
-                                    </button>
-                                    <button class="btn-reset btn btn-link">
-                                        <svg class="icon icon-xs btn__icon">
-                                            <use href="img/sprite.svg#share"></use>
-                                        </svg>
-                                        <span class="btn__text">Поделиться</span>
-                                    </button>
-                                    <button class="btn-reset btn btn-link">
-                                        <svg class="icon icon-xs btn__icon">
-                                            <use href="img/sprite.svg#inbox-in"></use>
-                                        </svg>
-                                        <span class="btn__text">В смету</span>
-                                    </button>
+					<div class="gap-md">
+						<div class="catalog-heading">
+							<div class="catalog-heading__back">
+								<a class="catalog-heading__back-link" href="javascript:;">
+									<svg class="icon icon-xs">
+										<use href="img/sprite.svg#chevron-left"></use>
+									</svg>
+									<span>Вернуться к покупкам</span>
+								</a>
+							</div>
+							<div class="h1 catalog-heading__title">Корзина</div>
+							<div class="catalog-heading__action">
+								<a class="btn-reset btn btn-mini" href="javascript:;">
+									<svg class="icon btn__icon">
+										<use href="img/sprite.svg#trash"></use>
+									</svg>
+									<span class="btn__text">Удалить всё</span>
+								</a>
+							</div>
+							<div class="catalog-heading__toolbar">
+								<div class="catalog-heading__toolbar-item catalog-heading__toolbar-action">
+									<button class="btn-reset btn btn-link">
+										<svg class="icon icon-xs btn__icon">
+											<use href="img/sprite.svg#printer"></use>
+										</svg>
+										<span class="btn__text">Распечатать</span>
+									</button>
+									<button class="btn-reset btn btn-link">
+										<svg class="icon icon-xs btn__icon">
+											<use href="img/sprite.svg#share"></use>
+										</svg>
+										<span class="btn__text">Поделиться</span>
+									</button>
+									<button class="btn-reset btn btn-link">
+										<svg class="icon icon-xs btn__icon">
+											<use href="img/sprite.svg#inbox-in"></use>
+										</svg>
+										<span class="btn__text">В смету</span>
+									</button>
+								</div>
+								<div class="catalog-heading__toolbar-item">
+								<span class="custom-checkbox">
+									<input id="cart-sort-category" class="custom-checkbox__input" type="checkbox" checked>
+									<label for="cart-sort-category" class="custom-checkbox__label-for">Сортировать по категориям</label>
+								</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gap-md">
+						<div class="cart-quick-add">
+							<input
+								class="input-reset input"
+								type="text"
+								name=""
+								placeholder="Введите артикул или название для быстрого добавления товара"
+								autocomplete="off"
+							>
+						</div>
+					</div>
+					<div class="gap-md">
+						<div class="cart-delivery-info">
+							<div class="cart-delivery-info__view">
+								<svg class="icon">
+									<use href="img/sprite.svg#menu-truck-2"></use>
+								</svg>
+							</div>
+							<div class="cart-delivery-info__descr">
+							<span class="cart-delivery-info__caption">
+								<span class="cart-delivery-info__title h5">Стоимость доставки будет больше на 829 ₽</span>
+								<span class="cart-delivery-info__subtitle">Добавьте товары еще на 829 рублей и стоимость доставки уменьшится</span>
+							</span>
+								<span class="cart-delivery-info__progress">
+								<span class="progress-bar">
+									<progress id="" class="visually-hidden progress-bar__indicator" value="17" max="100"></progress>
+									<span class="progress-bar__bg">
+										<span class="progress-bar__line"></span>
+									</span>
+								</span>
+							</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="cart-content__layout">
+						<div class="cart-content__toolbar">
+							<div class="cart-content__toolbar-item">
+								<div class="custom-checkbox">
+									<input
+										class="custom-checkbox__input custom-checkbox__input--checkline checkall-for"
+										type="checkbox"
+										name=""
+										data-checkall-for="cartCheckall"
+									>
+									<span class="text-secondary-color desktop-only">Выбрать все</span>
+								</div>
+							</div>
+							<div class="cart-content__toolbar-item">
+								<button class="btn-reset btn btn-link" data-fancybox data-src="#modal-estimate">
+									<span class="btn__text">Добавить в смету</span>
+								</button>
+							</div>
+							<div class="cart-content__toolbar-item cart-content-delete">
+								<button class="btn-reset btn btn-link">
+									<span class="btn__text">Удалить выбранные</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="cart-content__grid">
+                            <div class="cart-content__category" data-removable>
+                                <div class="cart-content__category-heading">
+                                    <div class="cart-content__category-title h5">Удлинители</div>
+                                    <div class="cart-content__category-action">
+                                        <a class="btn-reset btn btn-mini" href="javascript:;" data-delete-trigger>
+                                            <svg class="icon btn__icon">
+                                                <use href="img/sprite.svg#trash"></use>
+                                            </svg>
+                                            <span class="btn__text">Удалить категорию</span>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="catalog-heading__toolbar-item">
-                                    <span class="custom-checkbox">
-                                        <input id="cart-sort-category" class="custom-checkbox__input" type="checkbox">
-                                        <label for="cart-sort-category" class="custom-checkbox__label-for">Сортировать по категориям</label>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gap-md">
-                        <div class="cart-quick-add">
-                            <input
-                                    class="input-reset input"
-                                    type="text"
-                                    name=""
-                                    placeholder="Введите артикул или название для быстрого добавления товара"
-                                    autocomplete="off"
-                            >
-                        </div>
-                    </div>
-                    <div class="gap-md">
-                        <div class="cart-delivery-info">
-                            <div class="cart-delivery-info__view">
-                                <svg class="icon">
-                                    <use href="img/sprite.svg#menu-truck-2"></use>
-                                </svg>
-                            </div>
-                            <div class="cart-delivery-info__descr">
-                                <span class="cart-delivery-info__caption">
-                                    <span class="cart-delivery-info__title h5">Стоимость доставки будет больше на 829 ₽</span>
-                                    <span class="cart-delivery-info__subtitle">Добавьте товары еще на 829 рублей и стоимость доставки уменьшится</span>
-                                </span>
-                                <span class="cart-delivery-info__progress">
-                                    <span class="progress-bar">
-                                        <progress id="" class="visually-hidden progress-bar__indicator" value="17" max="100"></progress>
-                                        <span class="progress-bar__bg">
-                                            <span class="progress-bar__line"></span>
+                                <div class="card-product" data-removable>
+                                    <span class="card-product-check">
+                                        <span class="custom-checkbox">
+                                            <input
+                                                    class="custom-checkbox__input checkall-group"
+                                                    type="checkbox"
+                                                    name=""
+                                                    data-checkall-group="cartCheckall"
+                                            >
                                         </span>
                                     </span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cart-content__layout">
-                        <div class="cart-content__toolbar">
-                            <div class="cart-content__toolbar-item">
-                                <div class="custom-checkbox">
-                                    <input
-                                            class="custom-checkbox__input custom-checkbox__input--checkline checkall-for"
-                                            type="checkbox"
-                                            name=""
-                                            data-checkall-for="cartCheckall"
+                                    <span class="card-product-view">
+								<picture>
+									<source srcset="img/product.webp" type="image/webp">
+									<img
+                                            loading="lazy"
+                                            src="img/product.png"
+                                            class="image"
+                                            width="70"
+                                            height="70"
+                                            alt="Изображение блока"
                                     >
-                                    <span class="text-secondary-color desktop-only">Выбрать все</span>
+								</picture>
+							</span>
+                                    <span class="card-product-descr">
+								<span class="card-product-descr__top">
+									<span class="card-product-descr__info">
+										<span class="product-code"><span>ZB3327018</span></span>
+										<span class="card-product-descr__availability product-availability in-stock">
+											<svg class="icon">
+												<use href="img/sprite.svg#checkbox-rec"></use>
+											</svg>
+											<span>Товар в наличии</span>
+										</span>
+									</span>
+
+									<span class="card-product-descr__title">
+										<a href="javascript:;">Haupa Отвёртка двухкомпонентная PH 2</a>
+									</span>
+									<span class="card-product-descr__text">
+										<span>0,4 кг</span>
+									</span>
+								</span>
+								<span class="card-product-descr__bottom">
+									<span class="card-product-descr__price">
+										<span class="card-product-descr__price-total">2 956,80 ₽</span>
+										<span class="card-product-descr__price-current">1 478,40 ₽ за шт.</span>
+									</span>
+									<span class="card-product-descr__cart product-card__cart cart-buy">
+										<span class="cart-quantity">
+											<button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+												<svg class="icon icon-sm btn__icon">
+													<use href="img/sprite.svg#minus"></use>
+												</svg>
+												<svg class="icon icon-sm btn__icon icon-selected">
+													<use href="img/sprite.svg#trash"></use>
+												</svg>
+											</button>
+											<input
+                                                    id=""
+                                                    class="input-reset cart-quantity-input"
+                                                    type="text"
+                                                    placeholder="999"
+                                                    value="1"
+                                                    max="999"
+                                                    data-mult="1"
+                                            >
+											<button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+												<svg class="icon icon-sm btn__icon">
+													<use href="img/sprite.svg#plus"></use>
+												</svg>
+											</button>
+										</span>
+										<span class="card-product-descr__delete" data-delete-trigger>
+											<svg class="icon icon-sm">
+												<use href="img/sprite.svg#trash"></use>
+											</svg>
+										</span>
+									</span>
+								</span>
+							</span>
+                                </div>
+                                <div class="card-product" data-removable>
+                                    <span class="card-product-check">
+                                        <span class="custom-checkbox">
+                                            <input
+                                                    class="custom-checkbox__input checkall-group"
+                                                    type="checkbox"
+                                                    name=""
+                                                    data-checkall-group="cartCheckall"
+                                            >
+                                        </span>
+                                    </span>
+                                    <span class="card-product-view">
+								<picture>
+									<source srcset="img/product.webp" type="image/webp">
+									<img
+                                            loading="lazy"
+                                            src="img/product.png"
+                                            class="image"
+                                            width="70"
+                                            height="70"
+                                            alt="Изображение блока"
+                                    >
+								</picture>
+							</span>
+                                    <span class="card-product-descr">
+								<span class="card-product-descr__top">
+									<span class="card-product-descr__info">
+										<span class="product-code"><span>ZB3327018</span></span>
+										<span class="card-product-descr__availability product-availability in-stock">
+											<svg class="icon">
+												<use href="img/sprite.svg#checkbox-rec"></use>
+											</svg>
+											<span>Товар в наличии</span>
+										</span>
+									</span>
+
+									<span class="card-product-descr__title">
+										<a href="javascript:;">SE Удлинитель катушечный Thorsman 4 роз 15м 3х1.5 IP20</a>
+									</span>
+									<span class="card-product-descr__text">
+										<span>0,4 кг</span>
+									</span>
+								</span>
+								<span class="card-product-descr__bottom">
+									<span class="card-product-descr__price">
+										<span class="card-product-descr__price-total">2 956,80 ₽</span>
+										<span class="card-product-descr__price-current">1 478,40 ₽ за шт.</span>
+									</span>
+									<span class="card-product-descr__cart product-card__cart cart-buy">
+										<span class="cart-quantity">
+											<button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+												<svg class="icon icon-sm btn__icon">
+													<use href="img/sprite.svg#minus"></use>
+												</svg>
+												<svg class="icon icon-sm btn__icon icon-selected">
+													<use href="img/sprite.svg#trash"></use>
+												</svg>
+											</button>
+											<input
+                                                    id=""
+                                                    class="input-reset cart-quantity-input"
+                                                    type="text"
+                                                    placeholder="999"
+                                                    value="1"
+                                                    max="999"
+                                                    data-mult="1"
+                                            >
+											<button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+												<svg class="icon icon-sm btn__icon">
+													<use href="img/sprite.svg#plus"></use>
+												</svg>
+											</button>
+										</span>
+										<span class="card-product-descr__delete" data-delete-trigger>
+											<svg class="icon icon-sm">
+												<use href="img/sprite.svg#trash"></use>
+											</svg>
+										</span>
+									</span>
+								</span>
+							</span>
                                 </div>
                             </div>
-                            <div class="cart-content__toolbar-item">
-                                <button class="btn-reset btn btn-link" data-fancybox data-src="#modal-estimate">
-                                    <span class="btn__text">Добавить в смету</span>
-                                </button>
-                            </div>
-                            <div class="cart-content__toolbar-item cart-content-delete">
-                                <button class="btn-reset btn btn-link">
-                                    <span class="btn__text">Удалить выбранные</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="cart-content__grid">
-                            <div class="card-product" data-removable>
+                            <div class="cart-content__category" data-removable>
+                                <div class="cart-content__category-heading">
+                                    <div class="cart-content__category-title h5">Системы автоматического управления приборами</div>
+                                    <div class="cart-content__category-action">
+                                        <a class="btn-reset btn btn-mini" href="javascript:;" data-delete-trigger>
+                                            <svg class="icon btn__icon">
+                                                <use href="img/sprite.svg#trash"></use>
+                                            </svg>
+                                            <span class="btn__text">Удалить категорию</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-product" data-removable>
                                 <span class="card-product-check">
                                     <span class="custom-checkbox">
                                         <input
@@ -126,78 +315,78 @@
                                         >
                                     </span>
                                 </span>
-                                <span class="card-product-view">
-                                    <picture>
-                                        <source srcset="img/product.webp" type="image/webp">
-                                        <img
-                                                loading="lazy"
-                                                src="img/product.png"
-                                                class="image"
-                                                width="70"
-                                                height="70"
-                                                alt="Изображение блока"
-                                        >
-                                    </picture>
-                                </span>
-                                <span class="card-product-descr">
-                                    <span class="card-product-descr__top">
-                                        <span class="card-product-descr__info">
-                                            <span class="product-code"><span>ZB3327018</span></span>
-                                            <span class="card-product-descr__availability product-availability in-stock">
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#checkbox-rec"></use>
-                                                </svg>
-                                                <span>Товар в наличии</span>
-                                            </span>
-                                        </span>
+                                    <span class="card-product-view">
+								<picture>
+									<source srcset="img/product.webp" type="image/webp">
+									<img
+                                            loading="lazy"
+                                            src="img/product.png"
+                                            class="image"
+                                            width="70"
+                                            height="70"
+                                            alt="Изображение блока"
+                                    >
+								</picture>
+							</span>
+                                    <span class="card-product-descr">
+								<span class="card-product-descr__top">
+									<span class="card-product-descr__info">
+										<span class="product-code"><span>ZB3327018</span></span>
+										<span class="card-product-descr__availability product-availability in-stock">
+											<svg class="icon">
+												<use href="img/sprite.svg#checkbox-rec"></use>
+											</svg>
+											<span>Товар в наличии</span>
+										</span>
+									</span>
 
-                                        <span class="card-product-descr__title">
-                                            <a href="javascript:;">Haupa Отвёртка двухкомпонентная PH 2</a>
-                                        </span>
-                                        <span class="card-product-descr__text">
-                                            <span>0,4 кг</span>
-                                        </span>
-                                    </span>
-                                    <span class="card-product-descr__bottom">
-                                        <span class="card-product-descr__price">
-                                            <span class="card-product-descr__price-total">2 956,80 ₽</span>
-                                            <span class="card-product-descr__price-current">1 478,40 ₽ за шт.</span>
-                                        </span>
-                                        <span class="card-product-descr__cart product-card__cart cart-buy">
-                                            <span class="cart-quantity">
-                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
-                                                    <svg class="icon icon-sm btn__icon">
-                                                        <use href="img/sprite.svg#minus"></use>
-                                                    </svg>
-                                                    <svg class="icon icon-sm btn__icon icon-selected">
-                                                        <use href="img/sprite.svg#trash"></use>
-                                                    </svg>
-                                                </button>
-                                                <input
-                                                        id=""
-                                                        class="input-reset cart-quantity-input"
-                                                        type="text"
-                                                        placeholder="999"
-                                                        value="1"
-                                                        max="999"
-                                                        data-mult="1"
-                                                >
-                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
-                                                    <svg class="icon icon-sm btn__icon">
-                                                        <use href="img/sprite.svg#plus"></use>
-                                                    </svg>
-                                                </button>
-                                            </span>
-                                            <span class="card-product-descr__delete" data-delete-trigger>
-                                                <svg class="icon icon-sm">
-                                                    <use href="img/sprite.svg#trash"></use>
-                                                </svg>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="card-product" data-removable>
+									<span class="card-product-descr__title">
+										<a href="javascript:;">Haupa Отвёртка двухкомпонентная PH 2</a>
+									</span>
+									<span class="card-product-descr__text">
+										<span>0,4 кг</span>
+									</span>
+								</span>
+								<span class="card-product-descr__bottom">
+									<span class="card-product-descr__price">
+										<span class="card-product-descr__price-total">2 956,80 ₽</span>
+										<span class="card-product-descr__price-current">1 478,40 ₽ за шт.</span>
+									</span>
+									<span class="card-product-descr__cart product-card__cart cart-buy">
+										<span class="cart-quantity">
+											<button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+												<svg class="icon icon-sm btn__icon">
+													<use href="img/sprite.svg#minus"></use>
+												</svg>
+												<svg class="icon icon-sm btn__icon icon-selected">
+													<use href="img/sprite.svg#trash"></use>
+												</svg>
+											</button>
+											<input
+                                                    id=""
+                                                    class="input-reset cart-quantity-input"
+                                                    type="text"
+                                                    placeholder="999"
+                                                    value="1"
+                                                    max="999"
+                                                    data-mult="1"
+                                            >
+											<button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+												<svg class="icon icon-sm btn__icon">
+													<use href="img/sprite.svg#plus"></use>
+												</svg>
+											</button>
+										</span>
+										<span class="card-product-descr__delete" data-delete-trigger>
+											<svg class="icon icon-sm">
+												<use href="img/sprite.svg#trash"></use>
+											</svg>
+										</span>
+									</span>
+								</span>
+							</span>
+                                </div>
+                                <div class="card-product" data-removable>
                                 <span class="card-product-check">
                                     <span class="custom-checkbox">
                                         <input
@@ -208,358 +397,195 @@
                                         >
                                     </span>
                                 </span>
-                                <span class="card-product-view">
-                                    <picture>
-                                        <source srcset="img/product.webp" type="image/webp">
-                                        <img
-                                                loading="lazy"
-                                                src="img/product.png"
-                                                class="image"
-                                                width="70"
-                                                height="70"
-                                                alt="Изображение блока"
-                                        >
-                                    </picture>
-                                </span>
-                                <span class="card-product-descr">
-                                    <span class="card-product-descr__top">
-                                        <span class="card-product-descr__info">
-                                            <span class="product-code"><span>ZB3327018</span></span>
-                                            <span class="card-product-descr__availability product-availability in-stock">
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#checkbox-rec"></use>
-                                                </svg>
-                                                <span>Товар в наличии</span>
-                                            </span>
-                                        </span>
+                                    <span class="card-product-view">
+								<picture>
+									<source srcset="img/product.webp" type="image/webp">
+									<img
+                                            loading="lazy"
+                                            src="img/product.png"
+                                            class="image"
+                                            width="70"
+                                            height="70"
+                                            alt="Изображение блока"
+                                    >
+								</picture>
+							</span>
+                                    <span class="card-product-descr">
+								<span class="card-product-descr__top">
+									<span class="card-product-descr__info">
+										<span class="product-code"><span>ZB3327018</span></span>
+										<span class="card-product-descr__availability product-availability in-stock">
+											<svg class="icon">
+												<use href="img/sprite.svg#checkbox-rec"></use>
+											</svg>
+											<span>Товар в наличии</span>
+										</span>
+									</span>
 
-                                        <span class="card-product-descr__title">
-                                            <a href="javascript:;">SE Удлинитель катушечный Thorsman 4 роз 15м 3х1.5 IP20</a>
-                                        </span>
-                                        <span class="card-product-descr__text">
-                                            <span>0,4 кг</span>
-                                        </span>
-                                    </span>
-                                    <span class="card-product-descr__bottom">
-                                        <span class="card-product-descr__price">
-                                            <span class="card-product-descr__price-total">2 956,80 ₽</span>
-                                            <span class="card-product-descr__price-current">1 478,40 ₽ за шт.</span>
-                                        </span>
-                                        <span class="card-product-descr__cart product-card__cart cart-buy">
-                                            <span class="cart-quantity">
-                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
-                                                    <svg class="icon icon-sm btn__icon">
-                                                        <use href="img/sprite.svg#minus"></use>
-                                                    </svg>
-                                                    <svg class="icon icon-sm btn__icon icon-selected">
-                                                        <use href="img/sprite.svg#trash"></use>
-                                                    </svg>
-                                                </button>
-                                                <input
-                                                        id=""
-                                                        class="input-reset cart-quantity-input"
-                                                        type="text"
-                                                        placeholder="999"
-                                                        value="1"
-                                                        max="999"
-                                                        data-mult="1"
-                                                >
-                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
-                                                    <svg class="icon icon-sm btn__icon">
-                                                        <use href="img/sprite.svg#plus"></use>
-                                                    </svg>
-                                                </button>
-                                            </span>
-                                            <span class="card-product-descr__delete" data-delete-trigger>
-                                                <svg class="icon icon-sm">
-                                                    <use href="img/sprite.svg#trash"></use>
-                                                </svg>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
+									<span class="card-product-descr__title">
+										<a href="javascript:;">SE Удлинитель катушечный Thorsman 4 роз 15м 3х1.5 IP20</a>
+									</span>
+									<span class="card-product-descr__text">
+										<span>0,4 кг</span>
+									</span>
+								</span>
+								<span class="card-product-descr__bottom">
+									<span class="card-product-descr__price">
+										<span class="card-product-descr__price-total">2 956,80 ₽</span>
+										<span class="card-product-descr__price-current">1 478,40 ₽ за шт.</span>
+									</span>
+									<span class="card-product-descr__cart product-card__cart cart-buy">
+										<span class="cart-quantity">
+											<button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+												<svg class="icon icon-sm btn__icon">
+													<use href="img/sprite.svg#minus"></use>
+												</svg>
+												<svg class="icon icon-sm btn__icon icon-selected">
+													<use href="img/sprite.svg#trash"></use>
+												</svg>
+											</button>
+											<input
+                                                    id=""
+                                                    class="input-reset cart-quantity-input"
+                                                    type="text"
+                                                    placeholder="999"
+                                                    value="1"
+                                                    max="999"
+                                                    data-mult="1"
+                                            >
+											<button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+												<svg class="icon icon-sm btn__icon">
+													<use href="img/sprite.svg#plus"></use>
+												</svg>
+											</button>
+										</span>
+										<span class="card-product-descr__delete" data-delete-trigger>
+											<svg class="icon icon-sm">
+												<use href="img/sprite.svg#trash"></use>
+											</svg>
+										</span>
+									</span>
+								</span>
+							</span>
+                                </div>
                             </div>
-                            <div class="card-product" data-removable>
-                                <span class="card-product-check">
-                                    <span class="custom-checkbox">
-                                        <input
-                                                class="custom-checkbox__input checkall-group"
-                                                type="checkbox"
-                                                name=""
-                                                data-checkall-group="cartCheckall"
-                                        >
-                                    </span>
-                                </span>
-                                <span class="card-product-view">
-                                    <picture>
-                                        <source srcset="img/product.webp" type="image/webp">
-                                        <img
-                                                loading="lazy"
-                                                src="img/product.png"
-                                                class="image"
-                                                width="70"
-                                                height="70"
-                                                alt="Изображение блока"
-                                        >
-                                    </picture>
-                                </span>
-                                <span class="card-product-descr">
-                                    <span class="card-product-descr__top">
-                                        <span class="card-product-descr__info">
-                                            <span class="product-code"><span>ZB3327018</span></span>
-                                            <span class="card-product-descr__availability product-availability in-stock">
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#checkbox-rec"></use>
-                                                </svg>
-                                                <span>Товар в наличии</span>
-                                            </span>
-                                        </span>
-
-                                        <span class="card-product-descr__title">
-                                            <a href="javascript:;">Haupa Отвёртка двухкомпонентная PH 2</a>
-                                        </span>
-                                        <span class="card-product-descr__text">
-                                            <span>0,4 кг</span>
-                                        </span>
-                                    </span>
-                                    <span class="card-product-descr__bottom">
-                                        <span class="card-product-descr__price">
-                                            <span class="card-product-descr__price-total">2 956,80 ₽</span>
-                                            <span class="card-product-descr__price-current">1 478,40 ₽ за шт.</span>
-                                        </span>
-                                        <span class="card-product-descr__cart product-card__cart cart-buy">
-                                            <span class="cart-quantity">
-                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
-                                                    <svg class="icon icon-sm btn__icon">
-                                                        <use href="img/sprite.svg#minus"></use>
-                                                    </svg>
-                                                    <svg class="icon icon-sm btn__icon icon-selected">
-                                                        <use href="img/sprite.svg#trash"></use>
-                                                    </svg>
-                                                </button>
-                                                <input
-                                                        id=""
-                                                        class="input-reset cart-quantity-input"
-                                                        type="text"
-                                                        placeholder="999"
-                                                        value="1"
-                                                        max="999"
-                                                        data-mult="1"
-                                                >
-                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
-                                                    <svg class="icon icon-sm btn__icon">
-                                                        <use href="img/sprite.svg#plus"></use>
-                                                    </svg>
-                                                </button>
-                                            </span>
-                                            <span class="card-product-descr__delete" data-delete-trigger>
-                                                <svg class="icon icon-sm">
-                                                    <use href="img/sprite.svg#trash"></use>
-                                                </svg>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="card-product" data-removable>
-                                <span class="card-product-check">
-                                    <span class="custom-checkbox">
-                                        <input
-                                                class="custom-checkbox__input checkall-group"
-                                                type="checkbox"
-                                                name=""
-                                                data-checkall-group="cartCheckall"
-                                        >
-                                    </span>
-                                </span>
-                                <span class="card-product-view">
-                                    <picture>
-                                        <source srcset="img/product.webp" type="image/webp">
-                                        <img
-                                                loading="lazy"
-                                                src="img/product.png"
-                                                class="image"
-                                                width="70"
-                                                height="70"
-                                                alt="Изображение блока"
-                                        >
-                                    </picture>
-                                </span>
-                                <span class="card-product-descr">
-                                    <span class="card-product-descr__top">
-                                        <span class="card-product-descr__info">
-                                            <span class="product-code"><span>ZB3327018</span></span>
-                                            <span class="card-product-descr__availability product-availability in-stock">
-                                                <svg class="icon">
-                                                    <use href="img/sprite.svg#checkbox-rec"></use>
-                                                </svg>
-                                                <span>Товар в наличии</span>
-                                            </span>
-                                        </span>
-
-                                        <span class="card-product-descr__title">
-                                            <a href="javascript:;">SE Удлинитель катушечный Thorsman 4 роз 15м 3х1.5 IP20</a>
-                                        </span>
-                                        <span class="card-product-descr__text">
-                                            <span>0,4 кг</span>
-                                        </span>
-                                    </span>
-                                    <span class="card-product-descr__bottom">
-                                        <span class="card-product-descr__price">
-                                            <span class="card-product-descr__price-total">2 956,80 ₽</span>
-                                            <span class="card-product-descr__price-current">1 478,40 ₽ за шт.</span>
-                                        </span>
-                                        <span class="card-product-descr__cart product-card__cart cart-buy">
-                                            <span class="cart-quantity">
-                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
-                                                    <svg class="icon icon-sm btn__icon">
-                                                        <use href="img/sprite.svg#minus"></use>
-                                                    </svg>
-                                                    <svg class="icon icon-sm btn__icon icon-selected">
-                                                        <use href="img/sprite.svg#trash"></use>
-                                                    </svg>
-                                                </button>
-                                                <input
-                                                        id=""
-                                                        class="input-reset cart-quantity-input"
-                                                        type="text"
-                                                        placeholder="999"
-                                                        value="1"
-                                                        max="999"
-                                                        data-mult="1"
-                                                >
-                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
-                                                    <svg class="icon icon-sm btn__icon">
-                                                        <use href="img/sprite.svg#plus"></use>
-                                                    </svg>
-                                                </button>
-                                            </span>
-                                            <span class="card-product-descr__delete" data-delete-trigger>
-                                                <svg class="icon icon-sm">
-                                                    <use href="img/sprite.svg#trash"></use>
-                                                </svg>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+						</div>
+					</div>
 				</div>
 				<div class="cart-sidebar">
 					<div class="cart-sidebar-gap">
 						<div class="cart-sidebar__item">
 							<div class="cart-sidebar__item-part cart-sidebar-ordering">
 								<button class="btn-reset btn btn-primary">
-								    <span class="btn__text">Перейти к оформлению</span>
+									<span class="btn__text">Перейти к оформлению</span>
 								</button>
 							</div>
 							<div class="cart-sidebar__item-part">
-                                <div class="gap-md">
-                                    <table class="table-descr table-descr-sb">
-                                        <tbody>
-                                        <tr>
-                                            <td>
-                                                <span class="h5">Итого</span>
-                                            </td>
-                                            <td>
-                                                <span class="h4">14 263 ₽</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <span>Начислим баллов</span>
-                                            </td>
-                                            <td>
-                                                <span class="price-bonus">
-                                                    <span class="green-color semi-bold">+ 346,99</span>
-                                                    <svg class="icon icon-xs">
-                                                        <use href="img/sprite.svg#fill-bonus"></use>
-                                                    </svg>
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="gap-md">
-                                    <input
-                                            class="input-reset input"
-                                            type="text"
-                                            name=""
-                                            placeholder="Промокод"
-                                            autocomplete="off"
-                                    >
-                                </div>
-                                <div class="">
-                                    <table class="table-descr table-descr-sb">
-                                        <tbody>
-                                        <tr>
-                                            <td>
-                                                <span>Доступно баллов</span>
-                                            </td>
-                                            <td>
-                                                <span class="price-bonus">
-                                                    <span class="semi-bold">2 726</span>
-                                                    <svg class="icon icon-xs">
-                                                        <use href="img/sprite.svg#fill-bonus"></use>
-                                                    </svg>
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+								<div class="gap-md">
+									<table class="table-descr table-descr-sb">
+										<tbody>
+										<tr>
+											<td>
+												<span class="h5">Итого</span>
+											</td>
+											<td>
+												<span class="h4">14 263 ₽</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Начислим баллов</span>
+											</td>
+											<td>
+											<span class="price-bonus">
+												<span class="green-color semi-bold">+ 346,99</span>
+												<svg class="icon icon-xs">
+													<use href="img/sprite.svg#fill-bonus"></use>
+												</svg>
+											</span>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="gap-md">
+									<input
+										class="input-reset input"
+										type="text"
+										name=""
+										placeholder="Промокод"
+										autocomplete="off"
+									>
+								</div>
+								<div class="">
+									<table class="table-descr table-descr-sb">
+										<tbody>
+										<tr>
+											<td>
+												<span>Доступно баллов</span>
+											</td>
+											<td>
+											<span class="price-bonus">
+												<span class="semi-bold">2 726</span>
+												<svg class="icon icon-xs">
+													<use href="img/sprite.svg#fill-bonus"></use>
+												</svg>
+											</span>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 							<div class="cart-sidebar__item-part">
-                                <div class="">
-                                    <table class="table-descr table-descr-sb">
-                                        <tbody>
-                                        <tr>
-                                            <td>
-                                                <span>4 товара</span>
-                                            </td>
-                                            <td>
-                                                <span class="semi-bold">18 276 ₽</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <span>Скидки на товары</span>
-                                            </td>
-                                            <td>
-                                                <span class="green-color semi-bold">- 1 071 ₽</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <span>Вес заказа</span>
-                                            </td>
-                                            <td>
-                                                <span class="semi-bold">3,4 кг</span>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+								<div class="">
+									<table class="table-descr table-descr-sb">
+										<tbody>
+										<tr>
+											<td>
+												<span>4 товара</span>
+											</td>
+											<td>
+												<span class="semi-bold">18 276 ₽</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Скидки на товары</span>
+											</td>
+											<td>
+												<span class="green-color semi-bold">- 1 071 ₽</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Вес заказа</span>
+											</td>
+											<td>
+												<span class="semi-bold">3,4 кг</span>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>
 
-                    <div class="cart-sidebar-gap">
-                        <div class="gap-sm">
-                            <button class="btn-reset become-auth-banner" type="button">
-                                <div><b>Авторизуйтесь, </b></div>
-                                <div>чтобы снизить цену</div>
-                            </button>
-                        </div>
-                        <div class="gap-sm">
-                            <button class="btn-reset become-auth-banner" type="button">
-                                <div><b>Зарегистрируйтесь</b> и получите </div>
-                                <div>500 привественных баллов</div>
-                            </button>
-                        </div>
-                    </div>
+					<div class="cart-sidebar-gap">
+						<div class="gap-sm">
+							<button class="btn-reset become-auth-banner" type="button">
+								<div><b>Авторизуйтесь, </b></div>
+								<div>чтобы снизить цену</div>
+							</button>
+						</div>
+						<div class="gap-sm">
+							<button class="btn-reset become-auth-banner" type="button">
+								<div><b>Зарегистрируйтесь</b> и получите </div>
+								<div>500 привественных баллов</div>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -763,17 +789,17 @@
 												<div class="card-product-descr__info">
 													<span class="product-code"><span>ZB3327018</span></span>
 													<span class="star-rating-wrapper star-rating-wrapper--noframe">
-													<span class="star-rating">
-														<span class="star-rating__container">
-															<label>
-																<svg class="icon">
-																	<use href="img/sprite.svg#fill-star"></use>
-																</svg>
-															</label>
-														</span>
+												<span class="star-rating">
+													<span class="star-rating__container">
+														<label>
+															<svg class="icon">
+																<use href="img/sprite.svg#fill-star"></use>
+															</svg>
+														</label>
 													</span>
-													<span class="star-rating-value" data-value="4.5">4.5</span>
 												</span>
+												<span class="star-rating-value" data-value="4.5">4.5</span>
+											</span>
 												</div>
 												<div class="card-product-descr__availability product-availability in-stock">
 													<svg class="icon">
@@ -927,17 +953,17 @@
 												<div class="card-product-descr__info">
 													<span class="product-code"><span>46- 312792P13</span></span>
 													<span class="star-rating-wrapper star-rating-wrapper--noframe">
-													<span class="star-rating">
-														<span class="star-rating__container">
-															<label>
-																<svg class="icon">
-																	<use href="img/sprite.svg#fill-star"></use>
-																</svg>
-															</label>
-														</span>
+												<span class="star-rating">
+													<span class="star-rating__container">
+														<label>
+															<svg class="icon">
+																<use href="img/sprite.svg#fill-star"></use>
+															</svg>
+														</label>
 													</span>
-													<span class="star-rating-value" data-value="5.0">5.0</span>
 												</span>
+												<span class="star-rating-value" data-value="5.0">5.0</span>
+											</span>
 												</div>
 												<div class="card-product-descr__availability product-availability on-order">
 													<svg class="icon">
@@ -1423,17 +1449,17 @@
 												<div class="card-product-descr__info">
 													<span class="product-code"><span>ZB3327018</span></span>
 													<span class="star-rating-wrapper star-rating-wrapper--noframe">
-													<span class="star-rating">
-														<span class="star-rating__container">
-															<label>
-																<svg class="icon">
-																	<use href="img/sprite.svg#fill-star"></use>
-																</svg>
-															</label>
-														</span>
+												<span class="star-rating">
+													<span class="star-rating__container">
+														<label>
+															<svg class="icon">
+																<use href="img/sprite.svg#fill-star"></use>
+															</svg>
+														</label>
 													</span>
-													<span class="star-rating-value" data-value="4.5">4.5</span>
 												</span>
+												<span class="star-rating-value" data-value="4.5">4.5</span>
+											</span>
 												</div>
 												<div class="card-product-descr__availability product-availability in-stock">
 													<svg class="icon">
@@ -1587,17 +1613,17 @@
 												<div class="card-product-descr__info">
 													<span class="product-code"><span>ZB3327018</span></span>
 													<span class="star-rating-wrapper star-rating-wrapper--noframe">
-													<span class="star-rating">
-														<span class="star-rating__container">
-															<label>
-																<svg class="icon">
-																	<use href="img/sprite.svg#fill-star"></use>
-																</svg>
-															</label>
-														</span>
+												<span class="star-rating">
+													<span class="star-rating__container">
+														<label>
+															<svg class="icon">
+																<use href="img/sprite.svg#fill-star"></use>
+															</svg>
+														</label>
 													</span>
-													<span class="star-rating-value" data-value="4.5">4.5</span>
 												</span>
+												<span class="star-rating-value" data-value="4.5">4.5</span>
+											</span>
 												</div>
 												<div class="card-product-descr__availability product-availability in-stock">
 													<svg class="icon">
@@ -1751,17 +1777,17 @@
 												<div class="card-product-descr__info">
 													<span class="product-code"><span>46- 312792P13</span></span>
 													<span class="star-rating-wrapper star-rating-wrapper--noframe">
-													<span class="star-rating">
-														<span class="star-rating__container">
-															<label>
-																<svg class="icon">
-																	<use href="img/sprite.svg#fill-star"></use>
-																</svg>
-															</label>
-														</span>
+												<span class="star-rating">
+													<span class="star-rating__container">
+														<label>
+															<svg class="icon">
+																<use href="img/sprite.svg#fill-star"></use>
+															</svg>
+														</label>
 													</span>
-													<span class="star-rating-value" data-value="5.0">5.0</span>
 												</span>
+												<span class="star-rating-value" data-value="5.0">5.0</span>
+											</span>
 												</div>
 												<div class="card-product-descr__availability product-availability on-order">
 													<svg class="icon">
