@@ -25,18 +25,18 @@
                         <div class="cart-content__grid">
                             <div class="card-product" data-removable>
                                 <span class="card-product-view">
-                                <picture>
-                                    <source srcset="img/product.webp" type="image/webp">
-                                    <img
-                                            loading="lazy"
-                                            src="img/product.png"
-                                            class="image"
-                                            width="70"
-                                            height="70"
-                                            alt="Изображение блока"
-                                    >
-                                </picture>
-                            </span>
+                                    <picture>
+                                        <source srcset="img/product.webp" type="image/webp">
+                                        <img
+                                                loading="lazy"
+                                                src="img/product.png"
+                                                class="image"
+                                                width="70"
+                                                height="70"
+                                                alt="Изображение блока"
+                                        >
+                                    </picture>
+                                </span>
                                 <span class="card-product-descr">
                                     <span class="card-product-descr__top">
                                         <span class="card-product-descr__info">
@@ -315,7 +315,7 @@
                                 </button>
                             </div>
                             <div class="cart-sidebar__item-part">
-                                <div class="gap-md">
+                                <div class="">
                                     <table class="table-descr table-descr-sb">
                                         <tbody>
                                         <tr>
@@ -359,6 +359,19 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<?/* todo (@Masterkov): добавить класс "<body class='has-cart-menu-panel'>" для страниц корзины */?>
+<div class="cart-mobile-menu-panel">
+    <div class="cart-mobile-menu-panel__descr">
+        <div class="cart-mobile-menu-panel__title">Итого</div>
+        <div class="cart-mobile-menu-panel__value">18 276 ₽</div>
+    </div>
+    <div class="cart-mobile-menu-panel__btn">
+        <button class="btn-reset btn btn-primary">
+            <span class="btn__text">Добавить всё в корзину</span>
+        </button>
     </div>
 </div>
 

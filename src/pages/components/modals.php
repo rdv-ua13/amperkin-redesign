@@ -377,6 +377,57 @@
     </div>
 </div>
 
+<?/* share shopping cart */?>
+<div id="modal-share-cart" class="modal modal-big">
+    <div class="modal__content">
+        <div class="modal__content-item">
+            <div class="modal__header">
+                <div class="modal__title-share">
+                    <div class="h4">Поделиться корзиной</div>
+                </div>
+            </div>
+
+            <div class="gap-sm">
+                <div class="submit-field-wrapper" data-share-link>
+                    <div class="submit-field-input flex-1">
+                        <input
+                                class="input-reset input"
+                                type="text"
+                                name=""
+                                placeholder="https://www.amperkin.ru/product/774420/?utm_source=dire..."
+                                value="https://www.amperkin.ru/product/774420/?utm_source=dire..."
+                                data-share-link-input
+                        >
+                    </div>
+                    <button class="btn-reset btn btn-primary" type="button" data-share-link-btn>
+                        <span class="btn__text">Копировать</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal__soc modal-share-soc">
+                <div class="modal__soc-links">
+                    <a class="soc-vk" href="javascript:;" target="_blank">
+                        <svg class="icon">
+                            <use href="img/sprite.svg#soc-logo-vk"></use>
+                        </svg>
+                    </a>
+                    <a class="soc-ok" href="javascript:;" target="_blank">
+                        <svg class="icon">
+                            <use href="img/sprite.svg#soc-logo-ok"></use>
+                        </svg>
+                    </a>
+                    <a class="soc-tg" href="javascript:;" target="_blank">
+                        <svg class="icon">
+                            <use href="img/sprite.svg#soc-logo-tg"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?/* city */?>
 <div id="modal-city" class="modal modal-big modal-city">
     <div class="modal__content">
@@ -733,6 +784,7 @@
     </div>
 </div>
 
+<?/* review success */?>
 <div id="modal-review-success" class="modal modal-big">
     <div class="modal__content">
         <div class="modal__content-item">
@@ -744,6 +796,27 @@
                     <div class="h4 text-center">Ваш отзыв успешно отправлен на модерацию</div>
                 </div>
                 <div class="modal__subtitle text-center">После проверки ваш отзыв будет опубликован на странице товара</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?/* cart delete */?>
+<div id="modal-cart-delete" class="modal modal-cart-delete">
+    <div class="modal__content">
+        <div class="modal__content-item">
+            <div class="modal__header">
+                <div class="modal__title h4">Удалить товары</div>
+                <div class="modal__subtitle">Вы уверены, что хотите удалить выбранные товары из корзины?</div>
+            </div>
+
+            <div class="btn-g modal-cart-delete__btn-g">
+                <button class="btn-reset btn btn-primary">
+                    <span class="btn__text">Удалить</span>
+                </button>
+                <button class="btn-reset btn btn-light">
+                    <span class="btn__text">Отменить</span>
+                </button>
             </div>
         </div>
     </div>

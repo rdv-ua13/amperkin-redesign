@@ -17,7 +17,7 @@
                             </div>
                             <div class="h1 catalog-heading__title">Корзина</div>
                             <div class="catalog-heading__action">
-                                <a class="btn-reset btn btn-mini" href="javascript:;">
+                                <a class="btn-reset btn btn-mini" href="javascript:;" data-fancybox data-src="#modal-cart-delete">
                                     <svg class="icon btn__icon">
                                         <use href="img/sprite.svg#trash"></use>
                                     </svg>
@@ -32,13 +32,13 @@
                                         </svg>
                                         <span class="btn__text">Распечатать</span>
                                     </button>
-                                    <button class="btn-reset btn btn-link">
+                                    <button class="btn-reset btn btn-link" data-fancybox data-src="#modal-share-cart">
                                         <svg class="icon icon-xs btn__icon">
                                             <use href="img/sprite.svg#share"></use>
                                         </svg>
                                         <span class="btn__text">Поделиться</span>
                                     </button>
-                                    <button class="btn-reset btn btn-link">
+                                    <button class="btn-reset btn btn-link" data-fancybox data-src="#modal-estimate">
                                         <svg class="icon icon-xs btn__icon">
                                             <use href="img/sprite.svg#inbox-in"></use>
                                         </svg>
@@ -452,7 +452,7 @@
                                     <span class="btn__text">Добавить в смету</span>
                                 </button>
                             </div>
-                            <div class="cart-content__toolbar-item cart-content-delete">
+                            <div class="cart-content__toolbar-item cart-content-delete" data-fancybox data-src="#modal-cart-delete">
                                 <button class="btn-reset btn btn-link">
                                     <span class="btn__text">Удалить выбранные</span>
                                 </button>
@@ -828,13 +828,22 @@
                                     </table>
                                 </div>
                                 <div class="gap-md">
-                                    <input
-                                            class="input-reset input"
-                                            type="text"
-                                            name=""
-                                            placeholder="Промокод"
-                                            autocomplete="off"
-                                    >
+                                    <div class="input-wrapper input-promocode">
+                                        <input
+                                                class="input-reset input"
+                                                type="text"
+                                                name=""
+                                                placeholder="Промокод"
+                                                value=""
+                                                autocomplete="off"
+                                        >
+                                        <button class="btn-reset btn btn-link input-promocode-icon">
+                                            <svg class="icon btn__icon icon-xs">
+                                                <use href="img/sprite.svg#fill-check-rec"></use>
+                                            </svg>
+                                        </button>
+                                        <span class="input-promocode-note">При применении промокода, использование бонусных баллов невозможно, но их начисление за покупку сохраняется</span>
+                                    </div>
                                 </div>
                                 <div class="">
                                     <table class="table-descr table-descr-sb">
@@ -2212,6 +2221,19 @@
 			</div>
 		</div>
 	</div>
+</div>
+
+<?/* todo (@Masterkov): добавить класс "<body class='has-cart-menu-panel'>" для страниц корзины */?>
+<div class="cart-mobile-menu-panel">
+    <div class="cart-mobile-menu-panel__descr">
+        <div class="cart-mobile-menu-panel__title">Итого</div>
+        <div class="cart-mobile-menu-panel__value">18 276 ₽</div>
+    </div>
+    <div class="cart-mobile-menu-panel__btn">
+        <button class="btn-reset btn btn-primary">
+            <span class="btn__text">Перейти к оформлению</span>
+        </button>
+    </div>
 </div>
 
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/footer.php"); ?>

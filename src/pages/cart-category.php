@@ -17,7 +17,7 @@
 							</div>
 							<div class="h1 catalog-heading__title">Корзина</div>
 							<div class="catalog-heading__action">
-								<a class="btn-reset btn btn-mini" href="javascript:;">
+								<a class="btn-reset btn btn-mini" href="javascript:;" data-fancybox data-src="#modal-cart-delete">
 									<svg class="icon btn__icon">
 										<use href="img/sprite.svg#trash"></use>
 									</svg>
@@ -32,13 +32,13 @@
 										</svg>
 										<span class="btn__text">Распечатать</span>
 									</button>
-									<button class="btn-reset btn btn-link">
+									<button class="btn-reset btn btn-link" data-fancybox data-src="#modal-share-cart">
 										<svg class="icon icon-xs btn__icon">
 											<use href="img/sprite.svg#share"></use>
 										</svg>
 										<span class="btn__text">Поделиться</span>
 									</button>
-									<button class="btn-reset btn btn-link">
+									<button class="btn-reset btn btn-link" data-fancybox data-src="#modal-estimate">
 										<svg class="icon icon-xs btn__icon">
 											<use href="img/sprite.svg#inbox-in"></use>
 										</svg>
@@ -55,15 +55,360 @@
 						</div>
 					</div>
 					<div class="gap-md">
-						<div class="cart-quick-add">
-							<input
-								class="input-reset input"
-								type="text"
-								name=""
-								placeholder="Введите артикул или название для быстрого добавления товара"
-								autocomplete="off"
-							>
-						</div>
+                        <div class="cart-quick-add">
+                            <div class="input-search-wrapper">
+                                <input
+                                        class="input-reset input-search"
+                                        type="search"
+                                        name=""
+                                        placeholder="Введите артикул или название для быстрого добавления товара"
+                                        autocomplete="off"
+                                        onclick="$(this).closest('.cart-quick-add').find('.cart-quick-add__results').toggleClass('active');"
+                                >
+                                <button class="btn-reset btn btn-link input-delete-btn">
+                                    <svg class="icon btn__icon icon-xs">
+                                        <use href="img/sprite.svg#cross"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="cart-quick-add__results">
+                                <div class="search-results">
+                                    <div class="search-results__header">
+                                        <div class="search-results__header-top">
+                                            <div class="search-results__title h4">Быстрое добавление товара</div>
+                                            <div class="search-results__close">
+                                                <svg class="icon icon-md">
+                                                    <use href="img/sprite.svg#cross"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="search-results__search">
+                                            <div class="search-results__search-item">
+                                                <div class="input-search-wrapper">
+                                                    <input
+                                                            class="input-reset input-search"
+                                                            type="search"
+                                                            name=""
+                                                            value=""
+                                                            placeholder="Введите артикул или название для быстрого добавления товара"
+                                                            autocomplete="off"
+                                                    >
+                                                    <button class="btn-reset btn btn-link input-delete-btn">
+                                                        <svg class="icon btn__icon icon-xs">
+                                                            <use href="img/sprite.svg#cross"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-results__suggest">
+                                        <div class="search-results__suggest-list">
+                                            <div class="search-results-product">
+                                                <div class="search-results-product__view">
+                                                    <picture>
+                                                        <source srcset="img/product.webp" type="image/webp">
+                                                        <img
+                                                                loading="lazy"
+                                                                src="img/product.png"
+                                                                class="image"
+                                                                width="64"
+                                                                height="64"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </picture>
+                                                </div>
+                                                <div class="search-results-product__descr">
+                                                    <div class="search-results-product__descr-header">
+                                                        <div class="search-results-product__info">
+                                                            <span class="product-code">ZB3327018</span>
+                                                        </div>
+                                                        <div class="search-results-product__title">SE Unica System+ Антрацит Блок розеточный (2к+з)+usb тип А</div>
+                                                    </div>
+                                                    <div class="search-results-product__descr-bottom">
+                                                        <div class="search-results-product__price">
+                                                            <div class="search-results-product__price-current">1 478,40 ₽</div>
+                                                            <div class="search-results-product__price-originally">1 624,50 ₽</div>
+                                                        </div>
+                                                        <div class="search-results-product__cart cart-buy">
+                                                            <div class="cart-quantity disabled">
+                                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                    <svg class="icon icon-sm btn__icon">
+                                                                        <use href="img/sprite.svg#minus"></use>
+                                                                    </svg>
+                                                                    <svg class="icon icon-sm btn__icon icon-selected">
+                                                                        <use href="img/sprite.svg#trash"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <input id="" class="input-reset cart-quantity-input" type="text" placeholder="999" value="1" max="999" data-mult="1">
+                                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                    <svg class="icon icon-sm btn__icon">
+                                                                        <use href="img/sprite.svg#plus"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <button class="btn-reset btn btn-mini btn-primary cart-in" type="button">
+                                                                <span class="btn__text">В КОРЗИНУ</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-results-product">
+                                                <div class="search-results-product__view">
+                                                    <picture>
+                                                        <source srcset="img/product-2.webp" type="image/webp">
+                                                        <img
+                                                                loading="lazy"
+                                                                src="img/product-2.png"
+                                                                class="image"
+                                                                width="64"
+                                                                height="64"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </picture>
+                                                </div>
+                                                <div class="search-results-product__descr">
+                                                    <div class="search-results-product__descr-header">
+                                                        <div class="search-results-product__info">
+                                                            <span class="product-code">AB3327018</span>
+                                                        </div>
+                                                        <div class="search-results-product__title">SE Удлинитель катушечный Thorsman 4 роз 15м</div>
+                                                    </div>
+                                                    <div class="search-results-product__descr-bottom">
+                                                        <div class="search-results-product__price">
+                                                            <div class="search-results-product__price-current">1 478,40 ₽</div>
+                                                            <div class="search-results-product__price-originally">1 624,50 ₽</div>
+                                                        </div>
+                                                        <div class="search-results-product__cart cart-buy">
+                                                            <div class="cart-quantity disabled">
+                                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                    <svg class="icon icon-sm btn__icon">
+                                                                        <use href="img/sprite.svg#minus"></use>
+                                                                    </svg>
+                                                                    <svg class="icon icon-sm btn__icon icon-selected">
+                                                                        <use href="img/sprite.svg#trash"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <input id="" class="input-reset cart-quantity-input" type="text" placeholder="999" value="1" max="999" data-mult="1">
+                                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                    <svg class="icon icon-sm btn__icon">
+                                                                        <use href="img/sprite.svg#plus"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <button class="btn-reset btn btn-mini btn-primary cart-in" type="button">
+                                                                <span class="btn__text">В КОРЗИНУ</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-results-product">
+                                                <div class="search-results-product__view">
+                                                    <picture>
+                                                        <source srcset="img/product-3.webp" type="image/webp">
+                                                        <img
+                                                                loading="lazy"
+                                                                src="img/product-3.png"
+                                                                class="image"
+                                                                width="64"
+                                                                height="64"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </picture>
+                                                </div>
+                                                <div class="search-results-product__descr">
+                                                    <div class="search-results-product__descr-header">
+                                                        <div class="search-results-product__info">
+                                                            <span class="product-code">BB3327018</span>
+                                                        </div>
+                                                        <div class="search-results-product__title">SE Unica Extend Бел Удлинитель 3 розетки 2К+З, кабель 1,5м</div>
+                                                    </div>
+                                                    <div class="search-results-product__descr-bottom">
+                                                        <div class="search-results-product__price">
+                                                            <div class="search-results-product__price-current">1 478,40 ₽</div>
+                                                            <div class="search-results-product__price-originally">1 624,50 ₽</div>
+                                                        </div>
+                                                        <div class="search-results-product__cart cart-buy">
+                                                            <div class="cart-quantity disabled">
+                                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                    <svg class="icon icon-sm btn__icon">
+                                                                        <use href="img/sprite.svg#minus"></use>
+                                                                    </svg>
+                                                                    <svg class="icon icon-sm btn__icon icon-selected">
+                                                                        <use href="img/sprite.svg#trash"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <input id="" class="input-reset cart-quantity-input" type="text" placeholder="999" value="1" max="999" data-mult="1">
+                                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                    <svg class="icon icon-sm btn__icon">
+                                                                        <use href="img/sprite.svg#plus"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <button class="btn-reset btn btn-mini btn-primary cart-in" type="button">
+                                                                <span class="btn__text">В КОРЗИНУ</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-results-product">
+                                                <div class="search-results-product__view">
+                                                    <picture>
+                                                        <source srcset="img/product-4.webp" type="image/webp">
+                                                        <img
+                                                                loading="lazy"
+                                                                src="img/product-4.png"
+                                                                class="image"
+                                                                width="64"
+                                                                height="64"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </picture>
+                                                </div>
+                                                <div class="search-results-product__descr">
+                                                    <div class="search-results-product__descr-header">
+                                                        <div class="search-results-product__info">
+                                                            <span class="product-code">CB3327018</span>
+                                                        </div>
+                                                        <div class="search-results-product__title">SE Unica System+ Белый Блок розеточный (2к+з)+usb тип А</div>
+                                                    </div>
+                                                    <div class="search-results-product__descr-bottom">
+                                                        <div class="search-results-product__price">
+                                                            <div class="search-results-product__price-current">1 478,40 ₽</div>
+                                                            <div class="search-results-product__price-originally">1 624,50 ₽</div>
+                                                        </div>
+                                                        <div class="search-results-product__cart cart-buy">
+                                                            <div class="cart-quantity disabled">
+                                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                    <svg class="icon icon-sm btn__icon">
+                                                                        <use href="img/sprite.svg#minus"></use>
+                                                                    </svg>
+                                                                    <svg class="icon icon-sm btn__icon icon-selected">
+                                                                        <use href="img/sprite.svg#trash"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <input id="" class="input-reset cart-quantity-input" type="text" placeholder="999" value="1" max="999" data-mult="1">
+                                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                    <svg class="icon icon-sm btn__icon">
+                                                                        <use href="img/sprite.svg#plus"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <button class="btn-reset btn btn-mini btn-primary cart-in" type="button">
+                                                                <span class="btn__text">В КОРЗИНУ</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-results-product">
+                                                <div class="search-results-product__view">
+                                                    <picture>
+                                                        <source srcset="img/product-5.webp" type="image/webp">
+                                                        <img
+                                                                loading="lazy"
+                                                                src="img/product-5.png"
+                                                                class="image"
+                                                                width="64"
+                                                                height="64"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </picture>
+                                                </div>
+                                                <div class="search-results-product__descr">
+                                                    <div class="search-results-product__descr-header">
+                                                        <div class="search-results-product__info">
+                                                            <span class="product-code">DB3327018</span>
+                                                        </div>
+                                                        <div class="search-results-product__title">SE Unica Extend Черный Удлинитель 3 розетки 2К+З, кабель 1,5м</div>
+                                                    </div>
+                                                    <div class="search-results-product__descr-bottom">
+                                                        <div class="search-results-product__price">
+                                                            <div class="search-results-product__price-current">1 478,40 ₽</div>
+                                                            <div class="search-results-product__price-originally">1 624,50 ₽</div>
+                                                        </div>
+                                                        <div class="search-results-product__cart cart-buy">
+                                                            <div class="cart-quantity disabled">
+                                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                    <svg class="icon icon-sm btn__icon">
+                                                                        <use href="img/sprite.svg#minus"></use>
+                                                                    </svg>
+                                                                    <svg class="icon icon-sm btn__icon icon-selected">
+                                                                        <use href="img/sprite.svg#trash"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <input id="" class="input-reset cart-quantity-input" type="text" placeholder="999" value="1" max="999" data-mult="1">
+                                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                    <svg class="icon icon-sm btn__icon">
+                                                                        <use href="img/sprite.svg#plus"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <button class="btn-reset btn btn-mini btn-primary cart-in" type="button">
+                                                                <span class="btn__text">В КОРЗИНУ</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-results-product">
+                                                <div class="search-results-product__view">
+                                                    <picture>
+                                                        <source srcset="img/product.webp" type="image/webp">
+                                                        <img
+                                                                loading="lazy"
+                                                                src="img/product.png"
+                                                                class="image"
+                                                                width="64"
+                                                                height="64"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </picture>
+                                                </div>
+                                                <div class="search-results-product__descr">
+                                                    <div class="search-results-product__descr-header">
+                                                        <div class="search-results-product__info">
+                                                            <span class="product-code">EB3327018</span>
+                                                        </div>
+                                                        <div class="search-results-product__title">SE Unica System+ Антрацит Блок розеточный (2к+з)+usb тип А</div>
+                                                    </div>
+                                                    <div class="search-results-product__descr-bottom">
+                                                        <div class="search-results-product__price">
+                                                            <div class="search-results-product__price-current">1 478,40 ₽</div>
+                                                            <div class="search-results-product__price-originally">1 624,50 ₽</div>
+                                                        </div>
+                                                        <div class="search-results-product__cart cart-buy">
+                                                            <div class="cart-quantity disabled">
+                                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                                    <svg class="icon icon-sm btn__icon">
+                                                                        <use href="img/sprite.svg#minus"></use>
+                                                                    </svg>
+                                                                    <svg class="icon icon-sm btn__icon icon-selected">
+                                                                        <use href="img/sprite.svg#trash"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <input id="" class="input-reset cart-quantity-input" type="text" placeholder="999" value="1" max="999" data-mult="1">
+                                                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                                    <svg class="icon icon-sm btn__icon">
+                                                                        <use href="img/sprite.svg#plus"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <button class="btn-reset btn btn-mini btn-primary cart-in" type="button">
+                                                                <span class="btn__text">В КОРЗИНУ</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 					</div>
 					<div class="gap-md">
 						<div class="cart-delivery-info">
@@ -107,7 +452,7 @@
 									<span class="btn__text">Добавить в смету</span>
 								</button>
 							</div>
-							<div class="cart-content__toolbar-item cart-content-delete">
+							<div class="cart-content__toolbar-item cart-content-delete" data-fancybox data-src="#modal-cart-delete">
 								<button class="btn-reset btn btn-link">
 									<span class="btn__text">Удалить выбранные</span>
 								</button>
@@ -509,13 +854,40 @@
 									</table>
 								</div>
 								<div class="gap-md">
-									<input
-										class="input-reset input"
-										type="text"
-										name=""
-										placeholder="Промокод"
-										autocomplete="off"
-									>
+                                    <div class="input-wrapper input-promocode input-promocode--has-data input-promocode--success">
+                                        <input
+                                                class="input-reset input"
+                                                type="text"
+                                                name=""
+                                                placeholder="Промокод"
+                                                value="ELECTRO100"
+                                                autocomplete="off"
+                                        >
+                                        <button class="btn-reset btn btn-link input-promocode-icon">
+                                            <svg class="icon btn__icon icon-xs">
+                                                <use href="img/sprite.svg#fill-check-rec"></use>
+                                            </svg>
+                                        </button>
+                                        <span class="input-promocode-note">При применении промокода, использование бонусных баллов невозможно, но их начисление за покупку сохраняется</span>
+                                    </div>
+                                    <?/* // promocode error
+                                    <div class="input-wrapper input-promocode input-promocode--has-data input-promocode--error">
+                                        <input
+                                                class="input-reset input"
+                                                type="text"
+                                                name=""
+                                                placeholder="Промокод"
+                                                value="ELECTRO100"
+                                                autocomplete="off"
+                                        >
+                                        <button class="btn-reset btn btn-link input-promocode-icon">
+                                            <svg class="icon btn__icon icon-xs">
+                                                <use href="img/sprite.svg#fill-cross-rec"></use>
+                                            </svg>
+                                        </button>
+                                        <span class="input-promocode-note">Недействительный промокод</span>
+                                    </div>
+                                    */?>
 								</div>
 								<div class="">
 									<table class="table-descr table-descr-sb">
@@ -1893,6 +2265,19 @@
 			</div>
 		</div>
 	</div>
+</div>
+
+<?/* todo (@Masterkov): добавить класс "<body class='has-cart-menu-panel'>" для страниц корзины */?>
+<div class="cart-mobile-menu-panel">
+    <div class="cart-mobile-menu-panel__descr">
+        <div class="cart-mobile-menu-panel__title">Итого</div>
+        <div class="cart-mobile-menu-panel__value">18 276 ₽</div>
+    </div>
+    <div class="cart-mobile-menu-panel__btn">
+        <button class="btn-reset btn btn-primary">
+            <span class="btn__text">Перейти к оформлению</span>
+        </button>
+    </div>
 </div>
 
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/footer.php"); ?>
