@@ -73,7 +73,7 @@
             <img src="img/logo.svg" width="180" height="50" alt="Логотип компании">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">14 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">17 + ui</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">n + ui (всего страниц в макете)</span>
         </span>
@@ -82,7 +82,7 @@
 
     <div>
         <ul>
-            <!--<li class="block-ready">Блок готов</li>-->
+            <li class="block-ready">Блок готов</li>
             <li><a href="index.php" target="_blank">Главная</a></li>
             <br>
 
@@ -102,7 +102,7 @@
             <li><a href="search-searchbar-product-off.php" target="_blank" class="ready">Отсутствующий товар</a></li>
             <br>
 
-            <!--<li class="block-ready">Блок готов</li>-->
+            <li class="block-ready">Блок готов</li>
             <li><a href="cart.php" target="_blank" class="ready">Корзина</a></li>
             <li><a href="cart-category.php" target="_blank" class="ready">Корзина - сортировка по категориям</a></li>
             <li><a href="cart-user.php" target="_blank" class="ready">Корзина - пользователь</a></li>

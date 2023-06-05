@@ -863,6 +863,82 @@ application.prototype.initSliders = function () {
             }
         }
     }
+
+    if ($('.index-slider-wrapper').length) {
+        let indexSlider = null;
+
+        breakpointChecker();
+        $(window).on('resize', breakpointChecker);
+
+        function breakpointChecker() {
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                indexSlider = null;
+
+                indexSlider = new Swiper('.index-slider', {
+                    slidesPerView: 1,
+                    navigation: {
+                        nextEl: '.index-slider .swiper-button-next',
+                        prevEl: '.index-slider .swiper-button-prev',
+                    },
+                    pagination: {
+                        el: ".index-slider .swiper-pagination",
+                    },
+                });
+            }
+            else if (window.matchMedia('(max-width: 991.98px)').matches) {
+                indexSlider = null;
+            }
+        }
+    }
+
+    if ($('.partners-label').length) {
+        const slider = $('[data-partners-label-slider]');
+
+        slider.each(function (i) {
+            slider.eq(i).closest('.partners-label-wrapper').addClass('partners-label-wrapper-' + i);
+
+            const partnersLabelSliderSetting = {
+                slidesPerView: 'auto',
+                slidesPerGroup: 1,
+                spaceBetween: 8,
+                /*loop: true,*/
+                direction: 'horizontal',
+                navigation: {
+                    nextEl: '.partners-label-wrapper-' + i + ' .swiper-button-next',
+                    prevEl: '.partners-label-wrapper-' + i + ' .swiper-button-prev',
+                },
+                breakpoints: {
+                    992: {
+                        spaceBetween: 16,
+                        /*allowTouchMove: false*/
+                    },
+                }
+            };
+            let partnersLabelSlider = new Swiper('.partners-label-wrapper-' + i + ' .partners-label', partnersLabelSliderSetting);
+        });
+    }
+
+    if ($('.collection-slider').length) {
+        let collectionSlider = null;
+
+        breakpointChecker();
+        $(window).on('resize', breakpointChecker);
+
+        function breakpointChecker() {
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                collectionSlider = null;
+            }
+            else if (window.matchMedia('(max-width: 991.98px)').matches) {
+                collectionSlider = null;
+
+                collectionSlider = new Swiper('.collection-slider', {
+                    spaceBetween: 12,
+                    slidesPerView: 'auto',
+                });
+            }
+        }
+
+    }
 };
 
 // Initialize select2 plagin
@@ -1518,7 +1594,7 @@ application.prototype.initCatalogSidebarFilter = function () {
 
 // Initialize catalog sidebar apply filter
 application.prototype.initCatalogSidebarApplyFilter = function () {
-    const trigger = $('.catalog-sidebar-filter__item');
+    let trigger = null;
     let coordsTrigger = null;
     let wTrigger = null;
     let hTrigger = null;
@@ -1527,21 +1603,28 @@ application.prototype.initCatalogSidebarApplyFilter = function () {
         '           <div class="catalog-sidebar-apply-filter__value">2 184 товара</div>' +
         '       </div>';
 
-    trigger.on('click', function () {
-        coordsTrigger = $(this).offset();
-        wTrigger = $(this).outerWidth();
-        hTrigger = $(this).outerHeight();
+    $(document).on('click', '.catalog-sidebar-filter__item .custom-checkbox__input', '.catalog-sidebar-filter__item .custom-checkbox__label-for', function () {
+        let scroll = $(window).scrollTop();
+        trigger = $(this).closest('.custom-checkbox');
+        coordsTrigger = trigger.offset();
+        wTrigger = trigger.outerWidth();
+        hTrigger = trigger.outerHeight();
 
         $('.catalog-sidebar-apply-filter').remove();
         $('body').append(html);
         $('.catalog-sidebar-apply-filter').css({
-           "top": parseInt(coordsTrigger.top + (hTrigger * 0.5)) + "px",
-           "left": parseInt(coordsTrigger.left + wTrigger - 2) + "px",
+           "top": parseInt(coordsTrigger.top + (hTrigger * 0.5)) - scroll + "px",
+           "left": parseInt(coordsTrigger.left + (wTrigger - 2)) + "px",
         });
         setTimeout(function () {
             $('.catalog-sidebar-apply-filter').remove();
         }, 5000);
-    })
+
+    });
+
+    $(window).on('scroll', function () {
+        $('.catalog-sidebar-apply-filter').remove();
+    });
 };
 
 // Initialize check all group
