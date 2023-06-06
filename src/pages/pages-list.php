@@ -83,7 +83,7 @@
     <div>
         <ul>
             <li class="block-ready">Блок готов</li>
-            <li><a href="index.php" target="_blank">Главная</a></li>
+            <li><a href="index.php" target="_blank" class="ready">Главная</a></li>
             <br>
 
             <li class="block-ready">Блок готов</li>
