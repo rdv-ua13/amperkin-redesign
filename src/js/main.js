@@ -21,7 +21,7 @@ application.prototype.init = function () {
     this.initTabsOnscroll();
     this.initCartOnscroll();
     this.initNotification();
-    this.initSwitchContent();
+    /*this.initSwitchContent();*/
     this.initPasswordSwitcher();
     this.initBasicSlider();
     this.initMiniSlider();
@@ -34,7 +34,7 @@ application.prototype.init = function () {
     this.setCardProductActMore();
     this.initReadmore();
     this.initCartQuantity();
-    /*this.initShareLink();*/ // commented
+    /*this.initShareLink();*/
     this.initTooltips();
     this.initMaskedInput();
     this.initDatepicker();
@@ -49,6 +49,7 @@ application.prototype.init = function () {
     this.initCheckedRadioInsurances();
     this.initCatalogSidebarFilterCheckedTags();
     this.initCatalogSidebarFilter();
+    this.initCatalogSidebarSortOptionsContent();
     this.initCatalogSidebarApplyFilter();
     this.initCheckall();
 };
@@ -1590,6 +1591,35 @@ application.prototype.initCatalogSidebarFilter = function () {
             }
         }
     }
+};
+
+// Initialize catalog sidebar sort options content
+application.prototype.initCatalogSidebarSortOptionsContent = function () {
+    $('.catalog-sidebar-filter__options-item').each(function(i, e) {
+        $(e).find('.catalog-sidebar-filter__options-search .input-search').on('input', function() {
+            let text = $(this).val().toLowerCase();
+            $(this).parents('.catalog-sidebar-filter__options-item').find('.catalog-sidebar-filter__item .custom-checkbox__label-for').each(function() {
+                if ($(this).text().toLowerCase().indexOf(text) === -1) {
+                    $(this).closest('.catalog-sidebar-filter__item').fadeOut(200);
+                    $(this).closest('.spoiler').addClass('height-auto');
+                    $(this).closest('.catalog-sidebar-filter__options-content-item').find('.spoiler-trigger').addClass('visually-hidden');
+                } else {
+                    $(this).closest('.catalog-sidebar-filter__item').fadeIn(200);
+                    $(this).closest('.spoiler').removeClass('height-auto');
+                    $(this).closest('.catalog-sidebar-filter__options-content-item').find('.spoiler-trigger').removeClass('visually-hidden');
+                }
+            });
+        });
+
+        $(e).find('.catalog-sidebar-filter__options-search .input-search').siblings('.input-delete-btn').on('click', function(e) {
+            e.preventDefault();
+
+            $(this).closest('.catalog-sidebar-filter__options-content').find('.catalog-sidebar-filter__item').fadeIn(200);
+            $(this).closest('.catalog-sidebar-filter__options-content').find('.spoiler').removeClass('height-auto');
+            $(this).closest('.catalog-sidebar-filter__options-content').find('.spoiler-trigger').removeClass('visually-hidden');
+        });
+    });
+
 };
 
 // Initialize catalog sidebar apply filter

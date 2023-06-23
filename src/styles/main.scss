@@ -470,10 +470,6 @@
 					}
 				}
 			}
-			.card-product {
-				min-width: 100%;
-				width: 100%;
-			}
 		}
 		&__text {
 			color: var(--text-secondary);
@@ -832,6 +828,7 @@
 						width: 36px;
 						min-height: 36px;
 						height: 36px;
+						cursor: pointer;
 						transition: var(--transition);
 
 						&:not(:last-child) {
@@ -1022,6 +1019,12 @@
 							}
 						}
 					}
+				}
+			}
+			&__grid {
+				.card-product {
+					min-width: 100%;
+					width: 100%;
 				}
 			}
 		}
@@ -2041,18 +2044,11 @@
 			}
 			&__layout {
 				.catalog-content__grid {
-					display: block;
-
 					&:not(:last-child) {
 						margin-bottom: 24px;
 					}
 					&.catalog-content__grid-mobile-slider {
-						.swiper {
-							.card-product {
-								min-width: 160px;
-								width: 160px;
-							}
-						}
+						display: block;
 					}
 				}
 				.pagination-more {
