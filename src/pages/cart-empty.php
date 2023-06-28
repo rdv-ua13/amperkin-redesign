@@ -27,7 +27,7 @@
 									name=""
 									placeholder="Введите артикул или название для быстрого добавления товара"
 									autocomplete="off"
-									onclick="$(this).closest('.cart-quick-add').find('.cart-quick-add__results').toggleClass('active');"
+                                    onclick="$(this).closest('.cart-quick-add').toggleClass('active');"
 								>
 								<button class="btn-reset btn btn-link input-delete-btn">
 									<svg class="icon btn__icon icon-xs">

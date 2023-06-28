@@ -42,7 +42,9 @@
 <? else : ?>
 <body>
 <? endif; ?>
-    <header class="header fixed-block">
+    <header class="header fixed-block
+    <? if (strpos($_SERVER["REQUEST_URI"], "ordering.php") || strpos($_SERVER["REQUEST_URI"], "order-confirm.php")) : ?>header--order<? endif; ?>
+    ">
         <div class="header-top">
             <div class="container header-container">
                 <div class="header-top-nav">
@@ -130,6 +132,15 @@
                             height="44"
                             alt="Амперкин - выбор профессионалов"
                         >
+                    </a>
+                </div>
+
+                <div class="header-back">
+                    <a class="header-back-link" href="javascript:;">
+                        <svg class="icon icon-xs">
+                            <use href="img/sprite.svg#chevron-left"></use>
+                        </svg>
+                        <span>Вернуться в корзину</span>
                     </a>
                 </div>
 

@@ -109,6 +109,11 @@
             <li><a href="cart-empty.php" target="_blank" class="ready">Корзина - пусто</a></li>
             <br>
 
+            <!--<li class="block-ready">Блок готов</li>-->
+            <li><a href="ordering.php" target="_blank" class="ready">Оформление заказа</a></li>
+            <li><a href="order-confirm.php" target="_blank" class="ready">Подтверждение заказа</a></li>
+            <br>
+
             <li><a href="ui.php" target="_blank">ui</a></li>
         </ul>
     </div>

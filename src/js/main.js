@@ -1362,13 +1362,13 @@ application.prototype.initInputSearchBehavior = function () {
 application.prototype.initSearchResBehavior = function () {
     $(document).on('click', '.search-results__close', function () {
         $(this).closest('.header-search-results').removeClass('active');
-        $(this).closest('.cart-quick-add__results').removeClass('active');
+        $(this).closest('.cart-quick-add').removeClass('active');
     });
 
     $(document).on('keyup', function (e) {
         if (e.key == 'Escape') {
             $('.search-results__close').closest('.header-search-results').removeClass('active');
-            $('.search-results__close').closest('.cart-quick-add__results').removeClass('active');
+            $('.search-results__close').closest('.cart-quick-add').removeClass('active');
         }
     });
 };
