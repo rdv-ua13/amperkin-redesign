@@ -54,6 +54,7 @@ application.prototype.init = function () {
     this.initCatalogSidebarSortOptionsContent();
     this.initCatalogSidebarApplyFilter();
     this.initCheckall();
+    this.initContactsMap();
 };
 
 // Initialize device check
@@ -1815,6 +1816,47 @@ application.prototype.initCheckall = function () {
                     }
                 }
             });
+        }
+    }
+};
+
+// Initialize contacts map
+application.prototype.initContactsMap = function () {
+    if ($("#orderMap").length) {
+        ymaps.ready(init);
+
+        let myMap;
+
+        function init () {
+            let zoomControl = new ymaps.control.ZoomControl({
+                options: {
+                    size: "large",
+                    float: 'none',
+                    position: {
+                        top: 50,
+                        right: 10,
+                        left: 'auto',
+                    },
+                }
+            });
+
+            // Параметры карты можно задать в конструкторе.
+            myMap = new ymaps.Map(
+                // ID DOM-элемента, в который будет добавлена карта.
+                'orderMap',
+                // Параметры карты.
+                {
+                    // Географические координаты центра отображаемой карты.
+                    center: [55.76, 37.64],
+                    // Масштаб.
+                    zoom: 10,
+                    controls: ['fullscreenControl'],
+                }, {
+                    // Поиск по организациям.
+                    searchControlProvider: 'yandex#search'
+                }
+            );
+            myMap.controls.add(zoomControl);
         }
     }
 };

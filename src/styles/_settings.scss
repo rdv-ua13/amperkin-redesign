@@ -795,7 +795,7 @@ input.disabled {
 .custom-checkbox,
 .custom-radio {
 	display: inline-flex;
-	align-items: center;
+	align-items: flex-start;
 	gap: 8px;
 	line-height: 1;
 	cursor: default;
@@ -1111,6 +1111,26 @@ input.disabled {
 
 	.submit-field-input {
 		position: relative;
+	}
+}
+
+.textarea {
+	min-width: 100%;
+	min-height: 66px;
+	padding: 12px;
+	border: 1px solid var(--gray4-color);
+	border-radius: 4px;
+	resize: none;
+	background: var(--white-color);
+	color: var(--text-primary);
+	font-size: 13px;
+	line-height: 18px;
+
+	&::placeholder {
+		color: var(--text-secondary);
+	}
+	&:focus {
+		border-color: var(--gray3-color);
 	}
 }
 @media (min-width: 992px) {
@@ -2194,9 +2214,6 @@ input.disabled {
 		&-asks {
 			gap: 24px;
 
-			&__header {
-				&-stats {}
-			}
 			&__form {
 				padding: 20px 24px;
 				border-radius: 4px;
@@ -3621,8 +3638,6 @@ input.disabled {
 		flex-direction: column;
 		gap: 16px;
 
-		&__heading {}
-		&__content {}
 		&__more {
 			display: flex;
 			flex-wrap: wrap;

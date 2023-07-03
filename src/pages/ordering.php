@@ -54,7 +54,7 @@
                                     <div class="basic-tabs-content" data-tab-content="tab-order-step-one">
                                         <div class="basic-tabs-content__panel active" data-id="0">
                                             <div class="order-step__data">
-                                                <div class="order-step__notice">
+                                                <div class="order-step-row order-step__notice">
                                                     <svg class="icon icon-sm">
                                                         <use href="img/sprite.svg#user-square"></use>
                                                     </svg>
@@ -156,7 +156,7 @@
                                         </div>
                                         <div class="basic-tabs-content__panel" data-id="1">
                                             <div class="order-step__data">
-                                                <div class="order-step__notice">
+                                                <div class="order-step-row order-step__notice">
                                                     <svg class="icon icon-sm">
                                                         <use href="img/sprite.svg#user-square"></use>
                                                     </svg>
@@ -213,7 +213,7 @@
 
                                                 <div class="order-step-row">
                                                     <div class="titled-input titled-input-label">
-                                                        <div class="input-title">ИНН организации</div>
+                                                        <div class="input-title">ИНН организации (допилить доп инпуты)</div>
                                                         <div class="input-wrapper">
                                                             <input
                                                                     class="input-reset input"
@@ -292,7 +292,7 @@
                                         </div>
                                         <div class="basic-tabs-content__panel" data-id="2">
                                             <div class="order-step__data">
-                                                <div class="order-step__notice">
+                                                <div class="order-step-row order-step__notice">
                                                     <svg class="icon icon-sm">
                                                         <use href="img/sprite.svg#user-square"></use>
                                                     </svg>
@@ -349,7 +349,7 @@
 
                                                 <div class="order-step-row">
                                                     <div class="titled-input titled-input-label">
-                                                        <div class="input-title">ИНН организации</div>
+                                                        <div class="input-title">ИНН организации (допилить доп инпуты)</div>
                                                         <div class="input-wrapper">
                                                             <input
                                                                     class="input-reset input"
@@ -440,7 +440,7 @@
                             </div>
                         </div>
                     </div>
-<?/*
+
                     <div class="gap-lg-plus product-card-mobile-section">
                         <div class="product-card-mobile-section-container">
                             <div class="order-step">
@@ -453,141 +453,279 @@
                                 </div>
                                 <div class="order-step__content">
                                     <div class="basic-tabs">
-                                        <div class="basic-tabs-container" data-tab="tab-order-step-one">
-                                            <div class="basic-tabs-wrapper">
-                                                <div class="basic-tabs-item">
+                                        <div class="basic-tabs-container swiper" data-tab="tab-order-step-two">
+                                            <div class="basic-tabs-wrapper swiper-wrapper">
+                                                <div class="basic-tabs-item swiper-slide">
                                                     <button class="btn-reset btn btn-light basic-tabs-trigger selected" type="button" data-target="0">
-                                                        <span class="btn__text basic-tabs-trigger__text">Физическое лицо</span>
+                                                        <span class="btn__text basic-tabs-trigger__text">Доставка</span>
                                                     </button>
                                                 </div>
-                                                <div class="basic-tabs-item">
+                                                <div class="basic-tabs-item swiper-slide">
                                                     <button class="btn-reset btn btn-light basic-tabs-trigger" type="button" data-target="1">
-                                                        <span class="btn__text basic-tabs-trigger__text">Юридическое лицо</span>
-                                                    </button>
-                                                </div>
-                                                <div class="basic-tabs-item">
-                                                    <button class="btn-reset btn btn-light basic-tabs-trigger" type="button" data-target="2">
-                                                        <span class="btn__text basic-tabs-trigger__text">ИП</span>
+                                                        <span class="btn__text basic-tabs-trigger__text">Самовывоз</span>
                                                     </button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="basic-tabs-content" data-tab-content="tab-order-step-one">
+                                    <div class="basic-tabs-content" data-tab-content="tab-order-step-two">
                                         <div class="basic-tabs-content__panel active" data-id="0">
-                                            <div class="order-step__data">
-                                                <div class="order-step__notice">
-                                                    <svg class="icon icon-sm">
-                                                        <use href="img/sprite.svg#user-square"></use>
-                                                    </svg>
-                                                    <span>
-                                                        Не хотите каждый раз заново заполнять данные?
-                                                        <a class="link-red" href="javascript:;">Войдите в профиль</a>
-                                                    </span>
-                                                </div>
-
+                                            <div class="order-step__data order-step-list">
                                                 <div class="order-step-row">
                                                     <div class="titled-input titled-input-label">
-                                                        <div class="input-title">Номер телефона для связи</div>
-                                                        <div class="input-wrapper">
-                                                            <input
-                                                                    class="input-reset input isPhone"
-                                                                    type="tel"
-                                                                    name=""
-                                                                    value=""
-                                                                    placeholder="+7 (999) 999-99-99"
-                                                                    autocomplete="off"
-                                                            >
-                                                        </div>
-                                                    </div>
-                                                    <div class="titled-input titled-input-label">
-                                                        <div class="input-title">Электронная почта</div>
-                                                        <div class="input-wrapper">
-                                                            <input
-                                                                    class="input-reset input"
-                                                                    type="email"
-                                                                    name=""
-                                                                    value=""
-                                                                    placeholder="mail@mail.ru"
-                                                                    autocomplete="off"
-                                                            >
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="order-step-row">
-                                                    <div class="titled-input titled-input-label">
-                                                        <div class="input-title">Ваше имя</div>
+                                                        <div class="input-title">Укажите адрес доставки</div>
                                                         <div class="input-wrapper">
                                                             <input
                                                                     class="input-reset input"
                                                                     type="text"
                                                                     name=""
                                                                     value=""
-                                                                    placeholder="Ваше имя"
+                                                                    placeholder="Начните вводить адрес"
                                                                     autocomplete="off"
                                                             >
                                                         </div>
                                                     </div>
                                                 </div>
 
+                                                <div class="order-step-row order-step-row-radio">
+                                                    <div class="input-wrapper input-wrapper-radio">
+                                                        <span class="custom-radio">
+                                                            <input
+                                                                    id="order-receive-delivery-one"
+                                                                    class="custom-radio__input checked"
+                                                                    type="checkbox"
+                                                                    name="orderReceiveDelivery"
+                                                                    checked
+                                                            >
+                                                            <label for="order-receive-delivery-one" class="custom-radio__label-for custom-radio__label-for-caption">
+                                                                <span>Доставка курьером</span>
+                                                                <span class="label-caption">560 ₽ + вернем 560 бонусов</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="order-step-row order-step-row-radio">
+                                                    <div class="input-wrapper input-wrapper-radio">
+                                                        <span class="custom-radio">
+                                                            <input
+                                                                    id="order-receive-delivery-two"
+                                                                    class="custom-radio__input"
+                                                                    type="checkbox"
+                                                                    name="orderReceiveDelivery"
+                                                            >
+                                                            <label for="order-receive-delivery-two" class="custom-radio__label-for custom-radio__label-for-caption">
+                                                                <span>СДЭК (самовывоз)</span>
+                                                                <span class="label-caption">490 ₽ + вернем 490 бонусов. Срок доставки: 1 день</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="order-step-row order-step-row-radio">
+                                                    <div class="input-wrapper input-wrapper-radio">
+                                                        <span class="custom-radio">
+                                                            <input
+                                                                    id="order-receive-delivery-three"
+                                                                    class="custom-radio__input"
+                                                                    type="checkbox"
+                                                                    name="orderReceiveDelivery"
+                                                            >
+                                                            <label for="order-receive-delivery-three" class="custom-radio__label-for custom-radio__label-for-caption">
+                                                                <span>Доставка курьером</span>
+                                                                <span class="label-caption">600 ₽ + вернем 600 бонусов. Только в пределах МКАД</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="order-step-row order-step-row-map">
+                                                    <div class="order-map">
+                                                        <div id="orderMap" class="order-map-content"></div>
+                                                    </div>
+                                                </div>
+
                                                 <div class="order-step-row">
-                                                    <div class="titled-input">
-                                                        <div class="input-title semi-bold">Сфера деятельности</div>
-                                                        <div class="input-wrapper input-wrapper-radio">
-                                                            <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-one"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivity"
-                                                                >
-                                                                <label for="order-activity-one" class="custom-radio__label-for">Розничный покупатель</label>
-                                                            </span>
-                                                            <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-two"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivity"
-                                                                >
-                                                                <label for="order-activity-two" class="custom-radio__label-for">Электромонтажник</label>
-                                                            </span>
-                                                            <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-three"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivity"
-                                                                >
-                                                                <label for="order-activity-three" class="custom-radio__label-for">Дизайнер</label>
-                                                            </span>
-                                                            <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-four"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivity"
-                                                                >
-                                                                <label for="order-activity-four" class="custom-radio__label-for">Щитовик</label>
-                                                            </span>
+                                                    <div class="titled-input titled-input-label">
+                                                        <div class="input-title">Комментарий к доставке</div>
+                                                        <div class="input-wrapper">
+                                                            <textarea
+                                                                    class="textarea"
+                                                                    name=""
+                                                                    placeholder="Укажите дополнительные комментарии к доставке"
+                                                            ></textarea>
                                                         </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="order-step-row order-step-row-radio">
+                                                    <div class="input-wrapper input-wrapper-radio">
+                                                        <span class="custom-radio">
+                                                            <label for="order-receive-delivery-one" class="custom-radio__label-for custom-radio__label-for-caption">
+                                                                <span class="semi-bold">Стоимость доставки – 560 ₽</span>
+                                                                <span class="label-caption">Вернем 560 бонусов</span>
+                                                            </label>
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="basic-tabs-content__panel" data-id="1">
-                                            Tabs 2 content
-                                        </div>
-                                        <div class="basic-tabs-content__panel" data-id="2">
-                                            Tabs 3 content
+                                            <div class="order-step__data order-step-list">
+                                                <div class="order-step-row order-step-row-radio">
+                                                    <div class="input-wrapper input-wrapper-radio">
+                                                        <span class="custom-radio">
+                                                            <input
+                                                                    id="order-receive-pickup-one"
+                                                                    class="custom-radio__input checked"
+                                                                    type="checkbox"
+                                                                    name="orderReceivePickup"
+                                                                    checked
+                                                            >
+                                                            <label for="order-receive-pickup-one" class="custom-radio__label-for custom-radio__label-for-caption">
+                                                                <span>Центральный магазин</span>
+                                                                <span class="label-caption">Москва, ул. Маршала Рыбалко, 10<br> Время работы: 09:00 – 20:00</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="order-step-row order-step-row-radio">
+                                                    <div class="input-wrapper input-wrapper-radio">
+                                                        <span class="custom-radio">
+                                                            <input
+                                                                    id="order-receive-pickup-two"
+                                                                    class="custom-radio__input"
+                                                                    type="checkbox"
+                                                                    name="orderReceivePickup"
+                                                            >
+                                                            <label for="order-receive-pickup-two" class="custom-radio__label-for custom-radio__label-for-caption">
+                                                                <span>Садовое кольцо</span>
+                                                                <span class="label-caption">Москва, ул. Тверская, 114, корп. 2<br> Время работы: 10:00 – 21:00</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="order-step-row order-step-row-radio">
+                                                    <div class="input-wrapper input-wrapper-radio">
+                                                        <span class="custom-radio">
+                                                            <input
+                                                                    id="order-receive-pickup-three"
+                                                                    class="custom-radio__input"
+                                                                    type="checkbox"
+                                                                    name="orderReceivePickup"
+                                                            >
+                                                            <label for="order-receive-pickup-three" class="custom-radio__label-for custom-radio__label-for-caption">
+                                                                <span>Ленинградское ш.</span>
+                                                                <span class="label-caption">Москва, ш. Ленинградское, 123/1<br> Время работы: 10:00 – 21:00</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="order-step-row">
+                                                    <div class="titled-input titled-input-label">
+                                                        <div class="input-title">Комментарий к доставке</div>
+                                                        <div class="input-wrapper">
+                                                            <textarea
+                                                                    class="textarea"
+                                                                    name=""
+                                                                    placeholder="Укажите дополнительные комментарии к доставке"
+                                                            ></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>*/?>
+                    </div>
+
+                    <div class="gap-lg-plus product-card-mobile-section">
+                        <div class="product-card-mobile-section-container">
+                            <div class="order-step">
+                                <div class="order-step__header">
+                                    <div class="order-step__title-pre">
+                                        <span>03</span>
+                                        <span>—</span>
+                                    </div>
+                                    <div class="order-step__title h4">Выберите способ оплаты</div>
+                                </div>
+                                <div class="order-step__content">
+                                    <div class="order-step__data order-step-list">
+                                        <div class="order-step-row order-step-row-radio">
+                                            <div class="input-wrapper input-wrapper-radio">
+                                                <span class="custom-radio">
+                                                    <input
+                                                            id="order-payment-method-one"
+                                                            class="custom-radio__input checked"
+                                                            type="checkbox"
+                                                            name="orderPaymentMethod"
+                                                            checked
+                                                    >
+                                                    <label for="order-payment-method-one" class="custom-radio__label-for custom-radio__label-for-caption">
+                                                        <span>При получениии (наличными или картой)</span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="order-step-row order-step-row-radio">
+                                            <div class="input-wrapper input-wrapper-radio">
+                                                <span class="custom-radio">
+                                                    <input
+                                                            id="order-payment-method-two"
+                                                            class="custom-radio__input"
+                                                            type="checkbox"
+                                                            name="orderPaymentMethod"
+                                                    >
+                                                    <label for="order-payment-method-two" class="custom-radio__label-for custom-radio__label-for-payment-card">
+                                                        <span>Банковской картой на сайте</span>
+                                                        <span class="payment-card">
+                                                            <span class="payment-card__item">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image icon-visa"
+                                                                        src="img/ps-visa.svg"
+                                                                        width="32"
+                                                                        height="11"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </span>
+                                                            <span class="payment-card__item">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image icon-mastercard"
+                                                                        src="img/ps-mastercard.svg"
+                                                                        width="30"
+                                                                        height="16"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </span>
+                                                            <span class="payment-card__item">
+                                                                <img
+                                                                        loading="lazy"
+                                                                        class="image icon-mir"
+                                                                        src="img/ps-mir.svg"
+                                                                        width="40"
+                                                                        height="10"
+                                                                        alt="Изображение блока"
+                                                                >
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-step__data order-step-bonus">
+                                        <div class="gap-md h5">Использовать бонусные баллы</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
 				</div>
 				<div class="order-sidebar">
@@ -698,14 +836,6 @@
 					</div>
 				</div>
 			</form>
-		</div>
-
-		<div class="gap-xl product-card-mobile-section">
-			<div class="product-card-mobile-section-container">
-				<div class="gap-lg">
-					<div class="h2">отсюда поля для мобилы</div>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
