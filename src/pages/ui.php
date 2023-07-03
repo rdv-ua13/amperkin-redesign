@@ -203,6 +203,9 @@
             .gap-lg {
                 margin-bottom: 32px !important;
             }
+            .gap-lg-plus {
+                margin-bottom: 48px !important;
+            }
             .gap-xl {
                 margin-bottom: 64px !important;
             }
@@ -214,6 +217,7 @@
             }
             .gap-md,
             .gap-lg,
+            .gap-lg-plus,
             .gap-xl {
                 margin-bottom: 16px !important;
             }

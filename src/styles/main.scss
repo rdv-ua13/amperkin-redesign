@@ -3753,6 +3753,8 @@
 				}
 			}
 			&-descr {
+				gap: 8px;
+
 				&__title,
 				&__price {
 					font-size: 12px;
@@ -3767,6 +3769,58 @@
 					font-weight: 600;
 					white-space: nowrap;
 				}
+			}
+		}
+	}
+	&-step {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		&__header {
+			display: flex;
+			align-items: flex-start;
+			gap: 8px;
+		}
+		&__content {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+		&__title {
+			&-pre {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+				color: var(--text-secondary);
+				font-size: 12px;
+			}
+		}
+		&__data {
+			display: flex;
+			flex-direction: column;
+		}
+		&__notice {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			padding: 12px 16px;
+			border-radius: 4px;
+			border: 1px solid #FFE58F;
+			background: #FFFBE6;
+			font-weight: 600;
+
+			.icon {
+				fill: #FAAD14;
+			}
+		}
+		&-row {
+			display: flex;
+			gap: 16px;
+
+			.titled-input,
+			.input-wrapper {
+				flex: 1;
 			}
 		}
 	}
@@ -3794,6 +3848,23 @@
 				}
 			}
 		}
+		&-step {
+			&__title {
+				&,
+				&-pre {
+					line-height: 24px;
+				}
+			}
+			&__data {
+				gap: 20px;
+				padding: 20px;
+				border-radius: 4px;
+				box-shadow: 0 8px 12px 0 rgba(128, 129, 133, 0.16);
+			}
+			&-row {
+				align-items: flex-end;
+			}
+		}
 	}
 }
 @media (min-width: 1200px) {
@@ -3811,12 +3882,6 @@
 				}
 			}
 		}
-		&-content {}
-	}
-}
-@media (max-width: 1199.98px) {
-	.order {
-		&-content {}
 	}
 }
 @media (max-width: 991.98px) {
@@ -3826,7 +3891,34 @@
 		&-sidebar {
 			display: none;
 		}
-		&-content {}
+		&-step {
+			&__title {
+				&,
+				&-pre {
+					line-height: 19px;
+				}
+			}
+			&__data {
+				gap: 16px;
+			}
+			&-row {
+				flex-direction: column;
+			}
+
+			.basic-tabs {
+				margin: 0 -16px;
+				width: 100vw;
+
+				&-item {
+					&:first-child {
+						margin-left: 16px;
+					}
+					&:last-child {
+						margin-right: 16px;
+					}
+				}
+			}
+		}
 	}
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -3835,7 +3927,6 @@
 			min-width: 305px;
 			width: 305px;
 		}
-		&-content {}
 	}
 }
 

@@ -18,6 +18,7 @@ application.prototype.init = function () {
     this.initFancyBehavior();
     this.initClientTypeBehavior();
     this.initTabs();
+    this.initBasicTabs();
     this.initTabsOnscroll();
     this.initCartOnscroll();
     this.initNotification();
@@ -26,6 +27,7 @@ application.prototype.init = function () {
     this.initBasicSlider();
     this.initMiniSlider();
     this.initSwiperTabs();
+    this.initSwiperBasicTabs();
     this.initTagbarSlider();
     this.initSliders();
     this.initSelect2();
@@ -416,6 +418,26 @@ application.prototype.initTabs = function () {
     }
 };
 
+// Initialize basic tabs
+application.prototype.initBasicTabs = function () {
+    if ($('.basic-tabs').length) {
+        const tabsContainer = $('.basic-tabs-container');
+        let currentSelected = 0;
+        let currentTabBlockId = null;
+
+        $('.basic-tabs-item').on('click', function () {
+            currentTabBlockId = $(this).closest(tabsContainer).data('tab');
+
+            $(".basic-tabs-container[data-tab='" + currentTabBlockId + "']").find('.basic-tabs-trigger').removeClass('selected');
+            $(this).find('.basic-tabs-trigger').removeClass('notice').addClass('selected');
+
+            currentSelected = $(this).find(".basic-tabs-trigger").data("target");
+            $(".basic-tabs-content[data-tab-content='" + currentTabBlockId + "']").find('.basic-tabs-content__panel').removeClass('active');
+            $(".basic-tabs-content[data-tab-content='" + currentTabBlockId + "']").find(".basic-tabs-content__panel[data-id='" + currentSelected + "']").addClass('active');
+        });
+    }
+};
+
 // Initialize tabs on scroll
 application.prototype.initTabsOnscroll = function () {
     if ($('[data-fixed-toolbar-coord]').length) {
@@ -667,6 +689,23 @@ application.prototype.initSwiperTabs = function () {
             slidesPerView: "auto",
         };
         let swiperTabs = new Swiper(".tabs-container.swiper", swiperTabSettings);
+    }
+};
+
+// Initialize swiper basic-tabs
+application.prototype.initSwiperBasicTabs = function () {
+    if ($(".basic-tabs-container.swiper").length) {
+        const swiperTabSettings = {
+            slidesPerView: "auto",
+            spaceBetween: 8,
+            breakpoints: {
+                992: {
+                    spaceBetween: 12,
+                },
+            }
+
+        };
+        let swiperTabs = new Swiper(".basic-tabs-container.swiper", swiperTabSettings);
     }
 };
 
@@ -1166,7 +1205,7 @@ application.prototype.initTooltips = function () {
 
 // Mobile number mask
 application.prototype.initMaskedInput = function () {
-    $(".isPhone").mask("+7-999-999-99-99", { autoclear: false });
+    $(".isPhone").mask("+7 (999) 999-99-99", { autoclear: false });
 };
 
 // Init datepicker
@@ -1529,6 +1568,7 @@ application.prototype.initCheckedRadioInsurances = function () {
             let name = $(this).attr('name');
 
             $('.custom-radio__input[name="' + name + '"]').removeClass('checked');
+            $('.custom-radio__input[name="' + name + '"]').not(this).prop('checked', false);
             $(this).addClass('checked');
         });
     }
