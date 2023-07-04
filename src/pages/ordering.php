@@ -211,9 +211,9 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="order-step-row">
+                                                <div class="order-step-row" data-org-container>
                                                     <div class="titled-input titled-input-label">
-                                                        <div class="input-title">ИНН организации (допилить доп инпуты)</div>
+                                                        <div class="input-title">ИНН организации</div>
                                                         <div class="input-wrapper">
                                                             <input
                                                                     class="input-reset input"
@@ -222,6 +222,7 @@
                                                                     value=""
                                                                     placeholder="Найти по ИНН"
                                                                     autocomplete="off"
+                                                                    data-org-trigger
                                                             >
                                                         </div>
                                                     </div>
@@ -347,9 +348,9 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="order-step-row">
+                                                <div class="order-step-row" data-org-container>
                                                     <div class="titled-input titled-input-label">
-                                                        <div class="input-title">ИНН организации (допилить доп инпуты)</div>
+                                                        <div class="input-title">ИНН организации</div>
                                                         <div class="input-wrapper">
                                                             <input
                                                                     class="input-reset input"
@@ -358,6 +359,7 @@
                                                                     value=""
                                                                     placeholder="Найти по ИНН"
                                                                     autocomplete="off"
+                                                                    data-org-trigger
                                                             >
                                                         </div>
                                                     </div>
@@ -720,13 +722,119 @@
 
                                     <div class="order-step__data order-step-bonus">
                                         <div class="gap-md h5">Использовать бонусные баллы</div>
+
+                                        <div class="order-step-bonus-action">
+                                            <div class="order-step-bonus-action__item order-step-bonus-available">
+                                                <table class="table-descr table-descr-sb">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span>Доступно баллов</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="bonus">
+                                                                <span class="bonus__value">2 726</span>
+                                                                <svg class="icon">
+                                                                    <use href="img/sprite.svg#fill-bonus"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="order-step-bonus-action__item order-step-bonus-debit">
+                                                <span class="order-step-bonus-debit__item">Оплатить баллами</span>
+                                                <div class="input-wrapper order-step-bonus-debit__item">
+                                                    <input
+                                                            id="debitInputValue"
+                                                            class="input-reset input"
+                                                            type="text"
+                                                            name=""
+                                                            value=""
+                                                            placeholder="0"
+                                                            autocomplete="off"
+                                                    >
+                                                    <svg class="icon">
+                                                        <use href="img/sprite.svg#fill-bonus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="order-step-bonus-action__item order-step-bonus-debit-range range-slider">
+                                                <div id="debitRange"></div>
+                                                <div class="range-slider__values">
+                                                    <span id="debitRangeValueMin" class="range-slider__val">0</span>
+                                                    <span id="debitRangeValueMax" class="range-slider__val">2726</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <div class="gap-lg-plus">
+                        <div class="order-step-total">
+                            <div class="gap-xs">
+                                <table class="table-descr table-descr-sb">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="h5">Итого</span>
+                                        </td>
+                                        <td>
+                                            <span class="h4">14 263 ₽</span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="gap-md">
+                                <table class="table-descr table-descr-sb">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>4 товара</span>
+                                        </td>
+                                        <td>
+                                            <span class="semi-bold">18 276 ₽</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>Доставка</span>
+                                        </td>
+                                        <td>
+                                            <span class="semi-bold">560 ₽</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>Вес заказа</span>
+                                        </td>
+                                        <td>
+                                            <span class="semi-bold">3,4 кг</span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="order-sidebar-ordering">
+                                <button class="btn-reset btn btn-primary">
+                                    <span class="btn__text">Подтвердить заказ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="seo-block">
+                        <div class="seo-block__descr">
+                            <p>Оформляя заказ, Вы принимаете условия <a class="link-red" href="javascript:;">оферты</a> и даете согласие на обработку персональных данных в соответствии с <a class="link-red" href="javascript:;">Положением о персональных данных</a>.</p>
+                            <p>С подробными условиями доставки можно ознакомиться на странице <a class="link-red" href="javascript:;">Доставка</a>.</p>
+                        </div>
+                    </div>
 				</div>
 				<div class="order-sidebar">
 					<div class="order-sidebar-gap">

@@ -30,6 +30,7 @@
     <script defer src="js/readmore.js"></script>    <!-- readmore -->
     <script defer src="js/flatpickr.min.js"></script>    <!-- flatpickr -->
     <script defer src="js/ru.js"></script>    <!-- flatpickr -->
+    <script defer src="js/nouislider.js"></script>    <!-- nouislider -->
 
 	<?/* Подключение библиотек (объединённо)
     <script defer src="js/libs.min.js"></script> */?>

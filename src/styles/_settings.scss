@@ -5452,6 +5452,65 @@ input.disabled {
 	}
 }
 
+.range-slider {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+
+	.noUi-base {
+		cursor: pointer;
+	}
+	.noUi-horizontal {
+		height: 3px;
+		margin-top: 8px;
+		margin-bottom: 8px;
+
+		.noUi-handle {
+			width: 16px;
+			height: 16px;
+			right: -8px;
+		}
+	}
+	.noUi-target {
+		border: none;
+		border-radius: 2px;
+		box-shadow: none;
+		background-color: var(--gray4-color);
+	}
+	.noUi-connects {
+		border-radius: 5px;
+		overflow: visible;
+	}
+	.noUi-connect {
+		background-color: var(--yellow-color);
+	}
+	.noUi-handle {
+		border: none;
+		border-radius: 50%;
+		box-shadow: none;
+		background-color: var(--yellow-color);
+		cursor: grab;
+
+		&::before,
+		&::after {
+			content: none;
+		}
+	}
+
+	&__values {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__val {
+		font-size: 12px;
+
+		&:last-child {
+			color: var(--text-secondary);
+		}
+	}
+}
+
 .pre-footer {
 	background-color: var(--gray6-color);
 

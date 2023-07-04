@@ -3886,7 +3886,75 @@
 			}
 		}
 		&-bonus {
+			&-action {
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
 
+				&__item {
+
+				}
+				.table-descr {
+					td {
+						font-size: 12px;
+						line-height: 16px;
+
+						&:first-child {
+							color: var(--text-primary);
+						}
+					}
+				}
+			}
+			&-available {
+				.table-descr {
+					min-width: 210px;
+					width: 210px;
+				}
+			}
+			&-debit {
+				display: flex;
+				align-items: center;
+				gap: 4px;
+
+				&,
+				&-range {
+					min-width: 343px;
+					width: 343px;
+				}
+				&__item {
+					&:first-child {
+						min-width: 40%;
+						width: 40%;
+					}
+				}
+				.input-wrapper {
+					min-width: calc(60% - 4px);
+					width: calc(60% - 4px);
+
+					.input {
+						width: 100%;
+						padding-right: 40px;
+					}
+					.icon {
+						position: absolute;
+						top: 12px;
+						right: 12px;
+						fill: var(--green-color);
+					}
+				}
+			}
+		}
+		&-total {
+			.table-descr {
+				td {
+					&:first-child {
+						color: var(--text-primary);
+					}
+					&:last-child {
+						font-weight: 600;
+					}
+				}
+			}
 		}
 	}
 	&-map {
@@ -3968,6 +4036,10 @@
 					}
 				}
 			}
+			&-total {
+				min-width: 380px;
+				width: 380px;
+			}
 		}
 		&-map {
 			width: calc(100% + 40px);
@@ -4037,6 +4109,11 @@
 					}
 				}
 			}
+			&-total {
+				min-width: 100%;
+				max-width: 380px;
+				width: 100%;
+			}
 
 			.basic-tabs {
 				margin: 0 -16px;
@@ -4065,6 +4142,23 @@
 			min-width: 305px;
 			width: 305px;
 		}
+	}
+}
+
+.bonus {
+	display: inline-flex;
+	align-items: center;
+	gap: 2px;
+	color: var(--text-primary);
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.4;
+
+	&__value {
+		white-space: nowrap;
+	}
+	.icon {
+		fill: var(--green-color);
 	}
 }
 

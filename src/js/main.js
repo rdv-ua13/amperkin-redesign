@@ -55,6 +55,8 @@ application.prototype.init = function () {
     this.initCatalogSidebarApplyFilter();
     this.initCheckall();
     this.initContactsMap();
+    this.initOrderBonusDebit();
+    this.initAddingOrgData();
 };
 
 // Initialize device check
@@ -523,32 +525,6 @@ application.prototype.initNotification = function () {
         } else {
             actionNotice.removeClass('added');
         }
-
-        // favorites
-        // estimate
-        // compare
-        // todo - finish logic (change content onclick)
-        /*switch (currentDataValue) {
-            case 'favorites':
-                actionNotice
-                    .append(
-                        `<div class='action-notice__view'>
-                            <svg class='icon'>
-                                <use href='img/sprite.svg#bookmarks'></use>
-                            </svg>
-                        </div>
-                        <div class='action-notice__descr'>
-                            <div class='action-notice__title'>Товар добавлен в избранное</div>
-                            <div class='action-notice__text'>В списке 2 товара</div>
-                        </div>`
-                    );
-                break;
-            case 'estimate':
-                break;
-            case 'compare':
-                break;
-            default: ;
-        }*/
 
         showNotification();
         setTimeout(hideNotification, 5000);
@@ -1684,8 +1660,8 @@ application.prototype.initCatalogSidebarApplyFilter = function () {
         $('.catalog-sidebar-apply-filter').remove();
         $('body').append(html);
         $('.catalog-sidebar-apply-filter').css({
-           "top": parseInt(coordsTrigger.top + (hTrigger * 0.5)) - scroll + "px",
-           "left": parseInt(coordsTrigger.left + (wTrigger - 2)) + "px",
+           'top': parseInt(coordsTrigger.top + (hTrigger * 0.5)) - scroll + 'px',
+           'left': parseInt(coordsTrigger.left + (wTrigger - 2)) + 'px',
         });
         setTimeout(function () {
             $('.catalog-sidebar-apply-filter').remove();
@@ -1822,7 +1798,7 @@ application.prototype.initCheckall = function () {
 
 // Initialize contacts map
 application.prototype.initContactsMap = function () {
-    if ($("#orderMap").length) {
+    if ($('#orderMap').length) {
         ymaps.ready(init);
 
         let myMap;
@@ -1830,7 +1806,7 @@ application.prototype.initContactsMap = function () {
         function init () {
             let zoomControl = new ymaps.control.ZoomControl({
                 options: {
-                    size: "large",
+                    size: 'large',
                     float: 'none',
                     position: {
                         top: 50,
@@ -1858,5 +1834,117 @@ application.prototype.initContactsMap = function () {
             );
             myMap.controls.add(zoomControl);
         }
+    }
+};
+
+// Initialize range slider ".order-step-bonus-debit-range"
+application.prototype.initOrderBonusDebit = function () {
+    if ($('.order-step-bonus-debit-range').length) {
+        let slider = $('#debitRange')[0];
+        let minVal = $('#debitRangeValueMin');
+        let maxVal = $('#debitRangeValueMax');
+        let maxValData = parseInt(maxVal.text());
+        let inputVal = $('#debitInputValue');
+        let minValCurrent;
+
+        noUiSlider.create(slider, {
+            start: 0,
+            step: 1,
+            connect: 'lower',
+            range: {
+                'min': 0,
+                'max': maxValData,
+            }
+        });
+
+        slider.noUiSlider.on('update', function () {
+            minValCurrent = parseInt(slider.noUiSlider.get());
+            minVal.text(minValCurrent);
+            inputVal.val(minValCurrent)
+        });
+
+        inputVal.on('input', function () {
+            if ($(this).val() === '' || $(this).val() === null) {
+                $(this).removeClass('has-data');
+                $(this).closest('.input-search-wrapper').removeClass('has-data');
+                slider.noUiSlider.set(0);
+            } else if ($(this).val() !== '' && $(this).val() !== null) {
+                $(this).addClass('has-data');
+                $(this).closest('.input-search-wrapper').addClass('has-data');
+                slider.noUiSlider.set($(this).val());
+            }
+        });
+    }
+};
+
+// Initialize adding organization data
+application.prototype.initAddingOrgData = function () {
+    if ($('[data-org-trigger]').length) {
+        let trigger = $('[data-org-trigger]');
+
+        let kppOrg = `<div class="titled-input titled-input-label" data-org-kpp>
+                            <div class="input-title">КПП организации</div>
+                            <div class="input-wrapper">
+                                <input
+                                        class="input-reset input"
+                                        type="text"
+                                        name=""
+                                        value=""
+                                        placeholder="КПП организации"
+                                        autocomplete="off"
+                                >
+                            </div>
+                        </div>`;
+        let titleAddressOrg = `<div class="order-step-row" data-org-title>
+                            <div class="titled-input titled-input-label">
+                                <div class="input-title">Название организации</div>
+                                <div class="input-wrapper">
+                                    <input
+                                            class="input-reset input"
+                                            type="text"
+                                            name=""
+                                            value=""
+                                            placeholder="Название организации"
+                                            autocomplete="off"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-step-row" data-org-legal-address>
+                            <div class="titled-input titled-input-label">
+                                <div class="input-title">Юридический адрес</div>
+                                <div class="input-wrapper">
+                                    <input
+                                            class="input-reset input"
+                                            type="text"
+                                            name=""
+                                            value=""
+                                            placeholder="Юридический адрес"
+                                            autocomplete="off"
+                                    >
+                                </div>
+                            </div>
+                        </div>`;
+
+        trigger.on('input', function () {
+            trigger.each(function (i) {
+                if ($(this).val() === '' || $(this).val() === null) {
+                    $(this).removeClass('has-data');
+                    $(this).closest('.order-step__data').find('[data-org-kpp]').remove();
+                    $(this).closest('.order-step__data').find('[data-org-title]').remove();
+                    $(this).closest('.order-step__data').find('[data-org-legal-address]').remove();
+                } else if ($(this).val() !== '' && $(this).val() !== null) {
+                    $(this).addClass('has-data');
+
+                    if (!$(this).closest('.order-step__data').find('[data-org-kpp]').length &&
+                        !$(this).closest('.order-step__data').find('[data-org-title]').length &&
+                        !$(this).closest('.order-step__data').find('[data-org-legal-address]').length)
+                    {
+                        $(this).closest('[data-org-container]').append(kppOrg);
+                        $(this).closest('[data-org-container]').after(titleAddressOrg);
+                    }
+                }
+            });
+        });
     }
 };
