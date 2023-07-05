@@ -770,6 +770,24 @@
                     </svg>
                     <!--end ui content-->
                 </span>
+                <span class="tooltip"
+                      data-tippy-content="#gift"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#gift"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#percentage-circle"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#percentage-circle"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
             </div>
             <div class="tooltip-ui-set tooltip-ui-iconset">
                 <span class="tooltip"
