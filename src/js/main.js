@@ -57,6 +57,7 @@ application.prototype.init = function () {
     this.initContactsMap();
     this.initOrderBonusDebit();
     this.initAddingOrgData();
+    this.initOpenPromocode();
 };
 
 // Initialize device check
@@ -363,6 +364,9 @@ application.prototype.initFancyBehavior = function () {
     $(document).on('click', function (e) {
         if ($('.fancybox__slide.is-selected.has-inline').is(e.target) || $('.fancybox__slide .carousel__button.is-close').is(e.target)) {
             body.removeClass('overflow-hidden');
+            $('[data-open-promocode]').removeClass('selected');
+            $('[data-open-promocode]').closest('.modal-order-promocode__list').removeClass('has-active');
+            $('[data-open-promocode]').closest('.modal-order-promocode__item').removeClass('active');
             return application.prototype.enableScroll();
         }
     });
@@ -1945,6 +1949,22 @@ application.prototype.initAddingOrgData = function () {
                     }
                 }
             });
+        });
+    }
+};
+
+// Initialize open promocode on click
+application.prototype.initOpenPromocode = function () {
+    if ($('[data-open-promocode]').length) {
+        let trigger = $('[data-open-promocode]');
+
+        trigger.on('click', function () {
+            if (!$(this).closest('.modal-order-promocode__list').hasClass('has-active')) {
+                $(this).addClass('selected');
+                $(this).closest('.modal-order-promocode__list').addClass('has-active');
+                $(this).closest('.modal-order-promocode__list').find('.modal-order-promocode__item').removeClass('active');
+                $(this).closest('.modal-order-promocode__item').addClass('active');
+            }
         });
     }
 };

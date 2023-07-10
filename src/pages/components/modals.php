@@ -821,3 +821,89 @@
         </div>
     </div>
 </div>
+
+<?/* order confirm promocode */?>
+<div id="modal-order-promocode" class="modal modal-order-promocode modal-big">
+    <div class="modal__content">
+        <div class="modal__content-item">
+            <div class="modal__header">
+                <div class="modal__title h4">Выберите промокод в подарок</div>
+            </div>
+
+            <div class="modal-order-promocode__list">
+                <div class="modal-order-promocode__item">
+                    <div class="modal-order-promocode__descr">
+                        <div class="modal-order-promocode__title h5">Скидка 10% на серию выключателей BIRONI</div>
+                        <div class="modal-order-promocode__subtitle">Промокод можно использовать при сумме заказа от 1500 ₽</div>
+                    </div>
+                    <div class="modal-order-promocode__btn">
+                        <button class="btn-reset btn btn-primary switch-content" data-open-promocode>
+                            <span class="btn__text text-default">открыть промокод</span>
+                            <span class="btn__text text-selected">bironi10sale</span>
+                            <span class="icon-selected tooltip" data-tippy-content="Скопировать промокод">
+                                <svg class="icon btn__icon">
+                                    <use href="img/sprite.svg#copy"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-order-promocode__item">
+                    <div class="modal-order-promocode__descr">
+                        <div class="modal-order-promocode__title h5">Скидка 500 ₽ на первый заказ в приложении</div>
+                        <div class="modal-order-promocode__subtitle">Промокод можно использовать при сумме заказа от 2000 ₽</div>
+                    </div>
+                    <div class="modal-order-promocode__btn">
+                        <button class="btn-reset btn btn-primary switch-content" data-open-promocode>
+                            <span class="btn__text text-default">открыть промокод</span>
+                            <span class="btn__text text-selected">bironi15sale</span>
+                            <span class="icon-selected tooltip" data-tippy-content="Скопировать промокод">
+                                <svg class="icon btn__icon">
+                                    <use href="img/sprite.svg#copy"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-order-promocode__item">
+                    <div class="modal-order-promocode__descr">
+                        <div class="modal-order-promocode__title h5">Скидка 10% на серию выключателей BIRONI</div>
+                        <div class="modal-order-promocode__subtitle">Промокод можно использовать при сумме заказа от 1500 ₽</div>
+                    </div>
+                    <div class="modal-order-promocode__btn">
+                        <button class="btn-reset btn btn-primary switch-content" data-open-promocode>
+                            <span class="btn__text text-default">открыть промокод</span>
+                            <span class="btn__text text-selected">bironi20sale</span>
+                            <span class="icon-selected tooltip" data-tippy-content="Скопировать промокод">
+                                <svg class="icon btn__icon">
+                                    <use href="img/sprite.svg#copy"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-order-promocode__item">
+                    <div class="modal-order-promocode__descr">
+                        <div class="modal-order-promocode__title h5">Скидка 10% на серию выключателей BIRONI</div>
+                        <div class="modal-order-promocode__subtitle">Промокод можно использовать при сумме заказа от 1500 ₽</div>
+                    </div>
+                    <div class="modal-order-promocode__btn">
+                        <button class="btn-reset btn btn-primary switch-content" data-open-promocode>
+                            <span class="btn__text text-default">открыть промокод</span>
+                            <span class="btn__text text-selected">bironi25sale</span>
+                            <span class="icon-selected tooltip" data-tippy-content="Скопировать промокод">
+                                <svg class="icon btn__icon">
+                                    <use href="img/sprite.svg#copy"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-order-promocode__caption">
+                <span>Вы можете выбрать только один промокод. Остальные будут заблокированы.</span>
+            </div>
+        </div>
+    </div>
+</div>

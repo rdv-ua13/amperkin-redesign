@@ -30,7 +30,7 @@
                                             <span>Выберите один из подарочных промокодов и используйте его в следующих заказах</span>
                                         </span>
                                         <span class="order-step__gift-promocode">
-                                            <button class="btn-reset btn btn-primary">
+                                            <button class="btn-reset btn btn-primary" data-fancybox data-src="#modal-order-promocode">
                                                 <span class="btn__text">Выбрать промокод</span>
                                             </button>
                                         </span>

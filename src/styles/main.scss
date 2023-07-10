@@ -44,6 +44,15 @@
 	}
 }
 
+body:not(.is-using-mouse) {
+	.fancybox {
+		&__container {
+			.carousel__button:focus {
+				box-shadow: none;
+			}
+		}
+	}
+}
 .fancybox {
 	&__html5video {
 		outline: none;

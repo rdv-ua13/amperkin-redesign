@@ -3302,7 +3302,7 @@ input.disabled {
 	display: none;
 	padding: 0;
 	border: 1px solid var(--text9-color);
-	border-radius: 16px;
+	border-radius: 8px;
 	box-shadow: 0 14px 21px -1px rgba(40, 41, 41, 0.08);
 	background: var(--white-color);
 	cursor: default!important;
@@ -3489,6 +3489,54 @@ input.disabled {
 			color: var(--text-primary);
 		}
 	}
+
+	&-order-promocode {
+		&__list {
+			display: flex;
+			flex-direction: column;
+
+			&.has-active {
+				.modal-order-promocode__item {
+					&:not(.active) {
+						opacity: 0.5;
+						pointer-events: none;
+						user-select: none;
+					}
+					&.active {
+						border-color: var(--yellow-color);
+						background-color: transparent;
+					}
+
+					.btn {
+						background-color: var(--gray5-color);
+						color: var(--text-primary);
+					}
+				}
+			}
+		}
+		&__item {
+			display: flex;
+			border: 2px solid transparent;
+			border-radius: 4px;
+			background-color: var(--gray6-color);
+
+			.btn {
+				.toastbox {
+					display: none;
+				}
+			}
+		}
+		&__descr {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+			flex: 1;
+		}
+		&__caption {
+			color: var(--text-caption);
+			font-size: 12px;
+		}
+	}
 }
 @media (min-width: 768px) {
 	.modal {
@@ -3499,6 +3547,10 @@ input.disabled {
 		&.modal-big {
 			min-width: 600px;
 			width: 600px;
+		}
+		&.modal-order-promocode {
+			min-width: 720px;
+			width: 720px;
 		}
 		&__content {
 			&-item {
@@ -3533,6 +3585,23 @@ input.disabled {
 						}
 					}
 				}
+			}
+		}
+		&-order-promocode {
+			&__list {
+				gap: 12px;
+
+				&:not(:last-child) {
+					margin-bottom: 24px;
+				}
+			}
+			&__item {
+				align-items: center;
+				gap: 20px;
+				padding: 18px 22px;
+			}
+			.btn {
+				min-width: 170px;
 			}
 		}
 	}
@@ -3604,6 +3673,27 @@ input.disabled {
 					flex: 1;
 					min-width: calc((100% - 12px) / 2);
 					width: calc((100% - 12px) / 2);
+				}
+			}
+		}
+
+		&-order-promocode {
+			.modal__header:not(:last-child),
+			.modal__list:not(:last-child) {
+				margin-bottom: 16px;
+			}
+			&__list {
+				gap: 8px;
+			}
+			&__item {
+				flex-direction: column;
+				gap: 16px;
+				padding: 10px 14px;
+			}
+			&__btn {
+				.btn {
+					min-width: 100%;
+					width: 100%;
 				}
 			}
 		}
