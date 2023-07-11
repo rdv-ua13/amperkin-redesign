@@ -50,9 +50,9 @@
                             <div class="h1 catalog-heading__title">Контакты</div>
                         </div>
                     </div>
-                    <div class="gap-lg-plus">
+                    <div class="gap-lg">
                         <div class="contacts-address">
-                            <div class="content-wrapper-mobile-section">
+                            <div class="gap-sm content-wrapper-mobile-section">
                                 <div class="content-wrapper-mobile-section-container">
                                     <div class="cp-item cp-item-column">
                                         <div class="gap-sm">
@@ -108,7 +108,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="gap-sm btn-g">
+                                        <div class="btn-g">
                                             <button class="btn-reset btn btn-primary">
                                                 <span class="btn__text">Обратная связь</span>
                                             </button>
@@ -119,7 +119,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-wrapper-mobile-section">
+                            <div class="gap-sm content-wrapper-mobile-section">
                                 <div class="content-wrapper-mobile-section-container">
                                     <div class="cp-item">
                                         <div class="gap-sm">
@@ -186,7 +186,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="gap-sm">
+                                        <div class="">
                                             <div class="contacts-address-item">
                                                 <div class="contacts-address-item__title">БИК банка:</div>
                                                 <div class="contacts-address-item__descr">

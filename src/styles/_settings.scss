@@ -2670,28 +2670,26 @@ input.disabled {
 }
 @media (max-width: 991.98px) {
 	.content-wrapper-mobile-section {
-		&-mobile-section {
-			margin: 0 -16px;
-			border-bottom: 8px solid var(--gray5-color);
+		margin: 0 -16px;
+		border-bottom: 8px solid var(--gray5-color);
 
-			&,
-			&-container {
+		&,
+		&-container {
+			width: 100vw;
+		}
+		&-container {
+			padding: 0 16px 16px;
+		}
+		.pagination {
+			&-all {
+				min-width: 100vw;
 				width: 100vw;
-			}
-			&-container {
-				padding: 0 16px 16px;
-			}
-			.pagination {
-				&-all {
-					min-width: 100vw;
-					width: 100vw;
-					margin-right: -16px;
-					margin-left: -16px;
+				margin-right: -16px;
+				margin-left: -16px;
 
-					.btn-link {
-						padding-right: 16px;
-						padding-left: 16px;
-					}
+				.btn-link {
+					padding-right: 16px;
+					padding-left: 16px;
 				}
 			}
 		}
