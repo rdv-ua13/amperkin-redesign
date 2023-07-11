@@ -73,7 +73,7 @@
             <img src="img/logo.svg" width="180" height="50" alt="Логотип компании">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">17 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">n + ui</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">n + ui (всего страниц в макете)</span>
         </span>
@@ -109,9 +109,21 @@
             <li><a href="cart-empty.php" target="_blank" class="ready">Корзина - пусто</a></li>
             <br>
 
-            <!--<li class="block-ready">Блок готов</li>-->
+            <li class="block-ready">Блок готов</li>
             <li><a href="ordering.php" target="_blank" class="ready">Оформление заказа</a></li>
             <li><a href="order-confirm.php" target="_blank" class="ready">Подтверждение заказа</a></li>
+            <br>
+
+            <!--<li class="block-ready">Блок готов</li>-->
+            <li><a href="cp-contacts.php" target="_blank" class="ready">Контентные страницы - Контакты</a></li>
+            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Оплата</a></li>-->
+            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Доставка</a></li>-->
+            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Гарантия</a></li>-->
+            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Акции</a></li>-->
+            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Новости</a></li>-->
+            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Одна новость</a></li>-->
+            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Статьи</a></li>-->
+            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Одна статья</a></li>-->
             <br>
 
             <li><a href="ui.php" target="_blank">ui</a></li>
