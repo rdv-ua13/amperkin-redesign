@@ -25,6 +25,7 @@ application.prototype.init = function () {
     /*this.initSwitchContent();*/
     this.initPasswordSwitcher();
     this.initBasicSlider();
+    this.initBasicGallerySlider();
     this.initMiniSlider();
     this.initSwiperTabs();
     this.initSwiperBasicTabs();
@@ -54,6 +55,7 @@ application.prototype.init = function () {
     this.initCatalogSidebarSortOptionsContent();
     this.initCatalogSidebarApplyFilter();
     this.initCheckall();
+    this.initOrdersMap();
     this.initContactsMap();
     this.initOrderBonusDebit();
     this.initAddingOrgData();
@@ -606,6 +608,34 @@ application.prototype.initBasicSlider = function () {
                 }
             };
             let basicSlider = new Swiper('.basic-slider-wrap-' + i + ' .basic-slider', basicSliderSetting);
+        });
+    }
+};
+
+// Initialize basic gallery slider
+application.prototype.initBasicGallerySlider = function () {
+    if ($('.basic-slider').length) {
+        const slider = $('[data-basic-gallery-slider]');
+
+        slider.each(function (i) {
+            slider.eq(i).closest('.basic-slider-wrap').addClass('basic-gallery-slider-wrap-' + i);
+
+            const basicGallerySliderSetting = {
+                slidesPerView: 'auto',
+                slidesPerGroup: 1,
+                spaceBetween: 8,
+                direction: 'horizontal',
+                navigation: {
+                    nextEl: '.basic-gallery-slider-wrap-' + i + ' .swiper-button-next',
+                    prevEl: '.basic-gallery-slider-wrap-' + i + ' .swiper-button-prev',
+                },
+                breakpoints: {
+                    992: {
+                        spaceBetween: 20,
+                    },
+                }
+            };
+            let basicGallerySlider = new Swiper('.basic-gallery-slider-wrap-' + i + ' .basic-gallery-slider', basicGallerySliderSetting);
         });
     }
 };
@@ -1800,8 +1830,8 @@ application.prototype.initCheckall = function () {
     }
 };
 
-// Initialize contacts map
-application.prototype.initContactsMap = function () {
+// Initialize orders map
+application.prototype.initOrdersMap = function () {
     if ($('#orderMap').length) {
         ymaps.ready(init);
 
@@ -1827,9 +1857,50 @@ application.prototype.initContactsMap = function () {
                 // Параметры карты.
                 {
                     // Географические координаты центра отображаемой карты.
-                    center: [55.76, 37.64],
+                    center: [55.798186, 37.489652],
                     // Масштаб.
-                    zoom: 10,
+                    zoom: 15,
+                    controls: ['fullscreenControl'],
+                }, {
+                    // Поиск по организациям.
+                    searchControlProvider: 'yandex#search'
+                }
+            );
+            myMap.controls.add(zoomControl);
+        }
+    }
+};
+
+// Initialize contacts map
+application.prototype.initContactsMap = function () {
+    if ($('#contactsMap').length) {
+        ymaps.ready(init);
+
+        let myMap;
+
+        function init () {
+            let zoomControl = new ymaps.control.ZoomControl({
+                options: {
+                    size: 'large',
+                    float: 'none',
+                    position: {
+                        top: 50,
+                        right: 10,
+                        left: 'auto',
+                    },
+                }
+            });
+
+            // Параметры карты можно задать в конструкторе.
+            myMap = new ymaps.Map(
+                // ID DOM-элемента, в который будет добавлена карта.
+                'contactsMap',
+                // Параметры карты.
+                {
+                    // Географические координаты центра отображаемой карты.
+                    center: [55.798186, 37.489652],
+                    // Масштаб.
+                    zoom: 15,
                     controls: ['fullscreenControl'],
                 }, {
                     // Поиск по организациям.

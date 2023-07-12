@@ -116,10 +116,10 @@
 
             <!--<li class="block-ready">Блок готов</li>-->
             <li><a href="cp-contacts.php" target="_blank" class="ready">Контентные страницы - Контакты</a></li>
-            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Оплата</a></li>-->
+            <li><a href="cp-payment.php" target="_blank" class="ready">Контентные страницы - Оплата</a></li>
             <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Доставка</a></li>-->
-            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Гарантия</a></li>-->
-            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Акции</a></li>-->
+            <li><a href="cp-warranty.php" target="_blank" class="ready">Контентные страницы - Гарантия</a></li>
+            <li><a href="cp-promotions.php" target="_blank" class="ready">Контентные страницы - Акции</a></li>
             <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Новости</a></li>-->
             <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Одна новость</a></li>-->
             <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Статьи</a></li>-->

@@ -50,7 +50,7 @@
                             <div class="h1 catalog-heading__title">Контакты</div>
                         </div>
                     </div>
-                    <div class="gap-lg">
+                    <div class="gap-lg-plus">
                         <div class="contacts-address">
                             <div class="gap-sm content-wrapper-mobile-section">
                                 <div class="content-wrapper-mobile-section-container">
@@ -202,7 +202,116 @@
                         </div>
                     </div>
                     <div class="gap-lg-plus">
-                        234
+                        <div class="content-wrapper-mobile-section">
+                            <div class="content-wrapper-mobile-section-container">
+                                <div class="gap-md h3">Наш офис</div>
+                                <div class="catalog-extra-slider out-container-x">
+                                    <div class="basic-slider-wrap">
+                                        <div class="basic-slider basic-gallery-slider swiper" data-basic-gallery-slider>
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a class="basic-gallery-slider-item" href="img/gallery-img1.png" data-fancybox="gallery">
+                                                        <span class="basic-gallery-slider-item__decor"></span>
+                                                        <img
+                                                                loading="lazy"
+                                                                class="image"
+                                                                src="img/gallery-img1.png"
+                                                                width="223"
+                                                                height="166"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="basic-gallery-slider-item" href="img/gallery-img2.png" data-fancybox="gallery">
+                                                        <span class="basic-gallery-slider-item__decor"></span>
+                                                        <img
+                                                                loading="lazy"
+                                                                class="image"
+                                                                src="img/gallery-img2.png"
+                                                                width="223"
+                                                                height="166"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="basic-gallery-slider-item" href="img/gallery-img3.png" data-fancybox="gallery">
+                                                        <span class="basic-gallery-slider-item__decor"></span>
+                                                        <img
+                                                                loading="lazy"
+                                                                class="image"
+                                                                src="img/gallery-img3.png"
+                                                                width="223"
+                                                                height="166"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="basic-gallery-slider-item" href="img/gallery-img4.png" data-fancybox="gallery">
+                                                        <span class="basic-gallery-slider-item__decor"></span>
+                                                        <img
+                                                                loading="lazy"
+                                                                class="image"
+                                                                src="img/gallery-img4.png"
+                                                                width="223"
+                                                                height="166"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="basic-gallery-slider-item" href="img/gallery-img1.png" data-fancybox="gallery">
+                                                        <span class="basic-gallery-slider-item__decor"></span>
+                                                        <img
+                                                                loading="lazy"
+                                                                class="image"
+                                                                src="img/gallery-img1.png"
+                                                                width="223"
+                                                                height="166"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="basic-gallery-slider-item" href="img/gallery-img2.png" data-fancybox="gallery">
+                                                        <span class="basic-gallery-slider-item__decor"></span>
+                                                        <img
+                                                                loading="lazy"
+                                                                class="image"
+                                                                src="img/gallery-img2.png"
+                                                                width="223"
+                                                                height="166"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="basic-gallery-slider-item" href="img/gallery-img3.png" data-fancybox="gallery">
+                                                        <span class="basic-gallery-slider-item__decor"></span>
+                                                        <img
+                                                                loading="lazy"
+                                                                class="image"
+                                                                src="img/gallery-img3.png"
+                                                                width="223"
+                                                                height="166"
+                                                                alt="Изображение блока"
+                                                        >
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="gap-md h3">Как добраться</div>
+                            <div class="contacts-map">
+                                <div id="contactsMap" class="contacts-map-content"></div>
+                            </div>
                     </div>
                 </div>
             </div>

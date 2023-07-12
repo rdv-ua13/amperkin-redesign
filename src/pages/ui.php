@@ -1145,6 +1145,33 @@
                     </svg>
                     <!--end ui content-->
                 </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-credit-card"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-credit-card"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-newspaper"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-newspaper"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
+                <span class="tooltip"
+                      data-tippy-content="#menu-color-wallet"
+                >
+                    <!--start ui content-->
+                    <svg class="icon">
+                        <use href="img/sprite.svg#menu-color-wallet"></use>
+                    </svg>
+                    <!--end ui content-->
+                </span>
             </div>
             <div class="tooltip-ui-set tooltip-ui-iconset">
                 <span class="tooltip"
