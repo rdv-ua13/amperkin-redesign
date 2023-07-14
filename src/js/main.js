@@ -60,6 +60,7 @@ application.prototype.init = function () {
     this.initOrderBonusDebit();
     this.initAddingOrgData();
     this.initOpenPromocode();
+    this.initAccordion();
 };
 
 // Initialize device check
@@ -1139,7 +1140,7 @@ application.prototype.initCartQuantity = function () {
             }
         });
 
-        $('.cart-quantity-btn--remove').on('click', function() {
+        $(document).on('click','.cart-quantity-btn--remove', function() {
             if ($(this).hasClass('selected')) {
                 $(this).removeClass('selected');
                 $(this).closest('.cart-buy').find('.cart-in').removeClass('active');
@@ -1147,7 +1148,7 @@ application.prototype.initCartQuantity = function () {
             }
         });
 
-        $('.cart-quantity-btn').on('click', function(e) {
+        $(document).on('click', '.cart-quantity-btn', function(e) {
             let $button = $(this);
             let oldValue = $button.closest('.cart-quantity').find('input.cart-quantity-input').val();
             let mult = parseInt($button.closest('.cart-quantity').find('input.cart-quantity-input').data('mult'));
@@ -2049,5 +2050,38 @@ application.prototype.initOpenPromocode = function () {
                 $(this).closest('.modal-order-promocode__item').addClass('active');
             }
         });
+    }
+};
+
+// Initialize accordion
+application.prototype.initAccordion = function () {
+    if ($(".accordion").length) {
+        initAccordionResponsive();
+        $(window).on("resize", initAccordionResponsive, reloadAccordionResponsive);
+
+        function reloadAccordionResponsive() {
+            setTimeout(function () {
+                location.reload();
+            }, 300);
+        }
+        function initAccordionResponsive() {
+            $(".accordion__collapse").hide();
+
+            $(".js-accordion-btn").on("click", function () {
+                if (!$(this).hasClass("open")) {
+                    $(this).addClass("open");
+                    $(this).closest(".accordion__item").addClass("active");
+                    $(this).closest(".accordion__item").find(".accordion__collapse").removeClass("collapsed");
+                    $(this).closest(".accordion__item").find(".accordion__collapse").slideDown(160);
+                } else if ($(this).hasClass("open")) {
+                    $(this).removeClass("open");
+                    $(this).closest(".accordion__item").removeClass("active");
+                    $(this).closest(".accordion__item").find(".accordion__collapse").slideUp(160);
+                    setTimeout(function () {
+                        $(this).closest(".accordion__item").find(".accordion__collapse").addClass("collapsed");
+                    }, 160);
+                }
+            });
+        }
     }
 };

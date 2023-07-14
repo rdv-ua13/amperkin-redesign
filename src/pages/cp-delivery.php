@@ -157,288 +157,270 @@
                                         <div class="h2">Частые вопросы</div>
                                     </div>
                                     <div class="">
-                                        <div class="delivery-faq">faq</div>
+                                        <div class="delivery-faq">
+                                            <div class="accordion" data-id="delivery-faq">
+                                                <div class="accordion__item">
+                                                    <div class="accordion__header">
+                                                        <div class="accordion__btn js-accordion-btn">
+                                                            <div class="accordion__header-title h5">Как оформить заказ?</div>
+                                                            <svg class="icon icon-md">
+                                                                <use href="img/sprite.svg#chevron-down"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion__collapse collapsed">
+                                                        <div class="accordion__collapse-content">
+                                                            <div class="accordion__collapse-item">
+                                                                <div class="gap-sm-plus">Сформируйте заказ, который Вы хотите приобрести в нашем интернет-магазине, затем положите выбранный товар в корзину и подтвердите заказ через корзину. При оформлении заказа можно выбрать тип доставки и разные варианты доставки. После оформления заказа с вами свяжется менеджер для подтверждения заказа и расскажет про время доставки.</div>
+                                                                <div class="gap-sm-plus">Проконсультироваться по вопросам доставки в регионы можно по телефону +7 (495) 118-37-70 с 9:00 до 18:00 московского времени или по e-mail <a class="link-dark link-tdu" href="mailto:info@amperkin.ru">info@amperkin.ru</a>. Услуги транспортной компании оплачивает клиент, мы осуществляем только отправку товара в Ваш регион.</div>
+                                                                <div class="">Стоимость доставки до транспортной компании от 10000 руб. – бесплатно, до 10000 руб. – 500 руб.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion__item">
+                                                    <div class="accordion__header">
+                                                        <div class="accordion__btn js-accordion-btn">
+                                                            <div class="accordion__header-title h5">Как отправляется товар?</div>
+                                                            <svg class="icon icon-md">
+                                                                <use href="img/sprite.svg#chevron-down"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion__collapse collapsed">
+                                                        <div class="accordion__collapse-content">
+                                                            <div class="accordion__collapse-item">
+                                                                <div class="gap-sm-plus">Мы собираем ваш заказ на нашем складе в день заказа и передаем его в транспортную компанию или в наш пункт выдачи.</div>
+                                                                <div class="">Если товара нет в наличии на нашем складе, мы формируем запрос поставщику и, как только товар готов, он отправляется напрямую в транспортную компанию или в наш пункт выдачи.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="basic-tabs-content__panel" data-id="1">
-                                <div class="order-step__data">
-                                    <div class="order-step-row order-step__notice">
-                                        <svg class="icon icon-sm">
-                                            <use href="img/sprite.svg#user-square"></use>
-                                        </svg>
-                                        <span>
-                                                        Не хотите каждый раз заново заполнять данные?
-                                                        <a class="link-red" href="javascript:;">Войдите в профиль</a>
-                                                    </span>
-                                    </div>
-
-                                    <div class="order-step-row">
-                                        <div class="titled-input titled-input-label">
-                                            <div class="input-title">Номер телефона для связи</div>
-                                            <div class="input-wrapper">
-                                                <input
-                                                        class="input-reset input isPhone"
-                                                        type="tel"
-                                                        name=""
-                                                        value=""
-                                                        placeholder="+7 (999) 999-99-99"
-                                                        autocomplete="off"
-                                                >
+                                <div class="gap-lg">
+                                    <div class="gap-sm-plus content-wrapper-mobile-section">
+                                        <div class="cp-item content-wrapper-mobile-section-container">
+                                            <div class="gap-sm-plus">
+                                                <div class="h4">Самовывоз из магазина у метро «Октябрьское поле» или МЦК «Панфиловская»</div>
                                             </div>
-                                        </div>
-                                        <div class="titled-input titled-input-label">
-                                            <div class="input-title">Электронная почта</div>
-                                            <div class="input-wrapper">
-                                                <input
-                                                        class="input-reset input"
-                                                        type="email"
-                                                        name=""
-                                                        value=""
-                                                        placeholder="mail@mail.ru"
-                                                        autocomplete="off"
-                                                >
+                                            <div class="gap-sm-plus">
+                                                <div class="cp-item-row">
+                                                    <div class="cp-item-row__title">Стоимость:</div>
+                                                    <div>Бесплатно</div>
+                                                </div>
+                                            </div>
+                                            <div class="gap-sm-plus">
+                                                <div class="cp-item-row">
+                                                    <div class="cp-item-row__title">График работы:</div>
+                                                    <div>
+                                                        <div>ПН-ПТ с 09:00 до 19:00</div>
+                                                        <div>СБ-ВС с 09:00 до 19:00 (<span class="text-secondary-color">только на выдачу оплаченных заказов</span>)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="cp-item-row">
+                                                    <div>
+                                                        <a class="link-dashed link-red" href="javascript:;">Показать на карте</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="order-step-row">
-                                        <div class="titled-input titled-input-label">
-                                            <div class="input-title">Ваше имя</div>
-                                            <div class="input-wrapper">
-                                                <input
-                                                        class="input-reset input"
-                                                        type="text"
-                                                        name=""
-                                                        value=""
-                                                        placeholder="Ваше имя"
-                                                        autocomplete="off"
-                                                >
+                                    <div class="gap-sm-plus content-wrapper-mobile-section">
+                                        <div class="cp-item content-wrapper-mobile-section-container">
+                                            <div class="gap-sm-plus">
+                                                <div class="h4">Пункты выдачи СДЭК по всей России</div>
+                                            </div>
+                                            <div class="gap-sm-plus issuing-office">
+                                                <div class="issuing-office__logo">
+                                                    <img
+                                                        loading="lazy"
+                                                        class="image"
+                                                        src="img/cdek.svg#cdek"
+                                                        width="80"
+                                                        height="22"
+                                                        alt="Изображение блока"
+                                                    >
+                                                </div>
+                                                <div>Более 700 пунктов выдачи по России от службы доставки СДЭК</div>
+                                            </div>
+                                            <div class="">
+                                                <div class="cp-item-row">
+                                                    <div>Для получения точной информации позвоните, пожалуйста, по номеру 8 (495) 118-37-70 и наши менеджеры помогут подобрать наиболее оптимальный способ получения заказа в вашем городе.</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="order-step-row" data-org-container>
-                                        <div class="titled-input titled-input-label">
-                                            <div class="input-title">ИНН организации</div>
-                                            <div class="input-wrapper">
-                                                <input
-                                                        class="input-reset input"
-                                                        type="text"
-                                                        name=""
-                                                        value=""
-                                                        placeholder="Найти по ИНН"
-                                                        autocomplete="off"
-                                                        data-org-trigger
-                                                >
+                                </div>
+                                <div class="gap-lg">
+                                    <div class="gap-lg content-wrapper-mobile-section-row">
+                                        <div class="h2">Условия доставки</div>
+                                    </div>
+                                    <div class="content-wrapper-mobile-section">
+                                        <div class="cp-item content-wrapper-mobile-section-container">
+                                            <div class="gap-sm-plus">
+                                                <div class="h4">Доставка до 3 дней</div>
+                                            </div>
+                                            <div class="gap-sm-plus">
+                                                <div>Заказ считается принятым и оформленным только после подтверждения заказа менеджером по телефону</div>
+                                            </div>
+                                            <div class="">
+                                                <div class="cp-item-row">
+                                                    <div class="cp-item-row__title">График доставки:</div>
+                                                    <div>ПН-ПТ с 09:00 до 19:00</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="order-step-row">
-                                        <div class="titled-input">
-                                            <div class="input-title semi-bold">Сфера деятельности</div>
-                                            <div class="input-wrapper input-wrapper-radio">
-                                                            <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-entity-one"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityEntity"
-                                                                >
-                                                                <label for="order-activity-entity-one" class="custom-radio__label-for">OEM партнер</label>
-                                                            </span>
-                                                <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-entity-two"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityEntity"
-                                                                >
-                                                                <label for="order-activity-entity-two" class="custom-radio__label-for">Эксплуатация</label>
-                                                            </span>
-                                                <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-entity-three"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityEntity"
-                                                                >
-                                                                <label for="order-activity-entity-three" class="custom-radio__label-for">Электромонтажник</label>
-                                                            </span>
-                                                <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-entity-four"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityEntity"
-                                                                >
-                                                                <label for="order-activity-entity-four" class="custom-radio__label-for">Дизайнер</label>
-                                                            </span>
-                                                <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-entity-five"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityEntity"
-                                                                >
-                                                                <label for="order-activity-entity-five" class="custom-radio__label-for">Щитовик</label>
-                                                            </span>
-                                                <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-entity-six"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityEntity"
-                                                                >
-                                                                <label for="order-activity-entity-six" class="custom-radio__label-for">СМО (Строительно-монтажная организация)</label>
-                                                            </span>
+                                </div>
+                                <div class="">
+                                    <div class="gap-lg content-wrapper-mobile-section-row">
+                                        <div class="h2">Частые вопросы</div>
+                                    </div>
+                                    <div class="">
+                                        <div class="delivery-faq">
+                                            <div class="accordion" data-id="delivery-faq">
+                                                <div class="accordion__item">
+                                                    <div class="accordion__header">
+                                                        <div class="accordion__btn js-accordion-btn">
+                                                            <div class="accordion__header-title h5">Как оформить заказ?</div>
+                                                            <svg class="icon icon-md">
+                                                                <use href="img/sprite.svg#chevron-down"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion__collapse collapsed">
+                                                        <div class="accordion__collapse-content">
+                                                            <div class="accordion__collapse-item">
+                                                                <div class="gap-sm-plus">Сформируйте заказ, который Вы хотите приобрести в нашем интернет-магазине, затем положите выбранный товар в корзину и подтвердите заказ через корзину. При оформлении заказа можно выбрать тип доставки и разные варианты доставки. После оформления заказа с вами свяжется менеджер для подтверждения заказа и расскажет про время доставки.</div>
+                                                                <div class="gap-sm-plus">Проконсультироваться по вопросам доставки в регионы можно по телефону +7 (495) 118-37-70 с 9:00 до 18:00 московского времени или по e-mail <a class="link-dark link-tdu" href="mailto:info@amperkin.ru">info@amperkin.ru</a>. Услуги транспортной компании оплачивает клиент, мы осуществляем только отправку товара в Ваш регион.</div>
+                                                                <div class="">Стоимость доставки до транспортной компании от 10000 руб. – бесплатно, до 10000 руб. – 500 руб.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion__item">
+                                                    <div class="accordion__header">
+                                                        <div class="accordion__btn js-accordion-btn">
+                                                            <div class="accordion__header-title h5">Как отправляется товар?</div>
+                                                            <svg class="icon icon-md">
+                                                                <use href="img/sprite.svg#chevron-down"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion__collapse collapsed">
+                                                        <div class="accordion__collapse-content">
+                                                            <div class="accordion__collapse-item">
+                                                                <div class="gap-sm-plus">Мы собираем ваш заказ на нашем складе в день заказа и передаем его в транспортную компанию или в наш пункт выдачи.</div>
+                                                                <div class="">Если товара нет в наличии на нашем складе, мы формируем запрос поставщику и, как только товар готов, он отправляется напрямую в транспортную компанию или в наш пункт выдачи.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="basic-tabs-content__panel" data-id="2">
-                                <div class="order-step__data">
-                                    <div class="order-step-row order-step__notice">
-                                        <svg class="icon icon-sm">
-                                            <use href="img/sprite.svg#user-square"></use>
-                                        </svg>
-                                        <span>
-                                                        Не хотите каждый раз заново заполнять данные?
-                                                        <a class="link-red" href="javascript:;">Войдите в профиль</a>
-                                                    </span>
-                                    </div>
-
-                                    <div class="order-step-row">
-                                        <div class="titled-input titled-input-label">
-                                            <div class="input-title">Номер телефона для связи</div>
-                                            <div class="input-wrapper">
-                                                <input
-                                                        class="input-reset input isPhone"
-                                                        type="tel"
-                                                        name=""
-                                                        value=""
-                                                        placeholder="+7 (999) 999-99-99"
-                                                        autocomplete="off"
-                                                >
+                                <div class="gap-lg">
+                                    <div class="gap-sm-plus content-wrapper-mobile-section">
+                                        <div class="cp-item content-wrapper-mobile-section-container">
+                                            <div class="gap-sm-plus">
+                                                <div class="h4">Пункты выдачи СДЭК по всей России</div>
                                             </div>
-                                        </div>
-                                        <div class="titled-input titled-input-label">
-                                            <div class="input-title">Электронная почта</div>
-                                            <div class="input-wrapper">
-                                                <input
-                                                        class="input-reset input"
-                                                        type="email"
-                                                        name=""
-                                                        value=""
-                                                        placeholder="mail@mail.ru"
-                                                        autocomplete="off"
-                                                >
+                                            <div class="gap-sm-plus">
+                                                <div class="cp-item-row">
+                                                    <div>Заказы передаются на отправку только после подтверждения и получения оплаты. Отправка осуществляется службой доставки СДЭК.</div>
+                                                </div>
+                                            </div>
+                                            <div class="issuing-office">
+                                                <div class="issuing-office__logo">
+                                                    <img
+                                                            loading="lazy"
+                                                            class="image"
+                                                            src="img/cdek.svg#cdek"
+                                                            width="80"
+                                                            height="22"
+                                                            alt="Изображение блока"
+                                                    >
+                                                </div>
+                                                <div>Более 700 пунктов выдачи по России</div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="order-step-row">
-                                        <div class="titled-input titled-input-label">
-                                            <div class="input-title">Ваше имя</div>
-                                            <div class="input-wrapper">
-                                                <input
-                                                        class="input-reset input"
-                                                        type="text"
-                                                        name=""
-                                                        value=""
-                                                        placeholder="Ваше имя"
-                                                        autocomplete="off"
-                                                >
+                                </div>
+                                <div class="gap-lg">
+                                    <div class="gap-lg content-wrapper-mobile-section-row">
+                                        <div class="h2">Условия доставки</div>
+                                    </div>
+                                    <div class="content-wrapper-mobile-section">
+                                        <div class="cp-item content-wrapper-mobile-section-container">
+                                            <div class="gap-sm-plus">
+                                                <div class="h4">Доставка до 3 дней</div>
+                                            </div>
+                                            <div class="gap-sm-plus">
+                                                <div>Заказ считается принятым и оформленным только после подтверждения заказа менеджером по телефону</div>
+                                            </div>
+                                            <div class="">
+                                                <div class="cp-item-row">
+                                                    <div class="cp-item-row__title">График доставки:</div>
+                                                    <div>ПН-ПТ с 09:00 до 19:00</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="order-step-row" data-org-container>
-                                        <div class="titled-input titled-input-label">
-                                            <div class="input-title">ИНН организации</div>
-                                            <div class="input-wrapper">
-                                                <input
-                                                        class="input-reset input"
-                                                        type="text"
-                                                        name=""
-                                                        value=""
-                                                        placeholder="Найти по ИНН"
-                                                        autocomplete="off"
-                                                        data-org-trigger
-                                                >
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="">
+                                    <div class="gap-lg content-wrapper-mobile-section-row">
+                                        <div class="h2">Частые вопросы</div>
                                     </div>
-
-                                    <div class="order-step-row">
-                                        <div class="titled-input">
-                                            <div class="input-title semi-bold">Сфера деятельности</div>
-                                            <div class="input-wrapper input-wrapper-radio">
-                                                            <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-private-entrepreneur-one"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityPrivateEntrepreneur"
-                                                                >
-                                                                <label for="order-activity-private-entrepreneur-one" class="custom-radio__label-for">OEM партнер</label>
-                                                            </span>
-                                                <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-private-entrepreneur-two"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityPrivateEntrepreneur"
-                                                                >
-                                                                <label for="order-activity-private-entrepreneur-two" class="custom-radio__label-for">Эксплуатация</label>
-                                                            </span>
-                                                <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-private-entrepreneur-three"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityPrivateEntrepreneur"
-                                                                >
-                                                                <label for="order-activity-private-entrepreneur-three" class="custom-radio__label-for">Электромонтажник</label>
-                                                            </span>
-                                                <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-private-entrepreneur-four"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityPrivateEntrepreneur"
-                                                                >
-                                                                <label for="order-activity-private-entrepreneur-four" class="custom-radio__label-for">Дизайнер</label>
-                                                            </span>
-                                                <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-private-entrepreneur-five"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityPrivateEntrepreneur"
-                                                                >
-                                                                <label for="order-activity-private-entrepreneur-five" class="custom-radio__label-for">Щитовик</label>
-                                                            </span>
-                                                <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-private-entrepreneur-six"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityPrivateEntrepreneur"
-                                                                >
-                                                                <label for="order-activity-private-entrepreneur-six" class="custom-radio__label-for">СМО (Строительно-монтажная организация)</label>
-                                                            </span>
-                                                <span class="custom-radio">
-                                                                <input
-                                                                        id="order-activity-private-entrepreneur-seven"
-                                                                        class="custom-radio__input"
-                                                                        type="checkbox"
-                                                                        name="orderActivityPrivateEntrepreneur"
-                                                                >
-                                                                <label for="order-activity-private-entrepreneur-seven" class="custom-radio__label-for">Розничный покупатель</label>
-                                                            </span>
+                                    <div class="">
+                                        <div class="delivery-faq">
+                                            <div class="accordion" data-id="delivery-faq">
+                                                <div class="accordion__item">
+                                                    <div class="accordion__header">
+                                                        <div class="accordion__btn js-accordion-btn">
+                                                            <div class="accordion__header-title h5">Как оформить заказ?</div>
+                                                            <svg class="icon icon-md">
+                                                                <use href="img/sprite.svg#chevron-down"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion__collapse collapsed">
+                                                        <div class="accordion__collapse-content">
+                                                            <div class="accordion__collapse-item">
+                                                                <div class="gap-sm-plus">Сформируйте заказ, который Вы хотите приобрести в нашем интернет-магазине, затем положите выбранный товар в корзину и подтвердите заказ через корзину. При оформлении заказа можно выбрать тип доставки и разные варианты доставки. После оформления заказа с вами свяжется менеджер для подтверждения заказа и расскажет про время доставки.</div>
+                                                                <div class="gap-sm-plus">Проконсультироваться по вопросам доставки в регионы можно по телефону +7 (495) 118-37-70 с 9:00 до 18:00 московского времени или по e-mail <a class="link-dark link-tdu" href="mailto:info@amperkin.ru">info@amperkin.ru</a>. Услуги транспортной компании оплачивает клиент, мы осуществляем только отправку товара в Ваш регион.</div>
+                                                                <div class="">Стоимость доставки до транспортной компании от 10000 руб. – бесплатно, до 10000 руб. – 500 руб.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion__item">
+                                                    <div class="accordion__header">
+                                                        <div class="accordion__btn js-accordion-btn">
+                                                            <div class="accordion__header-title h5">Как отправляется товар?</div>
+                                                            <svg class="icon icon-md">
+                                                                <use href="img/sprite.svg#chevron-down"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion__collapse collapsed">
+                                                        <div class="accordion__collapse-content">
+                                                            <div class="accordion__collapse-item">
+                                                                <div class="gap-sm-plus">Мы собираем ваш заказ на нашем складе в день заказа и передаем его в транспортную компанию или в наш пункт выдачи.</div>
+                                                                <div class="">Если товара нет в наличии на нашем складе, мы формируем запрос поставщику и, как только товар готов, он отправляется напрямую в транспортную компанию или в наш пункт выдачи.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -446,269 +428,6 @@
                             </div>
                         </div>
                     </div>
-					<!--<div class="gap-lg-plus">
-						<div class="contacts-address">
-							<div class="gap-sm content-wrapper-mobile-section">
-								<div class="content-wrapper-mobile-section-container">
-									<div class="cp-item cp-item-column">
-										<div class="gap-sm">
-											<div class="h5">Главный офис</div>
-										</div>
-										<div class="gap-sm">
-											<div class="gap-xs">
-												<div class="contacts-address-item">
-													<div class="contacts-address-item__title">Адрес:</div>
-													<div class="contacts-address-item__descr">
-														<div class="contacts-address-item__descr-text">
-															<p>123060, г. Москва, ул. Маршала Рыбалко, 10</p>
-														</div>
-														<div class="contacts-address-item__descr-caption">В офисе доступен самовывоз</div>
-													</div>
-												</div>
-											</div>
-											<div class="btn-g">
-												<button class="btn-reset btn btn-light">
-													<span class="btn__text">Как добраться</span>
-												</button>
-											</div>
-										</div>
-										<div class="gap-sm">
-											<div class="contacts-address-item">
-												<div class="contacts-address-item__title">Прием заказов и обработка:</div>
-												<div class="contacts-address-item__descr">
-													<div class="contacts-address-item__descr-text">
-														<p>ПН-ПТ с 09:00 до 19:00</p>
-														<p>СБ-ВС с 09:00 до 19:00 (<span class="text-secondary-color">только на выдачу оплаченных заказов</span>)</p>
-													</div>
-													<div class="contacts-address-item__descr-caption">Сделать заказ на нашем сайте Вы можете круглосуточно.</div>
-												</div>
-											</div>
-										</div>
-										<div class="gap-sm">
-											<div class="contacts-address-item">
-												<div class="contacts-address-item__title">Телефон:</div>
-												<div class="contacts-address-item__descr">
-													<div class="contacts-address-item__descr-text">
-														<p><span class="semi-bold">+7 (495) 118-37-70</span></p>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="gap-sm">
-											<div class="contacts-address-item">
-												<div class="contacts-address-item__title">Email:</div>
-												<div class="contacts-address-item__descr">
-													<div class="contacts-address-item__descr-text">
-														<p>info@amperkin.ru</p>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="btn-g">
-											<button class="btn-reset btn btn-primary">
-												<span class="btn__text">Обратная связь</span>
-											</button>
-											<button class="btn-reset btn btn-light">
-												<span class="btn__text">написать директору</span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="gap-sm content-wrapper-mobile-section">
-								<div class="content-wrapper-mobile-section-container">
-									<div class="cp-item">
-										<div class="gap-sm">
-											<div class="h5">Реквизиты ООО «АМПЕРКИН»</div>
-										</div>
-										<div class="gap-sm">
-											<div class="gap-xs">
-												<div class="contacts-address-item">
-													<div class="contacts-address-item__title">Юр. адрес:</div>
-													<div class="contacts-address-item__descr">
-														<div class="contacts-address-item__descr-text">
-															<p>123060, город Москва, улица Маршала Рыбалко, дом 10, этаж 1, помещение 1</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="gap-sm">
-											<div class="contacts-address-item">
-												<div class="contacts-address-item__title">ИНН / КПП:</div>
-												<div class="contacts-address-item__descr">
-													<div class="contacts-address-item__descr-text">
-														<p>7734440520 / 773401001</p>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="gap-sm">
-											<div class="contacts-address-item">
-												<div class="contacts-address-item__title">ОГРН:</div>
-												<div class="contacts-address-item__descr">
-													<div class="contacts-address-item__descr-text">
-														<p>1217700055583</p>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="gap-sm">
-											<div class="contacts-address-item">
-												<div class="contacts-address-item__title">Расчетный счет:</div>
-												<div class="contacts-address-item__descr">
-													<div class="contacts-address-item__descr-text">
-														<p>40702810540000099170</p>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="gap-sm">
-											<div class="contacts-address-item">
-												<div class="contacts-address-item__descr">
-													<div class="contacts-address-item__descr-text">
-														<p><span class="semi-bold">ПАО Сбербанк</span></p>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="gap-sm">
-											<div class="contacts-address-item">
-												<div class="contacts-address-item__title">Корреспондентский счет:</div>
-												<div class="contacts-address-item__descr">
-													<div class="contacts-address-item__descr-text">
-														<p>30101810400000000225</p>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="">
-											<div class="contacts-address-item">
-												<div class="contacts-address-item__title">БИК банка:</div>
-												<div class="contacts-address-item__descr">
-													<div class="contacts-address-item__descr-text">
-														<p>044525225</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="gap-lg-plus">
-						<div class="content-wrapper-mobile-section">
-							<div class="content-wrapper-mobile-section-container">
-								<div class="gap-md h3">Наш офис</div>
-								<div class="catalog-extra-slider out-container-x">
-									<div class="basic-slider-wrap">
-										<div class="basic-slider basic-gallery-slider swiper" data-basic-gallery-slider>
-											<div class="swiper-wrapper">
-												<div class="swiper-slide">
-													<a class="basic-gallery-slider-item" href="img/gallery-img1.png" data-fancybox="gallery">
-														<span class="basic-gallery-slider-item__decor"></span>
-														<img
-															loading="lazy"
-															class="image"
-															src="img/gallery-img1.png"
-															width="223"
-															height="166"
-															alt="Изображение блока"
-														>
-													</a>
-												</div>
-												<div class="swiper-slide">
-													<a class="basic-gallery-slider-item" href="img/gallery-img2.png" data-fancybox="gallery">
-														<span class="basic-gallery-slider-item__decor"></span>
-														<img
-															loading="lazy"
-															class="image"
-															src="img/gallery-img2.png"
-															width="223"
-															height="166"
-															alt="Изображение блока"
-														>
-													</a>
-												</div>
-												<div class="swiper-slide">
-													<a class="basic-gallery-slider-item" href="img/gallery-img3.png" data-fancybox="gallery">
-														<span class="basic-gallery-slider-item__decor"></span>
-														<img
-															loading="lazy"
-															class="image"
-															src="img/gallery-img3.png"
-															width="223"
-															height="166"
-															alt="Изображение блока"
-														>
-													</a>
-												</div>
-												<div class="swiper-slide">
-													<a class="basic-gallery-slider-item" href="img/gallery-img4.png" data-fancybox="gallery">
-														<span class="basic-gallery-slider-item__decor"></span>
-														<img
-															loading="lazy"
-															class="image"
-															src="img/gallery-img4.png"
-															width="223"
-															height="166"
-															alt="Изображение блока"
-														>
-													</a>
-												</div>
-												<div class="swiper-slide">
-													<a class="basic-gallery-slider-item" href="img/gallery-img1.png" data-fancybox="gallery">
-														<span class="basic-gallery-slider-item__decor"></span>
-														<img
-															loading="lazy"
-															class="image"
-															src="img/gallery-img1.png"
-															width="223"
-															height="166"
-															alt="Изображение блока"
-														>
-													</a>
-												</div>
-												<div class="swiper-slide">
-													<a class="basic-gallery-slider-item" href="img/gallery-img2.png" data-fancybox="gallery">
-														<span class="basic-gallery-slider-item__decor"></span>
-														<img
-															loading="lazy"
-															class="image"
-															src="img/gallery-img2.png"
-															width="223"
-															height="166"
-															alt="Изображение блока"
-														>
-													</a>
-												</div>
-												<div class="swiper-slide">
-													<a class="basic-gallery-slider-item" href="img/gallery-img3.png" data-fancybox="gallery">
-														<span class="basic-gallery-slider-item__decor"></span>
-														<img
-															loading="lazy"
-															class="image"
-															src="img/gallery-img3.png"
-															width="223"
-															height="166"
-															alt="Изображение блока"
-														>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="">
-						<div class="gap-md h3">Как добраться</div>
-						<div class="contacts-map">
-							<div id="contactsMap" class="contacts-map-content"></div>
-						</div>
-					</div>-->
 				</div>
 			</div>
 		</div>

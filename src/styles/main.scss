@@ -3128,6 +3128,20 @@ body:not(.is-using-mouse) {
 	}
 }
 
+.issuing-office {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 80px;
+		width: 80px;
+	}
+}
+
 .likes-count {
 	display: flex;
 	flex-direction: column;
@@ -3168,8 +3182,11 @@ body:not(.is-using-mouse) {
 
 .delivery {
 	&-faq {
-		background-color: red;
+
 	}
+}
+@media (min-width: 992px) {
+	.delivery {}
 }
 @media (max-width: 991.98px) {
 	.delivery {
