@@ -114,16 +114,16 @@
             <li><a href="order-confirm.php" target="_blank" class="ready">Подтверждение заказа</a></li>
             <br>
 
-            <!--<li class="block-ready">Блок готов</li>-->
+            <li class="block-ready">Блок готов</li>
             <li><a href="cp-contacts.php" target="_blank" class="ready">Контентные страницы - Контакты</a></li>
             <li><a href="cp-payment.php" target="_blank" class="ready">Контентные страницы - Оплата</a></li>
-            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Доставка</a></li>-->
+            <li><a href="cp-delivery.php" target="_blank" class="ready">Контентные страницы - Доставка</a></li>
             <li><a href="cp-warranty.php" target="_blank" class="ready">Контентные страницы - Гарантия</a></li>
             <li><a href="cp-promotions.php" target="_blank" class="ready">Контентные страницы - Акции</a></li>
-            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Новости</a></li>-->
-            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Одна новость</a></li>-->
-            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Статьи</a></li>-->
-            <!--<li><a href="**.php" target="_blank" class="ready">Контентные страницы - Одна статья</a></li>-->
+            <li><a href="cp-news.php" target="_blank" class="ready">Контентные страницы - Новости</a></li>
+            <li><a href="cp-news-details.php" target="_blank" class="ready">Контентные страницы - Одна новость</a></li>
+            <li><a href="cp-articles.php" target="_blank" class="ready">Контентные страницы - Статьи</a></li>
+            <li><a href="cp-articles-details.php" target="_blank" class="ready">Контентные страницы - Одна статья</a></li>
             <br>
 
             <li><a href="ui.php" target="_blank">ui</a></li>

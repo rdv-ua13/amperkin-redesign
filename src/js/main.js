@@ -607,7 +607,14 @@ application.prototype.initBasicSlider = function () {
                     },
                 }
             };
+            const basicSliderTagsSetting = {
+                slidesPerView: 'auto',
+                slidesPerGroup: 1,
+                spaceBetween: 12,
+                direction: 'horizontal',
+            };
             let basicSlider = new Swiper('.basic-slider-wrap-' + i + ' .basic-slider', basicSliderSetting);
+            let basicSliderTags = new Swiper('.basic-slider-wrap-' + i + ' .basic-slider-tags', basicSliderTagsSetting);
         });
     }
 };
@@ -1873,41 +1880,46 @@ application.prototype.initOrdersMap = function () {
 
 // Initialize contacts map
 application.prototype.initContactsMap = function () {
-    if ($('#contactsMap').length) {
+    if ($('.contacts-map').length) {
         ymaps.ready(init);
 
         let myMap;
+        let mapItem = $('.contacts-map-content');
 
         function init () {
-            let zoomControl = new ymaps.control.ZoomControl({
-                options: {
-                    size: 'large',
-                    float: 'none',
-                    position: {
-                        top: 50,
-                        right: 10,
-                        left: 'auto',
-                    },
-                }
-            });
+            mapItem.each(function (i) {
+                mapItem.eq(i).attr('id', 'contactsMap' + i);
 
-            // Параметры карты можно задать в конструкторе.
-            myMap = new ymaps.Map(
-                // ID DOM-элемента, в который будет добавлена карта.
-                'contactsMap',
-                // Параметры карты.
-                {
-                    // Географические координаты центра отображаемой карты.
-                    center: [55.798186, 37.489652],
-                    // Масштаб.
-                    zoom: 15,
-                    controls: ['fullscreenControl'],
-                }, {
-                    // Поиск по организациям.
-                    searchControlProvider: 'yandex#search'
-                }
-            );
-            myMap.controls.add(zoomControl);
+                let zoomControl = new ymaps.control.ZoomControl({
+                    options: {
+                        size: 'large',
+                        float: 'none',
+                        position: {
+                            top: 50,
+                            right: 10,
+                            left: 'auto',
+                        },
+                    }
+                });
+
+                // Параметры карты можно задать в конструкторе.
+                myMap = new ymaps.Map(
+                    // ID DOM-элемента, в который будет добавлена карта.
+                    'contactsMap' + i,
+                    // Параметры карты.
+                    {
+                        // Географические координаты центра отображаемой карты.
+                        center: [55.798186, 37.489652],
+                        // Масштаб.
+                        zoom: 15,
+                        controls: ['fullscreenControl'],
+                    }, {
+                        // Поиск по организациям.
+                        searchControlProvider: 'yandex#search'
+                    }
+                );
+                myMap.controls.add(zoomControl);
+            });
         }
     }
 };

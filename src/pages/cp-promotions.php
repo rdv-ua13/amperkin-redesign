@@ -1346,7 +1346,7 @@
             </div>
             <div class="gap-xl">
                 <div class="seo-block">
-                    <div class="seo-block__bottom">
+                    <div class="seo-block__bottom seo-block__bottom--mobile-border-none">
                         <div class="seo-block__bottom-item">
                             <div class="seo-block__bottom-view">
                                 <svg class="icon">

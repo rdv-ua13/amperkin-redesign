@@ -14,8 +14,8 @@
 						</div>
 						<ul class="list-reset cp-sidebar-item__list">
 							<li><a class="cp-sidebar-item__link" href="javascript:;">Доставка</a></li>
-							<li><a class="cp-sidebar-item__link active" href="javascript:;">Оплата</a></li>
-							<li><a class="cp-sidebar-item__link" href="javascript:;">Гарантия и возврат</a></li>
+							<li><a class="cp-sidebar-item__link" href="javascript:;">Оплата</a></li>
+							<li><a class="cp-sidebar-item__link active" href="javascript:;">Гарантия и возврат</a></li>
 							<li><a class="cp-sidebar-item__link" href="javascript:;">Юридическим лицам</a></li>
 							<li><a class="cp-sidebar-item__link" href="javascript:;">Физическим лицам</a></li>
 							<li><a class="cp-sidebar-item__link" href="javascript:;">Акции</a></li>

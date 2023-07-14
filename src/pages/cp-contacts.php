@@ -310,7 +310,7 @@
                     <div class="">
                         <div class="gap-md h3">Как добраться</div>
                             <div class="contacts-map">
-                                <div id="contactsMap" class="contacts-map-content"></div>
+                                <div class="contacts-map-content"></div>
                             </div>
                     </div>
                 </div>
