@@ -924,30 +924,17 @@ application.prototype.initSliders = function () {
     }
 
     if ($('.index-slider-wrapper').length) {
-        let indexSlider = null;
-
-        breakpointChecker();
-        $(window).on('resize', breakpointChecker);
-
-        function breakpointChecker() {
-            if (window.matchMedia('(min-width: 992px)').matches) {
-                indexSlider = null;
-
-                indexSlider = new Swiper('.index-slider', {
-                    slidesPerView: 1,
-                    navigation: {
-                        nextEl: '.index-slider .swiper-button-next',
-                        prevEl: '.index-slider .swiper-button-prev',
-                    },
-                    pagination: {
-                        el: ".index-slider .swiper-pagination",
-                    },
-                });
-            }
-            else if (window.matchMedia('(max-width: 991.98px)').matches) {
-                indexSlider = null;
-            }
-        }
+        const indexSliderSettings = new Swiper('.index-slider', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.index-slider .swiper-button-next',
+                prevEl: '.index-slider .swiper-button-prev',
+            },
+            pagination: {
+                el: ".index-slider .swiper-pagination",
+            },
+        });
+        let indexSlider = new Swiper('.index-slider', indexSliderSettings);
     }
 
     if ($('.partners-label').length) {
