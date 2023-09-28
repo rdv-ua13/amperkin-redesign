@@ -598,7 +598,7 @@
 											</div>
 										</div>
 									</li>
-									<?/* // todo: end this part
+
 						<li class="catalog-sidebar-filter__options-item" data-filter-option>
 							<div class="catalog-sidebar-filter__options-header collapse-view-in" data-filter-option-view>
 								<svg class="icon icon-sm">
@@ -611,7 +611,7 @@
 									<div class="range-slider-wrapper">
 										<div id="range-slider"></div>
 
-										<!--<div id="steps-slider" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr">
+										<div id="steps-slider" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr">
 											<div class="noUi-base">
 												<div class="noUi-connects">
 													<div class="noUi-connect"></div>
@@ -629,17 +629,15 @@
 													</div>
 												</div>
 											</div>
-										</div>-->
+										</div>
 
-										<!--<input id="range-slider-keypress-0" type="text">
-										<input id="range-slider-keypress-1" type="text">-->
+										<input id="range-slider-keypress-0" type="text">
+										<input id="range-slider-keypress-1" type="text">
 									</div>
 								</div>
 							</div>
 
-
-
-							<!--<div class="catalog-sidebar-prices ">
+							<div class="catalog-sidebar-prices ">
 								<div class="catalog-sidebar-prices__from">
 
 									<input id="arrFilter_P3_MIN" class="input__area catalog-sidebar__label" name="arrFilter_P3_MIN" value="" placeholder="6" autocomplete="off">
@@ -648,8 +646,9 @@
 								<div class="catalog-sidebar-prices__to">
 									<input id="arrFilter_P3_MAX" class="input__area catalog-sidebar__label" name="arrFilter_P3_MAX" value="" placeholder="628362" autocomplete="off">
 								</div>
-							</div>-->
-						</li>*/?>
+							</div>
+						</li>
+
 									<li class="catalog-sidebar-filter__options-item" data-filter-option>
 										<div class="catalog-sidebar-filter__options-header collapse-view-in" data-filter-option-view>
 											<svg class="icon icon-sm">

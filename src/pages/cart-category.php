@@ -484,75 +484,75 @@
                                         </span>
                                     </span>
                                     <span class="card-product-view">
-								<picture>
-									<source srcset="img/product.webp" type="image/webp">
-									<img
-                                            loading="lazy"
-                                            src="img/product.png"
-                                            class="image"
-                                            width="70"
-                                            height="70"
-                                            alt="Изображение блока"
-                                    >
-								</picture>
-							</span>
-                                    <span class="card-product-descr">
-								<span class="card-product-descr__top">
-									<span class="card-product-descr__info">
-										<span class="product-code"><span>ZB3327018</span></span>
-										<span class="card-product-descr__availability product-availability in-stock">
-											<svg class="icon">
-												<use href="img/sprite.svg#checkbox-rec"></use>
-											</svg>
-											<span>Товар в наличии</span>
-										</span>
-									</span>
-
-									<span class="card-product-descr__title">
-										<a href="javascript:;">Haupa Отвёртка двухкомпонентная PH 2</a>
-									</span>
-									<span class="card-product-descr__text">
-										<span>0,4 кг</span>
-									</span>
-								</span>
-								<span class="card-product-descr__bottom">
-									<span class="card-product-descr__price">
-										<span class="card-product-descr__price-total">2 956,80 ₽</span>
-										<span class="card-product-descr__price-current">1 478,40 ₽ за шт.</span>
-									</span>
-									<span class="card-product-descr__cart product-card__cart cart-buy">
-										<span class="cart-quantity">
-											<button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
-												<svg class="icon icon-sm btn__icon">
-													<use href="img/sprite.svg#minus"></use>
-												</svg>
-												<svg class="icon icon-sm btn__icon icon-selected">
-													<use href="img/sprite.svg#trash"></use>
-												</svg>
-											</button>
-											<input
-                                                    id=""
-                                                    class="input-reset cart-quantity-input"
-                                                    type="text"
-                                                    placeholder="999"
-                                                    value="1"
-                                                    max="999"
-                                                    data-mult="1"
+                                        <picture>
+                                            <source srcset="img/product.webp" type="image/webp">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/product.png"
+                                                    class="image"
+                                                    width="70"
+                                                    height="70"
+                                                    alt="Изображение блока"
                                             >
-											<button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
-												<svg class="icon icon-sm btn__icon">
-													<use href="img/sprite.svg#plus"></use>
-												</svg>
-											</button>
-										</span>
-										<span class="card-product-descr__delete" data-delete-trigger>
-											<svg class="icon icon-sm">
-												<use href="img/sprite.svg#trash"></use>
-											</svg>
-										</span>
-									</span>
-								</span>
-							</span>
+                                        </picture>
+                                    </span>
+                                    <span class="card-product-descr">
+                                        <span class="card-product-descr__top">
+                                            <span class="card-product-descr__info">
+                                                <span class="product-code"><span>ZB3327018</span></span>
+                                                <span class="card-product-descr__availability product-availability in-stock">
+                                                    <svg class="icon">
+                                                        <use href="img/sprite.svg#checkbox-rec"></use>
+                                                    </svg>
+                                                    <span>Товар в наличии</span>
+                                                </span>
+                                            </span>
+
+                                            <span class="card-product-descr__title">
+                                                <a href="javascript:;">Haupa Отвёртка двухкомпонентная PH 2</a>
+                                            </span>
+                                            <span class="card-product-descr__text">
+                                                <span>0,4 кг</span>
+                                            </span>
+                                        </span>
+                                        <span class="card-product-descr__bottom">
+                                            <span class="card-product-descr__price">
+                                                <span class="card-product-descr__price-total">2 956,80 ₽</span>
+                                                <span class="card-product-descr__price-current">1 478,40 ₽ за шт.</span>
+                                            </span>
+                                            <span class="card-product-descr__cart product-card__cart cart-buy">
+                                                <span class="cart-quantity">
+                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                                        <svg class="icon icon-sm btn__icon">
+                                                            <use href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                        <svg class="icon icon-sm btn__icon icon-selected">
+                                                            <use href="img/sprite.svg#trash"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input
+                                                            id=""
+                                                            class="input-reset cart-quantity-input"
+                                                            type="text"
+                                                            placeholder="999"
+                                                            value="1"
+                                                            max="999"
+                                                            data-mult="1"
+                                                    >
+                                                    <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                                        <svg class="icon icon-sm btn__icon">
+                                                            <use href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </span>
+                                                <span class="card-product-descr__delete" data-delete-trigger>
+                                                    <svg class="icon icon-sm">
+                                                        <use href="img/sprite.svg#trash"></use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
                                 </div>
                                 <div class="card-product" data-removable>
                                     <span class="card-product-check">

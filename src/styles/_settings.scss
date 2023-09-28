@@ -819,7 +819,7 @@ input.disabled {
 				padding-left: 16px;
 			}
 			&:last-child {
-				padding-left: 16px;
+				padding-right: 16px;
 			}
 		}
 	}
@@ -4054,7 +4054,7 @@ input.disabled {
 			right: auto;
 
 			&::after {
-				background: url("../img/sprite.svg#chevron-left");
+				background-image: url("../img/sprite.svg#chevron-left");
 			}
 		}
 		.swiper-button-next,
@@ -5317,6 +5317,19 @@ input.disabled {
 		box-shadow: 0 4px 6px rgba(213, 213, 214, 0.5);
 		background: var(--gray2-color);
 		font-size: 12px;
+
+		.tippy-arrow {
+			color: var(--gray2-color);
+		}
+
+		&[data-theme='light'] {
+			background: var(--white-color);
+			color: var(--gray2-color);
+
+			.tippy-arrow {
+				color: var(--white-color);
+			}
+		}
 	}
 	&-content {
 		padding: 10px 12px;

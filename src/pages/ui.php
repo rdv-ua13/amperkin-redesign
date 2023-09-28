@@ -241,6 +241,7 @@
             <div class="tooltip-ui-set tooltip-ui-iconset">
                 <span class="tooltip"
                       data-tippy-content="#search"
+                      data-tippy-theme="light"
                 >
                     <!--start ui content-->
                     <svg class="icon">
@@ -250,6 +251,7 @@
                 </span>
                 <span class="tooltip"
                       data-tippy-content="#shopping-cart-2"
+                      data-tippy-placement="right"
                 >
                     <!--start ui content-->
                     <svg class="icon">
@@ -259,6 +261,7 @@
                 </span>
                 <span class="tooltip"
                       data-tippy-content="#inbox-filled"
+                      data-tippy-placement="bottom"
                 >
                     <!--start ui content-->
                     <svg class="icon">
@@ -268,6 +271,7 @@
                 </span>
                 <span class="tooltip"
                       data-tippy-content="#inbox-in"
+                      data-tippy-placement="left"
                 >
                     <!--start ui content-->
                     <svg class="icon">
